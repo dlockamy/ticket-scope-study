@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner",
+    "head": "41460282a019fdc199420538888b941342007615",
+    "opened_ts": 1793387333447,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387350909,
+    "merge_sha": "977eabe8e355125965ebe7f62181a064c6ba8780",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-app-owner",
+    "title": "Declare owning team, use shared-contracts 2",
+    "head": "8679d4c238b4ace10d4f576507a9138e9ea06f22",
+    "opened_ts": 1793387371371,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387386819,
+    "merge_sha": "211a61723e2b92ee619dc1129705adc3b4f5eb0a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-app-owner",
+    "title": "Declare owning team, use shared-contracts 2",
+    "head": "7fd88e50f60ef3219243799ab177cd8634bc8cab",
+    "opened_ts": 1793387371533,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387405389,
+    "merge_sha": "051a53d0cc95faa1ff141ffedab89e5b52c89301",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-app-owner",
+    "title": "Declare owning team, use shared-contracts 2",
+    "head": "c0898c38832d42f3c0cc8dbb4c4a7a549c42a11b",
+    "opened_ts": 1793387371702,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387427018,
+    "merge_sha": "490d79ee8a1eb48cb1c2c1b555357b56340e5ec3",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

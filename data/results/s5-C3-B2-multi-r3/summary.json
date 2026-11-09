@@ -1,0 +1,138 @@
+{
+  "run": "s5-C3-B2-multi-r3",
+  "topology": "multi",
+  "change": "C3",
+  "arm": "B2",
+  "rep": 3,
+  "model": "haiku",
+  "tag": "s5",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 132,
+  "jenkins_wait_s": 71,
+  "agent_active_s": 62,
+  "t_first_clone_s": 5.086,
+  "t_first_pr_s": 17.166,
+  "t_first_merge_s": 30.93,
+  "repos_cloned": [
+    "billing",
+    "contracts",
+    "shell"
+  ],
+  "repos_changed": [
+    "billing",
+    "contracts",
+    "shell"
+  ],
+  "prs": 3,
+  "prs_merged": 3,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "contracts",
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 14
+    },
+    {
+      "id": 2,
+      "repo": "billing",
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 16
+    },
+    {
+      "id": 3,
+      "repo": "shell",
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 34
+    }
+  ],
+  "lines_changed_excl_lock": 11,
+  "files_changed": 6,
+  "pr_updates": 0,
+  "ci_runs": 3,
+  "ci_failures": 0,
+  "deploys": 3,
+  "deploy_failures": 0,
+  "subtasks_recorded": 1,
+  "subtask_detail": [
+    {
+      "repo": "contracts",
+      "title": "x"
+    }
+  ],
+  "jenkins_builds": 12,
+  "jenkins_executor_s": 50.3,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "multi-billing-cd": 2,
+    "multi-billing-ci": 2,
+    "multi-contracts-cd": 2,
+    "multi-contracts-ci": 2,
+    "multi-shell-cd": 2,
+    "multi-shell-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "audit_runs": 2,
+  "audit_last_violations": 1,
+  "hidden": "reports",
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 882214,
+  "agent_output_tokens": 10465,
+  "agent_turns": 29,
+  "agent_cost_usd": 0.01955779,
+  "agent_duration_s": 137,
+  "agent_error": false,
+  "acceptance_pass": false,
+  "missed": [
+    "reports"
+  ],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "reports": {
+      "src_ok": false,
+      "live_ok": false,
+      "live_enforces_contract": false,
+      "lock_contracts": "1.0.0"
+    }
+  },
+  "semver_ok": true,
+  "semver_class": "major",
+  "platformkit_changed": false,
+  "failed_checks": [
+    "reports: source passes owner \"insights\"",
+    "reports: live bundle boots with owner \"insights\" and the enforcing contract"
+  ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103-1: validateApp requires owner (v2.0.0)",
+    "head": "260c752c09ef1fb072593936e29870fc4d77d14a",
+    "opened_ts": 1793382930171,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382944180,
+    "merge_sha": "89b24eeabc62f0578f6658ed6823874ba44b1a2b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-103-pass-owner-billing",
+    "title": "PLAT-103-2: billing passes owner",
+    "head": "102b019bb479d3360ebfe9951b2ede7861093b57",
+    "opened_ts": 1793382962378,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382976346,
+    "merge_sha": "3b63466f826c94abe8a76822fd511103bfc78564",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "reports",
+    "branch": "plat-103-pass-owner-reports",
+    "title": "PLAT-103-3: reports passes owner",
+    "head": "ebe544ace8af583a07f7c4b3086627476ac5ab3d",
+    "opened_ts": 1793382962507,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382994918,
+    "merge_sha": "3d2847cc3fe5a519925b2bc46449e11845e2c5a7",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

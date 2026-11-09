@@ -1,0 +1,9 @@
+{"ts":1793389103094,"event":"clone","repo":"mono"}
+{"ts":1793389114674,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires owner; pass package.json team in all 3 apps (single PR)","repo":"mono"}
+{"ts":1793389114692,"event":"task_start","task":1}
+{"ts":1793389119527,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389132008,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4312,"waited_ms":12438,"sha":"72657dc339bb6d68b4d605696a908f9c75a7f339"}
+{"ts":1793389137137,"event":"pr_merged","pr":1,"merge_sha":"c3b86a0b4d46d5e0968df655d2f9f52d6a355a86"}
+{"ts":1793389155559,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11502,"ci_main_ms":3192,"waited_ms":18392}
+{"ts":1793389169867,"event":"task_done","task":1}
+{"ts":1793389169885,"event":"done","summary":"validateApp now throws if owner is missing/empty. core-shell (platform), billing (payments), reports (insights) pass owner matching their package.json team. Assumptions: owner hardcoded as a literal because the inlining bundler can't import package.json; all validateApp callers were in mono (platform-kit doesn't use it), so no lib release needed; no version bump for the inlined shared-contracts lib. All 3 apps build locally; PR #1 CI and CD green."}

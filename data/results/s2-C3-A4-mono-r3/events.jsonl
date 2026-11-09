@@ -1,0 +1,7 @@
+{"ts":1793367192042,"event":"clone","repo":"mono"}
+{"ts":1793367192104,"event":"clone","repo":"platformkit"}
+{"ts":1793367250357,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793367262727,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3118,"waited_ms":12339,"sha":"a8f72adb8d64cb81b55922d806517a819f2714aa"}
+{"ts":1793367269181,"event":"pr_merged","pr":1,"merge_sha":"f977aa2bd80fe806469fdaa6509e5400829ee9ae"}
+{"ts":1793367290564,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11279,"ci_main_ms":3206,"waited_ms":21348}
+{"ts":1793367293935,"event":"done","summary":"PR #1 (mono) merged, CI+CD green: validateApp now throws if owner missing/empty; core-shell passes 'platform', billing 'payments', reports 'insights' (from package.json team). Assumptions: libs/shared-contracts is inlined at build time (not a registry package), so no version bump/release or dependency adoption applies and one PR keeps lib+apps atomic. Added sub-route-reports (not in ticket) since it calls validateApp and would break at startup. PLAT-103-4: libs-platform-kit has no validateApp call nor shared-contracts dependency, so no change made."}

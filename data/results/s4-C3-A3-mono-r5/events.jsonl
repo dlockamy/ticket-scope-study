@@ -1,0 +1,6 @@
+{"ts":1793390964167,"event":"clone","repo":"mono"}
+{"ts":1793390985192,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793390997441,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4476,"waited_ms":12218,"sha":"e7503e0fd6c5eaecb49a1244f5baf4aaf575181d"}
+{"ts":1793390999333,"event":"pr_merged","pr":1,"merge_sha":"417b39901a30c957311724fa68a444929e326e0e"}
+{"ts":1793391023858,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16658,"ci_main_ms":3505,"waited_ms":24496}
+{"ts":1793391026131,"event":"done","summary":"validateApp now throws if owner missing/empty; shared-contracts bumped to 2.0.0 (breaking). Billing=payments, reports=insights, core-shell=platform from package.json team. Assumption: shared-contracts is in-repo and inlined at build, so a single PR covering all 4 sub-tasks was fine (per CONTRIBUTING: one PR unless order matters); no registry release/lockfile update needed. All 3 apps build locally."}

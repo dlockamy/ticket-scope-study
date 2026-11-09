@@ -1,0 +1,29 @@
+{
+  "run": "s5-C3-A2-mono-r3",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "A2",
+  "rep": 3,
+  "model": "haiku",
+  "tag": "s5",
+  "start_ms": 1793396708880,
+  "structure": "structured",
+  "list": "partial",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [
+    "billing",
+    "shell"
+  ],
+  "decoys": [],
+  "hidden": "reports",
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

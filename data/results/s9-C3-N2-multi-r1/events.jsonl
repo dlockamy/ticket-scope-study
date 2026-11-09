@@ -1,0 +1,33 @@
+{"ts":1793450649476,"event":"clone","repo":"shell"}
+{"ts":1793450649536,"event":"clone","repo":"billing"}
+{"ts":1793450649595,"event":"clone","repo":"reports"}
+{"ts":1793450649651,"event":"clone","repo":"contracts"}
+{"ts":1793450649705,"event":"clone","repo":"platformkit"}
+{"ts":1793450660042,"event":"task_added","task":1,"title":"contracts: validateApp requires team, bump to 2.0.0","repo":""}
+{"ts":1793450660063,"event":"task_added","task":2,"title":"shell: pass team, upgrade to contracts ^2","repo":""}
+{"ts":1793450660081,"event":"task_added","task":3,"title":"billing: pass team, upgrade to contracts ^2","repo":""}
+{"ts":1793450660099,"event":"task_added","task":4,"title":"reports: pass team, upgrade to contracts ^2","repo":""}
+{"ts":1793450660327,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-team","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450674529,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3623,"waited_ms":12286,"sha":"1494a0e25bb3bedaf044104308d346c3e03477ca"}
+{"ts":1793450674706,"event":"pr_merged","pr":1,"merge_sha":"9a91bb78c20be72ebc9058e7ae73bfd416a4aa7f"}
+{"ts":1793450686998,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5007,"ci_main_ms":2955,"waited_ms":12262}
+{"ts":1793450692383,"event":"pr_opened","pr":2,"repo":"shell","branch":"require-team-v2","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793450692503,"event":"pr_opened","pr":3,"repo":"billing","branch":"require-team-v2","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793450692618,"event":"pr_opened","pr":4,"repo":"reports","branch":"require-team-v2","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793450695416,"event":"pr_updated","pr":2,"size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450695563,"event":"pr_updated","pr":3,"size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450695754,"event":"pr_updated","pr":4,"size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450703347,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3107,"waited_ms":6119,"sha":"5c466c4c5711565b7ee69cd8f26f6d3bf68e7760"}
+{"ts":1793450703473,"event":"pr_merged","pr":2,"merge_sha":"6978d0e6cb1c38b8e4a4fcb2805791d88c783a5e"}
+{"ts":1793450718860,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8119,"ci_main_ms":3022,"waited_ms":15356}
+{"ts":1793450718924,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3125,"waited_ms":34,"sha":"d5ed8ecd296fd8afcc640f9a76c9b849554c6d08"}
+{"ts":1793450719050,"event":"pr_merged","pr":3,"merge_sha":"26ee6bfe9655aa712625f0c8ed4b6bad4f0201c5"}
+{"ts":1793450737494,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11702,"ci_main_ms":2966,"waited_ms":18415}
+{"ts":1793450737558,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3083,"waited_ms":33,"sha":"623dea42c2541388f6aa1f9981ccc3cd7ab296fd"}
+{"ts":1793450737690,"event":"pr_merged","pr":4,"merge_sha":"8544f8526951860679022bff4355fb5895d41f27"}
+{"ts":1793450759215,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10931,"ci_main_ms":3004,"waited_ms":21496}
+{"ts":1793450762000,"event":"task_done","task":1}
+{"ts":1793450762018,"event":"task_done","task":2}
+{"ts":1793450762035,"event":"task_done","task":3}
+{"ts":1793450762050,"event":"task_done","task":4}
+{"ts":1793450762063,"event":"done","summary":"validateApp in @mfe/shared-contracts now throws without app.team (2.0.0, breaking, published). shell, billing, reports upgraded to ^2.0.0, pass their package.json team (platform/payments/insights) and are deployed. Assumptions: team is hardcoded in source to match package.json (bundler inlines, can't read package.json at runtime); platform-kit untouched; readme fake-bucket-names request treated as separate ticket (no README with bucket names found in the repos)."}

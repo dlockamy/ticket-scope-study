@@ -1,0 +1,20 @@
+{"ts":1793398042101,"event":"clone","repo":"mono"}
+{"ts":1793398042164,"event":"clone","repo":"platformkit"}
+{"ts":1793398075350,"event":"task_added","task":1,"title":"PLAT-103-4: apps/sub-route-reports passes its owner (team insights) to validateApp","repo":"mono"}
+{"ts":1793398089652,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793398101310,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3110,"waited_ms":9179,"sha":"1fa982c50b94184a745d5e5713bd418c94b6c0ff"}
+{"ts":1793398103597,"event":"pr_merged","pr":1,"merge_sha":"a73f9f8d98b2f0118373aa145566d29eeab20d9c"}
+{"ts":1793398124575,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793398133776,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3017,"waited_ms":9167,"sha":"e9ce0015543251903c007458673057febeb77d1b"}
+{"ts":1793398137059,"event":"pr_merged","pr":2,"merge_sha":"7abb10daaf3edc704a3477179274f17cae1eb6cc"}
+{"ts":1793398155465,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11077,"ci_main_ms":3069,"waited_ms":18376}
+{"ts":1793398168366,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793398180596,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3012,"waited_ms":12196,"sha":"6875282cabbcd879036282639afeef9078efd146"}
+{"ts":1793398183118,"event":"pr_merged","pr":3,"merge_sha":"e4fb202d5bb774e06895c030626ca3985f28a570"}
+{"ts":1793398201570,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10032,"ci_main_ms":3025,"waited_ms":18419}
+{"ts":1793398207668,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793398222982,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3048,"waited_ms":15283,"sha":"86a0460e4fa1f385516344f096a7af912038ead8"}
+{"ts":1793398230820,"event":"pr_merged","pr":4,"merge_sha":"59f4451e8e4550ae6e31eacb4530bb8b877c1b81"}
+{"ts":1793398249324,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9306,"ci_main_ms":2979,"waited_ms":18476}
+{"ts":1793398257696,"event":"task_done","task":1}
+{"ts":1793398257712,"event":"done","summary":"PLAT-103 shipped. validateApp (libs/shared-contracts, now 2.0.0) rejects apps without a non-empty owner. All three callers now pass owner: core-shell -> 'platform', billing -> 'payments', reports -> 'insights'. PRs #1 (contract), #2 (billing), #3 (core-shell), #4 (reports), all CI green and merged; CI/CD on main green after each. Assumptions: (1) shared-contracts is inlined at build time, so 'release' = merge + major version bump in package.json, nothing published to the registry; (2) owner values are hardcoded in each app because the build helper cannot read package.json, and they match each package.json team field; (3) reports was not in the ticket. It is not built or deployed by CD (CD only watches core-shell and billing), so its change is merged but not live; the CD SUCCESS on PR #4 does not mean reports was deployed; (4) apps were smoke-tested locally by evaluating the built bundles, not in a browser."}

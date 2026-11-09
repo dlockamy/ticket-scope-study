@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl to billingEndpoint in shared config",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Billing app: use billingEndpoint (shipped with PR #1)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Core shell: use billingEndpoint (shipped with PR #1)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Platform kit: read billingEndpoint instead of billingUrl (no change needed)",
+    "repo": "platformkit",
+    "state": "done"
+  }
+]

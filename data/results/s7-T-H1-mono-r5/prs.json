@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-104-billing-v2-url",
+    "title": "PLAT-104-1/2: billingUrl -> /billing/v2 and rebuild billing app",
+    "head": "9838d5c539626633e70ff289efa207fc261a68e5",
+    "opened_ts": 1793416544425,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 2,
+      "lock_del": 2,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793416555564,
+    "merge_sha": "2b8b01756c9871a3f0ed644cd0630e9af9b0ac28",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "author": "dev-b",
+    "repo": "mono",
+    "branch": "plat-104-shell-reports-rebuild",
+    "title": "PLAT-104-3/4: rebuild core-shell and reports with billing/v2",
+    "head": "3aadea094acc94cdf47b5448c1e8dee7fa1c3a8e",
+    "opened_ts": 1793416585472,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793416596656,
+    "merge_sha": "398701179aee9a0257c90739a130014b7feb624f",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

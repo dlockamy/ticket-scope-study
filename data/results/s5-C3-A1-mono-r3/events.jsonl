@@ -1,0 +1,19 @@
+{"ts":1793396300931,"event":"clone","repo":"mono"}
+{"ts":1793396300992,"event":"clone","repo":"platformkit"}
+{"ts":1793396317933,"event":"task_added","task":1,"title":"Add owner requirement to validateApp in libs/shared-contracts","repo":"mono"}
+{"ts":1793396317955,"event":"task_added","task":2,"title":"Pass owner (team from package.json) in core-shell, billing and reports","repo":"mono"}
+{"ts":1793396317975,"event":"task_added","task":3,"title":"Build all apps locally and verify startup","repo":"mono"}
+{"ts":1793396317993,"event":"task_added","task":4,"title":"Open PR, wait for CI, merge, confirm CD deploy","repo":"mono"}
+{"ts":1793396345988,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396347491,"event":"task_start","task":1}
+{"ts":1793396347510,"event":"task_done","task":1}
+{"ts":1793396347527,"event":"task_start","task":2}
+{"ts":1793396347543,"event":"task_done","task":2}
+{"ts":1793396347562,"event":"task_start","task":3}
+{"ts":1793396347578,"event":"task_done","task":3}
+{"ts":1793396347593,"event":"task_start","task":4}
+{"ts":1793396359823,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3644,"waited_ms":12204,"sha":"b71296e360741c6f9613b397713899c436cb40e7"}
+{"ts":1793396361087,"event":"pr_merged","pr":1,"merge_sha":"19474b13d90aedb346ec8db42f051e28517cb9d2"}
+{"ts":1793396382532,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14024,"ci_main_ms":3119,"waited_ms":21416}
+{"ts":1793396386271,"event":"task_done","task":4}
+{"ts":1793396386287,"event":"done","summary":"PLAT-103 live. validateApp in libs/shared-contracts now throws when app.owner is missing, empty or whitespace-only. core-shell (platform), billing (payments) and reports (insights) pass owner matching their package.json team. PR #1 in mono merged to main (19474b13); CI and CD succeeded. Assumptions: owner is hardcoded in each app's src because build.js inlines only named imports, so reading package.json at runtime was not practical; the value matches package.json, but nothing enforces that match. Reports was included even though the ticket did not name it, since it also calls validateApp. Only mono was changed; platformkit untouched."}

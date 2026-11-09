@@ -1,0 +1,10 @@
+{"ts":1793450513257,"event":"clone","repo":"mono"}
+{"ts":1793450513314,"event":"clone","repo":"platformkit"}
+{"ts":1793450525540,"event":"task_added","task":1,"title":"Require owner in validateApp (shared-contracts) and pass team from each app's package.json","repo":"mono"}
+{"ts":1793450525561,"event":"task_start","task":1}
+{"ts":1793450528439,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450540680,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4135,"waited_ms":12212,"sha":"c72d492e26931b00297e3d724a83be2c1be2480f"}
+{"ts":1793450542661,"event":"pr_merged","pr":1,"merge_sha":"2dca4c71cc8ed225e03128e1c6f77423f367a5a6"}
+{"ts":1793450564154,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14493,"ci_main_ms":3402,"waited_ms":21464}
+{"ts":1793450566661,"event":"task_done","task":1}
+{"ts":1793450566678,"event":"done","summary":"validateApp in libs/shared-contracts now throws if app.owner is missing; core-shell (platform), billing (payments), reports (insights) pass owner matching the team in their package.json. Assumptions: libs/shared-contracts lives in the monorepo and is inlined at build, so platformkit needed no change or release; team values hardcoded because the inlining build can't import package.json. PR #1 merged, CI and CD green."}

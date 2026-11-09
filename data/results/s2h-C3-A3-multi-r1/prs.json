@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: Require owner in validateApp (2.0.0)\n\nBreaking change: validateApp now throws when owner is missing or empty. Version bumped to 2.0.0.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "38ed0b2590f0500371814d3ae243a024d239d918",
+    "opened_ts": 1793371651735,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371666193,
+    "merge_sha": "89f4db6cc48b520e8629a3f67d2434d8e5af4b81",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-103-billing-owner",
+    "title": "PLAT-103: Pass owning team to validateApp (billing)\n\nPasses owner 'payments' (from package.json team) to validateApp and moves to @mfe/shared-contracts ^2.0.0, which requires an owner.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "43bb3ed293ad0218105b77ce618117b7e663fc3d",
+    "opened_ts": 1793371713269,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371724263,
+    "merge_sha": "dced6c6b72962af45eb43be53a6037e5a60926c9",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-103-shell-owner",
+    "title": "PLAT-103: Pass owning team to validateApp (core shell)\n\nPasses owner 'platform' (from package.json team) to validateApp and moves to @mfe/shared-contracts ^2.0.0, which requires an owner.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "d13b683094674633448a4bf348c98c9ff2bd41ce",
+    "opened_ts": 1793371766706,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371782004,
+    "merge_sha": "7b3f19d1a58c49ac54de64822b86d100ae881fba",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-reports-owner",
+    "title": "PLAT-103: Pass owning team to validateApp (reports)\n\nPasses owner 'insights' (from package.json team) to validateApp and moves to @mfe/shared-contracts ^2.0.0, which requires an owner.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "2db8034fdfcfda3703e4df535b01ba9397fd752d",
+    "opened_ts": 1793371800545,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371814828,
+    "merge_sha": "bf5df7655b3bc8343d57d30cfba8b52b689f7a0b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

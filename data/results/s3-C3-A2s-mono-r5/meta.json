@@ -1,0 +1,29 @@
+{
+  "run": "s3-C3-A2s-mono-r5",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "A2s",
+  "rep": 5,
+  "model": "claude-sonnet-5-5",
+  "tag": "s3",
+  "start_ms": 1793385440643,
+  "structure": "structured",
+  "list": "partial_shell",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [
+    "billing",
+    "reports"
+  ],
+  "decoys": [],
+  "hidden": "shell",
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

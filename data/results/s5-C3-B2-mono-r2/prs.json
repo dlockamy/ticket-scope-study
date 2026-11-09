@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-1-owner-contract",
+    "title": "PLAT-103-1: validateApp requires an owner (shared-contracts 2.0.0)",
+    "head": "37037b139d6f5c9861bba02fafc97b1ff01b10c8",
+    "opened_ts": 1793394148003,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793394162946,
+    "merge_sha": "cfd1f497462c361f2434cda80cea5c643f6685a2",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "mono",
+    "branch": "plat-103-2-billing-owner",
+    "title": "PLAT-103-2: billing passes its owner to validateApp",
+    "head": "fdc57aaf135c04f68bc1886e0e4dda2dea7017e9",
+    "opened_ts": 1793394184529,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793394199590,
+    "merge_sha": "51de7507c4861ad774a14f449005eba82d7e13ce",
+    "ci_prev": 2,
+    "cd_prev": 2
+  },
+  {
+    "id": 3,
+    "repo": "mono",
+    "branch": "plat-103-3-shell-owner",
+    "title": "PLAT-103-3: core shell passes its owner to validateApp",
+    "head": "cbb65801b0e5ac353464dbf53655104a8f126d74",
+    "opened_ts": 1793394218642,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793394231077,
+    "merge_sha": "577b9f3499e51aa30dc7cf6201bec09907441de0",
+    "ci_prev": 3,
+    "cd_prev": 3
+  },
+  {
+    "id": 4,
+    "repo": "mono",
+    "branch": "plat-103-4-reports-owner",
+    "title": "PLAT-103-4: reports passes its owner to validateApp",
+    "head": "0cf655cb626ea7dd85098ec844b0befd0167a8f6",
+    "opened_ts": 1793394249839,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793394264411,
+    "merge_sha": "60b0ca7fd202cf5016e551cd680163191672b9f2",
+    "ci_prev": 4,
+    "cd_prev": 4
+  }
+]

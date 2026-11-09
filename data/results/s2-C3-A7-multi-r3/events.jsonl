@@ -1,0 +1,16 @@
+{"ts":1793367505029,"event":"clone","repo":"contracts"}
+{"ts":1793367505086,"event":"clone","repo":"billing"}
+{"ts":1793367505151,"event":"clone","repo":"shell"}
+{"ts":1793367527867,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793367539675,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3701,"waited_ms":6193,"sha":"5a5c5c820015d0e86ebd180f2e59a94de6782b08"}
+{"ts":1793367539851,"event":"pr_merged","pr":1,"merge_sha":"86dcb5230be05fc3eea3ef50f449485e13b07d22"}
+{"ts":1793367552147,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4886,"ci_main_ms":4781,"waited_ms":12261}
+{"ts":1793367559403,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793367559526,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793367571466,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3096,"waited_ms":9167,"sha":"082de2c71fb898826f6dca4ae7b9322126c3bce1"}
+{"ts":1793367571597,"event":"pr_merged","pr":2,"merge_sha":"6438be3e979aa445aa57265c21da9f9a0b6ec56a"}
+{"ts":1793367593102,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12560,"ci_main_ms":3041,"waited_ms":21476}
+{"ts":1793367593166,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3103,"waited_ms":34,"sha":"2b43feaadfd45f9195752624ece88507dd0e3750"}
+{"ts":1793367593296,"event":"pr_merged","pr":3,"merge_sha":"02d40f048faa328a41f56134c6c24c904f1fb933"}
+{"ts":1793367608710,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8880,"ci_main_ms":3115,"waited_ms":15384}
+{"ts":1793367614138,"event":"done","summary":"validateApp now requires owner; shared-contracts released as 2.0.0 (breaking=major). Billing (owner=payments) and core-shell (owner=platform), taken from package.json team, updated to ^2.0.0 with lockfiles, built locally, and deployed. Assumptions: reports app doesn't call validateApp so left untouched; owner values hardcoded to match package.json team."}

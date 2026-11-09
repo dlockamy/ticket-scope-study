@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "PLAT-103: validateApp requires owner (v2.0.0)",
+    "head": "51400ae0ad84ad0b47917c0e6f94e772c258a39e",
+    "opened_ts": 1793452547657,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793452560639,
+    "merge_sha": "b7e8bb5bd31f4fad9e2d18b791aff3d4f352284a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "pass-app-owner",
+    "title": "PLAT-103: pass owner to validateApp, shared-contracts ^2.0.0",
+    "head": "2ebb41c572b8680ebeb1d431c9ef36f2cf7111dc",
+    "opened_ts": 1793452587043,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793452598668,
+    "merge_sha": "85cd6998b2c662f2a2030c7a5adb40de50843222",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "pass-app-owner",
+    "title": "PLAT-103: pass owner to validateApp, shared-contracts ^2.0.0",
+    "head": "1edc9195124a615ba17a6077016e03c2472479a9",
+    "opened_ts": 1793452587172,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793452614213,
+    "merge_sha": "d6fbada0deb6ec679ed253ffcb15154e02d132ca",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "pass-app-owner",
+    "title": "PLAT-103: pass owner to validateApp, shared-contracts ^2.0.0",
+    "head": "d84b9536a0aec0770403866bec5c3046742ba317",
+    "opened_ts": 1793452587295,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793452632789,
+    "merge_sha": "a599412b4fd45fabb1e97aa12ca4eab9a81b2e4e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

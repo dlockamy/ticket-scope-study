@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner; pass team as owner in all 3 apps (shared-contracts is in-repo, inlined; no platformkit change)",
+    "repo": "mono",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Not doing: README fake bucket names (explicitly separate per lee)",
+    "repo": "",
+    "state": "todo"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: require an owner on every app",
+    "head": "486667de0f47b30188ee4094ccdc524096ce758a",
+    "opened_ts": 1793369027210,
+    "size": {
+      "files": 5,
+      "add": 5,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369041263,
+    "merge_sha": "8ad229dcd88284b19f2e12b4c9a222ce81c57870",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

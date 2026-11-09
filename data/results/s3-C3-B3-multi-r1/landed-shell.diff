@@ -1,0 +1,30 @@
+=== 1320de8 Pass owner to validateApp; adopt shared-contracts 2.x
+
+diff --git a/package.json b/package.json
+index 3ff0e85..4e4f6ba 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,11 @@
+   "name": "@mfe/core-shell",
+   "version": "1.0.0",
+   "team": "platform",
+-  "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0"}
++  "scripts": {
++    "prebuild": "npm install --no-audit --no-fund",
++    "build": "node build.js"
++  },
++  "dependencies": {
++    "@mfe/shared-contracts": "^2.0.0"
++  }
+ }
+diff --git a/src/config.js b/src/config.js
+index fc478f3..bb5ce95 100644
+--- a/src/config.js
++++ b/src/config.js
+@@ -1,4 +1,4 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'core-shell' });
++const app = validateApp({ name: 'core-shell', owner: 'platform' });
+ export const shellConfig = { app, billingEndpointHint: SHARED_CONFIG.billingUrl };

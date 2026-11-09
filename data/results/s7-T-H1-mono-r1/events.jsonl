@@ -1,0 +1,20 @@
+{"ts":1793413549458,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793413549494,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793413560660,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":318}
+{"ts":1793413563444,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-v2-url","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413575078,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3086,"waited_ms":9168,"sha":"ab607425aa03eb1ff2bac47ef3f1a60427d24724"}
+{"ts":1793413575251,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"e72ca4bf9e039adf7e8b3c8251510dd3c1fa28c8"}
+{"ts":1793413590757,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1237,"ci_main_ms":3173,"waited_ms":15470}
+{"ts":1793413594953,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":259}
+{"ts":1793413595527,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":575}
+{"ts":1793413595541,"who":"dev-b","event":"msg_wait","waited_ms":34564}
+{"ts":1793413598099,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793413602946,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-adopt-billing-v2-shell-reports","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413609378,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3027,"waited_ms":9167,"sha":"3f1731383bbe6ed6042a82e4568b97693e76f283"}
+{"ts":1793413609513,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"6021943fa39884db28b1c8383749ea18da4c51f6"}
+{"ts":1793413613903,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3341,"waited_ms":9128,"sha":"6b0bd78b21f6ea69d77cb2c77692c854e3acafb1"}
+{"ts":1793413614042,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"ecacdc9b6b4d520bb68e68ff04b2d93b42a86c84"}
+{"ts":1793413629441,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13524,"ci_main_ms":3759,"waited_ms":15368}
+{"ts":1793413631292,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13524,"ci_main_ms":3759,"waited_ms":21750}
+{"ts":1793413631737,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped in PR #3 (CI+CD green). Assumption: libs/shared-contracts is inlined at build and CD detects changes by app dir only, so I bumped core-shell and reports package.json to 1.0.1 to force rebuild with billing/v2 (verified in built output)."}
+{"ts":1793413634437,"who":"dev-a","event":"done","summary":"PLAT-104-1: shared-contracts billingUrl -> https://homelab.local/billing/v2 (PR #1, merged, CD green; version bumped 1.1.0 for hygiene, though libs/ are inlined, so no registry release exists). PLAT-104-2: billing app rebuilt with new contract (PR #2: version bump 1.0.1 to trigger per-dir CD; merged, CD green, built output contains billing/v2). Assumptions: no registry publish needed since lib is in-monorepo; apps only redeploy when their own dir changes. Told dev-b."}

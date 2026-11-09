@@ -1,0 +1,32 @@
+{"ts":1793391595689,"event":"clone","repo":"shell"}
+{"ts":1793391595747,"event":"clone","repo":"billing"}
+{"ts":1793391595805,"event":"clone","repo":"reports"}
+{"ts":1793391595861,"event":"clone","repo":"contracts"}
+{"ts":1793391595915,"event":"clone","repo":"platformkit"}
+{"ts":1793391613480,"event":"task_added","task":1,"title":"PLAT-103-1: validateApp rejects apps without owner (breaking, release 2.0.0)","repo":"contracts"}
+{"ts":1793391613503,"event":"task_added","task":2,"title":"PLAT-103-2: billing passes owner (team) to validateApp","repo":"billing"}
+{"ts":1793391613524,"event":"task_added","task":3,"title":"PLAT-103-3: core shell passes owner (team) to validateApp","repo":"shell"}
+{"ts":1793391613543,"event":"task_added","task":4,"title":"PLAT-103-4 (extra, found via grep): reports passes owner (team) to validateApp","repo":"reports"}
+{"ts":1793391621892,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793391625165,"event":"pr_updated","pr":1,"size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793392548033,"event":"pr_updated","pr":1,"size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793392679858,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3636,"waited_ms":38,"sha":"fb57418836b861cb648f7706e5cb33b218e41c98"}
+{"ts":1793392682061,"event":"pr_merged","pr":1,"merge_sha":"5131fac37f704d9eb1be875248fe613c2085507f"}
+{"ts":1793392695780,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":6600,"ci_main_ms":2891,"waited_ms":12278}
+{"ts":1793392712974,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793392713100,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793392713220,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793392728536,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3367,"waited_ms":12219,"sha":"a6c86de3b77425d814665a7e320bec217a56bb43"}
+{"ts":1793392728602,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3326,"waited_ms":35,"sha":"a7eab16799d8d46bed766d6af36d5dfd55f076b4"}
+{"ts":1793392728664,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3338,"waited_ms":35,"sha":"c25554527316f1c5c3e4c0d3533bf99461572e41"}
+{"ts":1793392733219,"event":"pr_merged","pr":2,"merge_sha":"ddd030507e78a0c1e88a0ba771a303dec712514b"}
+{"ts":1793392754674,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11693,"ci_main_ms":3081,"waited_ms":21426}
+{"ts":1793392754795,"event":"pr_merged","pr":3,"merge_sha":"1c6acc7a1b0bbbb016cfeffeb2d293e5206c2e28"}
+{"ts":1793392773225,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8820,"ci_main_ms":3040,"waited_ms":18400}
+{"ts":1793392773352,"event":"pr_merged","pr":4,"merge_sha":"74f27a05edb2764b52a35587d28ee5a840abdd80"}
+{"ts":1793392797826,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13806,"ci_main_ms":3136,"waited_ms":24445}
+{"ts":1793392803286,"event":"task_done","task":1}
+{"ts":1793392803306,"event":"task_done","task":2}
+{"ts":1793392803323,"event":"task_done","task":3}
+{"ts":1793392803339,"event":"task_done","task":4}
+{"ts":1793392803352,"event":"done","summary":"PLAT-103 shipped. validateApp (@mfe/shared-contracts) now throws when owner is missing or empty; released as 2.0.0 (breaking). Apps passing owner from package.json team: billing=payments, core-shell=platform, reports=insights. Adopted ^2.0.0 in all three apps. PRs: contracts #1, billing #2, shell #3, reports #4 (all CI and CD green). Assumptions: reports was the extra validateApp caller found by grep and added as PLAT-103-4; team values hardcoded in validateApp calls because the app build cannot read package.json. Process note: the first contracts commit was amended to add the Co-Authored-By line, but the push was rejected and st reported it as updated; PR #1 merged with the original commit message missing the attribution line."}

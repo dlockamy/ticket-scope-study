@@ -1,0 +1,6 @@
+{"ts":1793389275554,"event":"clone","repo":"mono"}
+{"ts":1793389289106,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389301518,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4118,"waited_ms":12372,"sha":"c20714c8c03f1b0b98c25064ce70388176d71b38"}
+{"ts":1793389303285,"event":"pr_merged","pr":1,"merge_sha":"02fad679f1a3662cee1e61b01e2e92fc1cd7e7dd"}
+{"ts":1793389324749,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12460,"ci_main_ms":3435,"waited_ms":21434}
+{"ts":1793389331452,"event":"done","summary":"validateApp now throws if owner is missing/empty. core-shell passes 'platform', billing 'payments', and reports 'insights' (from package.json team). Single PR since shared-contracts lives in the monorepo and is inlined at build time (no registry release/version bump needed). Assumption: reports also calls validateApp, so I updated it too to avoid breaking startup, though it was not a listed sub-task. PR #1 merged, CI and CD green."}

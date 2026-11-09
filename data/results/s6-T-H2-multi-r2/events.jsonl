@@ -1,0 +1,33 @@
+{"ts":1793412082347,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793412082347,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412084987,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793412085048,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793412086199,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793412090848,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412092520,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412093024,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412103063,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412103362,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3788,"waited_ms":9238,"sha":"014cbdde13f8a03efd4263f9d746ec4ebc6e6e94"}
+{"ts":1793412103553,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"ba2c5c02eac6e359f9f4364d059dd75f57564152"}
+{"ts":1793412113101,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412115992,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5386,"ci_main_ms":3058,"waited_ms":12407}
+{"ts":1793412119111,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793412119133,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793412119153,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793412119216,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793412123146,"who":"dev-b","event":"handoff_read"}
+{"ts":1793412124814,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"billing-require-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412132260,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412132420,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-4-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412135569,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2880,"waited_ms":9146,"sha":"da8c664cad9467d1b95c3a0dccf17933c446e9b5"}
+{"ts":1793412135713,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"d2a2c4c96455c5ddffd6520599c382ae518b3d71"}
+{"ts":1793412143322,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3132,"waited_ms":9163,"sha":"6b3e7d7ac8e5ae72cc3e7e10937fab4d6cfa6fb7"}
+{"ts":1793412143388,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3174,"waited_ms":36,"sha":"bff9ce3bdb3cd71158d74a1b8ef8f1f844bc5454"}
+{"ts":1793412145357,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"3867206ef95b3bfb110d92425996b124e6f9dd95"}
+{"ts":1793412145542,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"add9ad26c0ce1a017df8dcb374a8403788c47f50"}
+{"ts":1793412157295,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11727,"ci_main_ms":3108,"waited_ms":21540}
+{"ts":1793412159601,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793412159621,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/empty/non-string; released @mfe/shared-contracts 2.0.0 (major) via PR #1, live. PLAT-103-2: billing passes owner 'payments' (from package.json team), adopted ^2.0.0 with lockfile, PR #2 merged and deployed. Handoff posted for dev-b. Assumption: whitespace-only owner counts as empty."}
+{"ts":1793412164110,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9219,"ci_main_ms":3295,"waited_ms":18520}
+{"ts":1793412173412,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15750,"ci_main_ms":6245,"waited_ms":9268}
+{"ts":1793412175466,"who":"dev-b","event":"done","summary":"Shell (PR #3) and reports (PR #4) now pass owner from package.json team (platform / insights), adopt @mfe/shared-contracts ^2.0.0 with lockfile; CI and CD green. Assumption: owner values hardcoded to match package.json team."}

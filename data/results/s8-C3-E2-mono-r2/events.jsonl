@@ -1,0 +1,11 @@
+{"ts":1793448432201,"event":"clone","repo":"mono"}
+{"ts":1793448432218,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793448456839,"event":"pr_opened","pr":1,"repo":"mono","branch":"require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793448467954,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3374,"waited_ms":9186,"sha":"ef1a6472fdf5b873e228f53a296ab62957c7b437"}
+{"ts":1793448468090,"event":"pr_merged","pr":1,"merge_sha":"c005030288c75621b136482b56218b43e3a86f56"}
+{"ts":1793448489527,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10968,"ci_main_ms":3163,"waited_ms":21406}
+{"ts":1793448491981,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793448491996,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793448492009,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793448492021,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793448492046,"event":"done","summary":"validateApp now throws if owner is missing/blank (shared-contracts bumped to 2.0.0). billing, core-shell and reports pass owner from their package.json team field (payments, platform, insights). Assumption: those team values are the owning teams. Shipped as one PR because the lib is inlined at build, so splitting would have broken apps in between."}

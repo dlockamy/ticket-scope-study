@@ -1,0 +1,30 @@
+{"ts":1793416241403,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793416241793,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416243591,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793416243990,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793416249729,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416255165,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416256233,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793416256360,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416258170,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416267011,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3220,"waited_ms":9157,"sha":"77e0aac5c8b0fb39c0acb8b9e2c1eef8fe7eb28b"}
+{"ts":1793416267167,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"f8cbb226722ffc7f60094ff0a8976b8618403f3b"}
+{"ts":1793416268220,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416278270,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416279623,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":3693,"ci_main_ms":3477,"waited_ms":12424}
+{"ts":1793416283602,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793416283629,"who":"dev-a","event":"handoff_posted","version":"1.0.1","class":"patch"}
+{"ts":1793416288320,"who":"dev-b","event":"handoff_read"}
+{"ts":1793416288346,"who":"dev-b","event":"handoff_read"}
+{"ts":1793416289820,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793416289951,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793416297631,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-shell-reports-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416302190,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3192,"waited_ms":12202,"sha":"5038e2779c71e8d89a4398762d1d8a86ab1e0583"}
+{"ts":1793416302335,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"b27bd61dce2399421dd2fc72688e9e598cdfd334"}
+{"ts":1793416308678,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3185,"waited_ms":9146,"sha":"6d2917031ccab5074dcc69f1c67b94f9ac67004e"}
+{"ts":1793416308827,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"57547e9bf99c9efbb9a9d2f2489d19f09bab1ab4"}
+{"ts":1793416324096,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14455,"ci_main_ms":2968,"waited_ms":21728}
+{"ts":1793416324228,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":856,"ci_main_ms":2968,"waited_ms":15370}
+{"ts":1793416326675,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793416326693,"who":"dev-a","event":"done","summary":"PLAT-104-1: shared-contracts billingUrl -> https://homelab.local/billing/v2, version 1.0.0->1.0.1 (patch; value change, no API shape change), PR #1 merged. PLAT-104-2: billing app rebuilt with inlined contract; bumped app version 1.0.1 so CD (which only detects apps/ changes) rebuilt and deployed it, PR #2, CD green. Assumptions: lib is in-repo/inlined so no registry publish; patch class. Handoff posted for dev-b."}
+{"ts":1793416326854,"who":"dev-b","event":"done","summary":"PLAT-104-3 and PLAT-104-4 shipped in PR #3 (CI and CD green). core-shell and reports were rebuilt with inlined shared-contracts 1.0.1 (billingUrl=/billing/v2); I bumped each app's package.json to 1.0.1 so CD change detection picks them up. Assumptions: no npm install or lockfile change was needed because shared-contracts is an in-repo lib inlined at build time. I used one PR for both tasks because they are the same change."}

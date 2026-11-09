@@ -1,0 +1,36 @@
+{"ts":1793390443299,"event":"deps_query","pkg":"validateApp"}
+{"ts":1793390443317,"event":"deps_query","pkg":"@mfe/contract"}
+{"ts":1793390447280,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793390447345,"event":"clone","repo":"contracts"}
+{"ts":1793390451644,"event":"clone","repo":"shell"}
+{"ts":1793390451703,"event":"clone","repo":"billing"}
+{"ts":1793390451765,"event":"clone","repo":"reports"}
+{"ts":1793390451831,"event":"clone","repo":"analytics"}
+{"ts":1793390451887,"event":"clone","repo":"admin"}
+{"ts":1793390451943,"event":"clone","repo":"help"}
+{"ts":1793390451998,"event":"clone","repo":"marketing"}
+{"ts":1793390461387,"event":"task_added","task":1,"title":"validateApp requires owner; bump to 2.0.0 (breaking)","repo":"contracts"}
+{"ts":1793390461408,"event":"task_added","task":2,"title":"pass team as owner, upgrade to shared-contracts ^2.0.0","repo":"shell"}
+{"ts":1793390461428,"event":"task_added","task":3,"title":"pass team as owner, upgrade to shared-contracts ^2.0.0","repo":"billing"}
+{"ts":1793390461447,"event":"task_added","task":4,"title":"pass team as owner, upgrade to shared-contracts ^2.0.0","repo":"reports"}
+{"ts":1793390461679,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793390474886,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3799,"waited_ms":9206,"sha":"628fbd3776ea78e4afde14a9e5797e6f125e1ce1"}
+{"ts":1793390475073,"event":"pr_merged","pr":1,"merge_sha":"df0ff9a7fa112b9f392405774cfcc5022bb72729"}
+{"ts":1793390487375,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5022,"ci_main_ms":2937,"waited_ms":12273}
+{"ts":1793390497634,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793390497758,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793390497886,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793390511425,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3325,"waited_ms":9170,"sha":"6f33680a653aaaa007929a7bfece6300d8ee16fd"}
+{"ts":1793390511554,"event":"pr_merged","pr":2,"merge_sha":"b0da47eaeb40c070b4f5851f3cab841e085b5f1f"}
+{"ts":1793390511617,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3262,"waited_ms":34,"sha":"d935b2906e1cc15b787994e128924c7676fafe3a"}
+{"ts":1793390511741,"event":"pr_merged","pr":3,"merge_sha":"612daa43973dd49dd73e0a134a273746a141afb1"}
+{"ts":1793390511810,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3409,"waited_ms":36,"sha":"b942fc1e3c3f17e6fe89c965159ab805d3ea4df8"}
+{"ts":1793390511931,"event":"pr_merged","pr":4,"merge_sha":"972eaee65bfa0cb15c56877506783fa08f0597f4"}
+{"ts":1793390536424,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14798,"ci_main_ms":3512,"waited_ms":24457}
+{"ts":1793390536520,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15595,"ci_main_ms":3435,"waited_ms":61}
+{"ts":1793390539685,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16423,"ci_main_ms":3558,"waited_ms":3126}
+{"ts":1793390542663,"event":"task_done","task":1}
+{"ts":1793390542682,"event":"task_done","task":2}
+{"ts":1793390542699,"event":"task_done","task":3}
+{"ts":1793390542715,"event":"task_done","task":4}
+{"ts":1793390542729,"event":"done","summary":"validateApp now throws without a non-empty owner; shared-contracts bumped to 2.0.0 (breaking) and published. shell, billing, reports (the only validateApp callers; found by grepping all clones since the catalog lacked a validateApp entry) pass owner from package.json team (platform/payments/insights, hardcoded as literals), upgraded to ^2.0.0 with lockfiles, built locally and deployed. Assumption: other apps don't use the contract."}

@@ -1,0 +1,26 @@
+{"ts":1793449960420,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449963432,"event":"clone","repo":"contracts"}
+{"ts":1793449968538,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449982367,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3893,"waited_ms":12276,"sha":"fd7447a72fb3845b3ead3694231c2c8aee8c4027"}
+{"ts":1793449982566,"event":"pr_merged","pr":1,"merge_sha":"9b46f02b78ec4064edf675405ffd4908ed54b9dc"}
+{"ts":1793449994844,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4892,"ci_main_ms":2830,"waited_ms":12250}
+{"ts":1793449997211,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449997315,"event":"clone","repo":"billing"}
+{"ts":1793449997419,"event":"clone","repo":"reports"}
+{"ts":1793449997526,"event":"clone","repo":"shell"}
+{"ts":1793450006118,"event":"pr_opened","pr":2,"repo":"billing","branch":"pass-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450006643,"event":"pr_opened","pr":3,"repo":"reports","branch":"pass-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450007151,"event":"pr_opened","pr":4,"repo":"shell","branch":"pass-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450018254,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3189,"waited_ms":9187,"sha":"19c454fb2b5e2e233182253358d56a7c0289810c"}
+{"ts":1793450018384,"event":"pr_merged","pr":2,"merge_sha":"ff1e6faea27299005332756de157a2b4a7eb89c0"}
+{"ts":1793450039781,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11882,"ci_main_ms":3099,"waited_ms":21366}
+{"ts":1793450039868,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3222,"waited_ms":40,"sha":"13b7a6835ec3654f81b1b6d964a9076e96b1bc16"}
+{"ts":1793450040030,"event":"pr_merged","pr":3,"merge_sha":"b64cce07f3221c0e7e5198770daef563d07683dc"}
+{"ts":1793450061445,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11472,"ci_main_ms":3109,"waited_ms":21386}
+{"ts":1793450061510,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3242,"waited_ms":33,"sha":"fe05a51e7591c50718b88c9211896823156060c4"}
+{"ts":1793450061632,"event":"pr_merged","pr":4,"merge_sha":"9dba3b52b9d14e8ac1d698f3fe74ffbb76aeb1f6"}
+{"ts":1793450076942,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8015,"ci_main_ms":3052,"waited_ms":15281}
+{"ts":1793450079369,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793450079385,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793450079400,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793450079429,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts 2.0.0, major bump, published). Billing/reports/shell adopted ^2.0.0 (lockfiles committed) and pass owner from package.json team (payments/insights/platform). Assumption: owner is a literal matching package.json 'team', since the bundler inlines modules and can't import package.json."}

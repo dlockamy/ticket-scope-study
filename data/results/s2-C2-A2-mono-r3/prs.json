@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-102-rename-billing-endpoint",
+    "title": "PLAT-102: rename billingUrl to billingEndpoint",
+    "head": "9503e27b07a1a3761c56ec113ef1364af05c5ee9",
+    "opened_ts": 1793366691572,
+    "size": {
+      "files": 5,
+      "add": 5,
+      "del": 5,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793366702856,
+    "merge_sha": "0cf0739e0d0a314189ca1fa611c39c01d8caea04",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

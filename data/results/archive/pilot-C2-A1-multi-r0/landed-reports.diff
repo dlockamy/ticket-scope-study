@@ -1,0 +1,33 @@
+=== 40ee3d8 Use billingEndpoint from shared-contracts 2.0.0
+
+diff --git a/package.json b/package.json
+index 8d1a1fb..f103c87 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,11 @@
+   "name": "@mfe/sub-route-reports",
+   "version": "1.0.0",
+   "team": "insights",
+-  "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0"}
++  "scripts": {
++    "prebuild": "npm install --no-audit --no-fund",
++    "build": "node build.js"
++  },
++  "dependencies": {
++    "@mfe/shared-contracts": "^2.0.0"
++  }
+ }
+diff --git a/src/main.js b/src/main.js
+index e8f22da..d311dbe 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -1,7 +1,7 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+ const app = validateApp({ name: 'reports' });
+-console.log("Reports Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
++console.log("Reports Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingEndpoint);
+ 
+ export function renderReports(containerId) {
+   const container = document.getElementById(containerId);

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl to billingEndpoint (major 2.0.0)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Publish contracts before apps",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Update shell to contracts ^2",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Update billing to contracts ^2",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 5,
+    "title": "Update reports to contracts ^2",
+    "repo": "reports",
+    "state": "done"
+  }
+]

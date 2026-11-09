@@ -1,0 +1,6 @@
+{"ts":1793373337666,"event":"clone","repo":"mono"}
+{"ts":1793373355464,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373367861,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3163,"waited_ms":12362,"sha":"3f4d8b6d9d4cf23919642114a1d383525722efca"}
+{"ts":1793373371452,"event":"pr_merged","pr":1,"merge_sha":"dc58d53a9064259755eaa5714595fb1a997800b3"}
+{"ts":1793373389816,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11102,"ci_main_ms":3159,"waited_ms":18334}
+{"ts":1793373394166,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts, billing, core-shell, and also sub-route-reports (it read billingUrl too, not in sub-tasks). shared-contracts lives in the monorepo and is inlined at build time, so no registry release/lockfile update needed; bumped its version to 2.0.0 as a breaking-change marker. Single PR #1 since no ordering needed. CI and CD green."}

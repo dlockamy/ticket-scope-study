@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: require app owner in validateApp and pass owners from all apps",
+    "head": "b428f793b88cca26e283714da5a08ea19c3b37ac",
+    "opened_ts": 1793393746980,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393759823,
+    "merge_sha": "85db5a6ea6d1aa79131af430af239a9a3687d378",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

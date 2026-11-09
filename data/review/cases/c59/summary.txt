@@ -1,0 +1,6 @@
+PLAT-103: every app now declares its owning team.
+- PLAT-103-1 (PR #1, libs-shared-contracts): validateApp throws if owner is missing or empty. Breaking, so released as 2.0.0 (CD published it; registry has 1.0.0 and 2.0.0).
+- PLAT-103-2 (PR #2, apps-sub-route-billing): passes owner 'payments' (package.json team); dependency moved to @mfe/shared-contracts ^2.0.0 with lockfile updated.
+- PLAT-103-3 (PR #3, apps-core-shell): passes owner 'platform' (package.json team); dependency moved to ^2.0.0 with lockfile updated.
+All three merged; CI and CD green on main for each.
+Assumptions: owner is hardcoded in each app's source rather than read from package.json, since the build inlines only ES imports and cannot import JSON. The team value must be kept in sync with package.json by hand. The owner check rejects only missing or empty values (not whitespace-only). I did not add tests because the repos have none; I verified with node import checks and local builds.

@@ -1,0 +1,3 @@
+{"id":1793410947000,"ts":1793410947000,"from":"dev-a","to":"dev-b","text":"PLAT-103-1 merged to main (validateApp requires owner). Lib is inlined in-repo, no publish/version bump needed; just pass owner from package.json team and ship."}
+{"id":1793410950132,"ts":1793410950132,"from":"dev-b","to":"dev-a","text":"PLAT-103-3/4 merged and deployed (PR #2). Note shared-contracts is inlined, no version bump needed for billing either."}
+{"id":1793410959674,"ts":1793410959674,"from":"dev-a","to":"dev-b","text":"Heads up: I accidentally ran pr wait/merge on your PR #2 (I assumed my PR was #2; mine is #3). It had green CI and is merged, CD green. Sorry - nothing for you to do except verify."}

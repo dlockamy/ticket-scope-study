@@ -1,0 +1,16 @@
+{"ts":1793361969736,"event":"clone","repo":"contracts"}
+{"ts":1793361969792,"event":"clone","repo":"billing"}
+{"ts":1793361969857,"event":"clone","repo":"shell"}
+{"ts":1793361985759,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793361998247,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3602,"waited_ms":12451,"sha":"8d53ea8bbce6cc61a31de26e87350a9a9f56613b"}
+{"ts":1793361998417,"event":"pr_merged","pr":1,"merge_sha":"d4ee25a54b307d9993e334d720943570138ff135"}
+{"ts":1793362010757,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4813,"ci_main_ms":2749,"waited_ms":12309}
+{"ts":1793362023789,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793362023914,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793362033101,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2971,"waited_ms":9154,"sha":"9c06754952b31c5e04414a23596968986165c825"}
+{"ts":1793362033163,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2980,"waited_ms":35,"sha":"d315ccba0bac890a9974a68a69cb997195d87524"}
+{"ts":1793362037703,"event":"pr_merged","pr":2,"merge_sha":"9eca23db77cfb127ff8f578caafbfaf8f252eefd"}
+{"ts":1793362059181,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10914,"ci_main_ms":2992,"waited_ms":21448}
+{"ts":1793362059310,"event":"pr_merged","pr":3,"merge_sha":"9178706ace534fe49f06add5c368a38c0587d22d"}
+{"ts":1793362077734,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9838,"ci_main_ms":2987,"waited_ms":18394}
+{"ts":1793362084102,"event":"done","summary":"validateApp now throws if owner missing/empty; shared-contracts bumped to 2.0.0 (major, breaking) and published. Billing (owner=payments) and shell (owner=platform), from package.json team, updated to ^2.0.0 with lockfiles, deployed. Assumptions: reports app doesn't call validateApp so left alone; owner must be a non-blank string."}

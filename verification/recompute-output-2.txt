@@ -1,0 +1,41 @@
+# M. Did every open-ended / catalog run clone the hidden repo? (multi-repo, all phases, A1/A5/A6)
+C2 runs 17 cloned reports 17 | cloned all 5 (or all 17 in s4): 17
+C3 runs 36 cloned reports 36 | cloned all 5 (or all 17 in s4): 31
+17-repo estate A1/A5/A6 runs: 15 cloned reports 15 clones per run [17, 17, 17, 17, 9, 17, 17, 8, 8, 8, 8, 17, 17, 4, 8]
+
+# N. Decoy / catalog / checks (section 3.4)
+decoy_touched runs (any): 0
+A4 vs A1 tokens, multi C2: 328582 vs 267263 = +23%
+A4 vs A1 tokens, mono C3: 366847 vs 242295 = +51%
+catalog queries per multi-repo A5/A6 run (phase 1): total 30 runs 20
+A7 vs A2 misses pooled C2+C3 multi: 7 / 10 vs 4 / 10
+
+# O. The 12 that cloned the missing repo: what the closing text says
+Two texts exist per run: the `st done` summary (events.jsonl; what the draft quotes and the phase-5 reviewers saw) and the final chat message (agent.json result).
+names the missing app in the done summary: 12 of 12
+done summary cites scope (out of scope / not in ticket): 10 of 12 | runs that do not: ['s2-C3-A7-multi-r2', 's3-C3-B3-multi-r4']
+done summary says it stays on ^1.0.0 / is unaffected: 12 of 12
+final message cites scope: 12 of 12
+says "left it alone" literally (final message): ['s4-C3-A2-multi-r1', 's4-C3-A2-multi-r3', 's4-C3-A2-multi-r4']
+opened a PR on the hidden repo: []
+
+# P. The 21 that never cloned it: done summary mention (verbatim extracts are in claim-check.md)
+done summary names the missing app: 14 of 21 | of all 33: 26
+of the 30 phase-5 incomplete cases, done summary names it: 24 of 30 (study truth.json says 24)
+
+# Q. Phase 7 handoff timing (draft: dev-b apps merged 24 to 37 s after the contract was live, H1/H2)
+handoff_to_dependent_merge_s (H1+H2 multi, phase 7): [24, 25, 26, 26, 27, 28, 31, 33, 36, 37]
+dependent_merged_s: [61.7, 73.8, 72.8, 72.2, 69.1, 74.0, 64.5, 79.2, 72.6, 82.3]
+
+# R. Epic: children closed without being opened (phase 8)
+closed 110 closed unopened 33 | runs closing any child unread: 15 of which wrong-owner-value: 4 | runs that opened every child: 15
+s8 failing runs: ['s8-C3-E1-mono-r1', 's8-C3-E1-multi-r3', 's8-C3-E1-multi-r4', 's8-C3-E3-mono-r1', 's8-C3-E3-mono-r3']
+failing runs among those that opened every child: ['s8-C3-E1-multi-r4']
+
+# S. Noisy-ticket totals (phase 9)
+N1 complete 9 / 10
+N2 complete 0 / 10
+N3 complete 10 / 10
+phase 9 all arms failing: 11 of 30 | N1+N3 failing: 1 of 20
+N2b complete 10 / 10
+post-merge breaks (broken_live non-empty) in all runs: ['s9-C3-N1-multi-r4']

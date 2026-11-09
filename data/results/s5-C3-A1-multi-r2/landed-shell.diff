@@ -1,0 +1,23 @@
+=== e3de888 core-shell: declare owner team and use shared-contracts 2.0.0
+
+diff --git a/package.json b/package.json
+index 3ff0e85..39d533e 100644
+--- a/package.json
++++ b/package.json
+@@ -3,5 +3,5 @@
+   "version": "1.0.0",
+   "team": "platform",
+   "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0"}
++  "dependencies": {"@mfe/shared-contracts": "^2.0.0"}
+ }
+diff --git a/src/config.js b/src/config.js
+index fc478f3..bb5ce95 100644
+--- a/src/config.js
++++ b/src/config.js
+@@ -1,4 +1,4 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'core-shell' });
++const app = validateApp({ name: 'core-shell', owner: 'platform' });
+ export const shellConfig = { app, billingEndpointHint: SHARED_CONFIG.billingUrl };

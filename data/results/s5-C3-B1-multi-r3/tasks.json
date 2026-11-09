@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Make the reports app pass its owner to validateApp (team from package.json) and adopt the new shared contracts release (not in ticket; found via grep for validateApp)",
+    "repo": "reports",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Make validateApp reject apps without an owner; breaking change, release as major version",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Billing passes owner (package.json team) to validateApp; adopt new shared contracts release",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Core shell passes owner (package.json team) to validateApp; adopt new shared contracts release",
+    "repo": "shell",
+    "state": "done"
+  }
+]

@@ -1,0 +1,19 @@
+{"ts":1793413167771,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793413167827,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793413179796,"who":"dev-b","event":"task_start","task":3}
+{"ts":1793413179819,"who":"dev-b","event":"task_start","task":4}
+{"ts":1793413179948,"who":"dev-b","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-shell-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413182017,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":253}
+{"ts":1793413186088,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-owner-billing","size":{"files":3,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413190593,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3200,"waited_ms":9157,"sha":"8aaf15334dbbecdd8fb8f04cd4622291b03b99c0"}
+{"ts":1793413194008,"who":"dev-b","event":"pr_merged","pr":1,"merge_sha":"8cecd57bbb56dd2c803329793871bbae8bc5a4e8"}
+{"ts":1793413197386,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3428,"waited_ms":9170,"sha":"aa763831b8e7d7d1df1306e8361c56c1839f7e7d"}
+{"ts":1793413197522,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"3c001f81e6493d4291bbc498e22f7cbc74cf5ca1"}
+{"ts":1793413215828,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12471,"ci_main_ms":3189,"waited_ms":21769}
+{"ts":1793413215855,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":196}
+{"ts":1793413215988,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12471,"ci_main_ms":3189,"waited_ms":18436}
+{"ts":1793413218817,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793413218843,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793413218869,"who":"dev-b","event":"done","summary":"PLAT-103-3/4: core-shell (owner 'platform') and reports (owner 'insights') now pass owner to validateApp; PR #1 merged, CI+CD green. Assumptions: shared-contracts lives in libs/ and is inlined at build, so no registry version bump/lockfile needed; owner hardcoded to match package.json team since browser code can't read it. Merged before dev-a's enforcement change so apps never break."}
+{"ts":1793413218921,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":121}
+{"ts":1793413218964,"who":"dev-a","event":"done","summary":"PLAT-103-1 and -2 shipped in one PR #2 (merged, CI+CD green). Assumptions: shared-contracts lives in-repo and is inlined at build, so no registry publish or dependency adoption needed; bumped its version to 2.0.0 (breaking) for the record. Billing owner='payments' from package.json team. Combined into one PR so billing never broke."}

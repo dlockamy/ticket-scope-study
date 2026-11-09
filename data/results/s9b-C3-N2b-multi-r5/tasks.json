@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "contracts: validateApp requires owner, bump 2.0.0 (major)",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "shell/billing/reports: upgrade to ^2.0.0, pass owner=package.json team",
+    "repo": "",
+    "state": "todo"
+  }
+]

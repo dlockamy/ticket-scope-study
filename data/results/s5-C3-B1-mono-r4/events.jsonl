@@ -1,0 +1,23 @@
+{"ts":1793396956798,"event":"clone","repo":"mono"}
+{"ts":1793396956858,"event":"clone","repo":"platformkit"}
+{"ts":1793396989603,"event":"task_added","task":1,"title":"Make validateApp reject apps without an owner (libs/shared-contracts)","repo":"mono"}
+{"ts":1793396989623,"event":"task_added","task":2,"title":"Pass owner (team) from apps/sub-route-reports to validateApp and ship it","repo":"mono"}
+{"ts":1793396993682,"event":"task_added","task":3,"title":"Pass owner (team) from apps/sub-route-billing to validateApp, adopt the new contract and ship it","repo":"mono"}
+{"ts":1793396993704,"event":"task_added","task":4,"title":"Pass owner (team) from apps/core-shell to validateApp, adopt the new contract and ship it","repo":"mono"}
+{"ts":1793397002916,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397011418,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3051,"waited_ms":6125,"sha":"0b3a7ec6f32a833b84349c5f326b68eae4a83535"}
+{"ts":1793397012770,"event":"task_start","task":1}
+{"ts":1793397012904,"event":"pr_merged","pr":1,"merge_sha":"96ece5370eba289f3fa4a51ecd0f2afe72c9fdf4"}
+{"ts":1793397022157,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1235,"ci_main_ms":3114,"waited_ms":9223}
+{"ts":1793397024994,"event":"task_done","task":1}
+{"ts":1793397041617,"event":"task_start","task":2}
+{"ts":1793397041633,"event":"task_start","task":3}
+{"ts":1793397041648,"event":"task_start","task":4}
+{"ts":1793397041767,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-pass-owner","size":{"files":3,"add":3,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397052304,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3156,"waited_ms":9144,"sha":"79067a2592bafdf99c7976bb0706a4507045b038"}
+{"ts":1793397053741,"event":"pr_merged","pr":2,"merge_sha":"0b9e6a21cd0f01be3cec6aff8972a2bc50c7fef2"}
+{"ts":1793397075191,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10970,"ci_main_ms":3133,"waited_ms":21421}
+{"ts":1793397077403,"event":"task_done","task":2}
+{"ts":1793397077422,"event":"task_done","task":3}
+{"ts":1793397077439,"event":"task_done","task":4}
+{"ts":1793397081800,"event":"done","summary":"PLAT-103 done. PR #1 (mono): validateApp in libs/shared-contracts now throws unless app.owner is a non-blank string; lib bumped to 2.0.0. Merged, CI+CD green (CD deploys nothing for libs-only changes). PR #2 (mono): core-shell passes owner 'platform', sub-route-billing 'payments', sub-route-reports 'insights' (each from its package.json team). Merged, CI+CD green, CD deployed. Assumptions: (1) sub-route-reports also calls validateApp, so I added a sub-task and updated it; (2) shared-contracts is inlined at build time, so 'release' = merge plus rebuild of consumers, and it has no registry publish; (3) owner literals are hard-coded in source because the bundlers can't read package.json; they match the team fields; (4) the two PRs are ordered: lib first, apps second, since apps only pick up the new contract by building from main after PR #1."}

@@ -1,0 +1,23 @@
+{"ts":1793381545779,"event":"clone","repo":"shell"}
+{"ts":1793381545844,"event":"clone","repo":"billing"}
+{"ts":1793381545912,"event":"clone","repo":"reports"}
+{"ts":1793381545970,"event":"clone","repo":"contracts"}
+{"ts":1793381546028,"event":"clone","repo":"platformkit"}
+{"ts":1793381550271,"event":"task_added","task":1,"title":"Pass owner to validateApp in reports app","repo":"reports"}
+{"ts":1793381553991,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793381564946,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3899,"waited_ms":9231,"sha":"41824fac4e6c05c63577f88e605fedbd0afee3fa"}
+{"ts":1793381565125,"event":"pr_merged","pr":1,"merge_sha":"92656e6139b19f954535c5d0fcc93ccd28ecd21b"}
+{"ts":1793381577450,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4992,"ci_main_ms":2930,"waited_ms":12295}
+{"ts":1793381592152,"event":"pr_opened","pr":2,"repo":"shell","branch":"add-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793381592359,"event":"pr_opened","pr":3,"repo":"billing","branch":"add-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793381592592,"event":"pr_opened","pr":4,"repo":"reports","branch":"add-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793381604528,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3388,"waited_ms":9151,"sha":"ded2621f018e6f6dc80f97b2b687ea0151d9b6e4"}
+{"ts":1793381604657,"event":"pr_merged","pr":2,"merge_sha":"b910ee8dd8e5633edae182f78d620c55124cb85d"}
+{"ts":1793381629202,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14807,"ci_main_ms":3140,"waited_ms":24515}
+{"ts":1793381629266,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3378,"waited_ms":33,"sha":"1a423db92facae28d340d5925ea7f68ea9d55934"}
+{"ts":1793381629384,"event":"pr_merged","pr":3,"merge_sha":"ad36eed575ea6a8a80766b05cc60b1056f34eb58"}
+{"ts":1793381653949,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12008,"ci_main_ms":3107,"waited_ms":24536}
+{"ts":1793381654013,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3289,"waited_ms":32,"sha":"51c9fb35633e645a7e706c73d6bc141584855e93"}
+{"ts":1793381654140,"event":"pr_merged","pr":4,"merge_sha":"f3ccd029c284f249accdd2790afd27a5e670c54d"}
+{"ts":1793381672547,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11871,"ci_main_ms":3051,"waited_ms":18377}
+{"ts":1793381678050,"event":"done","summary":"validateApp now throws if owner missing/empty; released as @mfe/shared-contracts 2.0.0 (breaking, major bump). shell (platform), billing (payments), reports (insights) pass owner from package.json 'team', upgraded to ^2.0.0, deployed. Assumptions: reports also calls validateApp though not in sub-tasks, so I added a task and updated it; whitespace-only owner counts as empty."}

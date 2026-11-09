@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Contract: validateApp requires owner (libs/shared-contracts)",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Pass owner from package.json team in core-shell, billing, reports",
+    "repo": "",
+    "state": "todo"
+  }
+]

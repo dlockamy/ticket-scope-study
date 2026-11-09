@@ -1,0 +1,30 @@
+{"ts":1793398042979,"event":"clone","repo":"shell"}
+{"ts":1793398043040,"event":"clone","repo":"billing"}
+{"ts":1793398043100,"event":"clone","repo":"reports"}
+{"ts":1793398043159,"event":"clone","repo":"contracts"}
+{"ts":1793398043218,"event":"clone","repo":"platformkit"}
+{"ts":1793398052312,"event":"task_added","task":1,"title":"Make the reports app pass its owner to validateApp (team from package.json) and adopt the new shared contracts release (not in ticket; found via grep for validateApp)","repo":"reports"}
+{"ts":1793398052334,"event":"task_added","task":2,"title":"Make validateApp reject apps without an owner; breaking change, release as major version","repo":"contracts"}
+{"ts":1793398052354,"event":"task_added","task":3,"title":"Billing passes owner (package.json team) to validateApp; adopt new shared contracts release","repo":"billing"}
+{"ts":1793398052373,"event":"task_added","task":4,"title":"Core shell passes owner (package.json team) to validateApp; adopt new shared contracts release","repo":"shell"}
+{"ts":1793398060291,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793398073877,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3904,"waited_ms":12271,"sha":"9de379eb244c633f76875956914dfa013b29f00a"}
+{"ts":1793398075512,"event":"pr_merged","pr":1,"merge_sha":"ee8bac065d3f8234a9184774fcc6ea5e8ce85d76"}
+{"ts":1793398087834,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5108,"ci_main_ms":3019,"waited_ms":12291}
+{"ts":1793398087872,"event":"task_done","task":2}
+{"ts":1793398111309,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793398120724,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2942,"waited_ms":9374,"sha":"dd9112c0e3161280fd3dd9a09c4e8e342a43475f"}
+{"ts":1793398122221,"event":"pr_merged","pr":2,"merge_sha":"df8869e821bb48b8ee42cdb5a39bcc98c68cbd3d"}
+{"ts":1793398140669,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12567,"ci_main_ms":3032,"waited_ms":18417}
+{"ts":1793398140690,"event":"task_done","task":3}
+{"ts":1793398146455,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793398155637,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3052,"waited_ms":9149,"sha":"50718cc29971420f33c76e9e6ee9273b68fc6a1a"}
+{"ts":1793398157121,"event":"pr_merged","pr":3,"merge_sha":"929b5501660f20a6a0cc282fef09cb11d5eaaebf"}
+{"ts":1793398172494,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8227,"ci_main_ms":3025,"waited_ms":15345}
+{"ts":1793398172516,"event":"task_done","task":4}
+{"ts":1793398176127,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793398188382,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2905,"waited_ms":12224,"sha":"0c039df3007cdb70b97c071a419f8d1ed9b4d920"}
+{"ts":1793398190162,"event":"pr_merged","pr":4,"merge_sha":"85d79258e13a7c828a449326e4aa22deb6fd9d3b"}
+{"ts":1793398211650,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12511,"ci_main_ms":3127,"waited_ms":21457}
+{"ts":1793398211672,"event":"task_done","task":1}
+{"ts":1793398214694,"event":"done","summary":"PLAT-103 live. Contracts: validateApp now throws when owner is missing or empty; released as 2.0.0 (breaking, major bump). Billing, core shell, and reports (not listed in ticket, found via grep) now pass owner and depend on @mfe/shared-contracts ^2.0.0. Assumptions: owner is hardcoded in each app source (payments / platform / insights) to match package.json team, since the bundlers do not read package.json; empty check is falsy-based, so whitespace-only owner is not rejected; reports was added as a sub-task. PRs: #1 contracts, #2 billing, #3 shell, #4 reports. All CI and CD green."}

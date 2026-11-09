@@ -1,0 +1,34 @@
+{"ts":1793394325199,"event":"clone","repo":"contracts"}
+{"ts":1793394335573,"event":"task_added","task":1,"title":"Require owner in validateApp","repo":"contracts"}
+{"ts":1793394335591,"event":"task_start","task":1}
+{"ts":1793394339382,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-owner-required","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394350100,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3660,"waited_ms":9220,"sha":"5de40ad87384aeeaa4eea9bae6684d41b57b6774"}
+{"ts":1793394352082,"event":"pr_merged","pr":1,"merge_sha":"c79f4fee86738c8c39d8b702c42e7ff93132e2d7"}
+{"ts":1793394367461,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5058,"ci_main_ms":2858,"waited_ms":15349}
+{"ts":1793394369820,"event":"clone","repo":"billing"}
+{"ts":1793394369879,"event":"clone","repo":"shell"}
+{"ts":1793394389028,"event":"task_added","task":2,"title":"Pass owner to validateApp in billing","repo":"billing"}
+{"ts":1793394389043,"event":"task_start","task":2}
+{"ts":1793394389156,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793394400301,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2884,"waited_ms":9178,"sha":"b502e296612f90874e50d15dbbe6a6e597583659"}
+{"ts":1793394402131,"event":"pr_merged","pr":2,"merge_sha":"2af53524f70be10a8dffe1c79131fc9c4918a6fd"}
+{"ts":1793394420537,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11514,"ci_main_ms":3062,"waited_ms":18377}
+{"ts":1793394433821,"event":"task_added","task":3,"title":"Pass owner to validateApp in core shell","repo":"shell"}
+{"ts":1793394433840,"event":"task_start","task":3}
+{"ts":1793394433962,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793394444664,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2875,"waited_ms":9162,"sha":"5f1a4141637c29b3cf1e3d764efedaa861b933fd"}
+{"ts":1793394446264,"event":"pr_merged","pr":3,"merge_sha":"14b2b3fab1d70cd175cfafb6c21bf14e877728d0"}
+{"ts":1793394467740,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11278,"ci_main_ms":3001,"waited_ms":21447}
+{"ts":1793394470984,"event":"clone","repo":"reports"}
+{"ts":1793394471073,"event":"clone","repo":"platformkit"}
+{"ts":1793394478794,"event":"task_added","task":4,"title":"Pass owner to validateApp in reports (not in ticket list, also calls validateApp)","repo":"reports"}
+{"ts":1793394478810,"event":"task_start","task":4}
+{"ts":1793394478923,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793394489659,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2815,"waited_ms":9183,"sha":"34ca8e9ef630c7cadb334cf2f7244f0d22833f64"}
+{"ts":1793394491519,"event":"pr_merged","pr":4,"merge_sha":"b5ae71fbb9f64067c54f9c9d886e2c492154dbfd"}
+{"ts":1793394513003,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11813,"ci_main_ms":3061,"waited_ms":21453}
+{"ts":1793394516502,"event":"task_done","task":1}
+{"ts":1793394516519,"event":"task_done","task":2}
+{"ts":1793394516535,"event":"task_done","task":3}
+{"ts":1793394516552,"event":"task_done","task":4}
+{"ts":1793394516567,"event":"done","summary":"PLAT-103 shipped. Changes: (1) contracts 2.0.0 (breaking): validateApp throws 'app.owner is required' when owner missing/empty; released via CD (registry has 2.0.0). (2) billing: owner 'payments' (from package.json team), adopts @mfe/shared-contracts ^2.0.0, deployed. (3) core shell: owner 'platform', adopts ^2.0.0, deployed. (4) reports: owner 'insights', adopts ^2.0.0, deployed; not in the ticket's sub-task list but it calls validateApp and the acceptance criteria require every caller to pass an owner. Assumptions: empty-string or whitespace-free check via falsy test (undefined/null/''); owner values are hardcoded literals matching package.json team; platformkit has no validateApp callers so untouched; no test suite exists in the repos, verified via local build and CI."}

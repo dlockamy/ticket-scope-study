@@ -1,0 +1,6 @@
+{"ts":1793372011965,"event":"clone","repo":"mono"}
+{"ts":1793372022117,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372034533,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4380,"waited_ms":12382,"sha":"008cf716495797a0fbf93f0271a57f3cc7f50c89"}
+{"ts":1793372036303,"event":"pr_merged","pr":1,"merge_sha":"9cffb6552e28573baae4fe806bd835139565bcf4"}
+{"ts":1793372060810,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15962,"ci_main_ms":3585,"waited_ms":24477}
+{"ts":1793372063251,"event":"done","summary":"Renamed billingUrl->billingEndpoint in libs/shared-contracts (bumped to 2.0.0, breaking), and updated core-shell, sub-route-billing and sub-route-reports (also used it) in one PR (#1) since the lib is in-repo and inlined at build; no registry publish/dependency update needed. Builds pass, CI+CD green. Assumption: one PR is acceptable since all three subtasks must land together. Did not independently inspect the live bundle."}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: validateApp requires owner (v2.0.0)",
+    "head": "3506c1bcb8734be5b0994c892519f8e3127496b5",
+    "opened_ts": 1793376427748,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376440233,
+    "merge_sha": "8863f897690d654d9a289d6727f231eb75a61072",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103: declare owner",
+    "head": "d3d500fa0f2b1dfffd512c0d946c5f2bdd3b7891",
+    "opened_ts": 1793376467858,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376480215,
+    "merge_sha": "9e1c1232b382eff91773565b766bdf6fad73b358",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103: declare owner",
+    "head": "3eba3c7f0b02632799ceac7e1567f0b191d0fc78",
+    "opened_ts": 1793376467981,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376501836,
+    "merge_sha": "076cc80189c5b7622fd569dc22b6366e2595257c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-owner-reports",
+    "title": "PLAT-103: declare owner",
+    "head": "aea7c633878593fa6c192e1544cf06973aca7fd1",
+    "opened_ts": 1793376468101,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376523464,
+    "merge_sha": "c0a25d37a2d3df40359040df657e396ba6a6e860",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

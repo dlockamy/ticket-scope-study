@@ -1,0 +1,6 @@
+{"ts":1793361462237,"event":"clone","repo":"mono"}
+{"ts":1793361477489,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793361489737,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4194,"waited_ms":12215,"sha":"ba6a8f710babb7b5d8a5442287f5a0bbb5d79ad1"}
+{"ts":1793361491410,"event":"pr_merged","pr":1,"merge_sha":"5de443a848f038e671e690796ce439c5949df37e"}
+{"ts":1793361512850,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13290,"ci_main_ms":3500,"waited_ms":21411}
+{"ts":1793361516862,"event":"done","summary":"Renamed billingUrl->billingEndpoint in libs/shared-contracts (bumped to 2.0.0, breaking) and updated core-shell, billing, reports in one atomic PR #1, since libs/ is inlined at build time (CONTRIBUTING) so no registry release or dependency bump applies. CI and CD green. Assumption: single PR covers sub-tasks 1-4."}

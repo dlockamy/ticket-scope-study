@@ -1,0 +1,11 @@
+{"ts":1793448081393,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793448081474,"event":"clone","repo":"mono"}
+{"ts":1793448100306,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793448111403,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3071,"waited_ms":9165,"sha":"0bb2d38286c51825e0c71c824ad38e92dd650f7e"}
+{"ts":1793448111539,"event":"pr_merged","pr":1,"merge_sha":"00552eef6f9a51d9958442b6f3403fd9122e908c"}
+{"ts":1793448132947,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13476,"ci_main_ms":3480,"waited_ms":21379}
+{"ts":1793448135950,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793448135967,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793448135981,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793448135993,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793448136019,"event":"done","summary":"Single PR #1 (lib + all apps, since libs are inlined and an owner-only lib change would break apps at startup). validateApp throws on missing/empty owner; core-shell owner=platform-team, billing and reports owner=billing-team (assumed). Reports app also called validateApp though not in the ticket list, so I fixed it too. CI and CD green; all three apps built locally."}

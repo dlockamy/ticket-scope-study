@@ -1,0 +1,6 @@
+{"ts":1793375088295,"event":"clone","repo":"mono"}
+{"ts":1793375105163,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793375120268,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":6916,"waited_ms":12202,"sha":"61db5e594d1738d2abd7eff119bbec95bb1e4a08"}
+{"ts":1793375120394,"event":"pr_merged","pr":1,"merge_sha":"c838c4c1709257b6ebb5ddb5176c082d4dc5111c"}
+{"ts":1793375144921,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15587,"ci_main_ms":3481,"waited_ms":24499}
+{"ts":1793375147585,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and the billing, core-shell and reports apps in one PR (#1), merged, CI+CD green. Assumptions: shared-contracts lives in this monorepo and is inlined at build time, so no registry publish or dependency bump was needed and one PR satisfies all four sub-tasks; bumped its package.json to 2.0.0 to flag the breaking change. Reports app is not covered by CD change detection (only shell and billing deploy), so it has no deploy of its own; it builds fine."}

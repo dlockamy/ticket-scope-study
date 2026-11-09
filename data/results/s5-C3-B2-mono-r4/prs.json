@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-1-require-app-owner",
+    "title": "PLAT-103-1: require an owner in validateApp (breaking, shared-contracts 2.0.0)",
+    "head": "213a8d4bb4b1ddcb3065aed8099753b8c9e3632e",
+    "opened_ts": 1793397218665,
+    "size": {
+      "files": 3,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397231318,
+    "merge_sha": "1cf968fc2f87c742425351e87b45326df4c3f837",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "mono",
+    "branch": "plat-103-2-billing-owner",
+    "title": "PLAT-103-2: billing passes its owner to validateApp",
+    "head": "dbf2127c3fee700aba9d48dc3ebfc561a19e8403",
+    "opened_ts": 1793397261137,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397276053,
+    "merge_sha": "d05a0eacd140432411ef68664f72c3482036e22f",
+    "ci_prev": 2,
+    "cd_prev": 2
+  },
+  {
+    "id": 3,
+    "repo": "mono",
+    "branch": "plat-103-3-core-shell-owner",
+    "title": "PLAT-103-3: core shell passes its owner to validateApp",
+    "head": "5e79037057daf147ddc226c6a0c5a42cba703f17",
+    "opened_ts": 1793397300361,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397312737,
+    "merge_sha": "1fb1dfb918a7cf0383bcb893a3d56113e6ca475b",
+    "ci_prev": 3,
+    "cd_prev": 3
+  }
+]

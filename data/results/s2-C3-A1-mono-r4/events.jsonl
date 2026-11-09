@@ -1,0 +1,8 @@
+{"ts":1793374133139,"event":"clone","repo":"mono"}
+{"ts":1793374144352,"event":"task_added","task":1,"title":"Make validateApp require owner (libs/shared-contracts)","repo":""}
+{"ts":1793374144373,"event":"task_added","task":2,"title":"Pass package.json team as owner in core-shell, billing, reports","repo":""}
+{"ts":1793374146820,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793374158166,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4136,"waited_ms":9209,"sha":"1c589073ab55d2832f423bd09f7a1a391318cc9e"}
+{"ts":1793374160530,"event":"pr_merged","pr":1,"merge_sha":"171c105d8453b05a31c7af291cd0fd4a1630a9b5"}
+{"ts":1793374181977,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12545,"ci_main_ms":3122,"waited_ms":21415}
+{"ts":1793374184576,"event":"done","summary":"validateApp now throws if owner missing/empty; core-shell, billing, reports pass owner from their package.json team (platform, payments, insights). Single PR in mono (shared-contracts is an in-repo lib inlined at build, so no version bump/separate repo). Assumed owner must be a non-blank string. CI and CD green."}

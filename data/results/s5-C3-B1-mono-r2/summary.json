@@ -1,0 +1,117 @@
+{
+  "run": "s5-C3-B1-mono-r2",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "B1",
+  "rep": 2,
+  "model": "haiku",
+  "tag": "s5",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 120,
+  "jenkins_wait_s": 61,
+  "agent_active_s": 59,
+  "t_first_clone_s": 3.497,
+  "t_first_pr_s": 44.285,
+  "t_first_merge_s": 56.571,
+  "repos_cloned": [
+    "mono",
+    "platformkit"
+  ],
+  "repos_changed": [
+    "mono"
+  ],
+  "prs": 2,
+  "prs_merged": 2,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "mono",
+      "files": 3,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 12
+    },
+    {
+      "id": 2,
+      "repo": "mono",
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 13
+    }
+  ],
+  "lines_changed_excl_lock": 9,
+  "files_changed": 5,
+  "pr_updates": 0,
+  "ci_runs": 2,
+  "ci_failures": 0,
+  "deploys": 2,
+  "deploy_failures": 0,
+  "subtasks_recorded": 2,
+  "subtask_detail": [
+    {
+      "repo": "mono",
+      "title": "Sub-route reports: pass its owner (team) to validateApp and ship"
+    },
+    {
+      "repo": "mono",
+      "title": "Billing and core shell: pass owner (team) to validateApp and ship"
+    }
+  ],
+  "jenkins_builds": 8,
+  "jenkins_executor_s": 33.1,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "mono-cd": 4,
+    "mono-ci": 4
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "audit_runs": 0,
+  "audit_last_violations": null,
+  "hidden": "reports",
+  "decoy_touched": false,
+  "repeat_repo_prs": 1,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 824154,
+  "agent_output_tokens": 11889,
+  "agent_turns": 19,
+  "agent_cost_usd": 0.021537619999999997,
+  "agent_duration_s": 123,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true
+    }
+  },
+  "semver_ok": true,
+  "semver_class": null,
+  "platformkit_changed": false,
+  "failed_checks": []
+}

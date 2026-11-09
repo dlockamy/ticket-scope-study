@@ -1,0 +1,1 @@
+validateApp now throws if owner is missing/empty (shared-contracts 2.0.0, major bump, published). Billing passes owner 'payments' and reports passes 'insights' (from package.json team), both on ^2.0.0 with updated lockfiles; all deployed. Assumption: owner must be a non-blank string. Shell app doesn't call validateApp, so untouched.

@@ -1,0 +1,8 @@
+{"ts":1793389785726,"event":"clone","repo":"mono"}
+{"ts":1793389796955,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires owner","repo":""}
+{"ts":1793389796976,"event":"task_added","task":2,"title":"pass owner from package.json team in billing, reports, core-shell","repo":""}
+{"ts":1793389806170,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389815366,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3227,"waited_ms":9160,"sha":"6b454751f697dbbf0ac792d21a6d536263e346e9"}
+{"ts":1793389817400,"event":"pr_merged","pr":1,"merge_sha":"abd20bccd4a172bd00a87be1f55712f20fc6fc5f"}
+{"ts":1793389838817,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10817,"ci_main_ms":3084,"waited_ms":21387}
+{"ts":1793389841431,"event":"done","summary":"validateApp now throws if owner missing/empty; billing=payments, reports=insights, core-shell=platform passed (from each package.json team). Assumptions: owners hardcoded since libs are inlined as text and can't import package.json; platform-kit doesn't call validateApp. PR #1 merged, CI+CD green."}

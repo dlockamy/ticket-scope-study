@@ -1,0 +1,11 @@
+{"ts":1793451568363,"event":"clone","repo":"mono"}
+{"ts":1793451568421,"event":"clone","repo":"platformkit"}
+{"ts":1793451578630,"event":"task_added","task":1,"title":"mono: validateApp requires owner (libs/shared-contracts)","repo":""}
+{"ts":1793451578651,"event":"task_added","task":2,"title":"mono: apps pass team from package.json as owner (core-shell, billing, reports)","repo":""}
+{"ts":1793451578670,"event":"task_added","task":3,"title":"Open PR, wait CI, merge, confirm deploy","repo":""}
+{"ts":1793451578688,"event":"task_added","task":4,"title":"platformkit: no change needed (lib not involved)","repo":""}
+{"ts":1793451590239,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793451602504,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3153,"waited_ms":12229,"sha":"247c8366d1a430a084092e54696094e3ebae3517"}
+{"ts":1793451604570,"event":"pr_merged","pr":1,"merge_sha":"a05706561761f21ebdf4199e9d04adb85e5325df"}
+{"ts":1793451626080,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11151,"ci_main_ms":3107,"waited_ms":21477}
+{"ts":1793451628511,"event":"done","summary":"validateApp now requires owner; core-shell, billing, reports pass their package.json team (platform/payments/insights) in one mono PR (#1), merged, CD green. Assumptions: the bundler can't import JSON, so team is a literal matching package.json; shared-contracts is inlined so no version bump; platformkit untouched."}

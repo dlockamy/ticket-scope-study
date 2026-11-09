@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp rejects apps without owner (v2.0.0)",
+    "head": "68e5ba3323d564cdb8601915030d4fce61f279d7",
+    "opened_ts": 1793367195419,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367209791,
+    "merge_sha": "09f8debd6b240958c962e8cd1316e08688e98125",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "require-owner-v2",
+    "title": "Pass owner to validateApp, adopt shared-contracts 2",
+    "head": "af4a1d9d25f85e23a56917cef45eefc5258a2341",
+    "opened_ts": 1793367245790,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367259883,
+    "merge_sha": "430fe8d10e04bfdb0e45bee9649b5e96c4d91d08",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "require-owner-v2",
+    "title": "Pass owner to validateApp, adopt shared-contracts 2",
+    "head": "7d201c35e826613dbec242b8ef09dd3f307dadd3",
+    "opened_ts": 1793367245936,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367281494,
+    "merge_sha": "497c09e6fbcce3880da9d4fec42c7ee3cdd35933",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

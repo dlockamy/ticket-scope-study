@@ -1,0 +1,6 @@
+{"ts":1793371880597,"event":"clone","repo":"mono"}
+{"ts":1793371895664,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793371906425,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4353,"waited_ms":9202,"sha":"4e7fca8bad4718556f945767977bf27b14ea5922"}
+{"ts":1793371906637,"event":"pr_merged","pr":1,"merge_sha":"4b3586b701a76614dd9f25fee4c5cfdb230a0037"}
+{"ts":1793371931223,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13327,"ci_main_ms":3608,"waited_ms":24556}
+{"ts":1793371934022,"event":"done","summary":"PLAT-103 shipped in one PR (#1): validateApp now throws if owner missing/empty; core-shell passes owner 'platform', billing 'payments' (from package.json team). Assumptions: shared-contracts is an in-repo lib inlined at build time (CONTRIBUTING), so no registry publish or dependency adoption needed; bumped its version to 2.0.0 as a breaking change anyway; single PR since inlining removes ordering constraint. Also set owner 'insights' on reports (not in ticket) since it calls validateApp and would otherwise throw. CI and CD green."}

@@ -1,0 +1,33 @@
+{"ts":1793397830966,"event":"clone","repo":"contracts"}
+{"ts":1793397831024,"event":"clone","repo":"shell"}
+{"ts":1793397831084,"event":"clone","repo":"billing"}
+{"ts":1793397831155,"event":"clone","repo":"reports"}
+{"ts":1793397858302,"event":"task_added","task":1,"title":"Require owner in validateApp and bump to 2.0.0 (breaking)","repo":"contracts"}
+{"ts":1793397858324,"event":"task_added","task":2,"title":"Pass owner (team) to validateApp; depend on shared-contracts ^2","repo":"shell"}
+{"ts":1793397858345,"event":"task_added","task":3,"title":"Pass owner (team) to validateApp; depend on shared-contracts ^2","repo":"billing"}
+{"ts":1793397858365,"event":"task_added","task":4,"title":"Pass owner (team) to validateApp; depend on shared-contracts ^2","repo":"reports"}
+{"ts":1793397860626,"event":"task_start","task":1}
+{"ts":1793397863782,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397872864,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2714,"waited_ms":6092,"sha":"336bd7db0593595318de1f396fb88b364ea270b4"}
+{"ts":1793397874092,"event":"pr_merged","pr":1,"merge_sha":"aa95ec07e38b26ca707f77ed0f90f93d153afad8"}
+{"ts":1793397886345,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5207,"ci_main_ms":2926,"waited_ms":12221}
+{"ts":1793397889397,"event":"task_start","task":2}
+{"ts":1793397899129,"event":"pr_opened","pr":2,"repo":"shell","branch":"declare-app-owner","size":{"files":2,"add":3,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397901472,"event":"task_start","task":3}
+{"ts":1793397901488,"event":"task_start","task":4}
+{"ts":1793397908145,"event":"pr_opened","pr":3,"repo":"billing","branch":"declare-app-owner","size":{"files":2,"add":3,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397908278,"event":"pr_opened","pr":4,"repo":"reports","branch":"declare-app-owner","size":{"files":2,"add":3,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397909594,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2949,"waited_ms":39,"sha":"2e15c02cda2ff4f6fbf13be33d7e873015163460"}
+{"ts":1793397921857,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3067,"waited_ms":12232,"sha":"62a1101e18cc1fc33278f2605384f6dacf832885"}
+{"ts":1793397921920,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3086,"waited_ms":35,"sha":"1ff78195cd235089257d9fbe54201b081511b2cb"}
+{"ts":1793397923942,"event":"pr_merged","pr":2,"merge_sha":"677f19ed0f4cdac893c59a2e1e085182bb864277"}
+{"ts":1793397942411,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10028,"ci_main_ms":3139,"waited_ms":18438}
+{"ts":1793397942545,"event":"pr_merged","pr":3,"merge_sha":"1be94f82042b7e4e129e9376edf825ab367b3c1b"}
+{"ts":1793397967095,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12489,"ci_main_ms":3054,"waited_ms":24521}
+{"ts":1793397967235,"event":"pr_merged","pr":4,"merge_sha":"963dc41740ac4344503ed5d8464946af5bfa6081"}
+{"ts":1793397991856,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12763,"ci_main_ms":3178,"waited_ms":24592}
+{"ts":1793397994716,"event":"task_done","task":1}
+{"ts":1793397994734,"event":"task_done","task":2}
+{"ts":1793397994751,"event":"task_done","task":3}
+{"ts":1793397994767,"event":"task_done","task":4}
+{"ts":1793397994780,"event":"done","summary":"PLAT-103 live. (1) contracts PR #1: validateApp throws when app.owner is missing/empty; bumped to 2.0.0 (breaking) and CD published it. (2) PRs #2 core-shell (platform), #3 billing (payments), #4 reports (insights): pass owner, move dependency to ^2.0.0 with lockfiles updated; all merged and CD succeeded. Assumptions: owner values hardcoded in each app's src because the build's import inliner cannot read package.json, so they mirror package.json 'team' and must be kept in sync by hand. Major bump chosen since the stricter check breaks callers without owner; apps on ^1 keep working until they upgrade. platform-kit unchanged."}

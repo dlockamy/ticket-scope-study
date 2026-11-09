@@ -1,0 +1,57 @@
+// Jenkinsfile.cd — CD for __APP__ (multi-repo mirror of the monorepo's Jenkinsfile.cd).
+// Same stages and conventions. Forced differences: no "Detect Changes" (a repo is its own unit).
+pipeline {
+    agent { label 'linux-build' }
+    options {
+        timeout(time: 20, unit: 'MINUTES')
+        buildDiscarder(logRotator(numToKeepStr: '30'))
+        disableConcurrentBuilds()
+    }
+    environment {
+        AWS_DEFAULT_REGION = 'us-east-1'
+        S3_BUCKET          = 'homelab-mfe-delivery-bucket-multi'
+        DEPLOY_ENABLED     = 'true'
+    }
+    stages {
+        stage('Build') {
+            when { branch 'main' }
+            agent { docker { image 'node:22-alpine'; reuseNode true; args '-e HOME=/tmp -e npm_config_cache=/tmp/.npm' } }
+            steps { sh 'npm run build' }
+        }
+        stage('Publish') {
+            when { branch 'main' }
+            stages {
+                stage('Deploy disabled') {
+                    when { environment name: 'DEPLOY_ENABLED', value: 'false' }
+                    steps { unstable('Built, NOT deployed: DEPLOY_ENABLED is false in Jenkinsfile.cd.') }
+                }
+                stage('Deploy to S3') {
+                    when { beforeAgent true; environment name: 'DEPLOY_ENABLED', value: 'true' }
+                    agent { docker { image 'node:22-alpine'; reuseNode true; args '-u root -e HOME=/root' } }
+                    environment { BILLING_VERSION = "v${env.BUILD_NUMBER}" }
+                    steps {
+                        withCredentials([usernamePassword(credentialsId: 'aws-homelab-mfe-deploy', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                            sh '''#!/bin/sh
+                                set -eu
+                                apk add --no-cache aws-cli >/dev/null
+                                __PUBLISH__
+                            '''
+                        }
+                    }
+                }
+                stage('Tag release') {
+                    when { environment name: 'DEPLOY_ENABLED', value: 'true' }
+                    steps {
+                        withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GH_USER', passwordVariable: 'GH_TOKEN')]) {
+                            sh '''#!/bin/sh
+                                set -eu
+                                git tag "__TAG__-v${BUILD_NUMBER}"
+                                git -c credential.helper='!f() { echo "username=$GH_USER"; echo "password=$GH_TOKEN"; }; f' push origin "__TAG__-v${BUILD_NUMBER}"
+                            '''
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

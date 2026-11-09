@@ -1,0 +1,15 @@
+{"ts":1793397391020,"event":"clone","repo":"mono"}
+{"ts":1793397424155,"event":"task_added","task":1,"title":"PLAT-103-1: validateApp rejects apps without owner (breaking, shared-contracts 2.0.0)","repo":"mono"}
+{"ts":1793397424176,"event":"task_added","task":2,"title":"PLAT-103-2: billing passes owner (payments)","repo":"mono"}
+{"ts":1793397424196,"event":"task_added","task":3,"title":"PLAT-103-3: core-shell passes owner (platform)","repo":"mono"}
+{"ts":1793397424214,"event":"task_added","task":4,"title":"Extra: sub-route-reports also calls validateApp; pass owner (insights)","repo":"mono"}
+{"ts":1793397428631,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397442392,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3247,"waited_ms":12282,"sha":"e68f55c597d94999f5cafccc01cb966a297c2b90"}
+{"ts":1793397443895,"event":"task_start","task":1}
+{"ts":1793397444213,"event":"pr_merged","pr":1,"merge_sha":"cbb44a18c194555c8f0c85c1adfd730301d69ec3"}
+{"ts":1793397467008,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13272,"ci_main_ms":3634,"waited_ms":21465}
+{"ts":1793397469897,"event":"task_done","task":1}
+{"ts":1793397469915,"event":"task_done","task":2}
+{"ts":1793397469932,"event":"task_done","task":3}
+{"ts":1793397469948,"event":"task_done","task":4}
+{"ts":1793397469970,"event":"done","summary":"PLAT-103 shipped in PR #1 (merged to main cbb44a18, CI and CD green). validateApp now throws when app.owner is missing or empty; shared-contracts bumped to 2.0.0 (breaking). core-shell (platform), billing (payments) and sub-route-reports (insights) pass owner from package.json team. Assumptions: (1) reports also calls validateApp and would have failed at startup, so I added owner: insights although the ticket did not list it; (2) owner is hardcoded to match package.json team, since build.js only inlines named imports and cannot read JSON; (3) all three sub-tasks shipped in one PR per CONTRIBUTING, since the lib is inlined at build time; (4) the 2.0.0 bump is advisory, because the in-repo lib is not published to the registry."}

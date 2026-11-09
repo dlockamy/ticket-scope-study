@@ -1,0 +1,9 @@
+{"ts":1793450801275,"event":"clone","repo":"mono"}
+{"ts":1793450803491,"event":"clone","repo":"platformkit"}
+{"ts":1793450811541,"event":"task_added","task":1,"title":"Make validateApp require owner (libs/shared-contracts; no libs/config exists, lib lives in mono and is inlined) + bump to 2.0.0","repo":""}
+{"ts":1793450811562,"event":"task_added","task":2,"title":"Pass owner (package.json team) in core-shell, billing, reports","repo":""}
+{"ts":1793450815941,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450825148,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3050,"waited_ms":9175,"sha":"d68c10181232db3e5abc941e6259cab3fda0523b"}
+{"ts":1793450825281,"event":"pr_merged","pr":1,"merge_sha":"4140abae80e95071366d45616a4d5769e375e064"}
+{"ts":1793450846731,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14012,"ci_main_ms":3478,"waited_ms":21420}
+{"ts":1793450849269,"event":"done","summary":"validateApp (libs/shared-contracts in mono; no libs/config exists, assumed this is the lib meant) now throws without non-empty owner; bumped to 2.0.0 (breaking). core-shell/billing/reports pass owner from package.json team (platform/payments/insights). All apps build; PR #1 merged, CI+CD green. Assumption: lib is inlined so no registry publish needed."}

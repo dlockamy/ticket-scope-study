@@ -1,0 +1,6 @@
+{"ts":1793381904544,"event":"clone","repo":"mono"}
+{"ts":1793381925729,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793381935092,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3138,"waited_ms":9328,"sha":"5acf54b2454669ebcbc701ab0b3d21ae037e3553"}
+{"ts":1793381936919,"event":"pr_merged","pr":1,"merge_sha":"6fa719c8a9463061394f7abf5f9619a434929fe9"}
+{"ts":1793381958405,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11898,"ci_main_ms":2846,"waited_ms":21454}
+{"ts":1793381961517,"event":"done","summary":"validateApp now throws if owner is missing/blank. Core-shell passes 'platform', billing 'payments', and reports 'insights' (reports also calls validateApp, so it would have broken at startup). Assumptions: shared-contracts is in-repo and inlined at build, so no registry release or dependency bump was needed (CONTRIBUTING); owner values hardcoded from each package.json team, since bundles can't read package.json. All three apps built locally; CI and CD green on PR #1."}

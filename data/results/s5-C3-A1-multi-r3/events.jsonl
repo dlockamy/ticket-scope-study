@@ -1,0 +1,33 @@
+{"ts":1793396303589,"event":"clone","repo":"contracts"}
+{"ts":1793396303649,"event":"clone","repo":"shell"}
+{"ts":1793396303706,"event":"clone","repo":"billing"}
+{"ts":1793396303764,"event":"clone","repo":"reports"}
+{"ts":1793396322444,"event":"task_added","task":1,"title":"Contract: validateApp requires owner, bump shared-contracts to 2.0.0 (breaking)","repo":"contracts"}
+{"ts":1793396322466,"event":"task_added","task":2,"title":"Core shell: depend on shared-contracts ^2.0.0 and pass owner (platform)","repo":"shell"}
+{"ts":1793396322485,"event":"task_added","task":3,"title":"Billing: depend on shared-contracts ^2.0.0 and pass owner (payments)","repo":"billing"}
+{"ts":1793396322503,"event":"task_added","task":4,"title":"Reports: depend on shared-contracts ^2.0.0 and pass owner (insights)","repo":"reports"}
+{"ts":1793396324007,"event":"task_start","task":1}
+{"ts":1793396329892,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-contract-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396344709,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3677,"waited_ms":12282,"sha":"47611fd7b11473df3ad5ed73b4cf6fd33d70be15"}
+{"ts":1793396346594,"event":"pr_merged","pr":1,"merge_sha":"cedb0beb283c32ce705e4ffea05be14c4f3df1ed"}
+{"ts":1793396361979,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5594,"ci_main_ms":3095,"waited_ms":15356}
+{"ts":1793396365234,"event":"task_start","task":2}
+{"ts":1793396365252,"event":"task_start","task":3}
+{"ts":1793396365268,"event":"task_start","task":4}
+{"ts":1793396378613,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793396378746,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793396378875,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793396392377,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3174,"waited_ms":12188,"sha":"20baa4741adc4f05bca42b54bbe324d3dfd1ce23"}
+{"ts":1793396392442,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3196,"waited_ms":35,"sha":"ba5c12946f33ecfb0370cfb4ab399bed8c388b89"}
+{"ts":1793396395566,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":6014,"waited_ms":3098,"sha":"43947e7283b9d7a24261ad1aaf56c3a6587c0e61"}
+{"ts":1793396397180,"event":"pr_merged","pr":2,"merge_sha":"0566dd6c11bb79d3310fcabefe2f332e9b097b48"}
+{"ts":1793396412562,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8911,"ci_main_ms":3082,"waited_ms":15353}
+{"ts":1793396412695,"event":"pr_merged","pr":3,"merge_sha":"25b058ad8d84c96e553f53480ad3033b9cc3bf5f"}
+{"ts":1793396431065,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11455,"ci_main_ms":3024,"waited_ms":18341}
+{"ts":1793396431195,"event":"pr_merged","pr":4,"merge_sha":"02cfea5334f6e369010b225582c61e703c3a3ae7"}
+{"ts":1793396452711,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11326,"ci_main_ms":3108,"waited_ms":21486}
+{"ts":1793396454009,"event":"task_done","task":1}
+{"ts":1793396454028,"event":"task_done","task":2}
+{"ts":1793396454044,"event":"task_done","task":3}
+{"ts":1793396454060,"event":"task_done","task":4}
+{"ts":1793396457071,"event":"done","summary":"validateApp now throws when app.owner is missing or blank. shared-contracts bumped 1.0.0 -> 2.0.0 (breaking, published by CD). All three callers pass owner from package.json team: core-shell=platform, billing=payments, reports=insights. Apps moved to @mfe/shared-contracts ^2.0.0 with lockfile updates. PRs #1 (contracts), #2 (shell), #3 (billing), #4 (reports) merged; CI and CD green. Assumptions: owner is hard-coded in each app's source to match package.json team (the bundle is browser code, so package.json isn't read at runtime); a major bump was chosen because existing 1.x callers without owner now throw; apps stay on ^1.0.0 until they are moved, which is why they were moved in the same ticket after 2.0.0 was published. platformkit has no validateApp callers and was not changed."}

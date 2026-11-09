@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "contracts: rename billingUrl->billingEndpoint, bump 2.0.0 (breaking)",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "shell: use billingEndpoint, upgrade contracts ^2.0.0",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "billing: same",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "reports: same (not in dep catalog but uses it)",
+    "repo": "",
+    "state": "done"
+  }
+]

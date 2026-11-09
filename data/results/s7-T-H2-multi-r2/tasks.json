@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "key": "PLAT-104-1",
+    "ticket": "PLAT-104",
+    "repo": "contracts",
+    "title": "billingUrl value changes to the versioned address (shared contract; release per the team rules)",
+    "owner": "dev-a",
+    "state": "done",
+    "depends": []
+  },
+  {
+    "id": 2,
+    "key": "PLAT-104-2",
+    "ticket": "PLAT-104",
+    "repo": "billing",
+    "title": "billing app adopts the new contract release",
+    "owner": "dev-a",
+    "state": "done",
+    "depends": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "key": "PLAT-104-3",
+    "ticket": "PLAT-104",
+    "repo": "shell",
+    "title": "core shell adopts the new contract release",
+    "owner": "dev-b",
+    "state": "todo",
+    "depends": [
+      1
+    ]
+  },
+  {
+    "id": 4,
+    "key": "PLAT-104-4",
+    "ticket": "PLAT-104",
+    "repo": "reports",
+    "title": "reports app adopts the new contract release",
+    "owner": "dev-b",
+    "state": "todo",
+    "depends": [
+      1
+    ]
+  }
+]

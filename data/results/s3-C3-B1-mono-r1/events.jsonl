@@ -1,0 +1,7 @@
+{"ts":1793381560081,"event":"clone","repo":"mono"}
+{"ts":1793381571310,"event":"task_added","task":1,"title":"PLAT-103-4: apps/sub-route-reports calls validateApp; pass owner (team: insights)","repo":"mono"}
+{"ts":1793381571506,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793381583753,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3115,"waited_ms":9168,"sha":"a4c808a436675e206a37b009d8047da21465fa93"}
+{"ts":1793381586042,"event":"pr_merged","pr":1,"merge_sha":"236b262b4022309cb6254fb121527b31887c3d3b"}
+{"ts":1793381604433,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12002,"ci_main_ms":3171,"waited_ms":18361}
+{"ts":1793381607253,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, breaking). core-shell (platform), billing (payments), reports (insights) pass owner from their package.json team. Assumptions: libs/shared-contracts is inlined at build time so no registry release/lockfile updates needed; one PR since the lib change must land with its consumers or apps would break; added sub-task for sub-route-reports, which also calls validateApp but isn't built by CI/CD (no deploy for it). Owners hardcoded to match package.json team."}

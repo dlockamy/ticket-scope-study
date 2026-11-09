@@ -1,0 +1,17 @@
+{"ts":1793369156618,"event":"deps_query","pkg":"shared-contract"}
+{"ts":1793369156638,"event":"deps_query","pkg":"@mfe/contract"}
+{"ts":1793369158671,"event":"clone","repo":"mono"}
+{"ts":1793369158733,"event":"clone","repo":"platformkit"}
+{"ts":1793369177576,"event":"task_added","task":1,"title":"Make validateApp reject apps without an owner (libs/shared-contracts)","repo":"mono"}
+{"ts":1793369177598,"event":"task_added","task":2,"title":"Pass owner from package.json team in core-shell, billing and reports","repo":"mono"}
+{"ts":1793369177617,"event":"task_added","task":3,"title":"Build all apps locally, PR, CI, merge, confirm CD","repo":"mono"}
+{"ts":1793369177632,"event":"task_start","task":1}
+{"ts":1793369195917,"event":"task_done","task":1}
+{"ts":1793369195953,"event":"task_done","task":2}
+{"ts":1793369195978,"event":"task_start","task":3}
+{"ts":1793369198621,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369212560,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3771,"waited_ms":12214,"sha":"5c46c606c58ed99493fc2287f553956185427b91"}
+{"ts":1793369214324,"event":"pr_merged","pr":1,"merge_sha":"97ca6fc363f50f3b2a6728cc1173ef13e3ac0024"}
+{"ts":1793369237454,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12530,"ci_main_ms":3114,"waited_ms":21460}
+{"ts":1793369240787,"event":"task_done","task":3}
+{"ts":1793369240812,"event":"done","summary":"PLAT-103 shipped in PR #1 (merged 97ca6fc, CI and CD green). validateApp in libs/shared-contracts now throws 'app.owner is required' when owner is missing, non-string, or blank. core-shell (platform), sub-route-billing (payments) and sub-route-reports (insights) pass owner matching their package.json team. Assumptions: owner is hardcoded per app to match package.json rather than injected at build time; the contract is inlined in-repo, so no library version bump; the validation is in validateApp only, not in build.js. Local builds of all three apps passed before and after the change."}

@@ -1,0 +1,27 @@
+{"ts":1793413032617,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793413032629,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413035229,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793413036255,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793413041188,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413048253,"who":"dev-b","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-shell-reports","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413050680,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793413050817,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413059098,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3115,"waited_ms":9126,"sha":"7ac25db88a0993db8e0a3c0035715c43c40a0fe2"}
+{"ts":1793413059115,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413061774,"who":"dev-b","event":"pr_merged","pr":1,"merge_sha":"83dc4beb98eb9a78ba263f24f41ef9839a16369e"}
+{"ts":1793413061830,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3044,"waited_ms":9115,"sha":"dadbbc93139c543476137ace24d0748d50585df6"}
+{"ts":1793413062053,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"e9ec21ecf27a99e503033da3476376c663a84cf0"}
+{"ts":1793413083597,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10823,"ci_main_ms":3128,"waited_ms":21727}
+{"ts":1793413083617,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10823,"ci_main_ms":3128,"waited_ms":21520}
+{"ts":1793413083629,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413086528,"who":"dev-b","event":"done","summary":"PLAT-103-3/4 shipped in PR #1 (merged, CI+CD green): core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team) to validateApp. Assumptions: shared-contracts lives in libs/ and is inlined at build time, so no dependency bump is needed; values hardcoded since browser code can't read package.json. Change is backward compatible with the current validateApp, so it is safe whether or not dev-a's strict validation has landed. Reports is not in the CD change-detection list per docs/ci-cd.md; CD reported success."}
+{"ts":1793413087051,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793413087078,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793413092040,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793413092169,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793413095409,"who":"dev-a","event":"pr_updated","pr":3,"size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413107641,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":9064,"waited_ms":12199,"sha":"6bedb4219f9f645331a3be8c9f92fc0da3b52022"}
+{"ts":1793413107774,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"09f5e88c841aae62593ae2537600f0db2fa1cf10"}
+{"ts":1793413123198,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9586,"ci_main_ms":3044,"waited_ms":15393}
+{"ts":1793413125953,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793413125971,"who":"dev-a","event":"done","summary":"Sub-task 1: validateApp throws if owner missing/empty; shared-contracts bumped 1.0.0->2.0.0 (major) in libs/ (PR #2, merged, CD green). Sub-task 2: billing passes owner 'payments' (package.json team) (PR #3, merged, CD green). Assumptions: lib is in-repo and inlined at build time so no registry publish/lockfile bump is needed; owner hardcoded because the bundler can't import package.json. Handoff note posted for dev-b."}

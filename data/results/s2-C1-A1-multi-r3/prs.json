@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "add-billing-portal-url",
+    "title": "Add billingPortalUrl to shared config",
+    "head": "6be753d0825b7f96ff3c5d6881830e9e2651d713",
+    "opened_ts": 1793366367925,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793366381964,
+    "merge_sha": "ee7d6793b25c561a21997348af276838a21b8d4f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "add-manage-billing-link",
+    "title": "Add Manage billing link",
+    "head": "b66a4b1470987b9a2a1d793994d85db2cab02d7f",
+    "opened_ts": 1793366407904,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793366420242,
+    "merge_sha": "942a587f7759d5d4285ce77e82f25ce523d1dcaf",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

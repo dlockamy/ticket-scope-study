@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (2.0.0)",
+    "head": "825dd14713f199554f9efbae02ad31aff4a69232",
+    "opened_ts": 1793451582397,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451596594,
+    "merge_sha": "24b89d1846968481b9388ddeb4321c3b0028bb23",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "Pass owner to validateApp (contracts 2.x)",
+    "head": "c651792d9eda51b1d4519fb6f863177e9edab57c",
+    "opened_ts": 1793451619178,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451631506,
+    "merge_sha": "dd5a125936e864587f42709b95112edf93c9ecd8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "Pass owner to validateApp (contracts 2.x)",
+    "head": "1dc8d96ccb99748af42feb69ad2c693c084849da",
+    "opened_ts": 1793451619311,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451650042,
+    "merge_sha": "1cbc62cc174514009a4dce7e74ad84039e095127",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "Pass owner to validateApp (contracts 2.x)",
+    "head": "449330b11dcc2a2e34a90ef34eda7de990385226",
+    "opened_ts": 1793451619433,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451671649,
+    "merge_sha": "411d80371f36ae852a0bdd6020c0bac7fa928c3a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

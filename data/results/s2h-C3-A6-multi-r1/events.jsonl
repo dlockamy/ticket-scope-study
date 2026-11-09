@@ -1,0 +1,39 @@
+{"ts":1793369155782,"event":"deps_query","pkg":"@mfe/shared-contract"}
+{"ts":1793369155800,"event":"deps_query","pkg":"shared-contract"}
+{"ts":1793369155824,"event":"deps_query","pkg":"validateApp"}
+{"ts":1793369157129,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793369157194,"event":"clone","repo":"contracts"}
+{"ts":1793369157253,"event":"clone","repo":"shell"}
+{"ts":1793369157315,"event":"clone","repo":"billing"}
+{"ts":1793369157373,"event":"clone","repo":"reports"}
+{"ts":1793369157430,"event":"clone","repo":"platformkit"}
+{"ts":1793369177025,"event":"task_added","task":1,"title":"Contract: validateApp requires owner, release shared-contracts 2.0.0","repo":"contracts"}
+{"ts":1793369177045,"event":"task_added","task":2,"title":"Core shell: pass owner 'platform', depend on shared-contracts ^2.0.0","repo":"shell"}
+{"ts":1793369177064,"event":"task_added","task":3,"title":"Billing: pass owner 'payments', depend on shared-contracts ^2.0.0","repo":"billing"}
+{"ts":1793369177085,"event":"task_added","task":4,"title":"Reports: pass owner 'insights', depend on shared-contracts ^2.0.0","repo":"reports"}
+{"ts":1793369178869,"event":"task_start","task":1}
+{"ts":1793369186265,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-validate-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369196737,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3762,"waited_ms":9224,"sha":"f1678c1beca0453087d9a63759e0ca21023625a7"}
+{"ts":1793369198149,"event":"pr_merged","pr":1,"merge_sha":"86589b3aebf30bfd938cec657ae6772898810796"}
+{"ts":1793369213508,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5709,"ci_main_ms":3186,"waited_ms":15331}
+{"ts":1793369215808,"event":"task_done","task":1}
+{"ts":1793369215826,"event":"task_start","task":2}
+{"ts":1793369215845,"event":"task_start","task":3}
+{"ts":1793369215863,"event":"task_start","task":4}
+{"ts":1793369224430,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-platform","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369232520,"event":"task_start","task":2}
+{"ts":1793369238833,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-payments","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369238954,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-insights","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369239017,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3052,"waited_ms":31,"sha":"028d11077fa69169b068a16e55571f097485513d"}
+{"ts":1793369240511,"event":"pr_merged","pr":2,"merge_sha":"f5da4215ea16406307cd5e408f93cba6b361110f"}
+{"ts":1793369261980,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11526,"ci_main_ms":5154,"waited_ms":21440}
+{"ts":1793369262044,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3262,"waited_ms":34,"sha":"1658953e63a77806cf95a5e35d586bfe175264dd"}
+{"ts":1793369262101,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3222,"waited_ms":32,"sha":"dd547f988aa621d212301827f4042d57ac964516"}
+{"ts":1793369263464,"event":"task_done","task":2}
+{"ts":1793369263594,"event":"pr_merged","pr":3,"merge_sha":"55a451eb662973610e61d1cf58eae4c95be1b123"}
+{"ts":1793369285130,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12409,"ci_main_ms":3122,"waited_ms":21506}
+{"ts":1793369286609,"event":"task_done","task":3}
+{"ts":1793369286738,"event":"pr_merged","pr":4,"merge_sha":"fb797aaab6769b82d52cb534f0097babd14079ec"}
+{"ts":1793369305127,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11713,"ci_main_ms":3028,"waited_ms":18360}
+{"ts":1793369305148,"event":"task_done","task":4}
+{"ts":1793369308259,"event":"done","summary":"PLAT-103 shipped. shared-contracts 2.0.0 (PR #1): validateApp throws when app.owner is missing or empty. Major bump because it is a breaking change for callers. Apps moved to ^2.0.0 and pass their owning team from package.json: core-shell=platform (PR #2), sub-route-billing=payments (PR #3), sub-route-reports=insights (PR #4). All four CI and CD runs are green. Assumptions: (1) owner is hardcoded in each app's source to match package.json team, not read from package.json at build time. (2) Major bump rather than minor, so apps on ^1.0.0 keep working until they move. (3) platform-kit does not call validateApp, so it is untouched. (4) st deps lists only shell and billing as consumers, but sub-route-reports also depends on @mfe/shared-contracts, so the catalog is stale."}

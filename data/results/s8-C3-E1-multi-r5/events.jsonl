@@ -1,0 +1,27 @@
+{"ts":1793450313742,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793450319805,"event":"clone","repo":"contracts"}
+{"ts":1793450328202,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450339193,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3631,"waited_ms":9207,"sha":"6c32fdc2a520eb0f3262b62c5798ac36e6c018fe"}
+{"ts":1793450339349,"event":"pr_merged","pr":1,"merge_sha":"60f67fb578ba22a8494a49a34c43874e89726207"}
+{"ts":1793450351721,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5219,"ci_main_ms":2898,"waited_ms":12342}
+{"ts":1793450353818,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793450353833,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793450353905,"event":"clone","repo":"billing"}
+{"ts":1793450359604,"event":"pr_opened","pr":2,"repo":"billing","branch":"billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450374935,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3037,"waited_ms":15287,"sha":"c4850364aa52252960a52e5599b2badec07a5d1f"}
+{"ts":1793450375064,"event":"pr_merged","pr":2,"merge_sha":"99ffe442af4a091ae5cae5ba0b469991f0d9c530"}
+{"ts":1793450396486,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11153,"ci_main_ms":2982,"waited_ms":21392}
+{"ts":1793450399127,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793450399141,"event":"child_opened","child":"PLAT-103-3"}
+{"ts":1793450399205,"event":"clone","repo":"shell"}
+{"ts":1793450402887,"event":"pr_opened","pr":3,"repo":"shell","branch":"shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450415147,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2893,"waited_ms":12228,"sha":"da0c75e7d01c900924b99dea8d9fbc6d5e9d7ee5"}
+{"ts":1793450415268,"event":"pr_merged","pr":3,"merge_sha":"0ff15ae8b116bfdca79cc7c978d4a1ab4ea9a84d"}
+{"ts":1793450433680,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8696,"ci_main_ms":2955,"waited_ms":18383}
+{"ts":1793450435751,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793450435817,"event":"clone","repo":"reports"}
+{"ts":1793450443392,"event":"pr_opened","pr":4,"repo":"reports","branch":"reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793450452595,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2849,"waited_ms":9173,"sha":"430ec1033c9e613dcb7351d9c5844852e97ffb3b"}
+{"ts":1793450452726,"event":"pr_merged","pr":4,"merge_sha":"288dcbae5b789d89e0dd474a1ba92deca5185f7b"}
+{"ts":1793450471188,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11356,"ci_main_ms":3003,"waited_ms":18433}
+{"ts":1793450473766,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts 2.0.0, major bump, published). Billing (payments), shell (platform) and reports (insights) now pass owner from package.json team and depend on ^2.0.0; all merged, CI/CD green. Assumptions: owner must be a non-blank string; reports app also called validateApp but had no child ticket, so I fixed it under the epic's 'every app' criterion."}

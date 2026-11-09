@@ -1,0 +1,16 @@
+{"ts":1793382919907,"event":"clone","repo":"contracts"}
+{"ts":1793382919964,"event":"clone","repo":"billing"}
+{"ts":1793382920032,"event":"clone","repo":"reports"}
+{"ts":1793382930255,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793382942740,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3632,"waited_ms":12449,"sha":"260c752c09ef1fb072593936e29870fc4d77d14a"}
+{"ts":1793382944214,"event":"pr_merged","pr":1,"merge_sha":"89b24eeabc62f0578f6658ed6823874ba44b1a2b"}
+{"ts":1793382956512,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4840,"ci_main_ms":2806,"waited_ms":12264}
+{"ts":1793382962397,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-pass-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382962526,"event":"pr_opened","pr":3,"repo":"reports","branch":"plat-103-pass-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382974734,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3070,"waited_ms":12176,"sha":"102b019bb479d3360ebfe9951b2ede7861093b57"}
+{"ts":1793382974795,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3101,"waited_ms":33,"sha":"ebe544ace8af583a07f7c4b3086627476ac5ab3d"}
+{"ts":1793382976382,"event":"pr_merged","pr":2,"merge_sha":"3b63466f826c94abe8a76822fd511103bfc78564"}
+{"ts":1793382994823,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12184,"ci_main_ms":3028,"waited_ms":18411}
+{"ts":1793382994951,"event":"pr_merged","pr":3,"merge_sha":"3d2847cc3fe5a519925b2bc46449e11845e2c5a7"}
+{"ts":1793383013382,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11671,"ci_main_ms":3116,"waited_ms":18400}
+{"ts":1793383015341,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts 2.0.0, major bump, published). Billing passes owner 'payments', reports passes 'insights' (from package.json team), both upgraded to ^2.0.0 with lockfiles; all CI/CD green. Assumption: owner must be a non-blank string."}

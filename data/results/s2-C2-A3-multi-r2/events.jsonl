@@ -1,0 +1,21 @@
+{"ts":1793363665490,"event":"clone","repo":"contracts"}
+{"ts":1793363665546,"event":"clone","repo":"shell"}
+{"ts":1793363665610,"event":"clone","repo":"billing"}
+{"ts":1793363665673,"event":"clone","repo":"reports"}
+{"ts":1793363682607,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793363694990,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4063,"waited_ms":12334,"sha":"e75435b0974ac6ae6c7f24632204abc6be33b9d2"}
+{"ts":1793363699156,"event":"pr_merged","pr":1,"merge_sha":"35a589ef58cf6cf60c568fd79f9cfd818e0fa7e8"}
+{"ts":1793363711441,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5511,"ci_main_ms":3072,"waited_ms":12256}
+{"ts":1793363718407,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-102-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363718558,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363718704,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363730944,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3144,"waited_ms":12208,"sha":"48429430f0db2ca786518fd07bf3bce8c2835cc5"}
+{"ts":1793363731005,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3262,"waited_ms":35,"sha":"3f4d0605452270378ecfa6b7376d8b527fb8301f"}
+{"ts":1793363731063,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3202,"waited_ms":33,"sha":"df9f910a2ebfa4c13e755d59dd7ff70f36e50afe"}
+{"ts":1793363737827,"event":"pr_merged","pr":2,"merge_sha":"da7f48f82834a0d793849fed65a3800e5f3d06fe"}
+{"ts":1793363759338,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13209,"ci_main_ms":3038,"waited_ms":21482}
+{"ts":1793363759471,"event":"pr_merged","pr":3,"merge_sha":"e6879034a333c9f5f9c077351c2cf381162267a8"}
+{"ts":1793363774828,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7967,"ci_main_ms":3044,"waited_ms":15328}
+{"ts":1793363774959,"event":"pr_merged","pr":4,"merge_sha":"fadf471d6f722a1bdfaa1294ae566edcf92ad99b"}
+{"ts":1793363793404,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11444,"ci_main_ms":2948,"waited_ms":18416}
+{"ts":1793363795892,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in @mfe/shared-contracts, released as 2.0.0 (major, breaking; published by CD). Billing, shell and reports updated to billingEndpoint and ^2.0.0 with lockfiles; all built locally, CI+CD green. Assumption: only these three apps consume the setting; no compatibility alias kept, per the ticket's no-reference criterion."}

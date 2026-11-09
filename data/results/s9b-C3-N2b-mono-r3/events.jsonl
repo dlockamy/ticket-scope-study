@@ -1,0 +1,9 @@
+{"ts":1793453234764,"event":"clone","repo":"mono"}
+{"ts":1793453234827,"event":"clone","repo":"platformkit"}
+{"ts":1793453251798,"event":"task_added","task":1,"title":"validateApp requires owner; pass team as owner in all 3 apps (shared-contracts is in-repo, inlined; no platformkit change)","repo":"mono"}
+{"ts":1793453251819,"event":"task_added","task":2,"title":"Not doing: README fake bucket names (explicitly separate per lee)","repo":""}
+{"ts":1793453254982,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner-required","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793453264360,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3119,"waited_ms":9340,"sha":"e4237f348269e0e8372369e76a5974a029cf1cbd"}
+{"ts":1793453266206,"event":"pr_merged","pr":1,"merge_sha":"a31df9a3e6a2e66c32ff6b09aa61c805ee3964b7"}
+{"ts":1793453287679,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11309,"ci_main_ms":3045,"waited_ms":21442}
+{"ts":1793453290675,"event":"done","summary":"validateApp now throws without owner; core-shell/billing/reports pass their package.json team (platform/payments/insights) as owner. Merged PR #1, CI and CD green. Assumptions: only mono changed (shared-contracts is in-repo, inlined at build, so platformkit untouched and no registry release needed); bumped shared-contracts to 2.0.0 to flag the breaking change; owners hardcoded to match package.json team since bundler inlines plain source. README bucket-name cleanup not done (lee said it is separate)."}

@@ -1,0 +1,16 @@
+{"ts":1793412782355,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793412782790,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793412794664,"who":"dev-b","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-core-shell-reports","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412801268,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793412801293,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793412801505,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-owner-required","size":{"files":3,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412805326,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3310,"waited_ms":9176,"sha":"50e57736f6d0ccca67a6752333bbf845f9ae96ad"}
+{"ts":1793412807354,"who":"dev-b","event":"pr_merged","pr":1,"merge_sha":"147eef6839937ee9273b241b8aba388f0b02ef6f"}
+{"ts":1793412812371,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3468,"waited_ms":9200,"sha":"8580863777351fa54443e18898efb9d26cd29f1b"}
+{"ts":1793412812540,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"9e8a0ab6017a29a44990a7580de31f4711269b3a"}
+{"ts":1793412826003,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":881,"ci_main_ms":3090,"waited_ms":18619}
+{"ts":1793412827916,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":881,"ci_main_ms":3090,"waited_ms":15346}
+{"ts":1793412829179,"who":"dev-b","event":"done","summary":"PR #1 merged and deployed (CI+CD green): core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team) to validateApp. Assumptions: shared-contracts lives in the monorepo and is inlined at build, so there is no registry dependency to bump; passing owner against the old contract is harmless, so I did not wait for dev-a's PR #2. Combined subtasks 3 and 4 in one PR."}
+{"ts":1793412830764,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793412830786,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793412830802,"who":"dev-a","event":"done","summary":"PLAT-103-1/2 shipped in PR #2 (merged, CI+CD green). validateApp throws if owner missing/empty/blank; shared-contracts bumped to 2.0.0 (breaking; it's an in-repo lib inlined at build, so nothing is published). Billing passes owner 'payments' (from package.json team). Assumptions: combined 1+2 in one PR for ordering; billing has no registry-lib change to adopt (contract is inlined). Note: core-shell and reports (dev-b) must pass owner before their next deploy or they will fail at startup."}

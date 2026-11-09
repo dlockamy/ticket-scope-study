@@ -1,0 +1,20 @@
+=== f261982 PLAT-104: adopt @mfe/shared-contracts 1.1.0 (billing v2)
+
+diff --git a/package.json b/package.json
+index 8d1a1fb..1448731 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,11 @@
+   "name": "@mfe/sub-route-reports",
+   "version": "1.0.0",
+   "team": "insights",
+-  "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0"}
++  "scripts": {
++    "prebuild": "npm install --no-audit --no-fund",
++    "build": "node build.js"
++  },
++  "dependencies": {
++    "@mfe/shared-contracts": "^1.1.0"
++  }
+ }

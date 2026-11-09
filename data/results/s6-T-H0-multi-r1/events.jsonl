@@ -1,0 +1,25 @@
+{"ts":1793411036980,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793411037398,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793411037471,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793411045256,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411055977,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4186,"waited_ms":9174,"sha":"17a6623ff6af74dcff9f727138899a267d78454a"}
+{"ts":1793411056179,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"41490810f8d907215e20115ca0e954eaaa61a396"}
+{"ts":1793411068562,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5929,"ci_main_ms":3577,"waited_ms":12346}
+{"ts":1793411070689,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793411077796,"who":"dev-b","event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411077960,"who":"dev-b","event":"pr_opened","pr":3,"repo":"reports","branch":"plat-103-4-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411078833,"who":"dev-a","event":"pr_opened","pr":4,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411088026,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3033,"waited_ms":9161,"sha":"b34bdbfe3f1bc87a6dd302ca10df79e95dccf04c"}
+{"ts":1793411088192,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"a8baffedd1b271c1afc2117f87051663bd83a1f5"}
+{"ts":1793411088699,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3033,"waited_ms":9155,"sha":"b34bdbfe3f1bc87a6dd302ca10df79e95dccf04c"}
+{"ts":1793411088787,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2997,"waited_ms":49,"sha":"7422ca4da60cd4912898ff73820a38b909979767"}
+{"ts":1793411090647,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"a8baffedd1b271c1afc2117f87051663bd83a1f5"}
+{"ts":1793411109219,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8913,"ci_main_ms":3707,"waited_ms":18530}
+{"ts":1793411109372,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"c510a68a666713140a1127fc06bdd98fb08921d3"}
+{"ts":1793411109806,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8913,"ci_main_ms":3707,"waited_ms":21566}
+{"ts":1793411114921,"who":"dev-a","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2951,"waited_ms":56,"sha":"d745855f024be86430bc1731a2370a0a3c23bd04"}
+{"ts":1793411115099,"who":"dev-a","event":"pr_merged","pr":4,"merge_sha":"b4c9a9315530d6edc624cf9288bc43888ec59676"}
+{"ts":1793411127891,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11594,"ci_main_ms":3409,"waited_ms":18487}
+{"ts":1793411130414,"who":"dev-b","event":"done","summary":"PLAT-103-3 (shell, PR #2) and PLAT-103-4 (reports, PR #3) merged, CI and CD green. Both pass owner to validateApp and adopt @mfe/shared-contracts ^2.0.0 (lockfiles committed). Assumptions: owner hardcoded as the package.json team value (shell='platform', reports='insights') because the bundler inlines source and can't import package.json; waited for dev-a's v2.0.0 to appear in the registry before adopting."}
+{"ts":1793411136709,"who":"dev-a","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11466,"ci_main_ms":3221,"waited_ms":21577}
+{"ts":1793411139375,"who":"dev-a","event":"done","summary":"PLAT-103-1: contracts PR #1, validateApp throws if owner missing/empty, bumped to 2.0.0 (major), published. PLAT-103-2: billing PR #4 passes owner 'payments' (literal copy of package.json team, since the bundler inlines only imports), depends on ^2.0.0 with lockfile, deployed. Note: I mistakenly ran pr wait/merge on #2 (dev-b's shell PR, CI green) while meaning my own PR; it was merged and deployed successfully but by me, not dev-b."}

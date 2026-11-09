@@ -1,0 +1,7 @@
+{"ts":1793372928132,"event":"clone","repo":"mono"}
+{"ts":1793372928190,"event":"clone","repo":"platformkit"}
+{"ts":1793372959619,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372971882,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3006,"waited_ms":12229,"sha":"fc57a01425ad09508b3cc6fcce14c362ef5d52ac"}
+{"ts":1793372975283,"event":"pr_merged","pr":1,"merge_sha":"092ae7ac01324055ae49e574892edfdde6da67a0"}
+{"ts":1793372996641,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12625,"ci_main_ms":3223,"waited_ms":21329}
+{"ts":1793373002077,"event":"done","summary":"PLAT-103: validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0). core-shell passes owner 'platform', billing 'payments' (from package.json team). Also fixed sub-route-reports (owner 'insights'), which calls validateApp but was not in the ticket and would have broken on its next build. Shipped as one PR (#1) since libs/shared-contracts is inlined at build time, not a registry package, so no separate release/dependency bump applies. Merged, CI and CD green. PLAT-103-4: libs-platform-kit has no validateApp call and no dependency on shared-contracts, so no change made (assumption: ticket premise is mistaken); no PR opened."}

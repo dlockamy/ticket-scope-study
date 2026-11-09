@@ -1,0 +1,6 @@
+{"ts":1793385086925,"event":"clone","repo":"mono"}
+{"ts":1793385110979,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793385122458,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4327,"waited_ms":9187,"sha":"c6f43da8563285b3000d1df6cbf26b51d6b08098"}
+{"ts":1793385122584,"event":"pr_merged","pr":1,"merge_sha":"8da266becde8ebc5d2df5e7fe475161ee1b5cd81"}
+{"ts":1793385147089,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13121,"ci_main_ms":3629,"waited_ms":24475}
+{"ts":1793385151003,"event":"done","summary":"PLAT-103: validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0, breaking). Billing (payments), reports (insights) and core-shell (platform) pass owner matching package.json team. Single PR #1, CI+CD green. Assumptions: libs/ is inlined at build time, so no registry publish or lockfile update applies; owner is hardcoded since the browser bundle can't read package.json; core-shell also called validateApp (not in sub-tasks) so I fixed it to avoid breaking it. CD doesn't build/deploy reports (only shell+billing), so reports isn't deployed by the pipeline."}

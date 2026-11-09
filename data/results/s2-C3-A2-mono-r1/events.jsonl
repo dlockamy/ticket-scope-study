@@ -1,0 +1,6 @@
+{"ts":1793361969213,"event":"clone","repo":"mono"}
+{"ts":1793361996600,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793362008244,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3105,"waited_ms":9160,"sha":"b8207716424db340b2646115e1a7d2fc92fd0ff8"}
+{"ts":1793362008377,"event":"pr_merged","pr":1,"merge_sha":"eb259722c055a26cb300f65004f5bc5f57da0d97"}
+{"ts":1793362029842,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12429,"ci_main_ms":3105,"waited_ms":21435}
+{"ts":1793362040492,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, major). Core-shell (platform), billing (payments) and reports (insights) pass owner from their package.json team. Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so no registry release or dependency bump applies; all three subtasks shipped in one PR (#1) since there's no ordering problem. Reports also calls validateApp, so I updated it to avoid a latent break (it isn't deployed by CD). Owner values are literals matching package.json."}

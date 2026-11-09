@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-102: billingUrl -> billingEndpoint in contracts",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-102: billingUrl -> billingEndpoint in shell",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-102: billingUrl -> billingEndpoint in billing",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-102: billingUrl -> billingEndpoint in reports",
+    "repo": "reports",
+    "state": "done"
+  }
+]

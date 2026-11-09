@@ -1,0 +1,37 @@
+{
+  "run": "s8-C3-E3-mono-r2",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "E3",
+  "rep": 2,
+  "model": "claude-sonnet-5-5",
+  "tag": "s8",
+  "start_ms": 1793448627652,
+  "structure": "epic",
+  "list": "partial",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [
+    "billing",
+    "shell"
+  ],
+  "decoys": [],
+  "hidden": "reports",
+  "epic": true,
+  "children": [
+    "PLAT-103-1",
+    "PLAT-103-2",
+    "PLAT-103-3",
+    "PLAT-103-4"
+  ],
+  "custom": null,
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

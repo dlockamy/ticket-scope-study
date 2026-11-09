@@ -1,0 +1,6 @@
+{"ts":1793376860407,"event":"clone","repo":"mono"}
+{"ts":1793376884316,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793376895052,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3155,"waited_ms":9176,"sha":"044a3b58e702d3340ca650a8afc914f34323687c"}
+{"ts":1793376896885,"event":"pr_merged","pr":1,"merge_sha":"cc8c0abb55bb38c42a06ac60176a0dc65642e4c7"}
+{"ts":1793376918308,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13157,"ci_main_ms":3131,"waited_ms":21389}
+{"ts":1793376922447,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts (bumped to 2.0.0, breaking) and all consumers: billing, core-shell, and also reports (it read billingUrl too, would have broken the contract check). Assumptions: shared-contracts lives in the monorepo and is inlined at build, so no registry release/lockfile update needed; one PR (#1) since no ordering is required. Core-shell's billingEndpointHint key left as-is. CI and CD green."}

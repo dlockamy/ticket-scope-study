@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner; bump 2.0.0 (breaking)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "update to contracts ^2 and pass team owner",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "update to contracts ^2 and pass team owner",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "update to contracts ^2 and pass team owner",
+    "repo": "reports",
+    "state": "done"
+  }
+]

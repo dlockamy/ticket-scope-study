@@ -1,0 +1,7 @@
+{"ts":1793375344871,"event":"clone","repo":"mono"}
+{"ts":1793375344929,"event":"clone","repo":"platformkit"}
+{"ts":1793375357128,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793375370521,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3169,"waited_ms":12188,"sha":"d0b1170973288c23b0a462fb79ed2c32a1ce9782"}
+{"ts":1793375370645,"event":"pr_merged","pr":1,"merge_sha":"de277b77fe34c667a873fde61d1f764c5497c571"}
+{"ts":1793375416653,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":39810,"ci_main_ms":3561,"waited_ms":45979}
+{"ts":1793375419254,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and all users (billing, core-shell, and reports, which also referenced it) in one monorepo PR #1; CI and CD green. Assumptions: shared-contracts lives in the monorepo and is inlined at build, so there is no registry release/version bump. libs-platform-kit has no billingUrl reference and does not depend on shared-contracts, so no change/release there. Billing's platform-kit dependency is unrelated and unchanged."}

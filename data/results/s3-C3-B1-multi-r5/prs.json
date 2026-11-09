@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "705f45b0633c372cbfd59eba11dc6fa8454006ba",
+    "opened_ts": 1793385286260,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385299339,
+    "merge_sha": "f9e5bf99860df4cee3c16944a2b087c6c017a7e9",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "adopt-contracts-v2",
+    "title": "Pass owner to validateApp; adopt shared-contracts 2.x",
+    "head": "9bb7f8cf8734540211578df05db7aee543127f2b",
+    "opened_ts": 1793385322868,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385339004,
+    "merge_sha": "b8d9dbdc3340207592b15ea4994580b976779c1d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "adopt-contracts-v2",
+    "title": "Pass owner to validateApp; adopt shared-contracts 2.x",
+    "head": "35957b48bad36e188781100bbc25a9c0ecb2a14b",
+    "opened_ts": 1793385322998,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385354485,
+    "merge_sha": "d8e740f41362951b766bdf35fa76b7a820a0b7a2",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "adopt-contracts-v2",
+    "title": "Pass owner to validateApp; adopt shared-contracts 2.x",
+    "head": "5df590d88f202b7b339e775541a4d36045036120",
+    "opened_ts": 1793385323134,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385373060,
+    "merge_sha": "98d81afd7fbfe1804b7d94fb1cb762364105cab8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

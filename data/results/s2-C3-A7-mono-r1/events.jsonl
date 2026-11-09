@@ -1,0 +1,6 @@
+{"ts":1793361317012,"event":"clone","repo":"mono"}
+{"ts":1793361340183,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793361352403,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3069,"waited_ms":12188,"sha":"de02619a20e95841a4522fd83b979b7491399b4a"}
+{"ts":1793361354867,"event":"pr_merged","pr":1,"merge_sha":"9900981a4ab0c317fea2efc9518bee206bbc6541"}
+{"ts":1793361373178,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10936,"ci_main_ms":3089,"waited_ms":18283}
+{"ts":1793361376073,"event":"done","summary":"validateApp now throws if owner missing/empty; shared-contracts bumped 1.0.0->2.0.0 (breaking, major). core-shell owner=platform, billing owner=payments (from package.json team), and reports owner=insights (also called validateApp, would have broken at startup). Assumptions: shared-contracts is an in-repo lib inlined at build, so no registry publish or dependency update was needed; one PR since order doesn't matter for inlined libs. CI and CD green."}

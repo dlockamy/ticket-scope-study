@@ -1,0 +1,30 @@
+{"ts":1793413822754,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793413822771,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413825205,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793413825301,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793413825360,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793413827846,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413833105,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413837900,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413844373,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3777,"waited_ms":9203,"sha":"c5c57450a04629479e539fa9170aaf7c6dfc9bce"}
+{"ts":1793413844548,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"7ee848d6a458211d4bd48e0796fb5859419cf234"}
+{"ts":1793413847952,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413856980,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4967,"ci_main_ms":2800,"waited_ms":12401}
+{"ts":1793413857997,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413860267,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793413860331,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793413866085,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-billing-adopt-contracts-v2","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413868031,"who":"dev-b","event":"handoff_read"}
+{"ts":1793413877020,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-adopt-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413877103,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2947,"waited_ms":9153,"sha":"b271c25ec2f96ce0d716ad60bd6cda1bc61ba0a1"}
+{"ts":1793413877245,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-adopt-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413877329,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"09960fdc99ec23be89bea7d9beebfbec7da5e8a7"}
+{"ts":1793413891406,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3278,"waited_ms":12178,"sha":"21f61ac53f63ea127e18935cb9d1bc40591da78d"}
+{"ts":1793413891479,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3224,"waited_ms":39,"sha":"da5f14f30e60a15bc4fe515410e0c15e667861a1"}
+{"ts":1793413893821,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"39de0ae610554f47087b9cb38c192ff5e6f530be"}
+{"ts":1793413893972,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"56fc8e138f906e00e99a06eb95c39fcf7f9f21d8"}
+{"ts":1793413898975,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11713,"ci_main_ms":5202,"waited_ms":21610}
+{"ts":1793413901399,"who":"dev-a","event":"done","summary":"PLAT-104-1: billingUrl -> https://homelab.local/billing/v2, released @mfe/shared-contracts 2.0.0 (PR #1, live). PLAT-104-2: billing adopts ^2.0.0 with lockfile (PR #2, CI+CD green). Assumption: value change treated as MAJOR (behavior-breaking for consumers); billingVersion field left untouched. Handoff posted for dev-b."}
+{"ts":1793413912437,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11460,"ci_main_ms":3191,"waited_ms":18434}
+{"ts":1793413915590,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15763,"ci_main_ms":3156,"waited_ms":3117}
+{"ts":1793413918079,"who":"dev-b","event":"done","summary":"Shell (PR #3) and reports (PR #4) adopted @mfe/shared-contracts ^2.0.0 (billingUrl=/billing/v2), CI green, merged, CD succeeded. Assumption: dev-a's 2.0.0 handoff is correct; major bump meant ^1 ranges needed an explicit range change."}

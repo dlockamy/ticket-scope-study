@@ -1,0 +1,6 @@
+{"ts":1793381720371,"event":"clone","repo":"mono"}
+{"ts":1793381735371,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793381747808,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4068,"waited_ms":12400,"sha":"426f6692b3c1fce20cee5e441956d658a41de0ce"}
+{"ts":1793381749302,"event":"pr_merged","pr":1,"merge_sha":"043e9c608accabf8b324223f9390a7c0eb182800"}
+{"ts":1793381770782,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12462,"ci_main_ms":3259,"waited_ms":21447}
+{"ts":1793381773343,"event":"done","summary":"PLAT-103 shipped in one PR (#1): validateApp now throws if owner is missing/blank (shared-contracts bumped to 2.0.0, breaking). Billing passes owner 'payments', reports 'insights' (from package.json team). Assumptions: shared-contracts lives in-repo and is inlined at build, so no registry release/dependency bump was needed and one PR was safe; core-shell also calls validateApp, so I passed owner 'platform' (its package.json team) to avoid breaking it. Local builds of billing and reports passed; CI and CD green."}

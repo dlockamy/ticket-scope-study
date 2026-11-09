@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: Require an owner in validateApp and pass each app's team\n\nCompliance needs every app to declare its owning team.\n\n- libs/shared-contracts: validateApp throws if app.owner is missing or blank.\n- core-shell, sub-route-billing, sub-route-reports: pass owner from each package.json team (platform, payments, insights).\n\nVerified: all three apps build locally; validateApp rejects missing, empty, blank and null owners.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "5c46c606c58ed99493fc2287f553956185427b91",
+    "opened_ts": 1793369198601,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369214290,
+    "merge_sha": "97ca6fc363f50f3b2a6728cc1173ef13e3ac0024",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

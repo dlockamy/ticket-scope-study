@@ -1,0 +1,31 @@
+{"ts":1793415231694,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415231825,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793415234256,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793415234316,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793415234860,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793415238204,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415248250,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415250921,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793415258291,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415263021,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2713,"waited_ms":9153,"sha":"23202fd0187a5162e0fe0d9d2c10ab4f964ebc6d"}
+{"ts":1793415263172,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"42e1ea8926ac343b689fafc1c9af761d2e7e9f50"}
+{"ts":1793415268348,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415275606,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5577,"ci_main_ms":3231,"waited_ms":12402}
+{"ts":1793415278402,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415279839,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793415279907,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793415286341,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-adopt-contracts-2","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793415288436,"who":"dev-b","event":"handoff_read"}
+{"ts":1793415295022,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793415295259,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793415297600,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3099,"waited_ms":9153,"sha":"203035def91a3e6630f954f10658b275b7ab0a15"}
+{"ts":1793415297810,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"69afc712b20e8911d67b804ec7c0dda73c13ac19"}
+{"ts":1793415306113,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3210,"waited_ms":9135,"sha":"eeb700e37780ad4415a9a32da0f0569cdd1094f6"}
+{"ts":1793415306187,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3203,"waited_ms":43,"sha":"3f0d3fa556e8cd158eeabb9f5c2e3dae8979f8b0"}
+{"ts":1793415308205,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"7d4f78ad2e2fc9f1e5692d54e8c170b17ab523d6"}
+{"ts":1793415316294,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11968,"ci_main_ms":3074,"waited_ms":18446}
+{"ts":1793415319067,"who":"dev-a","event":"done","summary":"PLAT-104-1: released @mfe/shared-contracts 2.0.0 (MAJOR: existing billingUrl value changed to /billing/v2; ^1 consumers don't auto-adopt), PR #1 merged, published. Handoff posted for dev-b. PLAT-104-2: billing app now on ^2.0.0 (lockfile updated, bundle contains new URL), PR #2 merged, CD green. Assumption: value change of an existing key = breaking = major."}
+{"ts":1793415323681,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9240,"ci_main_ms":3233,"waited_ms":15442}
+{"ts":1793415323819,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"adf53744c34653b51c524a83517fd3eb66b8e6b4"}
+{"ts":1793415342387,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12669,"ci_main_ms":3079,"waited_ms":18536}
+{"ts":1793415345038,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped: shell (PR #3) and reports (PR #4) upgraded to @mfe/shared-contracts ^2.0.0 (dev-a's major release; ^1 would not pick it up), lockfiles committed, CI+CD green. Assumption: dev-a's handoff note is accurate about 2.0.0 being published; builds passed contract check locally."}

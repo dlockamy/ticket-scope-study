@@ -1,0 +1,176 @@
+{"run":"s2-C2-A4-mono-r1","finished":"done","acceptance_pass":true,"missed":[],"prs":1,"turnaround_s":2012,"rework_events":1,"agent_tokens":426018}
+{"run":"s2-C2-A4-multi-r1","finished":"done","acceptance_pass":true,"missed":[],"prs":4,"turnaround_s":2012,"rework_events":0,"agent_tokens":448629}
+{"run":"s2-C2-A1-mono-r1","finished":"UNFINISHED","acceptance_pass":true,"missed":[],"prs":1,"turnaround_s":627,"rework_events":0,"agent_tokens":178446}
+{"run":"s2-C2-A1-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":1,"turnaround_s":939,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A1-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A1-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-mono-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-multi-r2","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A1-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A1-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-mono-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-multi-r3","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A4-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A4-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A6-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A6-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A4-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A4-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A1-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A1-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A1-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A1-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A6-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A6-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A3-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C2-A3-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A3-mono-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2h-C3-A3-multi-r1","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A7-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A7-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A1-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A6-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A4-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A2-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A3-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A1-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A1-mono-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A1-multi-r4","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A6-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A5-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C3-A2-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C1-A3-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":[],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A3-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A4-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-mono-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+{"run":"s2-C2-A5-multi-r5","finished":"UNFINISHED","acceptance_pass":false,"missed":["shell","billing","reports"],"prs":0,"turnaround_s":0,"rework_events":0,"agent_tokens":0}
+/home/user/study-mfe/s2/bin/run-agent.sh: line 8: /home/user/study-mfe/s2/runs/s2-C2-A7-mono-r5/agent.err: No such file or directory
+/home/user/study-mfe/s2/bin/run-agent.sh: line 8: /home/user/study-mfe/s2/runs/s2-C2-A7-multi-r5/agent.err: No such file or directory
+jq: error: Could not open file /home/user/study-mfe/s2/runs/s2-C2-A7-mono-r5/meta.json: No such file or directory
+jq: error: Could not open file /home/user/study-mfe/s2/runs/s2-C2-A7-mono-r5/meta.json: No such file or directory
+Traceback (most recent call last):
+  File "/home/user/study-mfe/s2/bin/report2.py", line 5, in <module>
+    meta = json.load(open(f'{R}/meta.json')); start = meta['start_ms']
+                     ~~~~^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/study-mfe/s2/runs/s2-C2-A7-mono-r5/meta.json'
+{"run":null,"finished":null,"acceptance_pass":null,"missed":null,"prs":null,"turnaround_s":null,"rework_events":null,"agent_tokens":null}
+jq: error: Could not open file /home/user/study-mfe/s2/runs/s2-C2-A7-multi-r5/meta.json: No such file or directory
+jq: error: Could not open file /home/user/study-mfe/s2/runs/s2-C2-A7-multi-r5/meta.json: No such file or directory
+Traceback (most recent call last):
+  File "/home/user/study-mfe/s2/bin/report2.py", line 5, in <module>
+    meta = json.load(open(f'{R}/meta.json')); start = meta['start_ms']
+                     ~~~~^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/study-mfe/s2/runs/s2-C2-A7-multi-r5/meta.json'
+{"run":null,"finished":null,"acceptance_pass":null,"missed":null,"prs":null,"turnaround_s":null,"rework_events":null,"agent_tokens":null}

@@ -1,0 +1,37 @@
+[
+{
+"change": "C3",
+"arm": "N2b",
+"rep": 1,
+"model": "claude-sonnet-5-5",
+"tag": "s9b"
+},
+{
+"change": "C3",
+"arm": "N2b",
+"rep": 2,
+"model": "claude-sonnet-5-5",
+"tag": "s9b"
+},
+{
+"change": "C3",
+"arm": "N2b",
+"rep": 3,
+"model": "claude-sonnet-5-5",
+"tag": "s9b"
+},
+{
+"change": "C3",
+"arm": "N2b",
+"rep": 4,
+"model": "claude-sonnet-5-5",
+"tag": "s9b"
+},
+{
+"change": "C3",
+"arm": "N2b",
+"rep": 5,
+"model": "claude-sonnet-5-5",
+"tag": "s9b"
+}
+]

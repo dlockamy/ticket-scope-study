@@ -1,0 +1,15 @@
+{"ts":1793449763292,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449763310,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793449763324,"event":"child_opened","child":"PLAT-103-3"}
+{"ts":1793449763338,"event":"child_opened","child":"PLAT-103-4"}
+{"ts":1793449764998,"event":"clone","repo":"mono"}
+{"ts":1793449765055,"event":"clone","repo":"platformkit"}
+{"ts":1793449785951,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449795169,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3118,"waited_ms":9180,"sha":"cf60a04b87ef5173a45e8fe4ef2ec5d5495ee3c7"}
+{"ts":1793449796845,"event":"pr_merged","pr":1,"merge_sha":"50043e44d890ab4c58bcf0b82411ae10a608c25e"}
+{"ts":1793449815192,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11644,"ci_main_ms":3038,"waited_ms":18317}
+{"ts":1793449818343,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449818359,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793449818372,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793449818384,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793449818410,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0). core-shell (platform), billing (payments) and reports (insights, not in a child ticket but also called validateApp) pass their owner, matching the team field in each package.json. One atomic PR (#1) because the lib is inlined at build time and a lib-only merge would break the apps. Assumptions: shared-contracts is an in-repo lib, so no registry release or dependency update is needed; platform-kit does not call validateApp. Owners are hardcoded to match package.json team. CI and CD green."}

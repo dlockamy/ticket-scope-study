@@ -1,0 +1,55 @@
+=== fcb46e5 Require app team in validateApp (shared-contracts 2.0.0)
+
+diff --git a/apps/core-shell/src/config.js b/apps/core-shell/src/config.js
+index fc478f3..cb53846 100644
+--- a/apps/core-shell/src/config.js
++++ b/apps/core-shell/src/config.js
+@@ -1,4 +1,4 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'core-shell' });
++const app = validateApp({ name: 'core-shell', team: 'platform' });
+ export const shellConfig = { app, billingEndpointHint: SHARED_CONFIG.billingUrl };
+diff --git a/apps/sub-route-billing/src/main.js b/apps/sub-route-billing/src/main.js
+index 6493c0d..dcb87a1 100644
+--- a/apps/sub-route-billing/src/main.js
++++ b/apps/sub-route-billing/src/main.js
+@@ -1,7 +1,7 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ import { formatMoney } from '@studio/platform-kit';
+ 
+-const app = validateApp({ name: 'billing' });
++const app = validateApp({ name: 'billing', team: 'payments' });
+ console.log("Billing Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderBilling(containerId) {
+diff --git a/apps/sub-route-reports/src/main.js b/apps/sub-route-reports/src/main.js
+index e8f22da..69c2ee3 100644
+--- a/apps/sub-route-reports/src/main.js
++++ b/apps/sub-route-reports/src/main.js
+@@ -1,6 +1,6 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'reports' });
++const app = validateApp({ name: 'reports', team: 'insights' });
+ console.log("Reports Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderReports(containerId) {
+diff --git a/libs/shared-contracts/index.js b/libs/shared-contracts/index.js
+index 94d096c..2176611 100644
+--- a/libs/shared-contracts/index.js
++++ b/libs/shared-contracts/index.js
+@@ -7,5 +7,6 @@ export const SHARED_CONFIG = {
+ 
+ export function validateApp(app) {
+   if (!app || !app.name) throw new Error('app.name is required');
++  if (!app.team) throw new Error('app.team is required');
+   return { ...app };
+ }
+diff --git a/libs/shared-contracts/package.json b/libs/shared-contracts/package.json
+index 2313a58..d56bf22 100644
+--- a/libs/shared-contracts/package.json
++++ b/libs/shared-contracts/package.json
+@@ -1 +1 @@
+-{"name": "@mfe/shared-contracts", "version": "1.0.0", "type": "module", "main": "index.js"}
++{"name": "@mfe/shared-contracts", "version": "2.0.0", "type": "module", "main": "index.js"}

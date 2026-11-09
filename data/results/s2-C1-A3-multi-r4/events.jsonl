@@ -1,0 +1,11 @@
+{"ts":1793372204313,"event":"clone","repo":"contracts"}
+{"ts":1793372204371,"event":"clone","repo":"billing"}
+{"ts":1793372218715,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-101-billing-portal-url","size":{"files":2,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372230957,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3629,"waited_ms":12210,"sha":"c692fe5b8f2ecc521fe78cab0c8ff62f059d88f5"}
+{"ts":1793372231140,"event":"pr_merged","pr":1,"merge_sha":"e32bb1ef5e4f5ce9d82d32918d265191c8f39a5b"}
+{"ts":1793372246503,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5591,"ci_main_ms":3167,"waited_ms":15332}
+{"ts":1793372253449,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-101-manage-billing-link","size":{"files":2,"add":9,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372262650,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2938,"waited_ms":9167,"sha":"b97a16f86cd9338c219a0d290b3c475beb98a5a7"}
+{"ts":1793372262784,"event":"pr_merged","pr":2,"merge_sha":"9fd912523a2e83766689e9b4c05a9c5aa83c1b94"}
+{"ts":1793372284297,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13035,"ci_main_ms":3122,"waited_ms":21482}
+{"ts":1793372287099,"event":"done","summary":"Shipped PLAT-101: contracts 1.1.0 adds billingPortalUrl (PR #1, published); billing bumped dep to ^1.1.0 and renders 'Manage billing' link from SHARED_CONFIG.billingPortalUrl (PR #2, CI+CD green). Assumptions: minor bump for additive change; link placed in its own <p> below status line."}

@@ -1,0 +1,7 @@
+{"ts":1793366857323,"event":"clone","repo":"mono"}
+{"ts":1793366857380,"event":"clone","repo":"platformkit"}
+{"ts":1793366874917,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793366886694,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4089,"waited_ms":9253,"sha":"fefa4082baa9cdae5b677896ddc8927b3e2cacd9"}
+{"ts":1793366886861,"event":"pr_merged","pr":1,"merge_sha":"a97bd272671e1f4556d0f7316774ba66ca5c0eac"}
+{"ts":1793366908337,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12751,"ci_main_ms":3274,"waited_ms":21445}
+{"ts":1793366917166,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts, billing, core-shell and reports (reports also used it; needed for the acceptance criteria) in one mono PR #1; CI and CD green. Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so there is no registry release or dependency bump for the apps; I bumped its package version to 2.0.0 (breaking) for the record. platform-kit never referenced billingUrl or shared-contracts, so PLAT-102-4 needed no change and no release (a version bump would publish a no-op)."}

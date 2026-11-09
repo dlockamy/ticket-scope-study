@@ -1,0 +1,17 @@
+{"ts":1793364819032,"event":"clone","repo":"contracts"}
+{"ts":1793364819089,"event":"clone","repo":"billing"}
+{"ts":1793364819147,"event":"clone","repo":"shell"}
+{"ts":1793364819205,"event":"clone","repo":"reports"}
+{"ts":1793364845682,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364858145,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3670,"waited_ms":12409,"sha":"86442f9ad0a131bb5fa55d4f06ec28efffaf145a"}
+{"ts":1793364861631,"event":"pr_merged","pr":1,"merge_sha":"25d863051e2d63cb26cd032ff4a617e3f8d9bf08"}
+{"ts":1793364873860,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4933,"ci_main_ms":2783,"waited_ms":12200}
+{"ts":1793364883262,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793364883420,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793364898706,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3198,"waited_ms":15244,"sha":"71da9925f18e2fd4b3c5484e286bf915ea84ec76"}
+{"ts":1793364898770,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3187,"waited_ms":36,"sha":"83073dda5198c0290233f0810ccb7003f7a9ac03"}
+{"ts":1793364902153,"event":"pr_merged","pr":2,"merge_sha":"e7264c974bab8b20177aa449e48edd165a649570"}
+{"ts":1793364920591,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12479,"ci_main_ms":3035,"waited_ms":18409}
+{"ts":1793364920718,"event":"pr_merged","pr":3,"merge_sha":"a44530899ee77c1da2f31fc680f2a781fd04a3b3"}
+{"ts":1793364982064,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":51340,"ci_main_ms":3021,"waited_ms":61318}
+{"ts":1793364985706,"event":"done","summary":"validateApp now throws without a non-empty owner; released as shared-contracts 2.0.0 (major, breaking). Billing (owner=payments) and shell (owner=platform), taken from package.json team, now depend on ^2.0.0 with updated lockfiles and are deployed. Assumption: owner hardcoded to match package.json team. Note: reports app also calls validateApp without owner; it stays on ^1.0.0 so it is unaffected, but it will need owner (insights) before it upgrades."}

@@ -1,0 +1,2 @@
+{"id":1793416565721,"ts":1793416565721,"from":"dev-a","to":"dev-b","text":"PLAT-104-1 live: @mfe/shared-contracts 1.1.0 published (billingUrl=/billing/v2). Use @mfe/shared-contracts@^1.1.0 in your apps."}
+{"id":1793416614070,"ts":1793416614070,"from":"dev-b","to":"dev-a","text":"shell (#3) and reports (#4) merged and deployed on contracts 1.1.0."}

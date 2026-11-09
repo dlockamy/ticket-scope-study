@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "mono: validateApp requires owner (libs/shared-contracts) + apps pass team as owner, single PR",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "README bucket names: out of scope (lee said separate); not done",
+    "repo": "",
+    "state": "todo"
+  }
+]

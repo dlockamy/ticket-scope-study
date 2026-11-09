@@ -1,0 +1,6 @@
+{"ts":1793382770728,"event":"clone","repo":"mono"}
+{"ts":1793382806922,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793382819189,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3448,"waited_ms":12233,"sha":"4046f281ede733ab23ee86ca5be7e8e2fbbf62ab"}
+{"ts":1793382820825,"event":"pr_merged","pr":1,"merge_sha":"7a21c9242af290bf4205db88d0837cada465b496"}
+{"ts":1793382842368,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11045,"ci_main_ms":3156,"waited_ms":21512}
+{"ts":1793382845559,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0). core-shell/billing/reports pass owner (platform/payments/insights, matching package.json team). Assumptions: shared-contracts lives in-repo and is inlined at build, so no registry release/lockfile update needed; hardcoded owners because bundles are inlined for the browser and can't read package.json; also updated reports since it calls validateApp and would otherwise break. One PR (#1), CI+CD green."}

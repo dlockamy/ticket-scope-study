@@ -1,0 +1,15 @@
+{"ts":1793366360683,"event":"clone","repo":"contracts"}
+{"ts":1793366360743,"event":"clone","repo":"billing"}
+{"ts":1793366367772,"event":"task_added","task":1,"title":"Add billingPortalUrl to shared config, bump to 1.1.0","repo":"contracts"}
+{"ts":1793366367796,"event":"task_added","task":2,"title":"Update contracts dependency and render Manage billing link","repo":"billing"}
+{"ts":1793366367994,"event":"pr_opened","pr":1,"repo":"contracts","branch":"add-billing-portal-url","size":{"files":2,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793366381809,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3697,"waited_ms":12225,"sha":"6be753d0825b7f96ff3c5d6881830e9e2651d713"}
+{"ts":1793366382001,"event":"pr_merged","pr":1,"merge_sha":"ee7d6793b25c561a21997348af276838a21b8d4f"}
+{"ts":1793366397369,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5017,"ci_main_ms":3032,"waited_ms":15340}
+{"ts":1793366407926,"event":"pr_opened","pr":2,"repo":"billing","branch":"add-manage-billing-link","size":{"files":2,"add":9,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793366420153,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3000,"waited_ms":12192,"sha":"b66a4b1470987b9a2a1d793994d85db2cab02d7f"}
+{"ts":1793366420277,"event":"pr_merged","pr":2,"merge_sha":"942a587f7759d5d4285ce77e82f25ce523d1dcaf"}
+{"ts":1793366438746,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11847,"ci_main_ms":3296,"waited_ms":18438}
+{"ts":1793366442206,"event":"task_done","task":1}
+{"ts":1793366442222,"event":"task_done","task":2}
+{"ts":1793366442236,"event":"done","summary":"Added billingPortalUrl to @mfe/shared-contracts (1.1.0, published), billing now depends on ^1.1.0 and renders a 'Manage billing' link from SHARED_CONFIG.billingPortalUrl. Both PRs merged, CI/CD green. Assumption: link opens in same tab; styling matches existing component."}

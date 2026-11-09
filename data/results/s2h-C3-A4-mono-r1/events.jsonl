@@ -1,0 +1,15 @@
+{"ts":1793368969630,"event":"clone","repo":"mono"}
+{"ts":1793368969688,"event":"clone","repo":"platformkit"}
+{"ts":1793368969709,"event":"task_added","task":1,"title":"PLAT-103-1 shared-contracts owner validation","repo":"mono"}
+{"ts":1793369010789,"event":"task_start","task":1}
+{"ts":1793369027235,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369038495,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3038,"waited_ms":9188,"sha":"486667de0f47b30188ee4094ccdc524096ce758a"}
+{"ts":1793369041298,"event":"pr_merged","pr":1,"merge_sha":"8ad229dcd88284b19f2e12b4c9a222ce81c57870"}
+{"ts":1793369062714,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12176,"ci_main_ms":3245,"waited_ms":21386}
+{"ts":1793369067520,"event":"task_done","task":1}
+{"ts":1793369067542,"event":"task_added","task":2,"title":"PLAT-103-2 billing passes owner","repo":"mono"}
+{"ts":1793369067563,"event":"task_added","task":3,"title":"PLAT-103-3 core shell passes owner","repo":"mono"}
+{"ts":1793369067583,"event":"task_added","task":4,"title":"PLAT-103-4 platform kit passes owner","repo":"platformkit"}
+{"ts":1793369067599,"event":"task_done","task":2}
+{"ts":1793369067615,"event":"task_done","task":3}
+{"ts":1793369072408,"event":"done","summary":"PLAT-103 shipped via mono PR #1 (merged, CI and CD green): validateApp now throws when app.owner is missing or blank; shared-contracts bumped to 2.0.0 (breaking); core-shell (platform), sub-route-billing (payments) and sub-route-reports (insights) pass owner. Assumptions: (1) shared-contracts is inlined at build time, so 'adopting the new release' means the in-PR code change, not a registry bump; (2) owner values are hardcoded literals matching each app's package.json team field; (3) sub-route-reports also calls validateApp and was not listed, so it was included to keep it starting up; (4) PLAT-103-2/3 had to land in the same PR as PLAT-103-1 because the lib is inlined. PLAT-103-4 NOT DONE: libs-platform-kit never calls validateApp and has no dependency on @mfe/shared-contracts, which is not published to the registry, so there is nothing to pass owner to; no change made there. Flagging for the ticket owner to confirm whether that sub-task should be closed as not applicable."}

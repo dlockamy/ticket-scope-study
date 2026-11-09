@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires app.team (2.0.0)",
+    "head": "d9012373e8114b2b83f742be674bdc569a64a4f4",
+    "opened_ts": 1793451264876,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451276657,
+    "merge_sha": "44c16f0dd87384e2461146e65c256d2d48bfdbe4",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-app-owner",
+    "title": "Pass owning team to validateApp (contracts 2.x)",
+    "head": "1b2afa7cd4bac7b6eb3567e70eb15ba723360369",
+    "opened_ts": 1793451293698,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451306143,
+    "merge_sha": "8e7dfa6a7d6e1ab6bee4495dd722129047bf6b4b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-app-owner",
+    "title": "Pass owning team to validateApp (contracts 2.x)",
+    "head": "54997836e875ebf8cf60ed789d789afec3b4e274",
+    "opened_ts": 1793451294239,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451327824,
+    "merge_sha": "071fa58a5dfc98bb67c606dac529aaec0d35cffa",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-app-owner",
+    "title": "Pass owning team to validateApp (contracts 2.x)",
+    "head": "b825b3221c30f0723988f37702ebb95f844d081c",
+    "opened_ts": 1793451294903,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451349486,
+    "merge_sha": "ff09d22cdb4e03bdafb5cefc3ca60bf438ffe899",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

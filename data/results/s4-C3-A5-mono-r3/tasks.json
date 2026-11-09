@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner; pass team from package.json in 3 apps (single PR)",
+    "repo": "mono",
+    "state": "done"
+  }
+]

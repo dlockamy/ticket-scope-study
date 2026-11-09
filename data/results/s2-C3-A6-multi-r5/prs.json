@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: validateApp requires owner (2.0.0)",
+    "head": "73b0d90ea8a98971cce7ea0ddcb03ffb01134286",
+    "opened_ts": 1793374499135,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374510522,
+    "merge_sha": "586d8528762b4c7a666b4064ccc79b9dc0eba294",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103: declare owner in validateApp call",
+    "head": "e234ac4e48a46c5e404fc1c2e9e34857a721ba73",
+    "opened_ts": 1793374540168,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374550582,
+    "merge_sha": "606c576256161cfb6e9d8edbfd94fdcc9251b8fe",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103: declare owner in validateApp call",
+    "head": "5ae64d69df2cf67d5fe2e33c7c9a997d5c44c2b9",
+    "opened_ts": 1793374540296,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374566178,
+    "merge_sha": "ab6ff7fe2737711bab7b4308abbb6737059c3e9c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-owner-reports",
+    "title": "PLAT-103: declare owner in validateApp call",
+    "head": "86395f2b07e65b3315d0c34f3f76bebece82d6b4",
+    "opened_ts": 1793374540418,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374590956,
+    "merge_sha": "6857cabbb30252c306fff04c8a35fb62b94b6a66",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

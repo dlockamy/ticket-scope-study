@@ -1,0 +1,28 @@
+{
+  "run": "s2-C2-A4-multi-r4",
+  "topology": "multi",
+  "change": "C2",
+  "arm": "A4",
+  "rep": 4,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "start_ms": 1793373497927,
+  "structure": "structured",
+  "list": "decoy",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [
+    "billing",
+    "shell"
+  ],
+  "decoys": [
+    "platformkit"
+  ],
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-102"
+}

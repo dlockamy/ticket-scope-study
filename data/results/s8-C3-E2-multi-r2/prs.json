@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-1-require-owner",
+    "title": "PLAT-103-1: validateApp requires owner (v2.0.0)",
+    "head": "e666de2fa8406a2cc51ad085f83b5ac1986de1b0",
+    "opened_ts": 1793448444588,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448457218,
+    "merge_sha": "85b15c41024e0c23523a134971867b61985d95f2",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-103-billing-owner",
+    "title": "PLAT-103-2: billing passes its owner",
+    "head": "efbe397068b7b4707175b82cf096798af36b6e16",
+    "opened_ts": 1793448490359,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448502728,
+    "merge_sha": "e178992ee33f64a3930180666f54eb5025956de8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-103-shell-owner",
+    "title": "PLAT-103-3: shell passes its owner",
+    "head": "9b5508c2f64a18a9becf844892f4554be4856767",
+    "opened_ts": 1793448524366,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448536764,
+    "merge_sha": "16b7d7995ba0865ac81cceb10f428c101b905eca",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-reports-owner",
+    "title": "PLAT-103-4: reports passes its owner",
+    "head": "fe18e21c47c16e9d46c791e5e260c59142e9ccf7",
+    "opened_ts": 1793448552279,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448567707,
+    "merge_sha": "278c53d45892e0b9b68f6d90e148ac02b5808e4c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

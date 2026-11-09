@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Add billingPortalUrl to libs/shared-contracts SHARED_CONFIG",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Render Manage billing link in billing app from SHARED_CONFIG",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 3,
+    "title": "PR, CI, merge, confirm CD",
+    "repo": "",
+    "state": "todo"
+  }
+]

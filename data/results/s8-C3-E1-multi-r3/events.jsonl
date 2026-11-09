@@ -1,0 +1,26 @@
+{"ts":1793449040846,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449040921,"event":"clone","repo":"contracts"}
+{"ts":1793449040981,"event":"clone","repo":"billing"}
+{"ts":1793449041055,"event":"clone","repo":"shell"}
+{"ts":1793449041119,"event":"clone","repo":"reports"}
+{"ts":1793449041181,"event":"clone","repo":"platformkit"}
+{"ts":1793449056682,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449069038,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3665,"waited_ms":9234,"sha":"df0d0c234009e4803a91c6883cea1b09e512bad6"}
+{"ts":1793449069216,"event":"pr_merged","pr":1,"merge_sha":"a3b6ff4dd5b07eb557cdb9c8345b380bbccf99ab"}
+{"ts":1793449081478,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5218,"ci_main_ms":2891,"waited_ms":12223}
+{"ts":1793449086143,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449095219,"event":"pr_opened","pr":2,"repo":"billing","branch":"pass-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793449095741,"event":"pr_opened","pr":3,"repo":"shell","branch":"pass-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793449105223,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2983,"waited_ms":6130,"sha":"a0af5fe4074042e901a6d134e5f2bde2547dbedf"}
+{"ts":1793449105352,"event":"pr_merged","pr":2,"merge_sha":"c814ef3d879f980f0b677bb4bac968294fb1c3b1"}
+{"ts":1793449123741,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11254,"ci_main_ms":2961,"waited_ms":18361}
+{"ts":1793449123808,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2956,"waited_ms":35,"sha":"d3ecbaf991ce643ded02c1539502e3dd4e6f3570"}
+{"ts":1793449123934,"event":"pr_merged","pr":3,"merge_sha":"1cb35790be03bf1e9e73db24d8725f02c5650455"}
+{"ts":1793449142355,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8779,"ci_main_ms":2991,"waited_ms":18391}
+{"ts":1793449145887,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793449145902,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793449146583,"event":"pr_opened","pr":4,"repo":"reports","branch":"pass-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793449161887,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2847,"waited_ms":15272,"sha":"26bc468944f904bcc1c97c9019869e15443c77a1"}
+{"ts":1793449162015,"event":"pr_merged","pr":4,"merge_sha":"3e069929f5d053866690cb78bd5c8a3efecc69ac"}
+{"ts":1793449183494,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11507,"ci_main_ms":2949,"waited_ms":21450}
+{"ts":1793449185853,"event":"done","summary":"validateApp now throws without a non-empty owner (shared-contracts 2.0.0, published). billing, core-shell and reports upgraded to ^2.0.0 and pass owner. Assumptions: owner team name is 'platform' (not specified); reports was not a child ticket but also calls validateApp, so I updated it for the epic criterion."}

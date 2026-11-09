@@ -1,0 +1,9 @@
+{"ts":1793451740810,"event":"clone","repo":"mono"}
+{"ts":1793451740868,"event":"clone","repo":"platformkit"}
+{"ts":1793451750035,"event":"task_added","task":1,"title":"Make validateApp require owner; pass package.json team from 3 apps (single mono PR; lib is inlined, no platformkit change)","repo":""}
+{"ts":1793451768091,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793451778911,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3149,"waited_ms":9206,"sha":"1a6bfc44a1ba10a004e000a2ee0bc8854bb84f12"}
+{"ts":1793451780793,"event":"pr_merged","pr":1,"merge_sha":"daf18de47b6a0730cf2ad9da608fa59f1a966015"}
+{"ts":1793451799165,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11768,"ci_main_ms":3049,"waited_ms":18342}
+{"ts":1793451802927,"event":"task_done","task":1}
+{"ts":1793451802943,"event":"done","summary":"validateApp (libs/shared-contracts) now throws if app.team is missing; lib bumped to 2.0.0 (breaking). core-shell/billing/reports pass team from their package.json (platform/payments/insights, hardcoded literals since bundler has no JSON import). Single mono PR #1 merged, CI+CD green. Assumptions: shared-contracts is an in-repo inlined lib so no platformkit change/publish needed; README fake-bucket-name cleanup left out as lee called it a separate thing."}

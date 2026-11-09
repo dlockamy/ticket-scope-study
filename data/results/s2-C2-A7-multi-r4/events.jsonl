@@ -1,0 +1,21 @@
+{"ts":1793372017143,"event":"clone","repo":"contracts"}
+{"ts":1793372021494,"event":"pr_opened","pr":1,"repo":"contracts","branch":"rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372032797,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4036,"waited_ms":6144,"sha":"1cad2492c594ec336f83ba912d5df0fe9e43131b"}
+{"ts":1793372032963,"event":"pr_merged","pr":1,"merge_sha":"1d57c30e93de82c678738818edc75c5c502112d5"}
+{"ts":1793372048343,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5447,"ci_main_ms":3127,"waited_ms":15350}
+{"ts":1793372055255,"event":"clone","repo":"billing"}
+{"ts":1793372055327,"event":"clone","repo":"shell"}
+{"ts":1793372063189,"event":"pr_opened","pr":2,"repo":"billing","branch":"use-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372063319,"event":"pr_opened","pr":3,"repo":"shell","branch":"use-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372077375,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3102,"waited_ms":12232,"sha":"7ec24e9aee7fcd59621c23a36932c0c578688926"}
+{"ts":1793372077437,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3079,"waited_ms":35,"sha":"1fe15bf2095fbe31823dc4004670f9b5fdad07d0"}
+{"ts":1793372080508,"event":"pr_merged","pr":2,"merge_sha":"159fae1556cd2aba75b0c844679311111f52373d"}
+{"ts":1793372105051,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15978,"ci_main_ms":3026,"waited_ms":24512}
+{"ts":1793372105185,"event":"pr_merged","pr":3,"merge_sha":"a515a88d7ac922b8e92644f1b997cd14a1e760e8"}
+{"ts":1793372123606,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9939,"ci_main_ms":3069,"waited_ms":18392}
+{"ts":1793372125542,"event":"clone","repo":"reports"}
+{"ts":1793372129981,"event":"pr_opened","pr":4,"repo":"reports","branch":"use-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372142253,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2940,"waited_ms":12238,"sha":"b55dd42b814e69945bab554ff9bae036e9dffee5"}
+{"ts":1793372142388,"event":"pr_merged","pr":4,"merge_sha":"4a1edcb43925a2e711c34f417b02911a78211ad6"}
+{"ts":1793372160796,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12229,"ci_main_ms":3087,"waited_ms":18378}
+{"ts":1793372164210,"event":"done","summary":"Renamed billingUrl->billingEndpoint in @mfe/shared-contracts, released as 2.0.0 (major, breaking per CONTRIBUTING). Billing, shell and reports (not a listed sub-task, but it also read billingUrl and would have broken on 2.0.0 under acceptance criteria) updated to ^2.0.0, built, merged, CD green. Assumption: live bundle check follows from successful CD; I did not inspect the CDN directly."}

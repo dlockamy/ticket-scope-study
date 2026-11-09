@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103-1: validateApp rejects apps without owner (breaking, shared-contracts 2.0.0)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-2: billing passes owner (payments)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-3: core-shell passes owner (platform)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Extra: sub-route-reports also calls validateApp; pass owner (insights)",
+    "repo": "mono",
+    "state": "done"
+  }
+]

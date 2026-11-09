@@ -1,0 +1,35 @@
+{"ts":1793396957223,"event":"clone","repo":"contracts"}
+{"ts":1793396957280,"event":"clone","repo":"shell"}
+{"ts":1793396957341,"event":"clone","repo":"billing"}
+{"ts":1793396957410,"event":"clone","repo":"reports"}
+{"ts":1793396957463,"event":"clone","repo":"platformkit"}
+{"ts":1793396963250,"event":"task_added","task":1,"title":"PLAT-103-4: reports app passes owner (team) to validateApp","repo":"reports"}
+{"ts":1793396963272,"event":"task_added","task":2,"title":"noop","repo":"platformkit"}
+{"ts":1793396968496,"event":"task_added","task":3,"title":"PLAT-103-1: validateApp rejects apps without owner (breaking, major release)","repo":"contracts"}
+{"ts":1793396968518,"event":"task_added","task":4,"title":"PLAT-103-2: billing passes owner (team) to validateApp","repo":"billing"}
+{"ts":1793396968537,"event":"task_added","task":5,"title":"PLAT-103-3: core shell passes owner (team) to validateApp","repo":"shell"}
+{"ts":1793396975036,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396976043,"event":"task_start","task":3}
+{"ts":1793396988350,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3756,"waited_ms":12276,"sha":"d6d5b079b2278bd0c32141bff42fff4ca97cb025"}
+{"ts":1793396989959,"event":"pr_merged","pr":1,"merge_sha":"6e2fbd8c0fa694ca409e84b6275c4f069dc34521"}
+{"ts":1793397005331,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5274,"ci_main_ms":2974,"waited_ms":15343}
+{"ts":1793397022548,"event":"task_start","task":4}
+{"ts":1793397022663,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-2-billing-owner","size":{"files":2,"add":3,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397031828,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2946,"waited_ms":9133,"sha":"f2f743c5b22d321b9af2306164a208c1d7a193c1"}
+{"ts":1793397033829,"event":"pr_merged","pr":2,"merge_sha":"d75c424cbb327f744a00fe107588eec428d61711"}
+{"ts":1793397055305,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11584,"ci_main_ms":3144,"waited_ms":21447}
+{"ts":1793397056623,"event":"task_done","task":4}
+{"ts":1793397056646,"event":"task_start","task":5}
+{"ts":1793397062053,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":3,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397071473,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2989,"waited_ms":9388,"sha":"b75565e08d29a0ebbd7d64c53e1b7171599c3f46"}
+{"ts":1793397073101,"event":"pr_merged","pr":3,"merge_sha":"b28e4e9daa1ca0b6a3360d35a040246b7ca2420e"}
+{"ts":1793397091568,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11204,"ci_main_ms":3098,"waited_ms":18439}
+{"ts":1793397091590,"event":"task_done","task":5}
+{"ts":1793397094399,"event":"task_start","task":1}
+{"ts":1793397096903,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-4-reports-owner","size":{"files":2,"add":3,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397109140,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2914,"waited_ms":12205,"sha":"7a2e5fb723e5272cf614dd9afe7a3bd3ea6a91cf"}
+{"ts":1793397109266,"event":"pr_merged","pr":4,"merge_sha":"675531cf64b012cb273ef6e3c3e829639f4bfedc"}
+{"ts":1793397130747,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11885,"ci_main_ms":3090,"waited_ms":21452}
+{"ts":1793397132770,"event":"task_done","task":1}
+{"ts":1793397132790,"event":"task_done","task":3}
+{"ts":1793397135059,"event":"done","summary":"PLAT-103 shipped. validateApp (@mfe/shared-contracts) now throws when app.owner is missing or empty; released as 2.0.0 (breaking). Consumers updated to ^2.0.0 and pass owner: billing 'payments', core-shell 'platform', reports 'insights' (each matches package.json team). Assumptions: (1) reports also calls validateApp, so it was added as PLAT-103-4 and migrated; without this it would fail at startup. (2) The bundler only inlines named imports, so owner is a string literal matching package.json team rather than read from package.json. Each PR merged with CI and CD green. Note: a stray sub-task 'platformkit noop' (task 2) was created by mistake; st has no delete command, so it remains as todo."}

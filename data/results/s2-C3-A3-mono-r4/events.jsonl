@@ -1,0 +1,6 @@
+{"ts":1793373647321,"event":"clone","repo":"mono"}
+{"ts":1793373675347,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373686489,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3120,"waited_ms":9201,"sha":"f73533447f22db893af13a79940d1bf1b06fe289"}
+{"ts":1793373686628,"event":"pr_merged","pr":1,"merge_sha":"1ca770fa3032e8bc9ca98700d459e34df48983a3"}
+{"ts":1793373708109,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12917,"ci_main_ms":3058,"waited_ms":21452}
+{"ts":1793373710798,"event":"done","summary":"PLAT-103 shipped in PR #1 (CI+CD green). validateApp now throws if owner missing/empty; shared-contracts bumped to 2.0.0 (breaking). core-shell=platform, billing=payments, reports=insights, from package.json team. Assumptions: libs/shared-contracts is inlined at build (in-repo, not a registry package), so no registry release/lockfile update was needed and one PR covered all four sub-tasks to avoid a broken intermediate state."}

@@ -1,0 +1,21 @@
+{"ts":1793385647569,"event":"clone","repo":"contracts"}
+{"ts":1793385647627,"event":"clone","repo":"billing"}
+{"ts":1793385647685,"event":"clone","repo":"shell"}
+{"ts":1793385647742,"event":"clone","repo":"reports"}
+{"ts":1793385667355,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793385679768,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3693,"waited_ms":12374,"sha":"5c2602ff4738be06dd8f1dc2d31fb821dc29720d"}
+{"ts":1793385682335,"event":"pr_merged","pr":1,"merge_sha":"adfeb52683b1af73c4653cc179923fb2730f4b4a"}
+{"ts":1793385694628,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4944,"ci_main_ms":2778,"waited_ms":12261}
+{"ts":1793385704968,"event":"pr_opened","pr":2,"repo":"billing","branch":"adopt-contracts-v2-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385705142,"event":"pr_opened","pr":3,"repo":"shell","branch":"adopt-contracts-v2-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385705305,"event":"pr_opened","pr":4,"repo":"reports","branch":"adopt-contracts-v2-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385717536,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3255,"waited_ms":12198,"sha":"a5b67ab35d8133544f436186e803963e0fe0e158"}
+{"ts":1793385717602,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3211,"waited_ms":35,"sha":"b76bd59d89e14cb3d4f66aab7644599868ce88e0"}
+{"ts":1793385717661,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3268,"waited_ms":34,"sha":"5c0e798a7e6fcaf534137497593622088a75f043"}
+{"ts":1793385720440,"event":"pr_merged","pr":2,"merge_sha":"73b04fc777167e1d2a412160e345c74252495773"}
+{"ts":1793385741898,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12058,"ci_main_ms":3153,"waited_ms":21428}
+{"ts":1793385742026,"event":"pr_merged","pr":3,"merge_sha":"7171f2a76875eef04152030d3aedf9f7d2394c98"}
+{"ts":1793385760481,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8933,"ci_main_ms":3121,"waited_ms":18425}
+{"ts":1793385760612,"event":"pr_merged","pr":4,"merge_sha":"78e424e825969dc091bc9dfcac3aba60aa65de46"}
+{"ts":1793385782124,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11845,"ci_main_ms":3041,"waited_ms":21482}
+{"ts":1793385784675,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts 2.0.0 published). billing (payments), shell (platform) pass owner from package.json team and adopt ^2.0.0; all deployed. Assumptions: also updated reports (insights) since it calls validateApp and acceptance says every app; owner whitespace-only treated as empty."}

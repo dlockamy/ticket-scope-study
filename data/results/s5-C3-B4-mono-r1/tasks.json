@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103-1: require an owner in validateApp",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-4: sub-route-reports passes its owner to validateApp (not in ticket; found while checking callers)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-2: billing passes its owner to validateApp",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-103-3: core shell passes its owner to validateApp",
+    "repo": "mono",
+    "state": "done"
+  }
+]

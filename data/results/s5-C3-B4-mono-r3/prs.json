@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: require every app to declare an owner",
+    "head": "c6f65b54e9cc3cc418188ebe9a2f985a6f305437",
+    "opened_ts": 1793394595090,
+    "size": {
+      "files": 5,
+      "add": 7,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793394606664,
+    "merge_sha": "2c5e93dd3e2180c9c29173f16b37ca1f6b3c5cb8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

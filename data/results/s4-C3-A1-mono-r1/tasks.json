@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "shared-contracts: validateApp requires non-empty owner",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "core-shell, billing, reports: pass owner from package.json team",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "build all apps, PR, CI, merge, deploy",
+    "repo": "",
+    "state": "done"
+  }
+]

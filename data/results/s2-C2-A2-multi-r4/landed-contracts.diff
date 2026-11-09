@@ -1,0 +1,22 @@
+=== 5bfaf47 Rename billingUrl to billingEndpoint (breaking, 2.0.0)
+
+diff --git a/index.js b/index.js
+index 94d096c..27d2ade 100644
+--- a/index.js
++++ b/index.js
+@@ -2,7 +2,7 @@ export const SHARED_CONFIG = {
+   theme: 'dark',
+   apiEndpoint: 'https://homelab.local',
+   billingVersion: '1.0.0',
+-  billingUrl: 'https://homelab.local/billing'
++  billingEndpoint: 'https://homelab.local/billing'
+ };
+ 
+ export function validateApp(app) {
+diff --git a/package.json b/package.json
+index 2313a58..d56bf22 100644
+--- a/package.json
++++ b/package.json
+@@ -1 +1 @@
+-{"name": "@mfe/shared-contracts", "version": "1.0.0", "type": "module", "main": "index.js"}
++{"name": "@mfe/shared-contracts", "version": "2.0.0", "type": "module", "main": "index.js"}

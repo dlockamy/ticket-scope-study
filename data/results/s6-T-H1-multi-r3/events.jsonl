@@ -1,0 +1,29 @@
+{"ts":1793412479017,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793412479989,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793412480061,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793412489388,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412500762,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3814,"waited_ms":9220,"sha":"03e6f9bfe3dffb67fd9edbbd81c0db3da27d8b71"}
+{"ts":1793412500966,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"c669b6bb61bb5324af0cd40bb1beaea3469fc6a4"}
+{"ts":1793412516423,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5199,"ci_main_ms":2949,"waited_ms":15425}
+{"ts":1793412519043,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":138}
+{"ts":1793412519111,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793412520811,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1768}
+{"ts":1793412520825,"who":"dev-b","event":"msg_wait","waited_ms":36490}
+{"ts":1793412524460,"who":"dev-b","event":"task_start","task":3}
+{"ts":1793412524481,"who":"dev-b","event":"task_start","task":4}
+{"ts":1793412527632,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412528133,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412528273,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412539145,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3189,"waited_ms":9186,"sha":"41f8f499b8ab110745d840aa02a6f3cd3c53ec3c"}
+{"ts":1793412539211,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3236,"waited_ms":38,"sha":"4f9ee6354f13605170067ce7ef70c4553e170a1e"}
+{"ts":1793412539877,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3216,"waited_ms":12210,"sha":"fec97240842b1d0474e7f15b0d53994f7929d52d"}
+{"ts":1793412540027,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"fff9357afab6aac2ffa105ebead83d190678658a"}
+{"ts":1793412541182,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"e5b23dafb0825a0568e67821ddd0b7bc676cd4e3"}
+{"ts":1793412541319,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"2e349a3282bd526aba26c0c8ff7886ec86646397"}
+{"ts":1793412562903,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13010,"ci_main_ms":5362,"waited_ms":21554}
+{"ts":1793412562995,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12757,"ci_main_ms":5379,"waited_ms":57}
+{"ts":1793412565679,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793412565711,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793412565728,"who":"dev-b","event":"done","summary":"Shell (PR #3, owner 'platform') and reports (PR #4, owner 'insights') now pass owner from package.json team to validateApp and depend on @mfe/shared-contracts ^2.0.0 (lockfiles committed). CI green, merged, CD green. Assumption: owner values hardcoded from package.json 'team'; waited for dev-a's 2.0.0 publish message before adopting."}
+{"ts":1793412570872,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":18381,"ci_main_ms":3340,"waited_ms":30808}
+{"ts":1793412573162,"who":"dev-a","event":"done","summary":"PLAT-103-1: contracts v2.0.0 (validateApp throws if owner missing/empty/whitespace), PR #1 merged, published. PLAT-103-2: billing passes owner 'payments' (from package.json team), adopted ^2.0.0 with lockfile, PR #2 merged, CD green. Assumptions: whitespace-only owner counts as empty; non-string owner rejected. Notified dev-b."}

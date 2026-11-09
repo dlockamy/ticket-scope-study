@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (2.0.0, breaking)",
+    "head": "8b8112340994ea7430606250a5c92b63a907c415",
+    "opened_ts": 1793453248970,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793453260956,
+    "merge_sha": "ec097d787732a15523a2eebd74f6a136efd807c7",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-owner-contracts-2",
+    "title": "Pass team as owner (contracts 2.0.0)",
+    "head": "977e88ba44182b07ba7ec4790a1c7e23258d374c",
+    "opened_ts": 1793453280873,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793453292768,
+    "merge_sha": "fb98e7585711d65806d51f42f8285601a5871b36",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-owner-contracts-2",
+    "title": "Pass team as owner (contracts 2.0.0)",
+    "head": "7a3270db1c686fe60430f183c824a758485f30f3",
+    "opened_ts": 1793453280999,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793453292956,
+    "merge_sha": "8e088238d4fbed2efddb9a5f456f0a07c23fadae",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-owner-contracts-2",
+    "title": "Pass team as owner (contracts 2.0.0)",
+    "head": "902f5959bb3799c499d15484003a92eec203b69e",
+    "opened_ts": 1793453281124,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793453293138,
+    "merge_sha": "53d64f6469408bf0ac7a485295ded1bbaccefaa9",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

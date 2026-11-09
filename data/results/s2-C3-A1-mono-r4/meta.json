@@ -1,0 +1,23 @@
+{
+  "run": "s2-C3-A1-mono-r4",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "A1",
+  "rep": 4,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "start_ms": 1793374127548,
+  "structure": "open",
+  "list": "none",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [],
+  "decoys": [],
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

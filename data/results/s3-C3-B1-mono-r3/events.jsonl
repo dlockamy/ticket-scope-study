@@ -1,0 +1,7 @@
+{"ts":1793383473706,"event":"clone","repo":"mono"}
+{"ts":1793383485505,"event":"task_added","task":1,"title":"Add owner (insights) to validateApp call in apps/sub-route-reports","repo":"mono"}
+{"ts":1793383496915,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793383509135,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3038,"waited_ms":12188,"sha":"0c0c9c6e8f62d14ec1fc5faced9ae676f782f786"}
+{"ts":1793383517768,"event":"pr_merged","pr":1,"merge_sha":"287817d7e3ae98562d96b7f695284eb87aad4608"}
+{"ts":1793383539207,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11722,"ci_main_ms":2665,"waited_ms":21408}
+{"ts":1793383543850,"event":"done","summary":"validateApp now throws if owner is missing/empty. Updated all 3 callers (core-shell=platform, billing=payments, reports=insights, per package.json team). Added an extra sub-task for sub-route-reports, which also calls validateApp but wasn't in the ticket. Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so no version bump or registry release was needed, and one PR covered the ordering. Owner values are hardcoded to match package.json team. CI and CD green."}

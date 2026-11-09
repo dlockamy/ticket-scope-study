@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: validateApp requires owner (v2.0.0)",
+    "head": "850af66bb20612e1b01ce02aa6861627b0326f24",
+    "opened_ts": 1793367836025,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367847110,
+    "merge_sha": "cf327f701eb6368b27d39e281ab74c35f71c3e78",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-owner-platform",
+    "title": "PLAT-103: declare owner 'platform' (contracts ^2.0.0)",
+    "head": "95624d7f2553c5d21fe0a07feb28793d1efd57a4",
+    "opened_ts": 1793367866062,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367876979,
+    "merge_sha": "12b4a9f08512507286ff31578c2ce66f7dd8faf8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-owner-payments",
+    "title": "PLAT-103: declare owner 'payments' (contracts ^2.0.0)",
+    "head": "0e75e3f11e408ef62283756bf9b0d22f773503cd",
+    "opened_ts": 1793367866204,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367895562,
+    "merge_sha": "4e673cc5a93d465228da206ab501ead2ad7ca857",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-owner-insights",
+    "title": "PLAT-103: declare owner 'insights' (contracts ^2.0.0)",
+    "head": "6e8df0f5ce6cf71b88c49d27812860f202d4699b",
+    "opened_ts": 1793367866340,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367917288,
+    "merge_sha": "968b8d03c59d73bbabeb460d9942a97abe473a42",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

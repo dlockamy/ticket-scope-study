@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp require owner (libs/shared-contracts; libs/config does not exist, lib is in-repo so no registry release)",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Pass team owner from package.json in core-shell, billing, reports",
+    "repo": "",
+    "state": "done"
+  }
+]

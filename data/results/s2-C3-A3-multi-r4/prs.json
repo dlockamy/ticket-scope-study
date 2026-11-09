@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "4a97f71c94aad7062dac59cba3094e91de55df5b",
+    "opened_ts": 1793373665092,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793373681053,
+    "merge_sha": "66955d61552abd19f9e96a7bbbe36c172882188c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "Declare app owner (shared-contracts 2.0.0)",
+    "head": "e7dcd5791f3ad9cd2a11cb53f143c3843da7ebc5",
+    "opened_ts": 1793373838257,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793373850955,
+    "merge_sha": "bc4fda8418c5ee66b4cea0a077ff110faa262d36",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "Declare app owner (shared-contracts 2.0.0)",
+    "head": "20a6920ab13ac3ce5a8d3db619aae5db3001cda6",
+    "opened_ts": 1793373838400,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793373872633,
+    "merge_sha": "489396ed1709c138c67fb9af0f51b8e4debd8923",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "Declare app owner (shared-contracts 2.0.0)",
+    "head": "998d148f0dd35855b6e62c3a2bf070da76abb5a2",
+    "opened_ts": 1793373838533,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793373891258,
+    "merge_sha": "10bfb4eb7782a8de4462f11c49d9097f78b4dabd",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,8 @@
+{"ts":1793384756731,"event":"clone","repo":"mono"}
+{"ts":1793384768686,"event":"task_added","task":1,"title":"apps/sub-route-reports: pass owner (insights) to validateApp","repo":"mono"}
+{"ts":1793384769515,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793384783102,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4469,"waited_ms":9207,"sha":"e916c8fdb18b23153883578bfcb71b6289aa8cd0"}
+{"ts":1793384783280,"event":"pr_merged","pr":1,"merge_sha":"69a35b4f572bd853aa9cfabfc6fc209d3544dfc0"}
+{"ts":1793384807822,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13808,"ci_main_ms":3501,"waited_ms":24513}
+{"ts":1793384813867,"event":"task_done","task":1}
+{"ts":1793384813893,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, breaking). Core-shell (platform), billing (payments), and reports (insights, found via grep; added as sub-task) pass owner from package.json team. Assumptions: shared-contracts lives in-repo and is inlined at build, so a single PR was safe (no registry release/ordering needed); reports isn't built by CI/CD but was updated anyway. PR #1 merged, CI and CD green."}

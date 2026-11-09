@@ -1,0 +1,2 @@
+{"id":1793411328656,"ts":1793411328656,"from":"dev-b","to":"dev-a","text":"dev-b: shell+reports PR ready (hardcode owner from package.json team; libs/ is inlined so no registry release needed). I'll merge after your shared-contracts PR merges — ping me when it does."}
+{"id":1793411373362,"ts":1793411373362,"from":"dev-a","to":"dev-b","text":"dev-a: PLAT-103-1 (PR #1) merged+deployed. Heads-up: I mistyped a PR number and accidentally merged your PR #2 (CI was green, deps satisfied); CD for it succeeded. Sorry - please verify shell/reports are live. My billing PR is #3."}

@@ -1,0 +1,96 @@
+{
+  "run": "s3-C3-B2-mono-r2",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "B2",
+  "rep": 2,
+  "model": "claude-sonnet-5-5",
+  "tag": "s3",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 59,
+  "jenkins_wait_s": 34,
+  "agent_active_s": 25,
+  "t_first_clone_s": 5.406,
+  "t_first_pr_s": 20.566,
+  "t_first_merge_s": 31.59,
+  "repos_cloned": [
+    "mono"
+  ],
+  "repos_changed": [
+    "mono"
+  ],
+  "prs": 1,
+  "prs_merged": 1,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "mono",
+      "files": 5,
+      "add": 5,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 11
+    }
+  ],
+  "lines_changed_excl_lock": 9,
+  "files_changed": 5,
+  "pr_updates": 0,
+  "ci_runs": 1,
+  "ci_failures": 0,
+  "deploys": 1,
+  "deploy_failures": 0,
+  "subtasks_recorded": 0,
+  "subtask_detail": [],
+  "jenkins_builds": 4,
+  "jenkins_executor_s": 25.3,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "mono-cd": 2,
+    "mono-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "audit_runs": 2,
+  "audit_last_violations": 0,
+  "hidden": "reports",
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 300456,
+  "agent_output_tokens": 2719,
+  "agent_turns": 10,
+  "agent_cost_usd": 0.1258616,
+  "agent_duration_s": 63,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true
+    }
+  },
+  "semver_ok": true,
+  "semver_class": null,
+  "platformkit_changed": false,
+  "failed_checks": []
+}

@@ -1,0 +1,33 @@
+=== 9a15cf2 PLAT-101: add Manage billing link using shared config
+
+diff --git a/package.json b/package.json
+index 66aa1b5..fff2c1a 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,12 @@
+   "name": "@mfe/sub-route-billing",
+   "version": "1.0.0",
+   "team": "payments",
+-  "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0", "@studio/platform-kit": "^1.0.0"}
++  "scripts": {
++    "prebuild": "npm install --no-audit --no-fund",
++    "build": "node build.js"
++  },
++  "dependencies": {
++    "@mfe/shared-contracts": "^1.1.0",
++    "@studio/platform-kit": "^1.0.0"
++  }
+ }
+diff --git a/src/main.js b/src/main.js
+index 6493c0d..c37ed30 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -15,6 +15,7 @@ export function renderBilling(containerId) {
+         <button style="background: #4caf50; border: none; color: white; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
+           Process Test Payment
+         </button>
++        <p><a href="${SHARED_CONFIG.billingPortalUrl}" style="color: #4caf50;">Manage billing</a></p>
+       </div>
+     `;
+   }

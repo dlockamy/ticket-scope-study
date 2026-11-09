@@ -1,0 +1,19 @@
+{"ts":1793416525407,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793416525505,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793416535849,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":275}
+{"ts":1793416537044,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":262}
+{"ts":1793416538059,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1012}
+{"ts":1793416538075,"who":"dev-b","event":"msg_wait","waited_ms":2082}
+{"ts":1793416544447,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-billing-v2-url","size":{"files":2,"add":2,"del":2,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793416555462,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3203,"waited_ms":9181,"sha":"9838d5c539626633e70ff289efa207fc261a68e5"}
+{"ts":1793416555607,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"2b8b01756c9871a3f0ed644cd0630e9af9b0ac28"}
+{"ts":1793416574127,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11040,"ci_main_ms":2979,"waited_ms":18491}
+{"ts":1793416577406,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":215}
+{"ts":1793416577423,"who":"dev-a","event":"done","summary":"PLAT-104-1/2 shipped in PR #1 (merged, CI+CD green). Assumptions: libs/shared-contracts lives in-repo and is inlined at build, so no registry release/version bump applies; CD only rebuilds apps whose dir changed, so I bumped sub-route-billing to 1.0.1 in the same PR so it redeploys with the new URL. Combined 1+2 into one PR because ordering requires it."}
+{"ts":1793416578477,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1075}
+{"ts":1793416578491,"who":"dev-b","event":"msg_wait","waited_ms":38626}
+{"ts":1793416585496,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-shell-reports-rebuild","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416596509,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3037,"waited_ms":9165,"sha":"3aadea094acc94cdf47b5448c1e8dee7fa1c3a8e"}
+{"ts":1793416596737,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"398701179aee9a0257c90739a130014b7feb624f"}
+{"ts":1793416618396,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9476,"ci_main_ms":3340,"waited_ms":21616}
+{"ts":1793416621142,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped in PR #2 (merged, CI+CD green). Assumptions: shared-contracts is in-repo and inlined at build, so no registry release/lockfile; CD rebuilds only on changes within an app dir, so I bumped core-shell and sub-route-reports package.json 1.0.0->1.0.1 to trigger rebuild after dev-a's billingUrl change landed. Note: Jenkinsfile.cd had REPORTS_CHANGED detection; I did not verify the reports bundle in the CDN beyond CD success."}

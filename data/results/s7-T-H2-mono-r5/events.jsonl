@@ -1,0 +1,27 @@
+{"ts":1793416658016,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793416658016,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416660268,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793416660294,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793416663537,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416669067,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416671233,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793416671411,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416683895,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4552,"waited_ms":12439,"sha":"d9a8a2fc4aada56124fe4dd35becd914a8fe162b"}
+{"ts":1793416685847,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"9326513121e0456abdfd20c3d7c8450e44886c4c"}
+{"ts":1793416689093,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416701310,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":3432,"ci_main_ms":3470,"waited_ms":15425}
+{"ts":1793416706683,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793416706709,"who":"dev-a","event":"handoff_posted","version":"1.0.0","class":"minor"}
+{"ts":1793416709145,"who":"dev-b","event":"handoff_read"}
+{"ts":1793416710980,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793416711123,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt","size":{"files":1,"add":1,"del":1,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793416712559,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-adopt-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416723375,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3142,"waited_ms":12220,"sha":"6947d25180b7a6a6be1cafc95d703eb5c94fe218"}
+{"ts":1793416723509,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"93db7454282c4e898be6a4c49453e42a20a7bddc"}
+{"ts":1793416723688,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3115,"waited_ms":9351,"sha":"6ce4e36432a59fd820ac118895161c191c3e52d2"}
+{"ts":1793416723815,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"5f05d7a5009a84a5b905933af9c9d9d7f133d2fb"}
+{"ts":1793416748485,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16097,"ci_main_ms":6874,"waited_ms":24637}
+{"ts":1793416748488,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16097,"ci_main_ms":6874,"waited_ms":24948}
+{"ts":1793416751103,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped in PR #3 (merged, CI+CD green). shared-contracts is inlined from libs/, not a registry package, so no dependency bump exists; per dev-a's handoff I patch-bumped core-shell and sub-route-reports to 1.0.1 so CD detects the change and rebuilds them with billingUrl=/billing/v2. Assumption: one combined PR is fine (no ordering needed)."}
+{"ts":1793416751196,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793416751213,"who":"dev-a","event":"done","summary":"PLAT-104-1: billingUrl -> /billing/v2 in libs/shared-contracts (PR #1, merged, CD green; nothing deployed since libs/ is not change-detected). PLAT-104-2: billing app version bump 1.0.1 to trigger rebuild with inlined new value (PR #2, merged, CD green). Assumptions: in-repo lib needs no version bump/publish (inlined at build time per CONTRIBUTING); handoff posted telling dev-b to touch their apps/ dirs to trigger deploys."}

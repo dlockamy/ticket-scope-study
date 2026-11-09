@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-require-app-owner",
+    "title": "PLAT-103: require owner in validateApp",
+    "head": "e84f439250c88b18bc62446effc7e77ae1faf296",
+    "opened_ts": 1793387347769,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387362246,
+    "merge_sha": "d9a8b6da0ecde793f5607e50f1754dbd4cbb1823",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

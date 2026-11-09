@@ -1,0 +1,15 @@
+{"ts":1793369346392,"event":"clone","repo":"mono"}
+{"ts":1793369346458,"event":"clone","repo":"platformkit"}
+{"ts":1793369390011,"event":"task_added","task":1,"title":"Rename billingUrl to billingEndpoint in shared config","repo":"mono"}
+{"ts":1793369393286,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369404485,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3215,"waited_ms":9206,"sha":"1e74b62dd4639bce4361cf32bf8f7fade9673701"}
+{"ts":1793369406259,"event":"pr_merged","pr":1,"merge_sha":"3f067dbbbc167eac01c06b8fdb08eab8242a2d84"}
+{"ts":1793369427732,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12845,"ci_main_ms":3105,"waited_ms":21441}
+{"ts":1793369431064,"event":"task_done","task":1}
+{"ts":1793369431086,"event":"task_added","task":2,"title":"Billing app: use billingEndpoint (shipped with PR #1)","repo":"mono"}
+{"ts":1793369431105,"event":"task_added","task":3,"title":"Core shell: use billingEndpoint (shipped with PR #1)","repo":"mono"}
+{"ts":1793369431124,"event":"task_added","task":4,"title":"Platform kit: read billingEndpoint instead of billingUrl (no change needed)","repo":"platformkit"}
+{"ts":1793369431139,"event":"task_done","task":2}
+{"ts":1793369431154,"event":"task_done","task":3}
+{"ts":1793369431169,"event":"task_done","task":4}
+{"ts":1793369435311,"event":"done","summary":"PLAT-102: billingUrl renamed to billingEndpoint (same value) in libs/shared-contracts, bumped to 2.0.0 (breaking). Core shell and billing apps updated, and the reports app too (not in the ticket, but it read billingUrl and the acceptance criteria cover it). Shipped in mono PR #1: CI green, merged, CD green (core-shell and billing deployed). platformkit needed no change: it has no billingUrl and does not read SHARED_CONFIG, so no PR. Assumptions: shared-contracts is inlined (not registry-published), so the 2.0.0 bump is the release marker and no tag is created (docs/releasing.md); one PR for all mono sub-tasks because the apps inline the contract at build time, so splitting would leave apps reading undefined; billingEndpointHint key name kept as-is."}

@@ -1,0 +1,30 @@
+{"ts":1793416241403,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793416241848,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416243533,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793416246295,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793416246355,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793416250817,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416253821,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2-url","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416260848,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416264662,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3776,"waited_ms":9238,"sha":"3392b24057f965d6caae24190bda483cc36bf357"}
+{"ts":1793416264841,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"4290b5bd20c8dfd2398f7c116caf901935376db0"}
+{"ts":1793416270898,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416280367,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5412,"ci_main_ms":3117,"waited_ms":15494}
+{"ts":1793416280947,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416283692,"who":"dev-a","event":"handoff_posted","version":"1.0.1","class":"patch"}
+{"ts":1793416283753,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793416289928,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-billing-adopt-contracts","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793416291008,"who":"dev-b","event":"handoff_read"}
+{"ts":1793416297655,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-adopt-contracts","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793416297874,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-adopt-contracts","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793416302190,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3082,"waited_ms":12229,"sha":"2c8dfa92351034b83653213051f18b27dabf0711"}
+{"ts":1793416302336,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"541b76581184bc928c450df4147284cf1ccd1378"}
+{"ts":1793416309205,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3137,"waited_ms":9188,"sha":"8ef572a7854755e3ace68c9604a7472f55d56066"}
+{"ts":1793416309301,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3162,"waited_ms":51,"sha":"9e7724f7948688273c305ffe794bd1bf97419152"}
+{"ts":1793416311332,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"57706bb06ccfd90b869b72140e9c35c6527fef1f"}
+{"ts":1793416323917,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12140,"ci_main_ms":3164,"waited_ms":21549}
+{"ts":1793416326473,"who":"dev-a","event":"done","summary":"PLAT-104-1: contracts billingUrl -> https://homelab.local/billing/v2, released as patch 1.0.1 (same-name value change, no API change; PR #1, published). PLAT-104-2: billing now depends on ^1.0.1 with updated lockfile; built bundle contains new URL (PR #2, CD green). Handoff posted for dev-b. Assumption: patch bump, not minor/major."}
+{"ts":1793416326788,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7970,"ci_main_ms":3104,"waited_ms":15422}
+{"ts":1793416326929,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"1cab9c525d2d93e061237d66d850719678a8a4a3"}
+{"ts":1793416348602,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12035,"ci_main_ms":3010,"waited_ms":21641}
+{"ts":1793416351236,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped: shell (PR #3) and reports (PR #4) updated to @mfe/shared-contracts ^1.0.1 (package.json + lockfile), CI green, merged, CD green. Reports build output confirmed billingUrl .../billing/v2. Assumption: dev-a's 1.0.1 handoff was accurate and published."}

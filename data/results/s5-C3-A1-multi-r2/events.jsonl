@@ -1,0 +1,35 @@
+{"ts":1793393515796,"event":"clone","repo":"contracts"}
+{"ts":1793393515854,"event":"clone","repo":"shell"}
+{"ts":1793393515915,"event":"clone","repo":"billing"}
+{"ts":1793393515976,"event":"clone","repo":"reports"}
+{"ts":1793393516031,"event":"clone","repo":"platformkit"}
+{"ts":1793393526678,"event":"task_added","task":1,"title":"validateApp requires owner; bump to 2.0.0 and publish","repo":"contracts"}
+{"ts":1793393526700,"event":"task_added","task":2,"title":"Pass owner team=platform; depend on shared-contracts ^2.0.0","repo":"shell"}
+{"ts":1793393526719,"event":"task_added","task":3,"title":"Pass owner team=payments; depend on shared-contracts ^2.0.0","repo":"billing"}
+{"ts":1793393526737,"event":"task_added","task":4,"title":"Pass owner team=insights; depend on shared-contracts ^2.0.0","repo":"reports"}
+{"ts":1793393528622,"event":"task_start","task":1}
+{"ts":1793393528641,"event":"task_start","task":1}
+{"ts":1793393537559,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-validate-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393550863,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3980,"waited_ms":12250,"sha":"efe3fab983e3486750d7eed760bf754e8b39acef"}
+{"ts":1793393552206,"event":"pr_merged","pr":1,"merge_sha":"8de8c95976a8b7d6dbf5fe7a97f99c9172d8e0e1"}
+{"ts":1793393567563,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5657,"ci_main_ms":3145,"waited_ms":15328}
+{"ts":1793393570068,"event":"task_done","task":1}
+{"ts":1793393570089,"event":"task_start","task":2}
+{"ts":1793393578019,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-platform","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393590256,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2964,"waited_ms":12206,"sha":"e3de888402d9e2f5436b534fac045f85bdab129f"}
+{"ts":1793393593973,"event":"pr_merged","pr":2,"merge_sha":"66d19789f2c9dba00c79e1c1cf52cdb4695f22ee"}
+{"ts":1793393612400,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9993,"ci_main_ms":3105,"waited_ms":18399}
+{"ts":1793393615396,"event":"task_done","task":2}
+{"ts":1793393615414,"event":"task_start","task":3}
+{"ts":1793393615430,"event":"task_start","task":4}
+{"ts":1793393621140,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-payments","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393621281,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-insights","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393635272,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3049,"waited_ms":12225,"sha":"ecd7fd32d9e7ab8ce1d3c554fa53a6e59d65be5e"}
+{"ts":1793393635333,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3042,"waited_ms":33,"sha":"5ed3964783435d015b691b5fa3fb8ebd0ebf391b"}
+{"ts":1793393636847,"event":"pr_merged","pr":3,"merge_sha":"84cb321a6e1d9f673ca61858d10c0759787932bd"}
+{"ts":1793393658301,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11802,"ci_main_ms":3090,"waited_ms":21426}
+{"ts":1793393658426,"event":"pr_merged","pr":4,"merge_sha":"29fa41a9c6b619c2fda666dc5572aa1705f47ba8"}
+{"ts":1793393679948,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11384,"ci_main_ms":3072,"waited_ms":21493}
+{"ts":1793393681601,"event":"task_done","task":3}
+{"ts":1793393681620,"event":"task_done","task":4}
+{"ts":1793393683870,"event":"done","summary":"PLAT-103 shipped. Changes: (1) shared-contracts 2.0.0 (PR #1): validateApp throws if app.owner is missing or empty; major bump since it is breaking for callers. (2) core-shell (PR #2), billing (PR #3), reports (PR #4): pass owner from package.json team (platform / payments / insights), bump @mfe/shared-contracts to ^2.0.0 with lockfiles regenerated. All CI and CD green. Assumptions: owner is hardcoded to match package.json team rather than read at runtime; the contract was bumped to 2.0.0 (not 1.1.0) because the throw breaks callers that omit owner; platformkit does not call validateApp so it is untouched; the apps were updated after the contract was published so the apps did not break on ordering."}

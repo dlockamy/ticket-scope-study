@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "753bb6ff777d0d486645d67bd604b56922a3a251",
+    "opened_ts": 1793451104893,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451116022,
+    "merge_sha": "785c6644abfd5faeeed583c5f99777e44572d376",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "Declare owning team, upgrade shared-contracts to 2.x",
+    "head": "c5c18e836406d66b84f0f41da3176b0ef0dadaca",
+    "opened_ts": 1793451138177,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451149441,
+    "merge_sha": "b77cb6ef89500c2fc55d394ecd0acb231f5e091b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "Declare owning team, upgrade shared-contracts to 2.x",
+    "head": "ae4f8b5205446d9a99f41949bf4069324939fd61",
+    "opened_ts": 1793451138308,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451168034,
+    "merge_sha": "01d080ae5e6e5dbe3f49ea7c8e209931430cb905",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "Declare owning team, upgrade shared-contracts to 2.x",
+    "head": "9ed67434b95f1dff0cee197a9f6bf06661579414",
+    "opened_ts": 1793451138468,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451189763,
+    "merge_sha": "c41fe5f48020f9f9d033dc00f8343e22d593c65d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

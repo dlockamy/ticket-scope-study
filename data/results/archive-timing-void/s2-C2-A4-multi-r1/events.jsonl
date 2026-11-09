@@ -1,0 +1,22 @@
+{"ts":1793335305706,"event":"clone","repo":"contracts"}
+{"ts":1793335305761,"event":"clone","repo":"platformkit"}
+{"ts":1793335305825,"event":"clone","repo":"billing"}
+{"ts":1793335305894,"event":"clone","repo":"shell"}
+{"ts":1793335305964,"event":"clone","repo":"reports"}
+{"ts":1793335620359,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793335930313,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4038,"waited_ms":308277,"sha":"7460cf6be7bc42a3b10ca0b18697b0f4de70fdca"}
+{"ts":1793335930498,"event":"pr_merged","pr":1,"merge_sha":"e91d2c063872645c46863477cb20bd6f36cb0662"}
+{"ts":1793335942793,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5237,"ci_main_ms":2882,"waited_ms":12262}
+{"ts":1793336460562,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-102-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793336460710,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793336460850,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793336471925,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3350,"waited_ms":9147,"sha":"ffe4938fcff8cf206f77a2eb3e111db4fd21a2ec"}
+{"ts":1793336472052,"event":"pr_merged","pr":2,"merge_sha":"506728aba8f706c59c93ca9c3b6fea46994adf05"}
+{"ts":1793336490399,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12988,"ci_main_ms":3055,"waited_ms":18316}
+{"ts":1793336490460,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3315,"waited_ms":33,"sha":"d53726c115506ae80fcbc9ffd0bce11f521f6e20"}
+{"ts":1793336490582,"event":"pr_merged","pr":3,"merge_sha":"15b250a8706609088049fe36faa8e5d480b576e4"}
+{"ts":1793336505932,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8113,"ci_main_ms":3013,"waited_ms":15321}
+{"ts":1793336505992,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3335,"waited_ms":30,"sha":"ee1751715b676beda837281916ef4117b110492b"}
+{"ts":1793336506112,"event":"pr_merged","pr":4,"merge_sha":"38a7ef3b63c4bddead7b97b8e0846ac869bde28f"}
+{"ts":1793336822844,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":309552,"ci_main_ms":301252,"waited_ms":316702}
+{"ts":1793337127397,"event":"done","summary":"Released @mfe/shared-contracts 2.0.0 (major; billingUrl -> billingEndpoint, same value) via PR #1. Billing (#2), shell (#3) and reports (#4) now use billingEndpoint and depend on ^2.0.0 with updated lockfiles; all CI/CD green. Assumptions: reports app also read billingUrl (not in sub-tasks) so I fixed it too to meet 'every live app still starts'. PLAT-102-4 (platform-kit): it has no billingUrl reference and no dependency on shared-contracts, so no change was made (adding an unused dependency seemed wrong)."}

@@ -1,0 +1,6 @@
+{"ts":1793377031119,"event":"clone","repo":"mono"}
+{"ts":1793377054798,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793377064205,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3156,"waited_ms":6116,"sha":"d188f39a7ddf640c3f0cc32aba6ad165a7ad23e6"}
+{"ts":1793377064344,"event":"pr_merged","pr":1,"merge_sha":"5c362304c4613d1abd10857e55ca6405042b6525"}
+{"ts":1793377085817,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14139,"ci_main_ms":3590,"waited_ms":21442}
+{"ts":1793377090167,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0 as breaking). core-shell=platform, billing=payments, reports=insights, from each package.json team. Assumptions: libs/ is inlined at build time (per CONTRIBUTING), so no registry release or dependency bump applies; shipped as one atomic PR (#1) so no app broke between lib and consumers. All three apps build locally; CI and CD green."}

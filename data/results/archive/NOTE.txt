@@ -1,0 +1,1 @@
+pilot round 1 (C2 A1, both layouts): outcomes valid (both passed, 0 misses) but ALL timings invalid: Docker VM clock was ~300 s behind the host, adding ~5 min to every CI/CD wait. Fixed by clock sync per round.

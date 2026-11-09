@@ -1,0 +1,21 @@
+{"ts":1793373339997,"event":"clone","repo":"contracts"}
+{"ts":1793373340054,"event":"clone","repo":"billing"}
+{"ts":1793373340116,"event":"clone","repo":"shell"}
+{"ts":1793373345650,"event":"pr_opened","pr":1,"repo":"contracts","branch":"rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373358316,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3740,"waited_ms":9240,"sha":"5bfaf4714365af21defbec94e8c1a9cd7c623c17"}
+{"ts":1793373358470,"event":"pr_merged","pr":1,"merge_sha":"36280ec24fc716910b757b123e16d6cb823cc4da"}
+{"ts":1793373370799,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4972,"ci_main_ms":2900,"waited_ms":12300}
+{"ts":1793373378835,"event":"pr_opened","pr":2,"repo":"billing","branch":"use-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793373378964,"event":"pr_opened","pr":3,"repo":"shell","branch":"use-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793373391173,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3216,"waited_ms":12177,"sha":"435022a5162c76e08139c88de67eab06516f8d90"}
+{"ts":1793373391234,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3188,"waited_ms":34,"sha":"72eb27bec99c61bd2887c16b93ee1b7a410c20c3"}
+{"ts":1793373394126,"event":"pr_merged","pr":2,"merge_sha":"3983ad5ee7ea2a68efc32b41a97ebc49da11aa70"}
+{"ts":1793373394249,"event":"pr_merged","pr":3,"merge_sha":"82042e9692a848581829fb1b1f935d7659360495"}
+{"ts":1793373415758,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13283,"ci_main_ms":5185,"waited_ms":21478}
+{"ts":1793373415835,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10404,"ci_main_ms":3151,"waited_ms":49}
+{"ts":1793373423818,"event":"clone","repo":"reports"}
+{"ts":1793373428174,"event":"pr_opened","pr":4,"repo":"reports","branch":"use-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793373440405,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2936,"waited_ms":12199,"sha":"f8c337e78069fe227c77e6b8b45207f388160de8"}
+{"ts":1793373440535,"event":"pr_merged","pr":4,"merge_sha":"8e4df183eba175441a6ad2debd9547fdaf88e3e3"}
+{"ts":1793373458955,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11224,"ci_main_ms":3020,"waited_ms":18392}
+{"ts":1793373463048,"event":"done","summary":"Renamed billingUrl->billingEndpoint in shared-contracts (2.0.0, major bump, published). Billing, shell and reports (which also used billingUrl, not listed in ticket) updated to ^2.0.0 with lockfiles, all merged and CD green. Assumption: reports needed updating to satisfy 'no reference remains in any app'."}

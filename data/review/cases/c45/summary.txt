@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty (contracts 2.0.0, major since breaking; published). shell, billing, reports (only callers, found by grep across all repos) pass owner from package.json team (platform/payments/insights), upgraded to ^2.0.0 with lockfiles, built OK, deployed. Assumptions: owner must be a non-blank string; no other app calls validateApp.

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "b9f3500bc20e48f56d53fe5d601e9746260157ce",
+    "opened_ts": 1793389292185,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389306369,
+    "merge_sha": "546980e0335029dbf151e6c727f3d85677970e09",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "pass-owner",
+    "title": "Pass owner to validateApp (shared-contracts 2)",
+    "head": "df68bfe628ca2833f2f4bb38d160aa0f31a9a289",
+    "opened_ts": 1793389329071,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389343323,
+    "merge_sha": "6517fae8ef90b033ac7da451349c1b8e77e96daf",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "pass-owner",
+    "title": "Pass owner to validateApp (shared-contracts 2)",
+    "head": "c837d85fc20683dc3d600e48f97668e4b0472034",
+    "opened_ts": 1793389329196,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389343441,
+    "merge_sha": "2160d77e947f05eb8314d154785a6340eb201743",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

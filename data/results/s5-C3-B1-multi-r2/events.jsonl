@@ -1,0 +1,31 @@
+{"ts":1793393888454,"event":"clone","repo":"contracts"}
+{"ts":1793393888513,"event":"clone","repo":"shell"}
+{"ts":1793393888572,"event":"clone","repo":"billing"}
+{"ts":1793393888630,"event":"clone","repo":"reports"}
+{"ts":1793393888684,"event":"clone","repo":"platformkit"}
+{"ts":1793393893826,"event":"task_added","task":1,"title":"PLAT-103 reports app: pass owner to validateApp (not in original ticket, found by search)","repo":"reports"}
+{"ts":1793393903623,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393905138,"event":"task_start","task":1}
+{"ts":1793393914377,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3583,"waited_ms":9203,"sha":"bfd9db46b77515ceddfb0c19af68352439f21f03"}
+{"ts":1793393918888,"event":"task_added","task":2,"title":"PLAT-103-1: validateApp rejects apps without owner (breaking, 2.0.0)","repo":"contracts"}
+{"ts":1793393918908,"event":"task_added","task":3,"title":"PLAT-103-2: billing passes owner (team) to validateApp; adopt shared-contracts 2.x","repo":"billing"}
+{"ts":1793393918926,"event":"task_added","task":4,"title":"PLAT-103-3: core shell passes owner (team) to validateApp; adopt shared-contracts 2.x","repo":"shell"}
+{"ts":1793393921446,"event":"pr_merged","pr":1,"merge_sha":"7740ae2becf74da3b3fc1880ed7173cb7a1be868"}
+{"ts":1793393933742,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4837,"ci_main_ms":2900,"waited_ms":12266}
+{"ts":1793393951358,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-2-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393963606,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2834,"waited_ms":12216,"sha":"03dc7f90d46047c56ba12944e681dca1141930b3"}
+{"ts":1793393966208,"event":"pr_merged","pr":2,"merge_sha":"10fdab2642b4ea75039b4951605f75b12c8c5109"}
+{"ts":1793393987715,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11463,"ci_main_ms":2988,"waited_ms":21478}
+{"ts":1793393995046,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793394007296,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2917,"waited_ms":12218,"sha":"dec65bc2bc68240e74566fddfec21fe52ebc8ce0"}
+{"ts":1793394011191,"event":"pr_merged","pr":3,"merge_sha":"a1ac1cb3af204a6c765450c94e4ee2cba1f2fc6b"}
+{"ts":1793394029614,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10011,"ci_main_ms":3063,"waited_ms":18393}
+{"ts":1793394033697,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-4-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793394042905,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2838,"waited_ms":9177,"sha":"d679a31509d7165b9378769a768ca1cc3afa8a8f"}
+{"ts":1793394044734,"event":"pr_merged","pr":4,"merge_sha":"bab8b09b97259a3c20771dda01a09152d319757c"}
+{"ts":1793394066242,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11653,"ci_main_ms":2970,"waited_ms":21478}
+{"ts":1793394069648,"event":"task_done","task":1}
+{"ts":1793394069667,"event":"task_done","task":2}
+{"ts":1793394069683,"event":"task_done","task":3}
+{"ts":1793394069699,"event":"task_done","task":4}
+{"ts":1793394069721,"event":"done","summary":"PLAT-103 shipped. validateApp (shared-contracts) now throws when owner is missing or empty; released as 2.0.0 (breaking). Billing (owner payments), core shell (owner platform) and reports (owner insights) pass owner from package.json team and moved to ^2.0.0; all merged and CD green. Assumptions: (1) reports also calls validateApp, so I added it although the ticket listed only billing and shell; (2) owner is hardcoded string per app, matching package.json team, not read at runtime; (3) npm install reformatted the apps' package.json files."}

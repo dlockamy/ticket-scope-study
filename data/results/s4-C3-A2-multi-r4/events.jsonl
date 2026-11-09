@@ -1,0 +1,17 @@
+{"ts":1793389276548,"event":"clone","repo":"contracts"}
+{"ts":1793389276609,"event":"clone","repo":"billing"}
+{"ts":1793389276667,"event":"clone","repo":"shell"}
+{"ts":1793389276723,"event":"clone","repo":"reports"}
+{"ts":1793389292205,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389304465,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2696,"waited_ms":12226,"sha":"b9f3500bc20e48f56d53fe5d601e9746260157ce"}
+{"ts":1793389306402,"event":"pr_merged","pr":1,"merge_sha":"546980e0335029dbf151e6c727f3d85677970e09"}
+{"ts":1793389318653,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":6800,"ci_main_ms":3724,"waited_ms":12222}
+{"ts":1793389329095,"event":"pr_opened","pr":2,"repo":"billing","branch":"pass-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793389329216,"event":"pr_opened","pr":3,"repo":"shell","branch":"pass-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793389341481,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3115,"waited_ms":12233,"sha":"df68bfe628ca2833f2f4bb38d160aa0f31a9a289"}
+{"ts":1793389341545,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3124,"waited_ms":35,"sha":"c837d85fc20683dc3d600e48f97668e4b0472034"}
+{"ts":1793389343354,"event":"pr_merged","pr":2,"merge_sha":"6517fae8ef90b033ac7da451349c1b8e77e96daf"}
+{"ts":1793389343474,"event":"pr_merged","pr":3,"merge_sha":"2160d77e947f05eb8314d154785a6340eb201743"}
+{"ts":1793389364924,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12565,"ci_main_ms":5175,"waited_ms":21421}
+{"ts":1793389365001,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10582,"ci_main_ms":3248,"waited_ms":47}
+{"ts":1793389367794,"event":"done","summary":"validateApp now throws if owner missing/empty; shared-contracts bumped to 2.0.0 (major, published). Billing passes owner 'payments', shell passes 'platform' (from package.json team), both on ^2.0.0 and deployed. Assumptions: owner values hardcoded to match package.json team. Note: apps-sub-route-reports also calls validateApp without owner; not in ticket scope, pinned to ^1.0.0 so unaffected, but it will break when it upgrades (owner 'insights')."}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "contracts: add billingPortalUrl to SHARED_CONFIG, bump 1.1.0",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "billing: bump contracts to ^1.1.0, render Manage billing link",
+    "repo": "",
+    "state": "todo"
+  }
+]

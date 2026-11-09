@@ -1,0 +1,11 @@
+{"ts":1793376054876,"event":"deps_query","pkg":"billingUrl"}
+{"ts":1793376054896,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793376054976,"event":"clone","repo":"mono"}
+{"ts":1793376055059,"event":"clone","repo":"platformkit"}
+{"ts":1793376062180,"event":"task_added","task":1,"title":"Rename billingUrl->billingEndpoint in shared-contracts and 3 apps (one PR, mono)","repo":""}
+{"ts":1793376074976,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793376087405,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4016,"waited_ms":12390,"sha":"265aaaece8845a39f7e0800c25f7da8dc9ee0dda"}
+{"ts":1793376089272,"event":"pr_merged","pr":1,"merge_sha":"f5cfd570748b09dcc242475abedc6809153ce7b8"}
+{"ts":1793376110740,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12288,"ci_main_ms":3223,"waited_ms":21440}
+{"ts":1793376115204,"event":"task_done","task":1}
+{"ts":1793376115219,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and core-shell, sub-route-billing, sub-route-reports in one mono PR (#1). Assumptions: no other repos used it (platformkit has no references; deps catalog had no entry); local builds of all 3 apps passed; CI and CD green."}

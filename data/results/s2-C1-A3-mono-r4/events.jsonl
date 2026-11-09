@@ -1,0 +1,6 @@
+{"ts":1793372202953,"event":"clone","repo":"mono"}
+{"ts":1793372215038,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-101-billing-portal-link","size":{"files":3,"add":4,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372230563,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4712,"waited_ms":15484,"sha":"40f643c2a6d3f4f32c970d2fb22f3da1924aa372"}
+{"ts":1793372232175,"event":"pr_merged","pr":1,"merge_sha":"ed8f6fe322587b79e9552021d8020b4800f32b5b"}
+{"ts":1793372253593,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14459,"ci_main_ms":3696,"waited_ms":21390}
+{"ts":1793372255837,"event":"done","summary":"Added billingPortalUrl to libs/shared-contracts (bumped to 1.1.0 for good measure) and a 'Manage billing' link in billing component reading SHARED_CONFIG.billingPortalUrl. Single PR #1 since libs/ in the monorepo are inlined at build time (no registry publish/order needed). CI and CD green. Assumption: the version bump is harmless/optional for an in-repo lib."}

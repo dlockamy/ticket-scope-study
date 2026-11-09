@@ -1,0 +1,17 @@
+{"ts":1793393887170,"event":"clone","repo":"mono"}
+{"ts":1793393887234,"event":"clone","repo":"platformkit"}
+{"ts":1793393918194,"event":"task_added","task":1,"title":"Sub-route reports: pass its owner (team) to validateApp and ship","repo":"mono"}
+{"ts":1793393927958,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-contract","size":{"files":3,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393929186,"event":"task_added","task":2,"title":"Billing and core shell: pass owner (team) to validateApp and ship","repo":"mono"}
+{"ts":1793393929206,"event":"task_start","task":1}
+{"ts":1793393938382,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3017,"waited_ms":9147,"sha":"2818254bf4e92985754d4e85828913a332118618"}
+{"ts":1793393940244,"event":"pr_merged","pr":1,"merge_sha":"30897f1919159a28ed9b55178c1cde9e933e4338"}
+{"ts":1793393961679,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9779,"ci_main_ms":3086,"waited_ms":21405}
+{"ts":1793393967367,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-owner-billing-shell","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393967387,"event":"task_start","task":2}
+{"ts":1793393979627,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3203,"waited_ms":12210,"sha":"b7180301b0650e460a70b17758d37e33da062db3"}
+{"ts":1793393980749,"event":"pr_merged","pr":2,"merge_sha":"df74a93fc5af47ed8d899cf813bf8683d7b7f3d3"}
+{"ts":1793393999140,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9926,"ci_main_ms":3026,"waited_ms":18359}
+{"ts":1793394001359,"event":"task_done","task":1}
+{"ts":1793394001378,"event":"task_done","task":2}
+{"ts":1793394003498,"event":"done","summary":"validateApp now rejects apps without a non-blank owner (shared-contracts 2.0.0, breaking). Billing (payments) and core-shell (platform) pass their package.json team as owner; reports (insights) also calls validateApp, so it was included in PR #1 and given its own sub-task. PR #1 (contract + reports) merged first; PR #2 (billing + core-shell) merged after and CD succeeded. Assumptions: shared-contracts is inlined at build time, so it is not published and needs no registry release; the version bump to 2.0.0 is informational. The owner values are hardcoded in each app rather than read from package.json, because the bundlers cannot import JSON. Reports is not deployed by CD, so its change is live only in the repo. Whitespace-only owners are rejected too."}

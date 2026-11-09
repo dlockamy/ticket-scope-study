@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "41824fac4e6c05c63577f88e605fedbd0afee3fa",
+    "opened_ts": 1793381553929,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793381565091,
+    "merge_sha": "92656e6139b19f954535c5d0fcc93ccd28ecd21b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "Declare owner in validateApp (PLAT-103)",
+    "head": "ded2621f018e6f6dc80f97b2b687ea0151d9b6e4",
+    "opened_ts": 1793381592130,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793381604621,
+    "merge_sha": "b910ee8dd8e5633edae182f78d620c55124cb85d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "Declare owner in validateApp (PLAT-103)",
+    "head": "1a423db92facae28d340d5925ea7f68ea9d55934",
+    "opened_ts": 1793381592333,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793381629350,
+    "merge_sha": "ad36eed575ea6a8a80766b05cc60b1056f34eb58",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "Declare owner in validateApp (PLAT-103)",
+    "head": "51c9fb35633e645a7e706c73d6bc141584855e93",
+    "opened_ts": 1793381592563,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793381654106,
+    "merge_sha": "f3ccd029c284f249accdd2790afd27a5e670c54d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

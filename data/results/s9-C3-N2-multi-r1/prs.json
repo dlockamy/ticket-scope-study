@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-team",
+    "title": "validateApp throws without team (breaking, 2.0.0)",
+    "head": "1494a0e25bb3bedaf044104308d346c3e03477ca",
+    "opened_ts": 1793450660250,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450674673,
+    "merge_sha": "9a91bb78c20be72ebc9058e7ae73bfd416a4aa7f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-team-v2",
+    "title": "Pass team to validateApp (shared-contracts ^2.0.0)",
+    "head": "5c466c4c5711565b7ee69cd8f26f6d3bf68e7760",
+    "opened_ts": 1793450692360,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450703439,
+    "merge_sha": "6978d0e6cb1c38b8e4a4fcb2805791d88c783a5e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-team-v2",
+    "title": "Pass team to validateApp (shared-contracts ^2.0.0)",
+    "head": "d5ed8ecd296fd8afcc640f9a76c9b849554c6d08",
+    "opened_ts": 1793450692485,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450719017,
+    "merge_sha": "26ee6bfe9655aa712625f0c8ed4b6bad4f0201c5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-team-v2",
+    "title": "Pass team to validateApp (shared-contracts ^2.0.0)",
+    "head": "623dea42c2541388f6aa1f9981ccc3cd7ab296fd",
+    "opened_ts": 1793450692600,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450737657,
+    "merge_sha": "8544f8526951860679022bff4355fb5895d41f27",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

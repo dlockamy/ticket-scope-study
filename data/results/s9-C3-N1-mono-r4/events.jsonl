@@ -1,0 +1,10 @@
+{"ts":1793451909430,"event":"clone","repo":"mono"}
+{"ts":1793451909494,"event":"clone","repo":"platformkit"}
+{"ts":1793451925280,"event":"task_added","task":1,"title":"validateApp requires owner; apps pass team from package.json (libs inlined, single repo)","repo":"mono"}
+{"ts":1793451929660,"event":"pr_opened","pr":1,"repo":"mono","branch":"require-app-owner","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793451942755,"event":"pr_updated","pr":1,"size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793451955001,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2716,"waited_ms":12215,"sha":"ab93f8b1374448a472267ff293f5c95d13f49cb7"}
+{"ts":1793451958898,"event":"pr_merged","pr":1,"merge_sha":"07358433af9002b19728e4cab0add7ca411e7a56"}
+{"ts":1793451980295,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14012,"ci_main_ms":3366,"waited_ms":21368}
+{"ts":1793451982573,"event":"task_done","task":1}
+{"ts":1793451982591,"event":"done","summary":"validateApp now throws if owner missing; core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team. Assumptions: owner passed as literal matching package.json team (bundler can't read package.json); library lives in mono libs/ and is inlined, so no platformkit release needed. PR #1 merged, CI+CD green."}

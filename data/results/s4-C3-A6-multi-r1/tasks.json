@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "contracts: add required owner to validateApp, bump to 2.0.0",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "shell: pass owner, upgrade contracts to ^2",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "billing: pass owner, upgrade contracts to ^2",
+    "repo": "",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "reports: pass owner, upgrade contracts to ^2 (missing from dep catalog)",
+    "repo": "",
+    "state": "done"
+  }
+]

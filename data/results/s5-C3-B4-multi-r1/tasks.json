@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103-1 require owner in validateApp (v2.0.0)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-2 billing passes owner to validateApp",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-3 core shell passes owner to validateApp",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-103-4 reports passes owner to validateApp (not in breakdown, found by search)",
+    "repo": "reports",
+    "state": "done"
+  }
+]

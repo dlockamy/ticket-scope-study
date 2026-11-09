@@ -1,0 +1,8 @@
+{"ts":1793385828688,"event":"clone","repo":"mono"}
+{"ts":1793385833030,"event":"audit","violations":3}
+{"ts":1793385840573,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793385851538,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3223,"waited_ms":9177,"sha":"a2601fe88eb4d2800a1312db0424c4bd66040e61"}
+{"ts":1793385851672,"event":"pr_merged","pr":1,"merge_sha":"3dbe0a8374efacc69c041e49670b11ca2d6ceea7"}
+{"ts":1793385879279,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":18425,"ci_main_ms":3458,"waited_ms":27578}
+{"ts":1793385882460,"event":"audit","violations":0}
+{"ts":1793385882473,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, breaking). core-shell (platform), billing (payments) and reports (insights; not in ticket but also called validateApp and failed audit) pass owner from package.json team. Single PR since libs/ is inlined at build time, so no registry release/lockfile adoption needed. Audit clean, CI/CD green."}

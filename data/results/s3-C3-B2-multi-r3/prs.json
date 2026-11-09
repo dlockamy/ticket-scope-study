@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103-1: validateApp requires owner (v2.0.0)",
+    "head": "e47db3fdb3b75eb5de9c52998a48cc485ead96ea",
+    "opened_ts": 1793383262165,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793383280195,
+    "merge_sha": "f5d0abaf0ac3b60240530b01cee342a11bd8a714",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103: pass owner to validateApp (billing)",
+    "head": "e73a8c6dab200047f482b7b54a401ba79eeb79c7",
+    "opened_ts": 1793383317705,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793383330097,
+    "merge_sha": "217e6ba42e70aa140a49bcaeed57a519935da418",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103: pass owner to validateApp (shell)",
+    "head": "4de248c7c2612cb5ae0f25526c317209ced932dd",
+    "opened_ts": 1793383348703,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793383361058,
+    "merge_sha": "9a80ff8e07c5721815f30f27a02d100158f455b8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-owner-reports",
+    "title": "PLAT-103: pass owner to validateApp (reports)",
+    "head": "3b480b61f049fd55add6c63befb51839f140936e",
+    "opened_ts": 1793383376595,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793383392034,
+    "merge_sha": "56a86a36a9a1beffb1e170d38c1fbc6bd683de44",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner; core-shell, billing, reports pass their package.json team (single PR, libs/ is inlined)",
+    "repo": "mono",
+    "state": "done"
+  }
+]

@@ -1,0 +1,6 @@
+{"ts":1793388298484,"event":"clone","repo":"mono"}
+{"ts":1793388319329,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793388332380,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3132,"waited_ms":6127,"sha":"7370eff4d03e0b069d8535bfbb38f3029137ff4d"}
+{"ts":1793388332514,"event":"pr_merged","pr":1,"merge_sha":"f350d10184baaa286d615c0addd875559bfc85ff"}
+{"ts":1793388353877,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10711,"ci_main_ms":3072,"waited_ms":21333}
+{"ts":1793388359804,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, breaking). core-shell=platform, billing=payments, reports=insights, taken from each package.json team field. Assumptions: libs/ is inlined at build time (per CONTRIBUTING), so no registry publish or dependency update was needed; all 4 sub-tasks shipped in one PR since the lib and apps must land together. All three apps built locally. PR #1 CI and CD green."}

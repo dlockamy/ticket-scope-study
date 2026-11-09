@@ -1,0 +1,6 @@
+{"ts":1793389602911,"event":"clone","repo":"mono"}
+{"ts":1793389638917,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389648327,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3064,"waited_ms":9378,"sha":"29ac3b25540bde7a6fb1e22b900d2558f7b4c1e2"}
+{"ts":1793389652130,"event":"pr_merged","pr":1,"merge_sha":"648684e3e162821e87c33c800bef5d0674b6701c"}
+{"ts":1793389673572,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10902,"ci_main_ms":3267,"waited_ms":21411}
+{"ts":1793389676001,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0). core-shell (platform), billing (payments) and reports (insights, not in sub-tasks but also called validateApp) pass owner matching package.json team. Assumptions: shared-contracts lives in-repo and is inlined at build, so one atomic PR was needed (separate PRs would break startup); owner values hard-coded, not read from package.json. CI and CD green."}

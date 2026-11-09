@@ -1,0 +1,6 @@
+{"ts":1793364466748,"event":"clone","repo":"mono"}
+{"ts":1793364484212,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364498373,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4372,"waited_ms":12279,"sha":"3c9d80c0c6e42f0bfa73768477ddca5e78b5b4a2"}
+{"ts":1793364498557,"event":"pr_merged","pr":1,"merge_sha":"595196be583bcd26654d08912b195872f818c2e0"}
+{"ts":1793364520042,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11732,"ci_main_ms":3292,"waited_ms":21454}
+{"ts":1793364525096,"event":"done","summary":"validateApp now throws if owner is missing/empty/non-string. core-shell (platform), billing (payments) and reports (insights, also a validateApp caller) pass owner from package.json team. Assumptions: libs/shared-contracts lives in the monorepo and is inlined at build time, so no version bump/registry release or lockfile change was needed; all three sub-tasks shipped in one PR (#1) since it's atomic. Builds verified locally, CI and CD green."}

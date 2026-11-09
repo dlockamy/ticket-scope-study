@@ -1,0 +1,9 @@
+{"ts":1793365877446,"event":"clone","repo":"mono"}
+{"ts":1793365877481,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793365885918,"event":"task_added","task":1,"title":"Contract: validateApp requires owner","repo":""}
+{"ts":1793365885944,"event":"task_added","task":2,"title":"Apps pass owner (core-shell platform, billing payments, reports insights)","repo":""}
+{"ts":1793365899917,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793365912353,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4371,"waited_ms":12402,"sha":"109f226a73767ec2314781a8d7def93af86834d6"}
+{"ts":1793365914401,"event":"pr_merged","pr":1,"merge_sha":"8952d64122ae98db16bc87b57b62c1f70a2edb6b"}
+{"ts":1793365935857,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13505,"ci_main_ms":3606,"waited_ms":21426}
+{"ts":1793365939440,"event":"done","summary":"validateApp now throws if owner missing/empty/non-string; core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team. Assumptions: owners hardcoded in source (mirroring package.json) rather than imported; whitespace-only owner counts as empty. PR #1 merged, CI+CD green."}

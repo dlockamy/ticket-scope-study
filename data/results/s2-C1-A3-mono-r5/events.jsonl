@@ -1,0 +1,6 @@
+{"ts":1793374966727,"event":"clone","repo":"mono"}
+{"ts":1793374982427,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-101-billing-portal-link","size":{"files":2,"add":3,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793374996656,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3078,"waited_ms":9189,"sha":"44c3d6959d551d0d89dccc2455deee2a976a7397"}
+{"ts":1793374996790,"event":"pr_merged","pr":1,"merge_sha":"45c897e3d663287278169c789dd954cfae90cd73"}
+{"ts":1793375015173,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11198,"ci_main_ms":3109,"waited_ms":18354}
+{"ts":1793375019832,"event":"done","summary":"PLAT-101: added billingPortalUrl to libs/shared-contracts SHARED_CONFIG and a 'Manage billing' link (from SHARED_CONFIG.billingPortalUrl) below the status line in sub-route-billing. One PR (#1) since both are in the monorepo; shared-contracts is inlined at build time so no version bump or registry publish applies. CI and CD green. Assumption: link opens in same tab, styled to match the green accent."}

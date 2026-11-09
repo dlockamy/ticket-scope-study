@@ -1,0 +1,16 @@
+{"ts":1793383638392,"event":"clone","repo":"contracts"}
+{"ts":1793383638449,"event":"clone","repo":"billing"}
+{"ts":1793383638506,"event":"clone","repo":"shell"}
+{"ts":1793383672457,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793383684689,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2803,"waited_ms":12197,"sha":"48ddcd970655742c525178e6bd2fc3938cc701fa"}
+{"ts":1793383687561,"event":"pr_merged","pr":1,"merge_sha":"7f1edfb8237b7159519e461a467fd1a3ac613999"}
+{"ts":1793383699894,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5206,"ci_main_ms":3145,"waited_ms":12304}
+{"ts":1793383706255,"event":"pr_opened","pr":2,"repo":"shell","branch":"shell-require-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793383715460,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2955,"waited_ms":9174,"sha":"7b82155601e97a97440e5c468abccc682a1c1561"}
+{"ts":1793383838788,"event":"pr_opened","pr":3,"repo":"billing","branch":"billing-require-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793383851062,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3052,"waited_ms":12239,"sha":"cfa5c5be6b479678741c32dfecbaef5e3bd05317"}
+{"ts":1793383855137,"event":"pr_merged","pr":2,"merge_sha":"45631a803b8ab595ef02f80fda94c2204e919df9"}
+{"ts":1793383873575,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10172,"ci_main_ms":3099,"waited_ms":18409}
+{"ts":1793383873719,"event":"pr_merged","pr":3,"merge_sha":"f3ec3e4f580d5e3986a695a6e83b6a94b1b409ac"}
+{"ts":1793383895183,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11933,"ci_main_ms":3091,"waited_ms":21434}
+{"ts":1793383900316,"event":"done","summary":"validateApp now throws if owner is missing or blank (contracts 2.0.0, major bump, published). Billing passes owner 'payments' and shell passes 'platform' (from package.json team); both adopted ^2.0.0 and are deployed. Assumptions: owner must be a non-empty string; I hardcoded the team values rather than reading package.json at runtime. The reports app wasn't in scope and stays on ^1.0.0, so it is unaffected."}

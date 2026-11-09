@@ -1,0 +1,12 @@
+{"ts":1793449419881,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449419898,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793449419912,"event":"child_opened","child":"PLAT-103-3"}
+{"ts":1793449422611,"event":"clone","repo":"mono"}
+{"ts":1793449434618,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449445391,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3175,"waited_ms":9174,"sha":"fe4e511ab57fdd648bb2bee0b22f3b557589bbd8"}
+{"ts":1793449445523,"event":"pr_merged","pr":1,"merge_sha":"d2ca0f3ff8713eed02d01464aa0f639f40a94d61"}
+{"ts":1793449473143,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":20290,"ci_main_ms":3352,"waited_ms":27591}
+{"ts":1793449475768,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449475784,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793449475797,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793449475821,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0). Billing passes owner 'payments', core-shell 'platform' (from package.json team). Assumptions: shared-contracts lives in-repo and is inlined at build, so no registry release/dependency update applies; shipped as one PR so main never had a broken intermediate state. Also fixed reports app (calls validateApp, owner 'insights'), which was not ticketed."}

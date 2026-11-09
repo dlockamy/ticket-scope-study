@@ -1,0 +1,17 @@
+{
+  "run": "s6-T-H0-multi-r5",
+  "topology": "multi",
+  "mode": "team",
+  "change": "C3",
+  "arm": "H0",
+  "rep": 5,
+  "tag": "s6",
+  "model": "claude-sonnet-5-5",
+  "devs": [
+    "dev-a",
+    "dev-b"
+  ],
+  "msg": false,
+  "handoff": false,
+  "start_ms": 1793413305885
+}

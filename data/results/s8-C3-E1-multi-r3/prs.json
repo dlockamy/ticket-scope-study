@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "PLAT-103-1: validateApp requires owner (2.0.0)",
+    "head": "df0d0c234009e4803a91c6883cea1b09e512bad6",
+    "opened_ts": 1793449056622,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793449069183,
+    "merge_sha": "a3b6ff4dd5b07eb557cdb9c8345b380bbccf99ab",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "pass-app-owner",
+    "title": "PLAT-103: billing passes its owner",
+    "head": "a0af5fe4074042e901a6d134e5f2bde2547dbedf",
+    "opened_ts": 1793449095197,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793449105319,
+    "merge_sha": "c814ef3d879f980f0b677bb4bac968294fb1c3b1",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "pass-app-owner",
+    "title": "PLAT-103: shell passes its owner",
+    "head": "d3ecbaf991ce643ded02c1539502e3dd4e6f3570",
+    "opened_ts": 1793449095720,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793449123900,
+    "merge_sha": "1cb35790be03bf1e9e73db24d8725f02c5650455",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "pass-app-owner",
+    "title": "PLAT-103: reports passes its owner",
+    "head": "26bc468944f904bcc1c97c9019869e15443c77a1",
+    "opened_ts": 1793449146562,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793449161980,
+    "merge_sha": "3e069929f5d053866690cb78bd5c8a3efecc69ac",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

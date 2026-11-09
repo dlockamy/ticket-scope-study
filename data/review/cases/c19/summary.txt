@@ -1,0 +1,1 @@
+validateApp now throws without owner; shared-contracts released as 2.0.0 (breaking, major). billing (owner=payments) and shell (owner=platform), from package.json team, adopted ^2.0.0 and shipped. Assumption: reports also calls validateApp but is out of scope; it stays on ^1.0.0 lockfile so is unaffected until it upgrades.

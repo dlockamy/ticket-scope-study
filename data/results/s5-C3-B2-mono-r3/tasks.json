@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103-1: validateApp rejects apps without owner (breaking, major bump)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-2: billing passes owner from package.json team",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-3: core-shell passes owner from package.json team",
+    "repo": "mono",
+    "state": "done"
+  }
+]

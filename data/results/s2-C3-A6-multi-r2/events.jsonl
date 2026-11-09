@@ -1,0 +1,26 @@
+{"ts":1793365880779,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793365880841,"event":"clone","repo":"contracts"}
+{"ts":1793365880897,"event":"clone","repo":"shell"}
+{"ts":1793365880955,"event":"clone","repo":"billing"}
+{"ts":1793365881017,"event":"clone","repo":"reports"}
+{"ts":1793365889156,"event":"task_added","task":1,"title":"contracts: validateApp requires owner (major 2.0.0), publish via CD","repo":""}
+{"ts":1793365889177,"event":"task_added","task":2,"title":"shell/billing/reports: bump to ^2.0.0 and pass owner from package.json team","repo":""}
+{"ts":1793365900035,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793365911629,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3988,"waited_ms":9238,"sha":"fc12e3ecfdd7809410ac309cff8e3e239f46bb67"}
+{"ts":1793365911826,"event":"pr_merged","pr":1,"merge_sha":"5bbf8ec8b32e466ecb95fd6228ec80ea7eb8d826"}
+{"ts":1793365927210,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5618,"ci_main_ms":2986,"waited_ms":15353}
+{"ts":1793365940884,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365941007,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365941127,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365952645,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3130,"waited_ms":9160,"sha":"8e34f48ca676d48a4085d3236666b2a73bf4aa73"}
+{"ts":1793365952769,"event":"pr_merged","pr":2,"merge_sha":"aa1b8bcf3371354286d440351598f06bcdae8fbd"}
+{"ts":1793365971182,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9065,"ci_main_ms":3062,"waited_ms":18384}
+{"ts":1793365971246,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3194,"waited_ms":34,"sha":"3f4ea9bad7f170675c95d2a55b34b93a342e3568"}
+{"ts":1793365971367,"event":"pr_merged","pr":3,"merge_sha":"4b50ddc1cbe6545378fa17cd3d205eff859ad69b"}
+{"ts":1793365992875,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14023,"ci_main_ms":3023,"waited_ms":21480}
+{"ts":1793365992937,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3171,"waited_ms":32,"sha":"9b3df25f2767c61983dafcc10c1a6d661089af80"}
+{"ts":1793365993063,"event":"pr_merged","pr":4,"merge_sha":"1eb9176ee397c3226fb60f0561a27aabd519310a"}
+{"ts":1793366014525,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11526,"ci_main_ms":2982,"waited_ms":21432}
+{"ts":1793366019494,"event":"task_done","task":1}
+{"ts":1793366019512,"event":"task_done","task":2}
+{"ts":1793366019526,"event":"done","summary":"validateApp now throws without a non-empty owner; released as @mfe/shared-contracts 2.0.0 (breaking). shell, billing, reports bumped to ^2.0.0 (lockfiles committed) and pass owner = their package.json team (platform/payments/insights), hardcoded since the bundler can't import JSON. All PRs merged, CI+CD green. Assumption: the dependency catalog omitted reports, so I found it by grepping source."}

@@ -1,0 +1,10 @@
+{"ts":1793364162705,"event":"clone","repo":"mono"}
+{"ts":1793364162723,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793364171825,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires owner (mono)","repo":""}
+{"ts":1793364171847,"event":"task_added","task":2,"title":"pass owner from package.json team in core-shell, billing, reports (mono)","repo":""}
+{"ts":1793364171866,"event":"task_added","task":3,"title":"build, PR, CI, merge, deploy","repo":""}
+{"ts":1793364187216,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364197927,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3049,"waited_ms":9140,"sha":"815dd27f5a2973139edf97ca971e768632e16fc5"}
+{"ts":1793364205672,"event":"pr_merged","pr":1,"merge_sha":"a91d2e47913e1a041f22ff1f7be59b54e90916d1"}
+{"ts":1793364227066,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13456,"ci_main_ms":3036,"waited_ms":21363}
+{"ts":1793364232170,"event":"done","summary":"validateApp now throws if owner is missing/empty/blank. core-shell (platform), billing (payments), reports (insights) pass owner matching their package.json team. Assumptions: owner hardcoded as literal matching package.json team (apps can't import package.json in the bundle); shared-contracts is a monorepo lib inlined at build, so one PR; platform-kit untouched. Reports isn't built by CI/CD but was built locally OK. PR #1 merged, CI and CD green."}

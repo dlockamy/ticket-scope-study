@@ -1,0 +1,21 @@
+{"ts":1793397174979,"event":"clone","repo":"mono"}
+{"ts":1793397190724,"event":"audit","violations":3}
+{"ts":1793397194883,"event":"task_added","task":1,"title":"PLAT-103-4: sub-route-reports passes its owner to validateApp (required by st audit and startup acceptance criteria; not listed in ticket)","repo":"mono"}
+{"ts":1793397194903,"event":"task_added","task":2,"title":"PLAT-103-1 contracts: validateApp requires owner","repo":"mono"}
+{"ts":1793397218688,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-app-owner","size":{"files":3,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397229477,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3051,"waited_ms":9180,"sha":"213a8d4bb4b1ddcb3065aed8099753b8c9e3632e"}
+{"ts":1793397231352,"event":"pr_merged","pr":1,"merge_sha":"1cf968fc2f87c742425351e87b45326df4c3f837"}
+{"ts":1793397249763,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9546,"ci_main_ms":3298,"waited_ms":18382}
+{"ts":1793397249841,"event":"audit","violations":2}
+{"ts":1793397261156,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397273437,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3076,"waited_ms":12247,"sha":"dbf2127c3fee700aba9d48dc3ebfc561a19e8403"}
+{"ts":1793397276089,"event":"pr_merged","pr":2,"merge_sha":"d05a0eacd140432411ef68664f72c3482036e22f"}
+{"ts":1793397294505,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9643,"ci_main_ms":2998,"waited_ms":18384}
+{"ts":1793397300388,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-core-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397312652,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3052,"waited_ms":12217,"sha":"5e79037057daf147ddc226c6a0c5a42cba703f17"}
+{"ts":1793397312769,"event":"pr_merged","pr":3,"merge_sha":"1fb1dfb918a7cf0383bcb893a3d56113e6ca475b"}
+{"ts":1793397331218,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9225,"ci_main_ms":3073,"waited_ms":18420}
+{"ts":1793397334533,"event":"audit","violations":0}
+{"ts":1793397334550,"event":"task_done","task":1}
+{"ts":1793397334565,"event":"task_done","task":2}
+{"ts":1793397338270,"event":"done","summary":"PLAT-103 done. PR #1 (PLAT-103-1): validateApp now throws unless app.owner is a non-empty string; shared-contracts bumped to 2.0.0 (breaking). sub-route-reports also updated (owner: insights) in PR #1, since it called validateApp and st audit flagged it. PR #2 (PLAT-103-2): billing owner 'payments'. PR #3 (PLAT-103-3): core-shell owner 'platform'. All CI and CD green; st audit reports 0 violations. Assumptions: (1) owner values hard-coded in src, matching package.json team, because build.js inlines src and the bundle never reads package.json; (2) libs/shared-contracts is inlined at build time, so 'adopting the release' means the apps pick up the new source on their next build, with no registry publish or npm install; (3) reports is not deployed by Jenkinsfile.cd, so its change merges to main but no CD deploy happens for it; (4) empty or whitespace-only owner is rejected too."}

@@ -1,0 +1,11 @@
+{"ts":1793452210331,"event":"clone","repo":"mono"}
+{"ts":1793452212708,"event":"clone","repo":"platformkit"}
+{"ts":1793452221676,"event":"task_added","task":1,"title":"Make validateApp require owner (libs/shared-contracts; libs/config does not exist, lib is in-repo so no registry release)","repo":""}
+{"ts":1793452221698,"event":"task_added","task":2,"title":"Pass team owner from package.json in core-shell, billing, reports","repo":""}
+{"ts":1793452228316,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793452240542,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3089,"waited_ms":12194,"sha":"58f0f9f51a302000f7fc7aad55c6130ad2509702"}
+{"ts":1793452242498,"event":"pr_merged","pr":1,"merge_sha":"33754844d523b62f9ae44dad0d2d17d0efc56e6d"}
+{"ts":1793452263905,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11742,"ci_main_ms":3140,"waited_ms":21377}
+{"ts":1793452266299,"event":"task_done","task":1}
+{"ts":1793452266315,"event":"task_done","task":2}
+{"ts":1793452266330,"event":"done","summary":"validateApp (libs/shared-contracts; ticket's 'libs/config' doesn't exist) now throws if owner missing/empty/non-string. core-shell, billing, reports pass owner from package.json team (platform/payments/insights). Single PR #1, CI+CD green. Assumptions: the lib is inlined in-repo, so no registry release/version bump needed; platform-kit untouched."}

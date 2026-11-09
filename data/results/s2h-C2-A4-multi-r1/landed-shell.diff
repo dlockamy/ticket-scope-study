@@ -1,0 +1,23 @@
+=== b92034a PLAT-102: use billingEndpoint from shared-contracts 2.0.0
+
+diff --git a/package.json b/package.json
+index 3ff0e85..39d533e 100644
+--- a/package.json
++++ b/package.json
+@@ -3,5 +3,5 @@
+   "version": "1.0.0",
+   "team": "platform",
+   "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0"}
++  "dependencies": {"@mfe/shared-contracts": "^2.0.0"}
+ }
+diff --git a/src/config.js b/src/config.js
+index fc478f3..4cb0eda 100644
+--- a/src/config.js
++++ b/src/config.js
+@@ -1,4 +1,4 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+ const app = validateApp({ name: 'core-shell' });
+-export const shellConfig = { app, billingEndpointHint: SHARED_CONFIG.billingUrl };
++export const shellConfig = { app, billingEndpointHint: SHARED_CONFIG.billingEndpoint };

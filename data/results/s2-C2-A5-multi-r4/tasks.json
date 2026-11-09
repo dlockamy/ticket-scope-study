@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl -> billingEndpoint, bump 2.0.0 (breaking)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Update to shared-contracts ^2.0.0 and use billingEndpoint",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Update to shared-contracts ^2.0.0 and use billingEndpoint",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Update to shared-contracts ^2.0.0 and use billingEndpoint",
+    "repo": "reports",
+    "state": "done"
+  }
+]

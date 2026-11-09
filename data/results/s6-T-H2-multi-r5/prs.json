@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "author": "dev-a",
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "PLAT-103-1: validateApp requires owner (v2.0.0)",
+    "head": "a30c384ca68a6449efbd320452059db9ae18610f",
+    "opened_ts": 1793413044840,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413055771,
+    "merge_sha": "55ec031a388568c3a1afc42dec11f19d8f549e1c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "author": "dev-a",
+    "repo": "billing",
+    "branch": "billing-owner",
+    "title": "PLAT-103-2: billing passes owner, adopt contracts 2.0.0",
+    "head": "0fbc34ae5f18d7e02cab8b8f3ca509a0cffd6c11",
+    "opened_ts": 1793413076339,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413088706,
+    "merge_sha": "a9319f871d0e37d350dc310ce418de0a0df79ae1",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "author": "dev-b",
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103: shell passes owner to validateApp",
+    "head": "1fcedbfcc992b331f6677892699243079c878fb0",
+    "opened_ts": 1793413078631,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413091714,
+    "merge_sha": "0d0766051537a1478b93e11b52640cd237d56002",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "author": "dev-b",
+    "repo": "reports",
+    "branch": "plat-103-owner-reports",
+    "title": "PLAT-103: reports passes owner to validateApp",
+    "head": "c39f1268a1e5bcac332f7e2d38f7461230281813",
+    "opened_ts": 1793413078798,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413091886,
+    "merge_sha": "11a5efdb5702477c5d6223972fd769ffe4f1af1c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

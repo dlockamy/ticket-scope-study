@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103-1: validateApp requires owner (v2.0.0)",
+    "head": "867c5b4adfacad8dcfc56df27a37492b7f2e1d8a",
+    "opened_ts": 1793390616252,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390629824,
+    "merge_sha": "f9de6b457baae6322ee482d1550acccbc3569c89",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103-2: billing passes owner, adopt contracts 2.0.0",
+    "head": "23bf77541827fe118138c8811be6f5b48ae4701f",
+    "opened_ts": 1793390662845,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390673933,
+    "merge_sha": "262507357a386d4335d0bd7b3ecd8f6fe301cc31",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103-3: shell passes owner, adopt contracts 2.0.0",
+    "head": "3b3a9bf2eeb0ffc20f4409f061f0fd5e64f73435",
+    "opened_ts": 1793390662977,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390692524,
+    "merge_sha": "ed6f048aceb7bc0af77fc3407bb875afc6964db0",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

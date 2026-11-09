@@ -1,0 +1,6 @@
+{"ts":1793368424173,"event":"clone","repo":"mono"}
+{"ts":1793368447741,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":2}}
+{"ts":1793368460308,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3471,"waited_ms":9171,"sha":"c3e8a2db6a2913f952b8df3498e371e1ec0f769b"}
+{"ts":1793368460454,"event":"pr_merged","pr":1,"merge_sha":"c91cb2079ffa8da8fc09bede04ba2324d82210c2"}
+{"ts":1793368478863,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11881,"ci_main_ms":3059,"waited_ms":18379}
+{"ts":1793368493427,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and updated billing, core-shell, reports in one PR (#1), since shared-contracts lives in the monorepo and is inlined at build time (no registry release/lockfile update needed). Bumped shared-contracts to 2.0.0 (breaking). Assumed core-shell's billingEndpointHint key stays as is. All three apps build locally; CI and CD green."}

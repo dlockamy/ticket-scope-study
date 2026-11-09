@@ -1,0 +1,24 @@
+// CI for sub-route-reports (multi-repo). Structure mirrors the monorepo's Jenkinsfile for a single app.
+pipeline {
+    agent { label 'linux-build' }
+    options { timeout(time: 10, unit: 'MINUTES'); buildDiscarder(logRotator(numToKeepStr: '30')); disableConcurrentBuilds(abortPrevious: true) }
+    stages {
+        stage('Build') {
+            agent { docker { image 'node:22-alpine'; reuseNode true; args '-e HOME=/tmp -e npm_config_cache=/tmp/.npm' } }
+            steps {
+                sh 'node --version && npm --version'
+                sh 'npm run build'
+            }
+        }
+        stage('Check output') {
+            steps {
+                sh '''#!/bin/sh
+                    set -eu
+                    test -s dist/main.js
+                    if grep -q "@mfe/shared-contracts" dist/main.js; then echo "bundle still imports the contract" >&2; exit 1; fi
+                    echo "build output OK"
+                '''
+            }
+        }
+    }
+}

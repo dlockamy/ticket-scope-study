@@ -1,0 +1,105 @@
+{
+  "run": "s2-C1-A3-multi-r5",
+  "topology": "multi",
+  "change": "C1",
+  "arm": "A3",
+  "rep": 5,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 88,
+  "jenkins_wait_s": 55,
+  "agent_active_s": 33,
+  "t_first_clone_s": 6.187,
+  "t_first_pr_s": 19.146,
+  "t_first_merge_s": 33.909,
+  "repos_cloned": [
+    "billing",
+    "contracts"
+  ],
+  "repos_changed": [
+    "billing",
+    "contracts"
+  ],
+  "prs": 2,
+  "prs_merged": 2,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "contracts",
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 15
+    },
+    {
+      "id": 2,
+      "repo": "billing",
+      "files": 2,
+      "add": 9,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 14
+    }
+  ],
+  "lines_changed_excl_lock": 16,
+  "files_changed": 4,
+  "pr_updates": 0,
+  "ci_runs": 2,
+  "ci_failures": 0,
+  "deploys": 2,
+  "deploy_failures": 0,
+  "subtasks_recorded": 0,
+  "subtask_detail": [],
+  "jenkins_builds": 8,
+  "jenkins_executor_s": 35.9,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "multi-billing-cd": 2,
+    "multi-billing-ci": 2,
+    "multi-contracts-cd": 2,
+    "multi-contracts-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 337097,
+  "agent_output_tokens": 2800,
+  "agent_turns": 13,
+  "agent_cost_usd": 0.10743539999999999,
+  "agent_duration_s": 92,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "lock_contracts": "1.0.0"
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "lock_contracts": "1.1.0"
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "lock_contracts": "1.0.0"
+    }
+  },
+  "semver_ok": true,
+  "semver_class": "minor",
+  "platformkit_changed": false,
+  "failed_checks": []
+}

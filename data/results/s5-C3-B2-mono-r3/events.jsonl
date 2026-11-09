@@ -1,0 +1,25 @@
+{"ts":1793396499042,"event":"clone","repo":"mono"}
+{"ts":1793396517146,"event":"audit","violations":3}
+{"ts":1793396544495,"event":"task_added","task":1,"title":"PLAT-103-1: validateApp rejects apps without owner (breaking, major bump)","repo":"mono"}
+{"ts":1793396544515,"event":"task_added","task":2,"title":"PLAT-103-2: billing passes owner from package.json team","repo":"mono"}
+{"ts":1793396544534,"event":"task_added","task":3,"title":"PLAT-103-3: core-shell passes owner from package.json team","repo":"mono"}
+{"ts":1793396544549,"event":"task_start","task":1}
+{"ts":1793396556217,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-contract","size":{"files":3,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396567047,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3223,"waited_ms":9195,"sha":"881e53c66b7fda0fdfdf7ca14f30d2d39259719d"}
+{"ts":1793396568750,"event":"task_done","task":1}
+{"ts":1793396568767,"event":"task_start","task":2}
+{"ts":1793396568892,"event":"pr_merged","pr":1,"merge_sha":"2eaa49d1b911f3f17089e496cc84e01f34957ae9"}
+{"ts":1793396584208,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9024,"ci_main_ms":3060,"waited_ms":15283}
+{"ts":1793396594140,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396606377,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2986,"waited_ms":12204,"sha":"0ccf3f2600cd1d376b03671b9cd07bc3a746e536"}
+{"ts":1793396608530,"event":"task_done","task":2}
+{"ts":1793396608549,"event":"task_start","task":3}
+{"ts":1793396608669,"event":"pr_merged","pr":2,"merge_sha":"3d14fdf6955cf79c233e2299d3a878d5e2e9beec"}
+{"ts":1793396630174,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11777,"ci_main_ms":3049,"waited_ms":21477}
+{"ts":1793396635694,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396647942,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3038,"waited_ms":12217,"sha":"5ec08e00386479b52e8f9355ac9b6706cff4bbda"}
+{"ts":1793396649953,"event":"task_done","task":3}
+{"ts":1793396650076,"event":"pr_merged","pr":3,"merge_sha":"603aa9ea0ff5aebc575464462245832d11a02d5d"}
+{"ts":1793396668532,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8456,"ci_main_ms":3007,"waited_ms":18427}
+{"ts":1793396668616,"event":"audit","violations":0}
+{"ts":1793396674140,"event":"done","summary":"PLAT-103: validateApp now throws when app.owner is missing or empty (shared-contracts bumped to 2.0.0, breaking). core-shell (platform) and sub-route-billing (payments) pass owner from their package.json team. Also fixed sub-route-reports (insights), which was not in the ticket but calls validateApp and would otherwise throw. Three PRs (#1 contract+reports, #2 billing, #3 shell), merged in dependency order; CI and CD green on each; st audit reports 0 violations. Assumptions: 'empty' means falsy (no whitespace trimming); owner values are hardcoded to match package.json because bundles cannot read package.json at runtime; shared-contracts is inlined at build time, so 'release' is the merge plus the major version bump, with no registry publish."}

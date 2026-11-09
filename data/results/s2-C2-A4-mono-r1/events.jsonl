@@ -1,0 +1,7 @@
+{"ts":1793377242059,"event":"clone","repo":"mono"}
+{"ts":1793377242134,"event":"clone","repo":"platformkit"}
+{"ts":1793377251964,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793377264442,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4154,"waited_ms":12436,"sha":"8dbd99fa4141000f7ab4f84678517338e3cfe390"}
+{"ts":1793377265675,"event":"pr_merged","pr":1,"merge_sha":"dd23e1e288eadf265af68f1a6f79ff8ac2535eb8"}
+{"ts":1793377287136,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11446,"ci_main_ms":3280,"waited_ms":21429}
+{"ts":1793377289591,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and all users (core-shell, sub-route-billing, and sub-route-reports, which also read it) in one PR #1; CI and CD green. Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so no version bump or dependency adoption applies (sub-tasks 2/3 'adopt new release' are N/A; one atomic PR needed). libs-platform-kit has no reference to billingUrl and does not depend on shared-contracts, so PLAT-102-4 needed no change; no PR or release made there."}

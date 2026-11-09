@@ -1,0 +1,159 @@
+{
+  "run": "s2-C3-A6-multi-r1",
+  "topology": "multi",
+  "change": "C3",
+  "arm": "A6",
+  "rep": 1,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "structure": "open",
+  "finished": "done",
+  "turnaround_s": 116,
+  "jenkins_wait_s": 89,
+  "agent_active_s": 27,
+  "t_first_clone_s": 5.19,
+  "t_first_pr_s": 14.394,
+  "t_first_merge_s": 25.491,
+  "repos_cloned": [
+    "billing",
+    "contracts",
+    "platformkit",
+    "reports",
+    "shell"
+  ],
+  "repos_changed": [
+    "billing",
+    "contracts",
+    "reports",
+    "shell"
+  ],
+  "prs": 4,
+  "prs_merged": 4,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "contracts",
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 11
+    },
+    {
+      "id": 2,
+      "repo": "shell",
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 9
+    },
+    {
+      "id": 3,
+      "repo": "billing",
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 27
+    },
+    {
+      "id": 4,
+      "repo": "reports",
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 48
+    }
+  ],
+  "lines_changed_excl_lock": 37,
+  "files_changed": 8,
+  "pr_updates": 0,
+  "ci_runs": 4,
+  "ci_failures": 0,
+  "deploys": 4,
+  "deploy_failures": 0,
+  "subtasks_recorded": 4,
+  "subtask_detail": [
+    {
+      "repo": "contracts",
+      "title": "validateApp requires owner; bump to 2.0.0 (breaking)"
+    },
+    {
+      "repo": "shell",
+      "title": "Pass owner 'platform', upgrade to contracts ^2.0.0"
+    },
+    {
+      "repo": "billing",
+      "title": "Pass owner 'payments', upgrade to contracts ^2.0.0"
+    },
+    {
+      "repo": "reports",
+      "title": "Pass owner 'insights', upgrade to contracts ^2.0.0 (missing from dep catalog)"
+    }
+  ],
+  "jenkins_builds": 16,
+  "jenkins_executor_s": 73.6,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "multi-billing-cd": 2,
+    "multi-billing-ci": 2,
+    "multi-contracts-cd": 2,
+    "multi-contracts-ci": 2,
+    "multi-reports-cd": 2,
+    "multi-reports-ci": 2,
+    "multi-shell-cd": 2,
+    "multi-shell-ci": 2
+  },
+  "deps_queries": 1,
+  "asks": 0,
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 267723,
+  "agent_output_tokens": 2595,
+  "agent_turns": 10,
+  "agent_cost_usd": 0.10311689999999998,
+  "agent_duration_s": 120,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    }
+  },
+  "semver_ok": true,
+  "semver_class": "major",
+  "platformkit_changed": false,
+  "failed_checks": []
+}

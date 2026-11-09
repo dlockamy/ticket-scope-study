@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp require owner (libs/shared-contracts; no libs/config exists, lib lives in mono and is inlined) + bump to 2.0.0",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Pass owner (package.json team) in core-shell, billing, reports",
+    "repo": "",
+    "state": "todo"
+  }
+]

@@ -1,0 +1,14 @@
+{"ts":1793369609706,"event":"clone","repo":"mono"}
+{"ts":1793369609762,"event":"clone","repo":"platformkit"}
+{"ts":1793369617259,"event":"task_added","task":1,"title":"Make validateApp reject apps without a non-empty owner (libs/shared-contracts)","repo":"mono"}
+{"ts":1793369617280,"event":"task_added","task":2,"title":"Pass owner from package.json team in core-shell, sub-route-billing, sub-route-reports","repo":"mono"}
+{"ts":1793369617300,"event":"task_added","task":3,"title":"Build apps locally, verify startup, open PR, pass CI, merge, confirm CD","repo":"mono"}
+{"ts":1793369636576,"event":"task_done","task":1}
+{"ts":1793369636595,"event":"task_done","task":2}
+{"ts":1793369638406,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369649611,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4366,"waited_ms":9194,"sha":"2b8e789c192ae2a5587b888b992f77e5418ced8c"}
+{"ts":1793369651480,"event":"pr_merged","pr":1,"merge_sha":"8956c0cdb17585f13e5372df17fda809cacad952"}
+{"ts":1793369651501,"event":"task_start","task":3}
+{"ts":1793369672948,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12552,"ci_main_ms":3151,"waited_ms":21419}
+{"ts":1793369675480,"event":"task_done","task":3}
+{"ts":1793369678017,"event":"done","summary":"PLAT-103: validateApp now throws when app.owner is missing or blank. The three apps that call it (core-shell, sub-route-billing, sub-route-reports) pass their package.json team as owner (platform, payments, insights). Shipped as PR #1 in mono; CI and CD succeeded on main. Assumptions: owner values are hard-coded to match package.json because the inliner can't import JSON; whitespace-only owner counts as empty; no platform-kit change was needed since the contract is in-repo and inlined at build time. Startup was checked by building all three apps and running validateApp directly, not by running the deployed site."}

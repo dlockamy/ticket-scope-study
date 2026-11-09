@@ -1,0 +1,13 @@
+{"ts":1793449225820,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449225834,"event":"child_opened","child":"PLAT-103-4"}
+{"ts":1793449227724,"event":"clone","repo":"mono"}
+{"ts":1793449227789,"event":"clone","repo":"platformkit"}
+{"ts":1793449243813,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449256076,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3045,"waited_ms":12230,"sha":"c0d89b3895c4362d8abee59e7be62b19885919c6"}
+{"ts":1793449257837,"event":"pr_merged","pr":1,"merge_sha":"2f322f85bb13b1d166fb409f6891032ec6243bcf"}
+{"ts":1793449279332,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10566,"ci_main_ms":3026,"waited_ms":21464}
+{"ts":1793449283327,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449283342,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793449283355,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793449283367,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793449283393,"event":"done","summary":"validateApp now throws if owner missing/empty; core-shell (owner 'platform'), billing ('billing') and reports ('reports') pass owners. Assumptions: owner names are guesses (no source of truth in repo); shared-contracts is an in-repo lib inlined at build, so no version bump/publish needed; landed lib + all callers in ONE PR to avoid a broken window. Reports app also called validateApp (not in the ticket's children) so I fixed it too; note CD only deploys core-shell and billing. platform-kit doesn't use validateApp."}

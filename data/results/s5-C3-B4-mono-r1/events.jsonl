@@ -1,0 +1,30 @@
+{"ts":1793393278897,"event":"clone","repo":"mono"}
+{"ts":1793393315463,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393317661,"event":"task_added","task":1,"title":"PLAT-103-1: require an owner in validateApp","repo":"mono"}
+{"ts":1793393317689,"event":"task_added","task":2,"title":"PLAT-103-4: sub-route-reports passes its owner to validateApp (not in ticket; found while checking callers)","repo":"mono"}
+{"ts":1793393317710,"event":"task_start","task":1}
+{"ts":1793393329974,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2975,"waited_ms":12233,"sha":"4badb5aa5b69884315a26f01e68edca099ea55c6"}
+{"ts":1793393332104,"event":"pr_merged","pr":1,"merge_sha":"724555243b476e0cff48e8484c2dab1a9bfcc38e"}
+{"ts":1793393344406,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1246,"ci_main_ms":3129,"waited_ms":12273}
+{"ts":1793393344427,"event":"task_done","task":1}
+{"ts":1793393360340,"event":"task_start","task":2}
+{"ts":1793393360463,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393372697,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3249,"waited_ms":12202,"sha":"11374627e452208eb9001c0c548359f617bafd32"}
+{"ts":1793393377041,"event":"pr_merged","pr":2,"merge_sha":"cdacd0bc1a2f88658e3c353e5e702633681749d2"}
+{"ts":1793393398514,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10608,"ci_main_ms":3077,"waited_ms":21445}
+{"ts":1793393401765,"event":"task_added","task":3,"title":"PLAT-103-2: billing passes its owner to validateApp","repo":"mono"}
+{"ts":1793393401784,"event":"task_done","task":3}
+{"ts":1793393406826,"event":"task_start","task":3}
+{"ts":1793393406940,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393416117,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3042,"waited_ms":9145,"sha":"5fced64520cdee456827e096aada925fca828759"}
+{"ts":1793393419244,"event":"pr_merged","pr":3,"merge_sha":"39af3679fbe062d640789662d0ec46719a8a5ddf"}
+{"ts":1793393434558,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8235,"ci_main_ms":3068,"waited_ms":15284}
+{"ts":1793393434581,"event":"task_added","task":4,"title":"PLAT-103-3: core shell passes its owner to validateApp","repo":"mono"}
+{"ts":1793393434599,"event":"task_done","task":4}
+{"ts":1793393434615,"event":"task_done","task":3}
+{"ts":1793393442073,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393454297,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3285,"waited_ms":12191,"sha":"8d6c78373d0a02d0ebbad0674c9ee98f4b19856c"}
+{"ts":1793393454415,"event":"pr_merged","pr":4,"merge_sha":"2a40e8198fbe39830f53755dfb4d2d7493d33786"}
+{"ts":1793393469744,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9458,"ci_main_ms":3127,"waited_ms":15299}
+{"ts":1793393472737,"event":"task_done","task":2}
+{"ts":1793393476151,"event":"done","summary":"PLAT-103 done. validateApp (libs/shared-contracts) now throws if app.owner is missing or blank; version bumped to 2.0.0 (breaking). Apps pass owner from package.json team: core-shell=platform (PR #3), sub-route-billing=payments (PR #2). Also fixed sub-route-reports (insights, PR #4), which calls validateApp and would have failed at startup; it was not in the ticket. PRs #1-#4 merged; CI and CD green on main for each. Assumptions: owner is hardcoded in each app's source to match package.json team (not read at build time); shared-contracts is inlined, so the 2.0.0 bump is informational and nothing is published; reports is not built or deployed by CD, so its change is merged but not deployed."}

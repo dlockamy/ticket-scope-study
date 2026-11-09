@@ -1,0 +1,24 @@
+{"ts":1793412609801,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412609801,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793412611999,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793412612108,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793412616968,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412626035,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412626591,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-owner-core-shell-reports","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412637512,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":4603,"waited_ms":9190,"sha":"8263ff65c71d401d47d58780bba17ec06e839d8c"}
+{"ts":1793412637529,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412638438,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4574,"waited_ms":12361,"sha":"fe3ad6b5fb21971c3ae4e01a51e92f949d68dba4"}
+{"ts":1793412639499,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"dd1b00dd583c8e3f0687dcae943807bc5c9814aa"}
+{"ts":1793412640081,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"59c9e16447017d092da28960d9571e9ea9990e37"}
+{"ts":1793412661240,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12701,"ci_main_ms":3551,"waited_ms":21711}
+{"ts":1793412661713,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12701,"ci_main_ms":3551,"waited_ms":21598}
+{"ts":1793412664533,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793412664554,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793412664573,"who":"dev-b","event":"done","summary":"PR #2 merged, CI and CD green. core-shell passes owner 'platform' and reports passes owner 'insights' (from package.json team) to validateApp. Assumptions: shared-contracts is an in-repo lib inlined at build time, so there is no registry version to adopt. Passing owner is harmless before or after dev-a's PR #1 (2.0.0), so I did not wait for it. No handoff note was needed because I released no library. Owner values are hardcoded because the browser bundle can't read package.json. I did not verify the combined main build after PR #1 lands."}
+{"ts":1793412665286,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793412669090,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412669163,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":4603,"waited_ms":35,"sha":"8263ff65c71d401d47d58780bba17ec06e839d8c"}
+{"ts":1793412683482,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3421,"waited_ms":12227,"sha":"871b2b211ce0a1335f5d0b16381b38a936baf5ea"}
+{"ts":1793412683613,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"a18b329337d5e02ce9d6d4d7dc4cf59f095d2b61"}
+{"ts":1793412705285,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10174,"ci_main_ms":5464,"waited_ms":21642}
+{"ts":1793412707544,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/empty; shared-contracts bumped 1.0.0->2.0.0 (major), PR #1 merged, CD green, handoff posted. PLAT-103-2: billing passes owner 'payments' (from package.json team), PR #3 merged, CD green. Assumption: shared-contracts is an in-repo lib inlined at build, so 'adopting' needs no dependency change; whitespace-only owner also rejected."}

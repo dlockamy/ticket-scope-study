@@ -1,0 +1,1 @@
+validateApp now requires owner (contracts 2.0.0, major bump, published). shell(platform), billing(payments), reports(insights) pass owner from package.json 'team', adopt ^2.0.0 with lockfiles, deployed. Assumptions: reports also uses validateApp (not in ticket) so I added a sub-task and fixed it, since 2.0.0 would otherwise break it; owner values hardcoded from package.json team.

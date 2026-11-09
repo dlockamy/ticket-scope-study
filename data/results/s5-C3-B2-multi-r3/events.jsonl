@@ -1,0 +1,20 @@
+{"ts":1793396496695,"event":"clone","repo":"contracts"}
+{"ts":1793396496755,"event":"clone","repo":"billing"}
+{"ts":1793396496813,"event":"clone","repo":"shell"}
+{"ts":1793396496873,"event":"audit","violations":3}
+{"ts":1793396503084,"event":"task_start","task":1}
+{"ts":1793396508630,"event":"task_added","task":1,"title":"x","repo":"contracts"}
+{"ts":1793396508775,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396520690,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3686,"waited_ms":9193,"sha":"47d8befaed222cc48671ac82666a38aca63af9c6"}
+{"ts":1793396522539,"event":"pr_merged","pr":1,"merge_sha":"ecbb18232b7c744ee55602f025147a8aa36f9c31"}
+{"ts":1793396537939,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4978,"ci_main_ms":2984,"waited_ms":15370}
+{"ts":1793396560077,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-2-billing-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793396564866,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793396567970,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2900,"waited_ms":3069,"sha":"45f992cf1a1c2777c7fde3480cfefbabe21b0590"}
+{"ts":1793396575477,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2617,"waited_ms":6122,"sha":"599664866640b712a8be6d3c6d0a4520bcb7eab4"}
+{"ts":1793396575619,"event":"pr_merged","pr":2,"merge_sha":"815b4bccba19413733834a6d064aaa5aa80ba63c"}
+{"ts":1793396597098,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12184,"ci_main_ms":3201,"waited_ms":21446}
+{"ts":1793396598669,"event":"pr_merged","pr":3,"merge_sha":"4acd09cfb7829901cf3b9643526e3d91287a592b"}
+{"ts":1793396614018,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7966,"ci_main_ms":3013,"waited_ms":15321}
+{"ts":1793396614099,"event":"audit","violations":1}
+{"ts":1793396624082,"event":"done","summary":"PLAT-103 delivered: (1) libs-shared-contracts (repo key 'contracts') 2.0.0 — validateApp throws when app.owner is missing/empty/whitespace; breaking => major bump; PR #1 merged, CD published 2.0.0. (2) billing (key 'billing') PR #2 — owner 'payments' (from package.json team), shared-contracts ^2.0.0; merged, CD green. (3) core-shell (key 'shell') PR #3 — owner 'platform' (from package.json team), shared-contracts ^2.0.0; merged, CD green. Assumptions: owner value is hardcoded as a literal in source because the bundler inlines source and cannot read package.json; whitespace-only owner is rejected too. OPEN: st audit still reports 1 violation for sub-route-reports (never in ticket scope; it pins ^1.0.0 so it is unaffected by the 2.0.0 release). Its owner needs to be added in a follow-up ticket; acceptance criterion 'audit reports no violations' is therefore NOT fully met. Note: I accidentally created a stray task titled 'x' (contracts) via 'st task add' — no st command to delete it."}

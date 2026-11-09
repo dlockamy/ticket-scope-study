@@ -1,0 +1,6 @@
+{"ts":1793363666738,"event":"clone","repo":"mono"}
+{"ts":1793363683426,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793363694978,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4411,"waited_ms":9204,"sha":"3472773a5c17d73d07632e175b275674b42a5b21"}
+{"ts":1793363697195,"event":"pr_merged","pr":1,"merge_sha":"ed7ab21d041cd7fee5512e65df3bbc3f7906fdce"}
+{"ts":1793363718627,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13315,"ci_main_ms":3558,"waited_ms":21396}
+{"ts":1793363722670,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and in core-shell, sub-route-billing, sub-route-reports in one PR (#1), merged, CI+CD green. Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so no registry release or dependency bump is needed; I bumped its package.json to 2.0.0 as a breaking-change marker. One PR since the lib and consumers must land together. Reports app isn't listed in docs as a CD-deployed component; its build passes."}

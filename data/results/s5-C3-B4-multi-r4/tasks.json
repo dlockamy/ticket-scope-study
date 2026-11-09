@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103 (extra): reports app passes owner ('insights') to validateApp, adopt contracts 2.x",
+    "repo": "reports",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-1: validateApp rejects apps without owner (breaking, major bump)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-2: billing passes owner 'payments' to validateApp, adopt contracts 2.x",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-103-3: core shell passes owner 'platform' to validateApp, adopt contracts 2.x",
+    "repo": "shell",
+    "state": "done"
+  }
+]

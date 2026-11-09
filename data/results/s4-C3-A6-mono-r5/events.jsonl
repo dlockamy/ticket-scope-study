@@ -1,0 +1,11 @@
+{"ts":1793391156149,"event":"clone","repo":"mono"}
+{"ts":1793391156183,"event":"deps_query","pkg":"@studio/contracts"}
+{"ts":1793391162969,"event":"task_added","task":1,"title":"Make validateApp require owner (libs/shared-contracts)","repo":""}
+{"ts":1793391162991,"event":"task_added","task":2,"title":"Pass package.json team as owner in core-shell, billing, reports","repo":""}
+{"ts":1793391176657,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793391187746,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3138,"waited_ms":9140,"sha":"48d0c169568dcb65108bd481386d05a8c5391035"}
+{"ts":1793391187873,"event":"pr_merged","pr":1,"merge_sha":"8777e21b26a5795e93d0ab98d8d7b226ae0dad71"}
+{"ts":1793391206322,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11908,"ci_main_ms":3216,"waited_ms":18419}
+{"ts":1793391209547,"event":"task_done","task":1}
+{"ts":1793391209567,"event":"task_done","task":2}
+{"ts":1793391209584,"event":"done","summary":"Shipped PLAT-103 via PR #1 (merged, CI+CD green). validateApp now throws if owner is missing/empty/non-string; core-shell (platform), billing (payments), reports (insights) pass owner. Assumptions: owner values hardcoded to match each app's package.json 'team' (apps are inlined in the browser so package.json can't be imported); validateApp lives in-repo (libs/shared-contracts), so no registry library release was needed. All three apps built locally."}

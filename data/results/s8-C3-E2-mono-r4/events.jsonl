@@ -1,0 +1,11 @@
+{"ts":1793449572250,"event":"clone","repo":"mono"}
+{"ts":1793449577901,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449590481,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449602777,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3116,"waited_ms":12258,"sha":"08314bacb1dd55792b8e121c6a52958060be2e1b"}
+{"ts":1793449604709,"event":"pr_merged","pr":1,"merge_sha":"a75e907d961117e5f60eabda973830bbf78ce5be"}
+{"ts":1793449626103,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10914,"ci_main_ms":3090,"waited_ms":21365}
+{"ts":1793449629072,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449629087,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793449629099,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793449629113,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793449629138,"event":"done","summary":"validateApp now throws if owner missing/empty; billing=payments, core-shell=platform, reports=insights (taken from each app's package.json 'team'). Shipped as one PR (#1) so no app breaks between lib and app changes; lib is inlined at build time so no registry release needed (bumped shared-contracts to 2.0.0 as a breaking-change marker). All three apps build; CI and CD green."}

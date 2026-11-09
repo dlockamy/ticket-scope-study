@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp: require owner (v2.0.0)",
+    "head": "764dbac4df9c5e3e7f6e06126b1b9e746b3dd565",
+    "opened_ts": 1793385108941,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385122201,
+    "merge_sha": "6831131be5929c6cdcf612580a047baf3d798fc5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "declare-app-owner",
+    "title": "Declare app owner (shared-contracts 2.x)",
+    "head": "394c35d75924929ca7664586d68f08354547ba79",
+    "opened_ts": 1793385145721,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385156088,
+    "merge_sha": "87caf89155af4bf499359aa8e81f8169209c8a5c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "reports",
+    "branch": "declare-app-owner",
+    "title": "Declare app owner (shared-contracts 2.x)",
+    "head": "7b4153487e7ba7c035f61621543eec25def9f9e6",
+    "opened_ts": 1793385146280,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793385180808,
+    "merge_sha": "ba7d51df1752520fc3c12963cb378978be393518",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

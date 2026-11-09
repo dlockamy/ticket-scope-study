@@ -1,0 +1,6 @@
+{"ts":1793375760168,"event":"clone","repo":"mono"}
+{"ts":1793375771140,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793375782050,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4206,"waited_ms":9210,"sha":"182bef92c34f3c1405796dc9c075b14e98be6d51"}
+{"ts":1793375782224,"event":"pr_merged","pr":1,"merge_sha":"bfcc495eb7fb4a78df551681638f05af8f0017d9"}
+{"ts":1793375809790,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":18282,"ci_main_ms":3378,"waited_ms":27533}
+{"ts":1793375812096,"event":"done","summary":"PLAT-102: renamed billingUrl->billingEndpoint in shared-contracts (bumped to 2.0.0, breaking), billing, core-shell, and reports (also used it, not in ticket; changed to keep it working). Assumptions: shared-contracts lives in this monorepo and is inlined at build time, so one PR was used rather than a separate release/dependency bump. CI and CD green."}

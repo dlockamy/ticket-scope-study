@@ -1,0 +1,26 @@
+{
+  "run": "s4-C3-A5-mono-r5",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "A5",
+  "rep": 5,
+  "model": "claude-sonnet-5-5",
+  "tag": "s4",
+  "start_ms": 1793390435096,
+  "structure": "open",
+  "list": "none",
+  "catalog": "complete",
+  "checks": false,
+  "clarify": false,
+  "listed": [],
+  "decoys": [],
+  "hidden": null,
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

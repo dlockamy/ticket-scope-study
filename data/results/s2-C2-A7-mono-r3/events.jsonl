@@ -1,0 +1,6 @@
+{"ts":1793367345466,"event":"clone","repo":"mono"}
+{"ts":1793367356496,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793367371992,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4408,"waited_ms":15459,"sha":"a29abfee299cfc7b7e0226c657577ba1bb000ef6"}
+{"ts":1793367373480,"event":"pr_merged","pr":1,"merge_sha":"80acaa2717e394d918b5fd0ff2ae599a959e0eeb"}
+{"ts":1793367391925,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11603,"ci_main_ms":3358,"waited_ms":18417}
+{"ts":1793367394541,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts, bumped to 2.0.0 (breaking, per CONTRIBUTING). Because libs/ is inlined at build time, updated core-shell, sub-route-billing and also sub-route-reports (also used billingUrl; would otherwise log undefined) in one PR #1, since no registry dependency bump applies. All three builds pass, no billingUrl remains; CI and CD succeeded. Assumption: I did not inspect live bundles directly; CD success taken as live."}

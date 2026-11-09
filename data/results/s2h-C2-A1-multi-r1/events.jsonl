@@ -1,0 +1,35 @@
+{"ts":1793369820313,"event":"clone","repo":"contracts"}
+{"ts":1793369820371,"event":"clone","repo":"shell"}
+{"ts":1793369820431,"event":"clone","repo":"billing"}
+{"ts":1793369820503,"event":"clone","repo":"reports"}
+{"ts":1793369820561,"event":"clone","repo":"platformkit"}
+{"ts":1793369836045,"event":"task_added","task":1,"title":"Rename billingUrl to billingEndpoint in shared-contracts, bump to 2.0.0, ship","repo":"contracts"}
+{"ts":1793369836067,"event":"task_added","task":2,"title":"Move core-shell to shared-contracts ^2 and rename billingUrl reference, ship","repo":"shell"}
+{"ts":1793369836086,"event":"task_added","task":3,"title":"Move sub-route-billing to shared-contracts ^2 and rename billingUrl reference, ship","repo":"billing"}
+{"ts":1793369836105,"event":"task_added","task":4,"title":"Move sub-route-reports to shared-contracts ^2 and rename billingUrl reference, ship","repo":"reports"}
+{"ts":1793369838840,"event":"task_start","task":1}
+{"ts":1793369845662,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369857438,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4033,"waited_ms":9228,"sha":"94c1d413cfe365cc068dbadb7d185d75b1cb5727"}
+{"ts":1793369859497,"event":"pr_merged","pr":1,"merge_sha":"24ebcd391f2064e18eb145b956ff2222e3946a18"}
+{"ts":1793369874878,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5433,"ci_main_ms":2904,"waited_ms":15352}
+{"ts":1793369878807,"event":"task_done","task":1}
+{"ts":1793369878827,"event":"task_start","task":2}
+{"ts":1793369878844,"event":"task_start","task":3}
+{"ts":1793369878862,"event":"task_start","task":4}
+{"ts":1793369895765,"event":"task_done","task":1}
+{"ts":1793369895894,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-102-billing-endpoint-rename","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369896020,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-102-billing-endpoint-rename","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369896143,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-billing-endpoint-rename","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369908095,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3263,"waited_ms":9188,"sha":"35f990959fec363b715d19422ca28312d3656780"}
+{"ts":1793369908159,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3257,"waited_ms":35,"sha":"b89913240efbbf8ab4509a5095144209e5f8010b"}
+{"ts":1793369908217,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3238,"waited_ms":34,"sha":"e481c58648033957f6d8fbf6e3780ac6d6c46326"}
+{"ts":1793369910641,"event":"pr_merged","pr":2,"merge_sha":"e6b26a7f32275a095d7048791fdd55b280e64dde"}
+{"ts":1793369925997,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7909,"ci_main_ms":3060,"waited_ms":15327}
+{"ts":1793369926126,"event":"pr_merged","pr":3,"merge_sha":"9a083fb8960bd0683c3333b31e34514ba4826db4"}
+{"ts":1793369944518,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11300,"ci_main_ms":3107,"waited_ms":18364}
+{"ts":1793369944654,"event":"pr_merged","pr":4,"merge_sha":"35274767f9deb9d855f58778486d58fe1795f722"}
+{"ts":1793369966156,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13799,"ci_main_ms":3057,"waited_ms":21472}
+{"ts":1793369969167,"event":"task_done","task":2}
+{"ts":1793369969185,"event":"task_done","task":3}
+{"ts":1793369969201,"event":"task_done","task":4}
+{"ts":1793369972311,"event":"done","summary":"Renamed billingUrl to billingEndpoint (same value) across shared config and all consumers. Shipped: PR #1 contracts 1.0.0 -> 2.0.0 (breaking, major bump because the key was removed); PR #2 core-shell, PR #3 sub-route-billing, PR #4 sub-route-reports, each moved to @mfe/shared-contracts ^2.0.0 with lockfile updated and the reference renamed. All merged, CI and CD green. Assumptions: 2.0.0 is the right bump for a removed key; the old billingUrl key was dropped (not kept as an alias) because the acceptance criteria require no remaining references; the shell's internal billingEndpointHint key was left as-is since it is not billingUrl; platform-kit was not touched because nothing referenced billingUrl there."}

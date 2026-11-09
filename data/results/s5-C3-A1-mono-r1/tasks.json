@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp require a non-empty owner in libs/shared-contracts",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Pass owner (team from package.json) in core-shell, sub-route-billing and sub-route-reports",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Build all apps, open PR, merge when green, confirm CD deploy",
+    "repo": "mono",
+    "state": "done"
+  }
+]

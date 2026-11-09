@@ -1,0 +1,18 @@
+{"ts":1793370012650,"event":"deps_query","pkg":"billingUrl"}
+{"ts":1793370012669,"event":"deps_query","pkg":"billingurl"}
+{"ts":1793370015035,"event":"clone","repo":"mono"}
+{"ts":1793370015090,"event":"clone","repo":"platformkit"}
+{"ts":1793370036811,"event":"task_added","task":1,"title":"Rename billingUrl to billingEndpoint in shared-contracts and all consuming apps (one PR)","repo":"mono"}
+{"ts":1793370036833,"event":"task_added","task":2,"title":"Build all apps and verify contract check passes","repo":"mono"}
+{"ts":1793370036852,"event":"task_added","task":3,"title":"Open PR, wait for CI, merge, confirm CD deploy","repo":"mono"}
+{"ts":1793370040034,"event":"task_start","task":1}
+{"ts":1793370043080,"event":"task_start","task":2}
+{"ts":1793370048455,"event":"task_done","task":2}
+{"ts":1793370048621,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793370062871,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3399,"waited_ms":12211,"sha":"75d5cbdbc744684b7da41eda7bc20da07ca4f7df"}
+{"ts":1793370065779,"event":"task_start","task":3}
+{"ts":1793370065932,"event":"pr_merged","pr":1,"merge_sha":"93e237d3f698b549576014bcdee595b20d68ccab"}
+{"ts":1793370084378,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10502,"ci_main_ms":3108,"waited_ms":18415}
+{"ts":1793370087361,"event":"task_done","task":3}
+{"ts":1793370092360,"event":"task_done","task":1}
+{"ts":1793370092388,"event":"done","summary":"PLAT-102: renamed shared config key billingUrl to billingEndpoint (same value) in libs/shared-contracts and in core-shell, sub-route-billing and sub-route-reports, in one PR (mono #1). Local builds of all three apps pass and the contract check is OK; CI and CD on main succeeded. Assumptions: all work belongs in the mono repo (platformkit has no references); core-shell's billingEndpointHint output key is unchanged since it does not contain billingUrl; no catalog entry exists for billingUrl so no dependent repos were found."}

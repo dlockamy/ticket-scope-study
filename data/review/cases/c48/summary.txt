@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty (shared-contracts 2.0.0 published). billing (payments), shell (platform) pass owner from package.json team and adopt ^2.0.0; all deployed. Assumptions: also updated reports (insights) since it calls validateApp and acceptance says every app; owner whitespace-only treated as empty.

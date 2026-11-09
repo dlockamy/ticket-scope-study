@@ -1,0 +1,81 @@
+=== 65c10dc PLAT-104-2: rebuild billing app with shared-contracts 1.1.0 (billing/v2)
+
+diff --git a/apps/sub-route-billing/package-lock.json b/apps/sub-route-billing/package-lock.json
+index e554367..ce439e1 100644
+--- a/apps/sub-route-billing/package-lock.json
++++ b/apps/sub-route-billing/package-lock.json
+@@ -1,12 +1,12 @@
+ {
+   "name": "@mfe/sub-route-billing",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "lockfileVersion": 3,
+   "requires": true,
+   "packages": {
+     "": {
+       "name": "@mfe/sub-route-billing",
+-      "version": "1.0.0",
++      "version": "1.0.1",
+       "dependencies": {
+         "@studio/platform-kit": "^1.0.0"
+       }
+diff --git a/apps/sub-route-billing/package.json b/apps/sub-route-billing/package.json
+index 2b61020..aac9a24 100644
+--- a/apps/sub-route-billing/package.json
++++ b/apps/sub-route-billing/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@mfe/sub-route-billing",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "team": "payments",
+   "scripts": {
+     "prebuild": "npm install --no-audit --no-fund",
+=== 8d13731 PLAT-104-3/4: rebuild core-shell and reports with shared-contracts 1.1.0 (billing/v2)
+
+diff --git a/apps/core-shell/package.json b/apps/core-shell/package.json
+index 0013d96..052a571 100644
+--- a/apps/core-shell/package.json
++++ b/apps/core-shell/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@mfe/core-shell",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "scripts": {
+     "build": "node build.js"
+   },
+diff --git a/apps/sub-route-reports/package.json b/apps/sub-route-reports/package.json
+index fe97eea..3350bf5 100644
+--- a/apps/sub-route-reports/package.json
++++ b/apps/sub-route-reports/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@mfe/sub-route-reports",
+-  "version": "1.0.0",
++  "version": "1.0.1",
+   "team": "insights",
+   "scripts": {"build": "node build.js"}
+ }
+=== b1d4f64 PLAT-104-1: billingUrl -> /billing/v2 (shared-contracts 1.1.0)
+
+diff --git a/libs/shared-contracts/index.js b/libs/shared-contracts/index.js
+index 94d096c..c1c3791 100644
+--- a/libs/shared-contracts/index.js
++++ b/libs/shared-contracts/index.js
+@@ -2,7 +2,7 @@ export const SHARED_CONFIG = {
+   theme: 'dark',
+   apiEndpoint: 'https://homelab.local',
+   billingVersion: '1.0.0',
+-  billingUrl: 'https://homelab.local/billing'
++  billingUrl: 'https://homelab.local/billing/v2'
+ };
+ 
+ export function validateApp(app) {
+diff --git a/libs/shared-contracts/package.json b/libs/shared-contracts/package.json
+index 2313a58..8e27a0d 100644
+--- a/libs/shared-contracts/package.json
++++ b/libs/shared-contracts/package.json
+@@ -1 +1 @@
+-{"name": "@mfe/shared-contracts", "version": "1.0.0", "type": "module", "main": "index.js"}
++{"name": "@mfe/shared-contracts", "version": "1.1.0", "type": "module", "main": "index.js"}

@@ -1,0 +1,31 @@
+{"ts":1793416658016,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416658184,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793416660246,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793416660317,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793416660512,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793416662320,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416667037,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793416672373,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416677661,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2-url","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793416682427,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416688705,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2758,"waited_ms":9159,"sha":"77cca27e49fa3ccd6a0db7f94054345893cf6cb7"}
+{"ts":1793416688851,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"08f9b660761821d03f292214896951bf9bd4f923"}
+{"ts":1793416692466,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416701310,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5440,"ci_main_ms":2880,"waited_ms":12428}
+{"ts":1793416702530,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793416704993,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793416708532,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-billing-adopt-contracts-v2","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793416712558,"who":"dev-b","event":"handoff_read"}
+{"ts":1793416720804,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2996,"waited_ms":12238,"sha":"b734394f53bc6f07cdc419798e52253bca16f65c"}
+{"ts":1793416720948,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"d47d0de55857df62ec692767250bda9a514ee9f9"}
+{"ts":1793416720970,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793416721124,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793416735121,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3351,"waited_ms":12222,"sha":"716c7c22f7fb17785b4473567573d53c613c65bc"}
+{"ts":1793416735197,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3271,"waited_ms":42,"sha":"41e4c2c96f868578637b0146af84581ee1bf36bd"}
+{"ts":1793416737568,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"7523955fcd7e06cac7a09f491a99af28a6575fe3"}
+{"ts":1793416737761,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"9b7afa1ef510e641b7d5d50d4da5d347ed282289"}
+{"ts":1793416745503,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12138,"ci_main_ms":3404,"waited_ms":24523}
+{"ts":1793416748449,"who":"dev-a","event":"done","summary":"PLAT-104-1: contracts billingUrl -> https://homelab.local/billing/v2, released as 2.0.0 (major: existing value changed; assumption), live in registry. PLAT-104-2: billing adopts ^2.0.0 (package.json + lockfile), merged and deployed. Handoff posted for dev-b (shell/reports must install @mfe/shared-contracts@^2.0.0 since ^1.0.0 won't pick up 2.0.0)."}
+{"ts":1793416753215,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8965,"ci_main_ms":3255,"waited_ms":15409}
+{"ts":1793416759462,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14785,"ci_main_ms":3216,"waited_ms":6214}
+{"ts":1793416761605,"who":"dev-b","event":"done","summary":"Shell (PR #3) and reports (PR #4) upgraded @mfe/shared-contracts ^1.0.0 -> ^2.0.0 (package.json + lockfile), built locally, CI green, merged, CD succeeded. Assumption: dev-a's 2.0.0 release (major) is the intended one; no source changes were needed."}

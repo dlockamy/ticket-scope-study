@@ -1,0 +1,16 @@
+{"ts":1793387494729,"event":"clone","repo":"contracts"}
+{"ts":1793387494799,"event":"clone","repo":"billing"}
+{"ts":1793387494857,"event":"clone","repo":"shell"}
+{"ts":1793387511305,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793387520591,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3721,"waited_ms":3095,"sha":"fe445d39c67ea2b84f5f294a1ebeeafb14f39b11"}
+{"ts":1793387520773,"event":"pr_merged","pr":1,"merge_sha":"3913e55be128d7d4e99d8a40491bae7360b77aa7"}
+{"ts":1793387533117,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5326,"ci_main_ms":2879,"waited_ms":12313}
+{"ts":1793387540474,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793387540643,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793387553152,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3288,"waited_ms":9163,"sha":"7c30bce756cc3c01d33d8de31302e59ecc9ff412"}
+{"ts":1793387553280,"event":"pr_merged","pr":2,"merge_sha":"fd1d66ec6abd0d58c09e88586350cb599818a2dc"}
+{"ts":1793387574707,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11984,"ci_main_ms":3136,"waited_ms":21398}
+{"ts":1793387574770,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3264,"waited_ms":32,"sha":"a8cfc60aec4f61769527690c823aadfaf5e8f14e"}
+{"ts":1793387574891,"event":"pr_merged","pr":3,"merge_sha":"c20b831b3a90e08cd048e37a725f4b28eebb624f"}
+{"ts":1793387590253,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8001,"ci_main_ms":3040,"waited_ms":15334}
+{"ts":1793387593204,"event":"done","summary":"validateApp now throws if owner missing/empty (contracts 2.0.0, published). Billing (owner=payments) and shell (owner=platform), taken from package.json team, adopt ^2.0.0 and are deployed. Assumptions: only billing and shell call validateApp (grep'd the three clones; other repos not checked); whitespace-only owner counts as empty."}

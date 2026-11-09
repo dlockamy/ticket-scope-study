@@ -1,0 +1,18 @@
+{"ts":1793363028179,"event":"clone","repo":"contracts"}
+{"ts":1793363028239,"event":"clone","repo":"shell"}
+{"ts":1793363028296,"event":"clone","repo":"billing"}
+{"ts":1793363028352,"event":"clone","repo":"platformkit"}
+{"ts":1793363028407,"event":"clone","repo":"reports"}
+{"ts":1793363046446,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793363062023,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3641,"waited_ms":12285,"sha":"8968c5e090c939d470816adb10186e9d8da8a685"}
+{"ts":1793363062175,"event":"pr_merged","pr":1,"merge_sha":"60b35c55f6d40b4150d3abe5e88f2694a83bcf05"}
+{"ts":1793363074434,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5245,"ci_main_ms":2906,"waited_ms":12227}
+{"ts":1793363086294,"event":"pr_opened","pr":2,"repo":"shell","branch":"pass-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363086437,"event":"pr_opened","pr":3,"repo":"billing","branch":"pass-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363100834,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3074,"waited_ms":12232,"sha":"192ab4176712f2ad2506430d4bb8f8db0422d205"}
+{"ts":1793363100961,"event":"pr_merged","pr":2,"merge_sha":"c9617bf05869f654cdb2a8bb5d45f45cb10f8bb2"}
+{"ts":1793363122435,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8896,"ci_main_ms":3077,"waited_ms":21445}
+{"ts":1793363122501,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3039,"waited_ms":35,"sha":"6839ccf01df7958e880ec82bfd9468ec81e8f432"}
+{"ts":1793363122628,"event":"pr_merged","pr":3,"merge_sha":"8580104931ab52e55c4f1fcdb9646c1073fc1361"}
+{"ts":1793363144165,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12963,"ci_main_ms":3053,"waited_ms":21509}
+{"ts":1793363148499,"event":"done","summary":"validateApp now throws if owner missing/empty; released @mfe/shared-contracts 2.0.0 (major, breaking; PR #1). Shell (owner 'platform', PR #2) and billing (owner 'payments', PR #3) pass owner from package.json team, upgraded to ^2.0.0, built, merged, deployed. Assumptions: platform-kit (PLAT-103-4) has no validateApp call and no team field, so no change was made. Reports also calls validateApp but is out of scope; it stays on ^1.0.0 and will need an owner ('insights') before it upgrades. Owner values are hardcoded literals matching package.json team (billing's bundler inlines imports)."}

@@ -1,0 +1,13 @@
+{"ts":1793448633793,"event":"clone","repo":"mono"}
+{"ts":1793448633851,"event":"clone","repo":"platformkit"}
+{"ts":1793448641316,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793448650426,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793448659418,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3184,"waited_ms":6106,"sha":"2a29cdbe8460d67d0543cf26e3bbf785c2ebae56"}
+{"ts":1793448659548,"event":"pr_merged","pr":1,"merge_sha":"e13b5bd3feec1afde22d2afa9060bc68a588b0c0"}
+{"ts":1793448677915,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12492,"ci_main_ms":3325,"waited_ms":18338}
+{"ts":1793448680289,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793448680305,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793448680320,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793448680333,"event":"child_opened","child":"PLAT-103-4"}
+{"ts":1793448686443,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793448686475,"event":"done","summary":"validateApp now requires non-empty owner; billing(payments), core-shell(platform), reports(insights) pass it. Shipped as one PR because libs/ is inlined at build, so the contract change and its consumers had to land together. Assumed owners from each app's package.json 'team' field. Reports app is not built/deployed by CI/CD, but was updated too. No other repo calls validateApp."}

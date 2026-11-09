@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: every app declares its owning team",
+    "head": "b71296e360741c6f9613b397713899c436cb40e7",
+    "opened_ts": 1793396345965,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793396361052,
+    "merge_sha": "19474b13d90aedb346ec8db42f051e28517cb9d2",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

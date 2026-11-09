@@ -1,0 +1,12 @@
+{"ts":1793453362200,"event":"clone","repo":"mono"}
+{"ts":1793453362256,"event":"clone","repo":"platformkit"}
+{"ts":1793453374713,"event":"task_added","task":1,"title":"mono: validateApp throws without owner (libs/shared-contracts)","repo":""}
+{"ts":1793453374734,"event":"task_added","task":2,"title":"mono: core-shell, billing, reports pass owner = package.json team","repo":""}
+{"ts":1793453374752,"event":"task_added","task":3,"title":"Out of scope: README fake bucket names (lee said separate thing)","repo":""}
+{"ts":1793453381133,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793453396577,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3327,"waited_ms":15408,"sha":"2ac9aff6f0a0b05a9a02df65a49609abb2a58fcb"}
+{"ts":1793453398670,"event":"pr_merged","pr":1,"merge_sha":"3e21575cc074f100f18c5662733e29a8ef09f5dd"}
+{"ts":1793453420095,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11702,"ci_main_ms":3107,"waited_ms":21394}
+{"ts":1793453423020,"event":"task_done","task":1}
+{"ts":1793453423044,"event":"task_done","task":2}
+{"ts":1793453423060,"event":"done","summary":"validateApp now throws 'app.owner is required' when owner missing. core-shell/billing/reports pass owner matching their package.json team (platform/payments/insights), hardcoded since bundles can't read package.json. Assumptions: validateApp lives in monorepo libs/shared-contracts (inlined at build, no registry package), so no version bump/platformkit change needed; no external consumers exist. README fake-bucket-name cleanup left out as Lee called it a separate thing. PR #1 merged, CI+CD green."}

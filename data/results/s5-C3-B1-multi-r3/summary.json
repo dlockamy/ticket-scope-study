@@ -1,0 +1,162 @@
+{
+  "run": "s5-C3-B1-multi-r3",
+  "topology": "multi",
+  "change": "C3",
+  "arm": "B1",
+  "rep": 3,
+  "model": "haiku",
+  "tag": "s5",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 177,
+  "jenkins_wait_s": 111,
+  "agent_active_s": 67,
+  "t_first_clone_s": 5.715,
+  "t_first_pr_s": 23.027,
+  "t_first_merge_s": 38.248,
+  "repos_cloned": [
+    "billing",
+    "contracts",
+    "platformkit",
+    "reports",
+    "shell"
+  ],
+  "repos_changed": [
+    "billing",
+    "contracts",
+    "reports",
+    "shell"
+  ],
+  "prs": 4,
+  "prs_merged": 4,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "contracts",
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 15
+    },
+    {
+      "id": 2,
+      "repo": "billing",
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 11
+    },
+    {
+      "id": 3,
+      "repo": "shell",
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 11
+    },
+    {
+      "id": 4,
+      "repo": "reports",
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1,
+      "open_to_merge_s": 14
+    }
+  ],
+  "lines_changed_excl_lock": 15,
+  "files_changed": 8,
+  "pr_updates": 0,
+  "ci_runs": 4,
+  "ci_failures": 0,
+  "deploys": 4,
+  "deploy_failures": 0,
+  "subtasks_recorded": 4,
+  "subtask_detail": [
+    {
+      "repo": "reports",
+      "title": "Make the reports app pass its owner to validateApp (team from package.json) and adopt the new shared contracts release (not in ticket; found via grep for validateApp)"
+    },
+    {
+      "repo": "contracts",
+      "title": "Make validateApp reject apps without an owner; breaking change, release as major version"
+    },
+    {
+      "repo": "billing",
+      "title": "Billing passes owner (package.json team) to validateApp; adopt new shared contracts release"
+    },
+    {
+      "repo": "shell",
+      "title": "Core shell passes owner (package.json team) to validateApp; adopt new shared contracts release"
+    }
+  ],
+  "jenkins_builds": 16,
+  "jenkins_executor_s": 72.6,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "multi-billing-cd": 2,
+    "multi-billing-ci": 2,
+    "multi-contracts-cd": 2,
+    "multi-contracts-ci": 2,
+    "multi-reports-cd": 2,
+    "multi-reports-ci": 2,
+    "multi-shell-cd": 2,
+    "multi-shell-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "audit_runs": 0,
+  "audit_last_violations": null,
+  "hidden": "reports",
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 1075760,
+  "agent_output_tokens": 10484,
+  "agent_turns": 34,
+  "agent_cost_usd": 0.020857479999999998,
+  "agent_duration_s": 181,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    }
+  },
+  "semver_ok": true,
+  "semver_class": "major",
+  "platformkit_changed": false,
+  "failed_checks": []
+}

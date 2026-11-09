@@ -1,0 +1,26 @@
+{
+  "run": "s2-C3-A2-multi-r5",
+  "topology": "multi",
+  "change": "C3",
+  "arm": "A2",
+  "rep": 5,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "start_ms": 1793374788142,
+  "structure": "structured",
+  "list": "partial",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [
+    "billing",
+    "shell"
+  ],
+  "decoys": [],
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

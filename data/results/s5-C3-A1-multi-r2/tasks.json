@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner; bump to 2.0.0 and publish",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Pass owner team=platform; depend on shared-contracts ^2.0.0",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Pass owner team=payments; depend on shared-contracts ^2.0.0",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Pass owner team=insights; depend on shared-contracts ^2.0.0",
+    "repo": "reports",
+    "state": "done"
+  }
+]

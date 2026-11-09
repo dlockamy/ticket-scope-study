@@ -1,0 +1,20 @@
+{"ts":1793413311229,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793413311492,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793413325539,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413325622,"who":"dev-b","event":"task_start","task":3}
+{"ts":1793413325651,"who":"dev-b","event":"task_start","task":4}
+{"ts":1793413325823,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-3-4-app-owner","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413336586,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3437,"waited_ms":9159,"sha":"1e9fa939b09d884abdf611ea3e2391678ad4f373"}
+{"ts":1793413336803,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3456,"waited_ms":9374,"sha":"76fa6bf0034466e8826fcc5ad607ec2cd1b462d2"}
+{"ts":1793413339078,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"95b83919c3395753b8b25a3397b5490f55208aff"}
+{"ts":1793413339311,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"b0039f456ad1c7e786e5a06228ec6c9647a1fbb5"}
+{"ts":1793413357727,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9977,"ci_main_ms":3333,"waited_ms":18614}
+{"ts":1793413357813,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9977,"ci_main_ms":3333,"waited_ms":18458}
+{"ts":1793413360314,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793413360338,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793413360638,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413366840,"who":"dev-b","event":"done","summary":"PR #2 merged and CD green: core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team). Assumptions: shared-contracts is inlined from libs/ in this monorepo, so no registry version adoption needed; owner values hardcoded because the inliner can't import package.json. Merged before dev-a's PR #1 (harmless with the old validator); verified both apps build on main with the new strict validateApp. Note: docs say CD only detects core-shell/billing changes, so reports may not be deployed by CD."}
+{"ts":1793413371965,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3016,"waited_ms":9168,"sha":"b45277e447c836c20fd1e6b9d592277c4250b29b"}
+{"ts":1793413372114,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"614f36f1c9b194787210d7ddbd8ed6e147a90a0b"}
+{"ts":1793413393761,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13815,"ci_main_ms":3342,"waited_ms":21616}
+{"ts":1793413396247,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp now throws if owner missing/blank (libs/shared-contracts, bumped to 2.0.0 as breaking; lib is in-repo and inlined, so nothing publishes). PLAT-103-2: billing passes owner 'payments' (from package.json team). Assumptions: lib merged first since it deploys nothing alone; owner hardcoded to match package.json team."}

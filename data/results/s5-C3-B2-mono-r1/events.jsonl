@@ -1,0 +1,17 @@
+{"ts":1793392842690,"event":"clone","repo":"mono"}
+{"ts":1793392842712,"event":"task_added","task":1,"title":"PLAT-103-1 shared-contracts owner validation","repo":"mono"}
+{"ts":1793392859973,"event":"task_added","task":2,"title":"PLAT-103-2 billing passes owner","repo":"mono"}
+{"ts":1793392859995,"event":"task_added","task":3,"title":"PLAT-103-3 core-shell passes owner","repo":"mono"}
+{"ts":1793392860016,"event":"task_added","task":4,"title":"reports passes owner (also calls validateApp)","repo":"mono"}
+{"ts":1793392860041,"event":"task_start","task":1}
+{"ts":1793392872739,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-validation","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":4}}
+{"ts":1793392885908,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4354,"waited_ms":12249,"sha":"641b552be0b19d5eacbcf9bdc2ace0a73528ffca"}
+{"ts":1793392885986,"event":"audit","violations":3}
+{"ts":1793392887220,"event":"pr_merged","pr":1,"merge_sha":"472997126cd7f25eca254aac7cae3cca1a15a3b5"}
+{"ts":1793392911703,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13501,"ci_main_ms":3553,"waited_ms":24454}
+{"ts":1793392912588,"event":"audit","violations":0}
+{"ts":1793392915271,"event":"task_done","task":1}
+{"ts":1793392915291,"event":"task_done","task":2}
+{"ts":1793392915308,"event":"task_done","task":3}
+{"ts":1793392915323,"event":"task_done","task":4}
+{"ts":1793392915345,"event":"done","summary":"PLAT-103 shipped in PR #1 (mono, merged to main 472997126cd7f25eca254aac7cae3cca1a15a3b5; CI and CD green). Changes: validateApp now throws when owner is missing or empty (shared-contracts bumped 1.0.0 -> 2.0.0, breaking); core-shell passes owner 'platform', billing passes 'payments'. Assumptions: (1) sub-route-reports also calls validateApp, so it also passes owner, 'insights' from its package.json, otherwise it would throw at startup; (2) the owner is hardcoded in each app's source, matching the existing name argument, since the browser bundle cannot read package.json; (3) one PR for the ticket, since CONTRIBUTING prefers that and the contract change would break reports if merged alone; (4) shared-contracts is inlined, not published, so the 2.0.0 bump is the version record only. st audit reports 0 violations on main. Note: CD deploys are gated by DEPLOY_ENABLED in Jenkinsfile.cd; the CD result here was reported green by st."}

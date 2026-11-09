@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103-1: validateApp rejects apps without an owner (shared-contracts major release)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-2: billing passes owner to validateApp",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-3: core-shell passes owner to validateApp",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-103-4 (assumed): reports passes owner to validateApp so audit and startup pass",
+    "repo": "mono",
+    "state": "done"
+  }
+]

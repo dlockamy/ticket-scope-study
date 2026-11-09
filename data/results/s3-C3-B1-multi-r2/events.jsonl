@@ -1,0 +1,24 @@
+{"ts":1793382608548,"event":"clone","repo":"shell"}
+{"ts":1793382608607,"event":"clone","repo":"billing"}
+{"ts":1793382608663,"event":"clone","repo":"reports"}
+{"ts":1793382608715,"event":"clone","repo":"contracts"}
+{"ts":1793382608767,"event":"clone","repo":"platformkit"}
+{"ts":1793382616381,"event":"task_added","task":1,"title":"Pass owner (team: insights) to validateApp in reports and adopt shared-contracts 2.0.0","repo":"reports"}
+{"ts":1793382616613,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793382629946,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3743,"waited_ms":12257,"sha":"32c3255b808f1898f33cc38ff3db99127a6f3916"}
+{"ts":1793382630116,"event":"pr_merged","pr":1,"merge_sha":"66b6b60898482b70bb7d1f19bfb6f0b97fb713ad"}
+{"ts":1793382642467,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5103,"ci_main_ms":2995,"waited_ms":12321}
+{"ts":1793382648116,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382648259,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382648401,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382659033,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3265,"waited_ms":9160,"sha":"19d659f6af90a8da19fad4ca6ebf7bf7a92ff09d"}
+{"ts":1793382659168,"event":"pr_merged","pr":2,"merge_sha":"3798644f5c0d7c48d1ad178022fa65fad7817bb5"}
+{"ts":1793382677569,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10109,"ci_main_ms":2994,"waited_ms":18369}
+{"ts":1793382677634,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3239,"waited_ms":34,"sha":"094976513c5bbaf8c5db19ab4fe2d2602fe6d3af"}
+{"ts":1793382677755,"event":"pr_merged","pr":3,"merge_sha":"ee87cac3bab6f6202317384ace24845d854fabf3"}
+{"ts":1793382699286,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11348,"ci_main_ms":2964,"waited_ms":21501}
+{"ts":1793382699351,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3287,"waited_ms":33,"sha":"2adb13b90c15a9b8c7da9276ab7c5515a1a9eed8"}
+{"ts":1793382699481,"event":"pr_merged","pr":4,"merge_sha":"d703cdaedfe38e7eb908fda8fa2f382ef1752760"}
+{"ts":1793382717865,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11630,"ci_main_ms":3052,"waited_ms":18355}
+{"ts":1793382720150,"event":"task_done","task":1}
+{"ts":1793382720166,"event":"done","summary":"validateApp now throws without a non-empty owner; released as shared-contracts 2.0.0 (breaking, major bump). Found a third consumer, reports, not named in the ticket, and added a task for it. Shell, billing and reports now pass owner from package.json team (platform/payments/insights) and use ^2.0.0. All PRs (#1-#4) merged, CI and CD green. Assumption: reports should be updated too, since the criteria cover every app calling validateApp."}

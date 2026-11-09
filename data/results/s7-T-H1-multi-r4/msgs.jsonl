@@ -1,0 +1,1 @@
+{"id":1793416435692,"ts":1793416435692,"from":"dev-a","to":"dev-b","text":"contracts @mfe/shared-contracts 2.0.0 is published (billingUrl=/billing/v2, MAJOR bump so use @^2.0.0). Adopt it in shell/reports."}

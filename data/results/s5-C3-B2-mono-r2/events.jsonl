@@ -1,0 +1,32 @@
+{"ts":1793394111594,"event":"clone","repo":"mono"}
+{"ts":1793394129062,"event":"audit","violations":3}
+{"ts":1793394139109,"event":"task_added","task":1,"title":"PLAT-103-1: validateApp rejects apps without an owner (shared-contracts major release)","repo":"mono"}
+{"ts":1793394139131,"event":"task_added","task":2,"title":"PLAT-103-2: billing passes owner to validateApp","repo":"mono"}
+{"ts":1793394139150,"event":"task_added","task":3,"title":"PLAT-103-3: core-shell passes owner to validateApp","repo":"mono"}
+{"ts":1793394139169,"event":"task_added","task":4,"title":"PLAT-103-4 (assumed): reports passes owner to validateApp so audit and startup pass","repo":"mono"}
+{"ts":1793394141069,"event":"task_start","task":1}
+{"ts":1793394148022,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-owner-contract","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394160266,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3000,"waited_ms":12211,"sha":"37037b139d6f5c9861bba02fafc97b1ff01b10c8"}
+{"ts":1793394162982,"event":"pr_merged","pr":1,"merge_sha":"cfd1f497462c361f2434cda80cea5c643f6685a2"}
+{"ts":1793394175265,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1137,"ci_main_ms":3025,"waited_ms":12253}
+{"ts":1793394175289,"event":"task_done","task":1}
+{"ts":1793394178529,"event":"task_start","task":2}
+{"ts":1793394184549,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394196790,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3126,"waited_ms":12208,"sha":"fdc57aaf135c04f68bc1886e0e4dda2dea7017e9"}
+{"ts":1793394199625,"event":"pr_merged","pr":2,"merge_sha":"51de7507c4861ad774a14f449005eba82d7e13ce"}
+{"ts":1793394218061,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9719,"ci_main_ms":3089,"waited_ms":18405}
+{"ts":1793394218084,"event":"task_done","task":2}
+{"ts":1793394218102,"event":"task_start","task":3}
+{"ts":1793394218674,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394227866,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2933,"waited_ms":9125,"sha":"cbb65801b0e5ac353464dbf53655104a8f126d74"}
+{"ts":1793394231110,"event":"pr_merged","pr":3,"merge_sha":"577b9f3499e51aa30dc7cf6201bec09907441de0"}
+{"ts":1793394249520,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11362,"ci_main_ms":3003,"waited_ms":18381}
+{"ts":1793394249542,"event":"task_done","task":3}
+{"ts":1793394249558,"event":"task_start","task":4}
+{"ts":1793394249860,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394262251,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3005,"waited_ms":12360,"sha":"0cf655cb626ea7dd85098ec844b0befd0167a8f6"}
+{"ts":1793394264446,"event":"pr_merged","pr":4,"merge_sha":"60b0ca7fd202cf5016e551cd680163191672b9f2"}
+{"ts":1793394279765,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8779,"ci_main_ms":2899,"waited_ms":15292}
+{"ts":1793394279785,"event":"task_done","task":4}
+{"ts":1793394279844,"event":"audit","violations":0}
+{"ts":1793394282995,"event":"done","summary":"PLAT-103 shipped. PR #1 (PLAT-103-1): validateApp throws if owner is missing/empty/whitespace; libs/shared-contracts bumped to 2.0.0 (breaking). PR #2 (billing, owner 'payments'), PR #3 (core-shell, owner 'platform'). PR #4 (reports, owner 'insights') added because audit flags it and it would otherwise throw at startup. All merged; CI and CD green; st audit reports 0 violations. Assumptions: owner values hardcoded in each app source to match package.json team (build does not read package.json); the shared contract is inlined, so 'adopting' the release needed no package.json dependency change; no CD deploys fire from libs/ changes, which is expected."}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-owner",
+    "title": "PLAT-103-1: validateApp requires owner (2.0.0)",
+    "head": "484529826a93f1b0c42ede5a9fc8b88086f25e92",
+    "opened_ts": 1793448093081,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448108045,
+    "merge_sha": "2103cc2fef356a95402a98ee6c18c3c593857a5d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "pass-owner",
+    "title": "PLAT-103: billing passes owner to validateApp",
+    "head": "2c9016b2bed6f074ca678a40d00030764b7b34ea",
+    "opened_ts": 1793448137591,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448153616,
+    "merge_sha": "c0a4363a1e606304ad31a031d86e6b1db88603d5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "pass-owner",
+    "title": "PLAT-103: shell passes owner to validateApp",
+    "head": "0b3c3a3168d6b05883027df2b9764d6c5dc4bd77",
+    "opened_ts": 1793448137959,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448178227,
+    "merge_sha": "96fac8b2d729454c3291136957d4519900216b03",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "pass-owner",
+    "title": "PLAT-103: reports passes owner to validateApp",
+    "head": "98606f00d964ea22ce9323089d92f28fae490130",
+    "opened_ts": 1793448138346,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793448199874,
+    "merge_sha": "22971bf82460fe6d46a4aebbdcb0808885b52f2a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

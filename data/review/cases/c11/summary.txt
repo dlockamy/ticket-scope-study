@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty (shared-contracts 2.0.0, major bump, published). Billing passes owner 'payments', reports passes 'insights' (from package.json team), both upgraded to ^2.0.0 with lockfiles; all CI/CD green. Assumption: owner must be a non-blank string.

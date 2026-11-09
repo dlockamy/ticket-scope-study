@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-103-1-require-owner",
+    "title": "PLAT-103-1: validateApp requires owner",
+    "head": "1e9fa939b09d884abdf611ea3e2391678ad4f373",
+    "opened_ts": 1793413325515,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413339017,
+    "merge_sha": "95b83919c3395753b8b25a3397b5490f55208aff",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "author": "dev-b",
+    "repo": "mono",
+    "branch": "plat-103-3-4-app-owner",
+    "title": "PLAT-103-3/4: core-shell and reports pass owner to validateApp",
+    "head": "76fa6bf0034466e8826fcc5ad607ec2cd1b462d2",
+    "opened_ts": 1793413325796,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413339243,
+    "merge_sha": "b0039f456ad1c7e786e5a06228ec6c9647a1fbb5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-103-2-billing-owner",
+    "title": "PLAT-103-2: billing passes owner",
+    "head": "b45277e447c836c20fd1e6b9d592277c4250b29b",
+    "opened_ts": 1793413360615,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413372064,
+    "merge_sha": "614f36f1c9b194787210d7ddbd8ed6e147a90a0b",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

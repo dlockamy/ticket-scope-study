@@ -1,0 +1,14 @@
+This repository is dual-licensed by content type.
+
+  Code - Apache License 2.0 (LICENSE-APACHE)
+    Source code: the harness, ticket generator, scorer and analysis scripts
+    under data/ (*.py, *.sh), and the verification scripts under
+    verification/scripts/.
+
+  Everything else - Creative Commons Attribution 4.0 International (LICENSE-CC-BY-4.0)
+    The report (report/), the documents (docs/), the figures (figures/), the
+    per-run results and other data files (data/), and the verification output
+    and notes (verification/).
+
+  Attribution for CC-BY-4.0: "The ticket-scope study,
+  github.com/dlockamy/ticket-scope-study".

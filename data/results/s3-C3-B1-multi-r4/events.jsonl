@@ -1,0 +1,23 @@
+{"ts":1793384753176,"event":"clone","repo":"shell"}
+{"ts":1793384753238,"event":"clone","repo":"billing"}
+{"ts":1793384753303,"event":"clone","repo":"reports"}
+{"ts":1793384753359,"event":"clone","repo":"contracts"}
+{"ts":1793384753415,"event":"clone","repo":"platformkit"}
+{"ts":1793384759713,"event":"task_added","task":1,"title":"Pass owner to validateApp in reports","repo":"reports"}
+{"ts":1793384769600,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793384783858,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4113,"waited_ms":12269,"sha":"d457c020e3fcf100b4f96ccf68ebce9255a3ccde"}
+{"ts":1793384783983,"event":"pr_merged","pr":1,"merge_sha":"66ffebecdaaca9fc02d48fc34a2eff0f76625d47"}
+{"ts":1793384799345,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5458,"ci_main_ms":3118,"waited_ms":15334}
+{"ts":1793384804450,"event":"pr_opened","pr":2,"repo":"shell","branch":"add-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793384805010,"event":"pr_opened","pr":3,"repo":"billing","branch":"add-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793384805533,"event":"pr_opened","pr":4,"repo":"reports","branch":"add-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793384816345,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3228,"waited_ms":6112,"sha":"462d8575f5c2a0108b8ebe6f47af3e5793778212"}
+{"ts":1793384816467,"event":"pr_merged","pr":2,"merge_sha":"d421c113e29a38b3c45017a7cd03850c12be35cc"}
+{"ts":1793384834908,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8899,"ci_main_ms":3084,"waited_ms":18412}
+{"ts":1793384834975,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3246,"waited_ms":34,"sha":"26e0422cf7d438d1fb6ddca1a62fa55490779e83"}
+{"ts":1793384835100,"event":"pr_merged","pr":3,"merge_sha":"656e0a19047a9f7461f2f3a741be46a2ec993924"}
+{"ts":1793384856545,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12938,"ci_main_ms":3039,"waited_ms":21416}
+{"ts":1793384856608,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3263,"waited_ms":33,"sha":"d14b31524cd44c4c1c5e732d68b1d35b6b50c0f8"}
+{"ts":1793384856729,"event":"pr_merged","pr":4,"merge_sha":"cc8fdbb7ebeda062928c71165ed7b5732fd6238b"}
+{"ts":1793384878231,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12676,"ci_main_ms":3047,"waited_ms":21474}
+{"ts":1793384881394,"event":"done","summary":"validateApp now throws if owner missing/empty; released as @mfe/shared-contracts 2.0.0 (breaking). shell (platform), billing (payments) and reports (insights, found via grep and added as an extra sub-task) now pass owner from package.json 'team', depend on ^2.0.0, built locally, and are deployed. Assumption: whitespace-only owner counts as empty."}

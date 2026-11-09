@@ -1,0 +1,24 @@
+{"ts":1793453520911,"event":"clone","repo":"shell"}
+{"ts":1793453520969,"event":"clone","repo":"billing"}
+{"ts":1793453521027,"event":"clone","repo":"reports"}
+{"ts":1793453521088,"event":"clone","repo":"contracts"}
+{"ts":1793453521142,"event":"clone","repo":"platformkit"}
+{"ts":1793453535351,"event":"task_added","task":1,"title":"contracts: validateApp requires owner, bump 2.0.0 (major)","repo":""}
+{"ts":1793453535375,"event":"task_added","task":2,"title":"shell/billing/reports: upgrade to ^2.0.0, pass owner=package.json team","repo":""}
+{"ts":1793453543051,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793453557151,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3972,"waited_ms":12252,"sha":"9ae759590c5e5136d7783a5408f6b143e8a583ec"}
+{"ts":1793453557317,"event":"pr_merged","pr":1,"merge_sha":"12882ebfbdef3b646eea7c475bc99a754b1a77e5"}
+{"ts":1793453572685,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5369,"ci_main_ms":3062,"waited_ms":15338}
+{"ts":1793453578084,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793453578220,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793453578355,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793453592966,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3242,"waited_ms":12210,"sha":"8f2c64ad4ff5575749b059fdb0d88962a61b92f5"}
+{"ts":1793453593091,"event":"pr_merged","pr":2,"merge_sha":"3c11520084ca0feff5584bccc3c4fa8c1eb72c5b"}
+{"ts":1793453611539,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8165,"ci_main_ms":3032,"waited_ms":18419}
+{"ts":1793453611603,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3223,"waited_ms":33,"sha":"7dd0cb1454df9a74689847fd710e3b494bda5584"}
+{"ts":1793453611728,"event":"pr_merged","pr":3,"merge_sha":"becc9487ee12722337b121507f538409f2452abf"}
+{"ts":1793453636327,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11419,"ci_main_ms":2885,"waited_ms":24570}
+{"ts":1793453636393,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3188,"waited_ms":35,"sha":"2bd7ef9b6fc667d17e195ff840ca030703326e7d"}
+{"ts":1793453636524,"event":"pr_merged","pr":4,"merge_sha":"adb8d374d7b549ac09d7ca87e4ad0d1af5d68d51"}
+{"ts":1793453654971,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11583,"ci_main_ms":2975,"waited_ms":18418}
+{"ts":1793453657786,"event":"done","summary":"validateApp in @mfe/shared-contracts now throws without owner; released as 2.0.0 (major, breaking). shell, billing, reports upgraded to ^2.0.0 and pass owner (platform/payments/insights = their package.json team) and are deployed. Assumptions: owner passed as a literal matching package.json team because the bundler inlines only imported modules; the README fake-bucket-names item was treated as a separate ticket (per lee) and no README with such names exists in these repos, so not done. platformkit untouched."}

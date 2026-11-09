@@ -1,0 +1,6 @@
+{"ts":1793382921983,"event":"clone","repo":"mono"}
+{"ts":1793382938247,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793382947428,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3148,"waited_ms":9148,"sha":"2a6056bfa82b61475efb854613b1ee1b019a3417"}
+{"ts":1793382949271,"event":"pr_merged","pr":1,"merge_sha":"47999605f0d4f9af91f28ffb6d32c66d4ef8d60a"}
+{"ts":1793382970716,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12897,"ci_main_ms":3096,"waited_ms":21414}
+{"ts":1793382974563,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, breaking). Billing passes 'payments', reports 'insights' (from package.json team). Also updated core-shell (owner 'platform' from its package.json team) since it calls validateApp and would otherwise fail at startup. Assumptions: lib lives in the monorepo and is inlined at build, so one PR covers all sub-tasks; hardcoded owner strings match package.json team. All three apps build; CI and CD green."}

@@ -1,0 +1,12 @@
+{"ts":1793386519299,"event":"clone","repo":"mono"}
+{"ts":1793386519327,"event":"deps_query","pkg":"@studio/contracts"}
+{"ts":1793386527228,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793386527250,"event":"deps_query","pkg":"validateApp"}
+{"ts":1793386527289,"event":"task_added","task":1,"title":"Require owner in validateApp and pass team from the three apps","repo":"mono"}
+{"ts":1793386527304,"event":"task_start","task":1}
+{"ts":1793386527458,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793386539932,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3176,"waited_ms":9156,"sha":"04e2023acc45d76b66c20e4d3f2e50473bb935e4"}
+{"ts":1793386540083,"event":"pr_merged","pr":1,"merge_sha":"4f1ce77e975dada87329188820dc10e680a8a913"}
+{"ts":1793386564618,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13567,"ci_main_ms":2977,"waited_ms":24499}
+{"ts":1793386566991,"event":"task_done","task":1}
+{"ts":1793386567009,"event":"done","summary":"validateApp now throws if owner is missing/empty. core-shell (platform), billing (payments), reports (insights) pass their package.json team as owner. One PR (#1), CI and CD green. Assumptions: owner values hardcoded from package.json team; reports app was missing from the deps catalog but also calls validateApp so was updated; packages/ untouched."}

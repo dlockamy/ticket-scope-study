@@ -1,0 +1,28 @@
+{
+  "run": "s2h-C3-A4-mono-r1",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "A4",
+  "rep": 1,
+  "model": "haiku",
+  "tag": "s2h",
+  "start_ms": 1793368962518,
+  "structure": "structured",
+  "list": "decoy",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [
+    "billing",
+    "shell"
+  ],
+  "decoys": [
+    "platformkit"
+  ],
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

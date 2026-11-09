@@ -1,0 +1,11 @@
+{"ts":1793362129452,"event":"clone","repo":"mono"}
+{"ts":1793362129482,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793362144444,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires owner","repo":""}
+{"ts":1793362144466,"event":"task_added","task":2,"title":"core-shell, billing, reports: pass owner from package.json team","repo":""}
+{"ts":1793362151182,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793362163458,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3448,"waited_ms":12247,"sha":"15692d010c09b23db8683841d44f6a32c8b6d317"}
+{"ts":1793362166163,"event":"pr_merged","pr":1,"merge_sha":"0253036e70d921976af3c6e2141ef7b49b82b123"}
+{"ts":1793362187590,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11610,"ci_main_ms":3225,"waited_ms":21398}
+{"ts":1793362189826,"event":"task_done","task":1}
+{"ts":1793362189845,"event":"task_done","task":2}
+{"ts":1793362189860,"event":"done","summary":"validateApp now throws if owner missing/empty; core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team. Assumption: owner values hardcoded in source (bundler can't read package.json); all three apps build locally. PR #1 merged, CI+CD green. Reports isn't in CI/CD build set."}

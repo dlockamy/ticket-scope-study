@@ -1,0 +1,21 @@
+{"ts":1793412345219,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793412345219,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412347439,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793412347482,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793412357756,"who":"dev-b","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-shell-reports","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412362152,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412372981,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":4689,"waited_ms":9156,"sha":"6c9c993cd90a83eef5c6b328f187b2ef6ee63848"}
+{"ts":1793412373215,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"64649460528d81c49bf52a6d1a0a2019d625f15e"}
+{"ts":1793412377664,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":7466,"waited_ms":18364,"sha":"78be3472b020bc7e7767a463bbf51b7c05e1cf9a"}
+{"ts":1793412377682,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412379718,"who":"dev-b","event":"pr_merged","pr":1,"merge_sha":"f339b5e576ca196e2a5b0975dd40196f3e7d54c1"}
+{"ts":1793412395060,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":877,"ci_main_ms":3156,"waited_ms":21813}
+{"ts":1793412395111,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":877,"ci_main_ms":3156,"waited_ms":15358}
+{"ts":1793412397612,"who":"dev-b","event":"done","summary":"PR #1 merged and deployed (CI/CD green): core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team). Assumption: shared-contracts is in-repo under libs/ and inlined at build, so there is no registry release to adopt; passing owner is harmless before or after dev-a's validateApp change. Did not verify against dev-a's contract since none was merged yet."}
+{"ts":1793412398659,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793412398765,"who":"dev-a","event":"handoff_read"}
+{"ts":1793412401424,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412410628,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3114,"waited_ms":9170,"sha":"f2730db6f21b99d1bc6269b2685b8be6719df910"}
+{"ts":1793412410759,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"b101de74e96acbaa7b312e2a3c906398ce3d0396"}
+{"ts":1793412429329,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10634,"ci_main_ms":3161,"waited_ms":18540}
+{"ts":1793412431695,"who":"dev-a","event":"done","summary":"PLAT-103-1: shared-contracts 2.0.0 (major) validateApp throws if owner missing/empty (PR #2, merged, CD ok). PLAT-103-2: billing passes owner 'payments' (= package.json team) (PR #3, merged, deployed). Assumptions: lib is in-repo and inlined, so no registry publish; owner hardcoded in main.js because the browser bundle can't read package.json; handoff posted for dev-b."}

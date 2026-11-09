@@ -1,0 +1,16 @@
+{"ts":1793361306029,"event":"clone","repo":"contracts"}
+{"ts":1793361321168,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793361333853,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3720,"waited_ms":9187,"sha":"43bf05159de933e034c7eba1bc0806393bddbea7"}
+{"ts":1793361333993,"event":"pr_merged","pr":1,"merge_sha":"a395b0b1a291f12327add21119cb863e09921efc"}
+{"ts":1793361346292,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4877,"ci_main_ms":2931,"waited_ms":12270}
+{"ts":1793361348780,"event":"clone","repo":"billing"}
+{"ts":1793361348862,"event":"clone","repo":"shell"}
+{"ts":1793361361087,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793361361253,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793361372338,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3184,"waited_ms":9168,"sha":"5d4bb0ec32a233f7e386e5376660a9e9cba1e6fe"}
+{"ts":1793361372399,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3191,"waited_ms":34,"sha":"5be203febc829625e03c6468ccd6568a0e5d635a"}
+{"ts":1793361378337,"event":"pr_merged","pr":2,"merge_sha":"4c242003d83183b0719ed06b1a4351e7cd4a15ff"}
+{"ts":1793361399835,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13067,"ci_main_ms":2912,"waited_ms":21468}
+{"ts":1793361399967,"event":"pr_merged","pr":3,"merge_sha":"fda9ec77593e19845b4880c651767f01170b875c"}
+{"ts":1793361418500,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8769,"ci_main_ms":3029,"waited_ms":18504}
+{"ts":1793361421800,"event":"done","summary":"validateApp now throws when owner is missing/empty/non-string; released @mfe/shared-contracts 2.0.0 (major, breaking per CONTRIBUTING). Billing (owner 'payments') and core-shell (owner 'platform'), taken from each package.json team, now pass owner and depend on ^2.0.0 with updated lockfiles. All PRs CI green, merged, CD green. Assumption: owner values hardcoded from package.json team; reports app doesn't call validateApp so was left alone."}

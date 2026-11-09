@@ -1,0 +1,17 @@
+{"ts":1793363837275,"event":"clone","repo":"contracts"}
+{"ts":1793363837331,"event":"clone","repo":"shell"}
+{"ts":1793363837390,"event":"clone","repo":"billing"}
+{"ts":1793363837444,"event":"clone","repo":"platformkit"}
+{"ts":1793363860244,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793363869665,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3633,"waited_ms":9370,"sha":"1a10ff2cd01b5c8d6adec1e3b74464a47e0b0152"}
+{"ts":1793363875508,"event":"pr_merged","pr":1,"merge_sha":"ca00fc23dc15368e479e33c274bfaf1924b3d895"}
+{"ts":1793363887837,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4856,"ci_main_ms":2791,"waited_ms":12297}
+{"ts":1793363897809,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363897941,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793363907133,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2947,"waited_ms":9159,"sha":"1f78e9cb28709cee30d4b31a779e17af1a313f2e"}
+{"ts":1793363907194,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2960,"waited_ms":33,"sha":"d76775f9ea01f822d1306cd32e197c2d7e778df4"}
+{"ts":1793363910010,"event":"pr_merged","pr":2,"merge_sha":"e243b8fe41e50f4fd75dd8f0317a2f83dfe6e023"}
+{"ts":1793363910133,"event":"pr_merged","pr":3,"merge_sha":"9e87210455c1de02ae69ec834fe2a7cd2bf83b90"}
+{"ts":1793363925484,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9005,"ci_main_ms":5107,"waited_ms":15322}
+{"ts":1793363931702,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13527,"ci_main_ms":3223,"waited_ms":6188}
+{"ts":1793363936023,"event":"done","summary":"validateApp now throws when owner is missing/empty (shared-contracts 2.0.0, PR #1, published). Shell (PR #2, owner 'platform') and billing (PR #3, owner 'payments') pass owner from package.json team, adopt ^2.0.0, merged and CD green. PLAT-103-4 (platform-kit): no change made - it never calls validateApp, has no dependency on shared-contracts and no team field, so there is nothing to update; assumed the sub-task was a mistaken inclusion. Reports app not touched: it pins ^1.0.0 so is unaffected until it upgrades."}

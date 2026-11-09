@@ -1,0 +1,32 @@
+{"ts":1793414588967,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793414588968,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414591025,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793414591092,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793414591166,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793414593442,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414599541,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414603489,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414610486,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3882,"waited_ms":9169,"sha":"84fcd197648cdd8569dabe45f1348eeecd5738b9"}
+{"ts":1793414610695,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"d384727ac90c131a069035f89fc56d2d2cc7c521"}
+{"ts":1793414613536,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414623100,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5212,"ci_main_ms":2940,"waited_ms":12363}
+{"ts":1793414623588,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414626192,"who":"dev-a","event":"handoff_posted","version":"1.1.0","class":"minor"}
+{"ts":1793414626214,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793414626278,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793414632192,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-adopt-contracts","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414633632,"who":"dev-b","event":"handoff_read"}
+{"ts":1793414639353,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-billing-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414639507,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-billing-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414641363,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2935,"waited_ms":9134,"sha":"faf5d9770aa453496caf9300360545130a9fb26d"}
+{"ts":1793414641499,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"66f4dafbdd23d50aa4e0be15fe58d6579a4e607f"}
+{"ts":1793414650496,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3312,"waited_ms":9159,"sha":"d7d9a8d01d4949bd86c9a5c8f0b4b88f637682c3"}
+{"ts":1793414650602,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3285,"waited_ms":59,"sha":"5a0b02b896581a252e6540cd85ed006515c6b8b7"}
+{"ts":1793414650825,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"cc9159c51585c87974ba0d456fbb66ebb1d3249b"}
+{"ts":1793414651024,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"808f27d86aee1ec044b36f17d924ab0763cb2a99"}
+{"ts":1793414663105,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15868,"ci_main_ms":6264,"waited_ms":21575}
+{"ts":1793414665185,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793414665209,"who":"dev-a","event":"done","summary":"Released @mfe/shared-contracts 1.1.0 (billingUrl -> https://homelab.local/billing/v2) via PR #1; billing adopted ^1.1.0 (lockfile updated) via PR #2, CI/CD green. Assumption: a value change on an existing key is a minor release (no shape/API change). Handoff note posted for dev-b."}
+{"ts":1793414666457,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9244,"ci_main_ms":7383,"waited_ms":15387}
+{"ts":1793414669616,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12838,"ci_main_ms":8693,"waited_ms":3119}
+{"ts":1793414671670,"who":"dev-b","event":"done","summary":"Shell (PR #3) and reports (PR #4) now depend on @mfe/shared-contracts ^1.1.0 (lockfiles updated), CI green, merged, CD succeeded. Assumption: dev-a's handoff 1.1.0 (minor) is correct; build's contract check passed."}

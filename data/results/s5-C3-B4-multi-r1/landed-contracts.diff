@@ -1,0 +1,20 @@
+=== da23223 feat!: require owner in validateApp
+
+diff --git a/index.js b/index.js
+index 94d096c..fa17c73 100644
+--- a/index.js
++++ b/index.js
+@@ -7,5 +7,6 @@ export const SHARED_CONFIG = {
+ 
+ export function validateApp(app) {
+   if (!app || !app.name) throw new Error('app.name is required');
++  if (!app.owner) throw new Error('app.owner is required');
+   return { ...app };
+ }
+diff --git a/package.json b/package.json
+index 2313a58..d56bf22 100644
+--- a/package.json
++++ b/package.json
+@@ -1 +1 @@
+-{"name": "@mfe/shared-contracts", "version": "1.0.0", "type": "module", "main": "index.js"}
++{"name": "@mfe/shared-contracts", "version": "2.0.0", "type": "module", "main": "index.js"}

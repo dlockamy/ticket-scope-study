@@ -1,0 +1,28 @@
+{"ts":1793412345229,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793412345373,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412347849,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793412347905,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793412351662,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793412352023,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412362171,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412372061,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793412374199,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4366,"waited_ms":9163,"sha":"ea0056f004e38a0f8b793d1bc9a44a4d0a8b421c"}
+{"ts":1793412374344,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"4ca66f77b80586315b34594f52e03ce51938bb62"}
+{"ts":1793412386713,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5572,"ci_main_ms":3311,"waited_ms":12338}
+{"ts":1793412389780,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793412389845,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793412392102,"who":"dev-b","event":"handoff_read"}
+{"ts":1793412397231,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412400372,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412400509,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412406437,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2932,"waited_ms":9172,"sha":"18bb570370e1762e58323313e90eb911795c9c7c"}
+{"ts":1793412406668,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"e87aba4b6b5bec81a5394d7050968c3a64efa1a6"}
+{"ts":1793412411378,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3079,"waited_ms":9149,"sha":"4b7d2a98b3eada4edcbac4b13c3b86b3845736e2"}
+{"ts":1793412411495,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3108,"waited_ms":38,"sha":"a76e2fd7dd62ff7bfdca5187278c7b79954fe8f6"}
+{"ts":1793412413226,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"7b323e20ca3889b6ea75d30432b8ecf673fb858e"}
+{"ts":1793412413396,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"72e9474ce153dfee7db0aec73aa9ab99961390c7"}
+{"ts":1793412428308,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12592,"ci_main_ms":3047,"waited_ms":21588}
+{"ts":1793412430928,"who":"dev-a","event":"done","summary":"PLAT-103-1: @mfe/shared-contracts 2.0.0 (major) published; validateApp throws if owner missing/empty/whitespace. PLAT-103-2: billing passes owner 'payments' (package.json team), depends on ^2.0.0 with lockfile, deployed. Handoff posted for dev-b. Assumption: whitespace-only owner counts as empty."}
+{"ts":1793412438012,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":17135,"ci_main_ms":5271,"waited_ms":24585}
+{"ts":1793412438099,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":17134,"ci_main_ms":9119,"waited_ms":55}
+{"ts":1793412440102,"who":"dev-b","event":"done","summary":"Shell (PR #3) and reports (PR #4) now pass owner from package.json team (platform / insights) to validateApp and depend on @mfe/shared-contracts ^2.0.0 (lockfiles committed). CI and CD green for both. Assumption: owner value = package.json 'team' verbatim."}

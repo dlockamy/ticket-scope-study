@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "rename-billing-endpoint",
+    "title": "Rename billingUrl to billingEndpoint",
+    "head": "23704982d0970fac4d768c646020e1fed3002f43",
+    "opened_ts": 1793368303929,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368321572,
+    "merge_sha": "8e1248fb08f6351f95522c006df41e6fccb6cdfd",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (contracts ^2)",
+    "head": "eac6ed5c305596258a187993bac22a8817ddd8ef",
+    "opened_ts": 1793368342712,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368356419,
+    "merge_sha": "fc363f283292f48c6bd1d6945925493e56648427",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (contracts ^2)",
+    "head": "d764d2c1c7586f4385877525e3c2bae61df56476",
+    "opened_ts": 1793368342835,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368356539,
+    "merge_sha": "0e9bc599af2293a3261c82ff784ad8bc6b8b5098",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (contracts ^2)",
+    "head": "56cefb2918bd246edb82348d48cc652bdcdfcd8f",
+    "opened_ts": 1793368342958,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368356658,
+    "merge_sha": "6acae6669550d76ee4a42a9b3d3befdbe3a3bbe7",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

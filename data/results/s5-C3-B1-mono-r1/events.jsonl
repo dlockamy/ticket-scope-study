@@ -1,0 +1,19 @@
+{"ts":1793391594702,"event":"clone","repo":"mono"}
+{"ts":1793391594761,"event":"clone","repo":"platformkit"}
+{"ts":1793391622581,"event":"task_added","task":1,"title":"PLAT-103-1: validateApp rejects apps without owner (libs/shared-contracts, breaking release)","repo":"mono"}
+{"ts":1793391622604,"event":"task_added","task":2,"title":"PLAT-103-2: billing passes owner (payments) to validateApp","repo":"mono"}
+{"ts":1793391622623,"event":"task_added","task":3,"title":"PLAT-103-3: core-shell passes owner (platform) to validateApp","repo":"mono"}
+{"ts":1793391622644,"event":"task_added","task":4,"title":"PLAT-103-4: sub-route-reports (also calls validateApp, not in ticket) passes owner (insights)","repo":"mono"}
+{"ts":1793391633207,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793391646912,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3165,"waited_ms":12236,"sha":"36919c7d96757fb892d5395c57d895ee02321c7f"}
+{"ts":1793391648756,"event":"pr_merged","pr":1,"merge_sha":"a9d43fc149e271563aa2ef6cf5837dc24791c306"}
+{"ts":1793391661065,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1334,"ci_main_ms":3194,"waited_ms":12281}
+{"ts":1793391670578,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-3-4-pass-owner","size":{"files":3,"add":3,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793391681214,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3074,"waited_ms":9185,"sha":"8beb8278814fa2b36a9b40b668e498ca8561ae1e"}
+{"ts":1793391682604,"event":"pr_merged","pr":2,"merge_sha":"389bd3803afc16d27c496184a3f3b197781d1a78"}
+{"ts":1793391704076,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10651,"ci_main_ms":3123,"waited_ms":21444}
+{"ts":1793391706039,"event":"task_done","task":1}
+{"ts":1793391706059,"event":"task_done","task":2}
+{"ts":1793391706075,"event":"task_done","task":3}
+{"ts":1793391706092,"event":"task_done","task":4}
+{"ts":1793391709635,"event":"done","summary":"PLAT-103 shipped. validateApp (libs/shared-contracts) now throws when owner is missing, empty or blank; bumped to 2.0.0 as a breaking change. core-shell (platform), billing (payments) and sub-route-reports (insights) pass owner. PRs: mono #1 (shared-contracts, merged first) and mono #2 (apps); CI and CD green on both. Assumptions: (1) sub-route-reports also calls validateApp and was not in the ticket, so I added PLAT-103-4 and fixed it in the same PR; without that it would throw at startup. (2) owner values are hard-coded in each app's source to match its package.json team field, since the build does not read package.json. (3) The shared-contracts 2.0.0 bump is only a version marker; the lib is inlined, not published, so nothing is deployed for it. Its change reaches users when the apps rebuild."}

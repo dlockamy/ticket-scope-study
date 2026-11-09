@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "rename-billing-endpoint",
+    "title": "Rename billingUrl to billingEndpoint (v2.0.0)",
+    "head": "4c9eb0777ec93980bae193ac1c951aba4a6f7ee1",
+    "opened_ts": 1793373971204,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793373986903,
+    "merge_sha": "9bde4d77783e4a6bd71e87edbda9403b4b441fd9",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (shared-contracts 2.0.0)",
+    "head": "594a0ab9c27df9cbe6636de22444957d9dd267f5",
+    "opened_ts": 1793374015626,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374033080,
+    "merge_sha": "eb3c875aa3cb4f17dc67753ee9115b570426bd73",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (shared-contracts 2.0.0)",
+    "head": "62bc83203c43739eb1eb2a02b62fb2a38a42dd07",
+    "opened_ts": 1793374015754,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374054717,
+    "merge_sha": "d8b5ed90632a8d5aa3afa42a30527a4332a4192b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (shared-contracts 2.0.0)",
+    "head": "17530690a7b0dd5fe7c4a632fd15bb973fc5bee2",
+    "opened_ts": 1793374015885,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793374070169,
+    "merge_sha": "cfb80318d5b66cabeff978806d2dacba540bb188",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

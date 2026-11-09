@@ -1,0 +1,20 @@
+{"ts":1793394323392,"event":"clone","repo":"mono"}
+{"ts":1793394354213,"event":"task_added","task":1,"title":"Reports app passes owner to validateApp (not in original breakdown)","repo":"mono"}
+{"ts":1793394368288,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394379663,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3049,"waited_ms":9194,"sha":"26e324992d2c1b56a099d04d561e6a9d0d08cf80"}
+{"ts":1793394382800,"event":"pr_merged","pr":1,"merge_sha":"7f29e61937b5a0c187fb1f72bf1d3203f0ed2e17"}
+{"ts":1793394395069,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1224,"ci_main_ms":3085,"waited_ms":12240}
+{"ts":1793394407243,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394419740,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3146,"waited_ms":12463,"sha":"b1c27c7a7f829bcfc7325f4b28bd98d4434302c8"}
+{"ts":1793394422345,"event":"pr_merged","pr":2,"merge_sha":"b43d9be5cce57289039316efec22059c0e437231"}
+{"ts":1793394440787,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9350,"ci_main_ms":2948,"waited_ms":18414}
+{"ts":1793394447549,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394459789,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3229,"waited_ms":12209,"sha":"9d856e150a5ead457a40c1de50ac2f5e2a81cbda"}
+{"ts":1793394461354,"event":"pr_merged","pr":3,"merge_sha":"793091a8914572dd5a3055c36d200fc295b16552"}
+{"ts":1793394485894,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14872,"ci_main_ms":2981,"waited_ms":24510}
+{"ts":1793394492285,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793394504521,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3181,"waited_ms":12204,"sha":"6cf850abeb0243447837fb14c7d4e95e7b1c0c4e"}
+{"ts":1793394504638,"event":"pr_merged","pr":4,"merge_sha":"e99c948c0125f0d09f6f7bacc36deb6e099baeea"}
+{"ts":1793394519978,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9004,"ci_main_ms":3036,"waited_ms":15311}
+{"ts":1793394522510,"event":"task_done","task":1}
+{"ts":1793394526091,"event":"done","summary":"PLAT-103 shipped in four PRs on homelab-mfe-monorepo, all merged, CI green, CD green. (1) PR #1: validateApp now throws unless app.owner is a non-empty string; shared-contracts bumped 1.0.0 -> 2.0.0 (breaking). Merged alone: libs-only, so CD deployed nothing. (2) PR #2: billing passes owner 'payments' (package.json team); deployed. (3) PR #3: core-shell passes owner 'platform'; deployed. (4) PR #4: sub-route-reports passes owner 'insights'. Reports was not in the breakdown but calls validateApp, so it was added. Assumptions: owner is a literal in each app's src matching package.json team, since build.js does not read package.json; the 2.0.0 bump is the release marker because libs/ is inlined, not published, so no registry version bump or app dependency change was needed; reports is not deployed by CD, so its change ships only as a build. Builds were verified locally; the owner check was verified directly with node. Not done: no automated check that src owner matches package.json team."}

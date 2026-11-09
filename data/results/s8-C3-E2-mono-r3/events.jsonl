@@ -1,0 +1,12 @@
+{"ts":1793448838788,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793448838804,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793448842341,"event":"clone","repo":"mono"}
+{"ts":1793448858949,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793448870856,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3089,"waited_ms":9201,"sha":"8f31dd66d1d21648ce5af06750c7480a4adf0a30"}
+{"ts":1793448871002,"event":"pr_merged","pr":1,"merge_sha":"0599cc21d45b72fdd32e7552addf0e70394aa8c8"}
+{"ts":1793448889429,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11179,"ci_main_ms":3052,"waited_ms":18394}
+{"ts":1793448899377,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793448899393,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793448899406,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793448899418,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793448899444,"event":"done","summary":"Single PR #1 (contract + 3 apps landed together so no app broke). validateApp throws if owner missing/empty; owners from package.json team: billing=payments, core-shell=platform, reports=insights. Assumptions: shared-contracts is an in-repo lib inlined at build, so no version bump/registry release; reports isn't built/deployed by CD, so its change is merged but nothing deploys for it."}

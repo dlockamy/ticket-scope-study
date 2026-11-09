@@ -1,0 +1,12 @@
+{"ts":1793386829037,"event":"clone","repo":"mono"}
+{"ts":1793386839905,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires non-empty owner","repo":""}
+{"ts":1793386839927,"event":"task_added","task":2,"title":"core-shell, billing, reports: pass owner from package.json team","repo":""}
+{"ts":1793386839947,"event":"task_added","task":3,"title":"build all apps, PR, CI, merge, deploy","repo":""}
+{"ts":1793386845358,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793386855840,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3066,"waited_ms":9180,"sha":"aa537591034eaf72025c7bc092a3f3ee4b9a961f"}
+{"ts":1793386855978,"event":"pr_merged","pr":1,"merge_sha":"f61289e9894a127c4eb89f2aa4eaa3049433e169"}
+{"ts":1793386874389,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12458,"ci_main_ms":3096,"waited_ms":18381}
+{"ts":1793386876441,"event":"task_done","task":1}
+{"ts":1793386876463,"event":"task_done","task":2}
+{"ts":1793386876487,"event":"task_done","task":3}
+{"ts":1793386876504,"event":"done","summary":"validateApp now throws if owner is missing/empty. core-shell (platform), billing (payments), reports (insights) pass owner matching their package.json team. One monorepo PR (#1); CI and CD green. Assumptions: owners are hardcoded literals matching package.json team, since the bundles are browser-inlined and can't read package.json at runtime. platform-kit repo untouched (not involved)."}

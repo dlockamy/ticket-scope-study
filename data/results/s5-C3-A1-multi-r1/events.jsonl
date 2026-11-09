@@ -1,0 +1,30 @@
+{"ts":1793393081842,"event":"clone","repo":"contracts"}
+{"ts":1793393081901,"event":"clone","repo":"shell"}
+{"ts":1793393081969,"event":"clone","repo":"billing"}
+{"ts":1793393082027,"event":"clone","repo":"reports"}
+{"ts":1793393082081,"event":"clone","repo":"platformkit"}
+{"ts":1793393105909,"event":"task_added","task":1,"title":"validateApp rejects apps without owner; release as 2.0.0 (breaking)","repo":"contracts"}
+{"ts":1793393105931,"event":"task_added","task":2,"title":"core-shell declares owner=platform, depends on shared-contracts ^2","repo":"shell"}
+{"ts":1793393105951,"event":"task_added","task":3,"title":"sub-route-billing declares owner=payments, depends on shared-contracts ^2","repo":"billing"}
+{"ts":1793393105969,"event":"task_added","task":4,"title":"sub-route-reports declares owner=insights, depends on shared-contracts ^2","repo":"reports"}
+{"ts":1793393118048,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393128828,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2706,"waited_ms":9183,"sha":"a67c4b75238bfded5df336ae5bbc4de5a0d8d76d"}
+{"ts":1793393130144,"event":"pr_merged","pr":1,"merge_sha":"e61bb8fde85ce8e61f0814ac55f8a50b8e378c7f"}
+{"ts":1793393142372,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5250,"ci_main_ms":3015,"waited_ms":12200}
+{"ts":1793393166141,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393166267,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393166403,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393176803,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3332,"waited_ms":9192,"sha":"c2300bc469317af9e71691c35e001f4d2ef6a4a4"}
+{"ts":1793393176866,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3301,"waited_ms":36,"sha":"b18a67e797654a3f6608e5d7f1bb3b77ad402bc3"}
+{"ts":1793393176924,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3281,"waited_ms":34,"sha":"f703dc6b411f1e5ec1122aaa66317b6f8f01c6e1"}
+{"ts":1793393178400,"event":"pr_merged","pr":2,"merge_sha":"bd42e6ad0f02867f390c049a39f42a587b099f66"}
+{"ts":1793393196789,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9079,"ci_main_ms":3139,"waited_ms":18359}
+{"ts":1793393196917,"event":"pr_merged","pr":3,"merge_sha":"ccfeb71450c5d737c4f592a36749cbad31e77647"}
+{"ts":1793393215325,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12333,"ci_main_ms":2994,"waited_ms":18377}
+{"ts":1793393215461,"event":"pr_merged","pr":4,"merge_sha":"69262564e55071ae41e23fed2cb92d69aed1ce62"}
+{"ts":1793393236973,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13062,"ci_main_ms":3056,"waited_ms":21482}
+{"ts":1793393238511,"event":"task_done","task":1}
+{"ts":1793393238530,"event":"task_done","task":2}
+{"ts":1793393238547,"event":"task_done","task":3}
+{"ts":1793393238563,"event":"task_done","task":4}
+{"ts":1793393240645,"event":"done","summary":"validateApp now throws unless the app declares a non-empty owner. Released @mfe/shared-contracts 2.0.0 (breaking, so major). Apps updated to pass their package.json team and depend on ^2.0.0: core-shell (platform), sub-route-billing (payments), sub-route-reports (insights). Assumptions: owner is hardcoded in each app's source to match package.json team (the bundlers cannot read package.json); 'empty' means missing, non-string, or whitespace-only. Contract was published before the app PRs since they need 2.0.0 from the registry. PRs #1-#4 merged, CI and CD green."}

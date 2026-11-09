@@ -1,0 +1,33 @@
+{"ts":1793397575728,"event":"clone","repo":"contracts"}
+{"ts":1793397575796,"event":"clone","repo":"billing"}
+{"ts":1793397575856,"event":"clone","repo":"shell"}
+{"ts":1793397575918,"event":"clone","repo":"reports"}
+{"ts":1793397590229,"event":"task_added","task":1,"title":"PLAT-103 (extra): reports app passes owner ('insights') to validateApp, adopt contracts 2.x","repo":"reports"}
+{"ts":1793397590247,"event":"task_start","task":1}
+{"ts":1793397593040,"event":"task_added","task":2,"title":"PLAT-103-1: validateApp rejects apps without owner (breaking, major bump)","repo":"contracts"}
+{"ts":1793397593063,"event":"task_added","task":3,"title":"PLAT-103-2: billing passes owner 'payments' to validateApp, adopt contracts 2.x","repo":"billing"}
+{"ts":1793397593083,"event":"task_added","task":4,"title":"PLAT-103-3: core shell passes owner 'platform' to validateApp, adopt contracts 2.x","repo":"shell"}
+{"ts":1793397599777,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-owner","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793397606100,"event":"pr_updated","pr":1,"size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397612307,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3733,"waited_ms":6175,"sha":"540d67e6bb4e0e958bd42d608d5356d76cb9b4ef"}
+{"ts":1793397614144,"event":"pr_merged","pr":1,"merge_sha":"21e29e8bb2b1b8026ef01433de245e73399cb1c1"}
+{"ts":1793397626438,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5082,"ci_main_ms":2892,"waited_ms":12263}
+{"ts":1793397629709,"event":"task_done","task":2}
+{"ts":1793397638565,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-2-billing-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397650805,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3160,"waited_ms":12209,"sha":"a6248944820bbf80cceee15f565b647dcd8aaa13"}
+{"ts":1793397653034,"event":"pr_merged","pr":2,"merge_sha":"4a5d70be421f54db6031343d99209213c887797a"}
+{"ts":1793397677573,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15263,"ci_main_ms":3167,"waited_ms":24509}
+{"ts":1793397677596,"event":"task_start","task":3}
+{"ts":1793397677611,"event":"task_done","task":3}
+{"ts":1793397686788,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397699022,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3105,"waited_ms":12200,"sha":"44553ee41ecef7d1d24e4004b5b98fb4a65083ef"}
+{"ts":1793397701322,"event":"pr_merged","pr":3,"merge_sha":"677033ca44d7d8f7f2d7e57b241d10478cb2e7ae"}
+{"ts":1793397716659,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8911,"ci_main_ms":3029,"waited_ms":15307}
+{"ts":1793397716684,"event":"task_start","task":4}
+{"ts":1793397716699,"event":"task_done","task":4}
+{"ts":1793397722955,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-4-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793397735234,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2995,"waited_ms":12246,"sha":"49abfdc7f1597b656660894a94282a1cd2c662db"}
+{"ts":1793397735375,"event":"pr_merged","pr":4,"merge_sha":"9e0e6598cdfae84172be31d8bf0f424c0502999f"}
+{"ts":1793397759883,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12691,"ci_main_ms":3092,"waited_ms":24479}
+{"ts":1793397761923,"event":"task_done","task":1}
+{"ts":1793397764964,"event":"done","summary":"PLAT-103 shipped. validateApp now throws when owner is missing or empty; contracts released as 2.0.0 (breaking, major bump; CD published it). Billing (owner 'payments'), core shell ('platform') and reports ('insights') pass owner from package.json 'team', bump @mfe/shared-contracts to ^2.0.0 with lockfiles, and are deployed. PRs: contracts #1, billing #2, shell #3, reports #4 (all CI green, CD green). Assumptions: (1) reports also calls validateApp, so I added it as an extra sub-task though the ticket did not list it; (2) owner values are hardcoded to the package.json team rather than read at runtime; (3) 'missing or empty' means falsy, so whitespace-only owners are accepted; (4) the first contracts PR was opened before its commit existed, so I pushed the commit to the same PR with st pr push."}

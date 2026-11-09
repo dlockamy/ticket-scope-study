@@ -1,0 +1,20 @@
+{"ts":1793415518236,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793415518470,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793415527245,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793415527376,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793415538250,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4394,"waited_ms":9152,"sha":"2bd5ab3bc6c458928ebebd6636e37bfec489e9d1"}
+{"ts":1793415538418,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"3bd86ec16f75796e1b77f42790b9bea420cadfe5"}
+{"ts":1793415547759,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1384,"ci_main_ms":3216,"waited_ms":9302}
+{"ts":1793415550790,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793415550813,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793415554201,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793415566496,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3032,"waited_ms":12261,"sha":"e432bd822ca8b649c97d27237ddca72dcc0c999f"}
+{"ts":1793415566636,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"ca2257751d27722e06c2b84929fe666e8d16c5e6"}
+{"ts":1793415585228,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9979,"ci_main_ms":3075,"waited_ms":18559}
+{"ts":1793415587981,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793415587999,"who":"dev-a","event":"done","summary":"PLAT-104-1: billingUrl -> https://homelab.local/billing/v2 (PR #1, merged). PLAT-104-2: billing app rebuilt/shipped with it (PR #2, CD green). Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so there is no registry release or dependency bump. CD only deploys when apps/ change, so a lib-only change deploys nothing; I bumped billing's package version (1.0.1) to trigger its deploy. core-shell and reports (dev-b) need their own app-dir change to ship."}
+{"ts":1793415698525,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-3-4-shell-reports-adopt-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793415709703,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3174,"waited_ms":9199,"sha":"43d4faaa991ca5516fcfae88611db4093c5eb8e7"}
+{"ts":1793415709842,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"a83a01bf944aedf3100c9dc22019228028c0a727"}
+{"ts":1793415732524,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10901,"ci_main_ms":3078,"waited_ms":18582}
+{"ts":1793415735293,"who":"dev-b","event":"done","summary":"PLAT-104-3 and PLAT-104-4 shipped in one PR (#3): core-shell and sub-route-reports bumped 1.0.0->1.0.1 so CD rebuilds them; libs/shared-contracts is inlined at build time, so the rebuild picks up billingUrl /billing/v2 (verified in local core-shell dist). CI and CD SUCCESS. Assumptions: version bump is the way to trigger change detection (same approach as dev-a's PR #2); one PR for both tasks since they are independent and low-risk."}

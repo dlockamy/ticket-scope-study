@@ -1,0 +1,14 @@
+{"ts":1793372635249,"event":"deps_query","pkg":"validateApp"}
+{"ts":1793372635267,"event":"deps_query","pkg":"@mfe/contract"}
+{"ts":1793372638426,"event":"clone","repo":"mono"}
+{"ts":1793372650965,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793372650985,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793372651044,"event":"clone","repo":"platformkit"}
+{"ts":1793372657150,"event":"task_added","task":1,"title":"validateApp requires owner; pass package.json team from core-shell, billing, reports","repo":"mono"}
+{"ts":1793372657167,"event":"task_start","task":1}
+{"ts":1793372663572,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372676007,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3099,"waited_ms":12397,"sha":"d78ff67e745dbf1ad2cb28b1d4c725636684c185"}
+{"ts":1793372678457,"event":"pr_merged","pr":1,"merge_sha":"cef0afc87555e401c192bc91eadb208ebf459936"}
+{"ts":1793372702958,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14287,"ci_main_ms":3446,"waited_ms":24465}
+{"ts":1793372706204,"event":"task_done","task":1}
+{"ts":1793372706221,"event":"done","summary":"validateApp now throws if owner missing/empty (non-string/blank too). core-shell, billing, reports pass owner from their package.json team (platform, payments, insights) — hardcoded literals, not read at runtime, since bundles inline sources. platform-kit doesn't use validateApp so no change there. All three apps built locally; CI and CD green. Reports app isn't covered by CI/CD build lists, so its deploy is not exercised by the pipeline."}

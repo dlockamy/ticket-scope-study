@@ -1,0 +1,6 @@
+{"ts":1793373215080,"event":"clone","repo":"mono"}
+{"ts":1793373244070,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373253434,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3069,"waited_ms":9331,"sha":"61022c43df2160052a82c4b30f3e525eea88ba2f"}
+{"ts":1793373253570,"event":"pr_merged","pr":1,"merge_sha":"eb712f55e8faa1aa9d422dbc645cdcc353b1ba2f"}
+{"ts":1793373271983,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11418,"ci_main_ms":3062,"waited_ms":18385}
+{"ts":1793373275045,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty. Core shell (platform), billing (payments) and reports (insights, also a validateApp caller, would otherwise break) pass owner from package.json team. Assumptions: shared-contracts is an in-repo lib inlined at build, so no version bump/registry release or dependency update was needed; one PR covers all three sub-tasks (must land together). Owner values hardcoded to match package.json. PR #1 merged, CI+CD green."}

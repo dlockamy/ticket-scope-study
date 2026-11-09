@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (2.0.0)",
+    "head": "f8d03b715c47689b4c3258ee117491bccdaa71ee",
+    "opened_ts": 1793388145865,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793388160314,
+    "merge_sha": "c68209cd5ca8bbaf171fe7dfc0e572c3fb464942",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-owner-shell",
+    "title": "Pass owner to validateApp (contracts 2.0.0)",
+    "head": "06e22394d9dab991f3ae96af4225fa03f30bb4b4",
+    "opened_ts": 1793388179094,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793388196631,
+    "merge_sha": "8334408692a6b75f2d33a2e75a72574f99dba05d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-owner-billing",
+    "title": "Pass owner to validateApp (contracts 2.0.0)",
+    "head": "7b66163f3ddf59708732928f611cc99a89267202",
+    "opened_ts": 1793388179269,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793388215172,
+    "merge_sha": "94f9845e88274b60e93b72a98fe5c4a78f6dda70",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-owner-reports",
+    "title": "Pass owner to validateApp (contracts 2.0.0)",
+    "head": "5b09a2e041af2077e7e36eb4f083a40d4ad10181",
+    "opened_ts": 1793388179474,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793388233691,
+    "merge_sha": "e1cbfecf9a80aab749446aa5f7201cda62590bf5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

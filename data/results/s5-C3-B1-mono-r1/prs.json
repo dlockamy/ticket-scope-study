@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-1-require-owner",
+    "title": "PLAT-103-1: validateApp requires an owner (breaking, 2.0.0)",
+    "head": "36919c7d96757fb892d5395c57d895ee02321c7f",
+    "opened_ts": 1793391633185,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793391648722,
+    "merge_sha": "a9d43fc149e271563aa2ef6cf5837dc24791c306",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "mono",
+    "branch": "plat-103-2-3-4-pass-owner",
+    "title": "PLAT-103-2/3/4: apps pass owner to validateApp",
+    "head": "8beb8278814fa2b36a9b40b668e498ca8561ae1e",
+    "opened_ts": 1793391670558,
+    "size": {
+      "files": 3,
+      "add": 3,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793391682568,
+    "merge_sha": "389bd3803afc16d27c496184a3f3b197781d1a78",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

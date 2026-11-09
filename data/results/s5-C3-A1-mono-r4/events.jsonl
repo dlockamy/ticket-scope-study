@@ -1,0 +1,16 @@
+{"ts":1793397831795,"event":"clone","repo":"mono"}
+{"ts":1793397831865,"event":"clone","repo":"platformkit"}
+{"ts":1793397831886,"event":"task_added","task":1,"title":"Add owner check to validateApp in shared contracts","repo":"mono"}
+{"ts":1793397831903,"event":"task_added","task":2,"title":"Pass team from package.json as owner in each app calling validateApp","repo":"mono"}
+{"ts":1793397831924,"event":"task_added","task":3,"title":"Verify build and startup of all affected apps","repo":"mono"}
+{"ts":1793397853175,"event":"task_start","task":1}
+{"ts":1793397853195,"event":"task_done","task":1}
+{"ts":1793397853212,"event":"task_start","task":2}
+{"ts":1793397853227,"event":"task_done","task":2}
+{"ts":1793397854957,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397867471,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4223,"waited_ms":12474,"sha":"c3ed5d44c135b25717d1df1b42ac65f8577ee459"}
+{"ts":1793397869643,"event":"pr_merged","pr":1,"merge_sha":"1506e5d5c999397074acbad765435743a361bb0c"}
+{"ts":1793397869665,"event":"task_start","task":3}
+{"ts":1793397891159,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12538,"ci_main_ms":3211,"waited_ms":21464}
+{"ts":1793397893083,"event":"task_done","task":3}
+{"ts":1793397895569,"event":"done","summary":"validateApp in libs/shared-contracts now throws when app.owner is missing or empty. Callers pass owner from package.json team: core-shell=platform, sub-route-billing=payments, sub-route-reports=insights. PR #1 (mono) merged; CI and CD succeeded on main. Assumptions: the only validateApp callers are in mono (grep found three, none in platformkit); libs/ is inlined at build time, so no version bump was needed; owner is hardcoded to match package.json rather than read at build time. Each app was built locally and the validation was checked directly in node. Note: the baseline commit has DEPLOY_ENABLED=true, so merging deployed to S3 via the real publish path."}

@@ -1,0 +1,6 @@
+{"ts":1793390589869,"event":"clone","repo":"mono"}
+{"ts":1793390611054,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793390623462,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4129,"waited_ms":12369,"sha":"2455219be1a23ef6f4ca65c838f96b5d3d96a213"}
+{"ts":1793390625529,"event":"pr_merged","pr":1,"merge_sha":"fa3816082c9001ea5d9cb8327900b3877aa623c2"}
+{"ts":1793390653101,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":17053,"ci_main_ms":3152,"waited_ms":27542}
+{"ts":1793390656152,"event":"done","summary":"validateApp now throws if owner is missing/empty. Core-shell passes 'platform', billing 'payments' (from package.json team), and reports 'insights' (also calls validateApp, so would have broken). Assumptions: libs/shared-contracts lives in the monorepo and is inlined at build time (per CONTRIBUTING), so there is no registry release or dependency bump; I bumped its version to 2.0.0 to mark the breaking change. Shipped as a single PR (#1) since lib and consumers must land together. CI and CD green."}

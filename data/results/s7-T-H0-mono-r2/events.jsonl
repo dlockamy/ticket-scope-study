@@ -1,0 +1,28 @@
+{"ts":1793413963150,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793413964048,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793413976522,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793413976649,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413987868,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3181,"waited_ms":9201,"sha":"d8b781ff798a1c8211c8942eec2ac181f0385608"}
+{"ts":1793413988021,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"bf2a2c360751cf3f5276aa249f7cb8478d5fd850"}
+{"ts":1793413997359,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1211,"ci_main_ms":3070,"waited_ms":9303}
+{"ts":1793414001326,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793414001350,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793414001562,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414012664,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3095,"waited_ms":9187,"sha":"cbca4237312e9913a329228e45a07ae9bab0b334"}
+{"ts":1793414012808,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"f16c76e6c506f6ab777003499f1a2f9cafcc956e"}
+{"ts":1793414022818,"who":"dev-b","event":"task_start","task":3}
+{"ts":1793414022844,"who":"dev-b","event":"task_start","task":4}
+{"ts":1793414023015,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-3-shell-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414023199,"who":"dev-b","event":"pr_opened","pr":4,"repo":"mono","branch":"plat-104-4-reports-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414031443,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11068,"ci_main_ms":5252,"waited_ms":18603}
+{"ts":1793414034221,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3413,"waited_ms":9200,"sha":"f8065ef13df7446f1806d0944f9a75249e243290"}
+{"ts":1793414034286,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3428,"waited_ms":36,"sha":"9a93711eba82d5e1ca8c207f234b1b88287c580d"}
+{"ts":1793414034419,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"02083c1968c49098db0f2f0024e473cb4c110217"}
+{"ts":1793414034951,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793414034968,"who":"dev-a","event":"done","summary":"PLAT-104-1: billingUrl -> https://homelab.local/billing/v2 in libs/shared-contracts (PR #1, merged, CD green; lib lives in-repo and is inlined at build time, so no version bump/registry publish; CD does not deploy libs/ changes). PLAT-104-2: libs are inlined, so billing needed a rebuild; bumped apps/sub-route-billing version 1.0.0->1.0.1 to trigger CD (PR #2, merged, CD green, billing deployed). Assumption: no lockfile change needed since shared-contracts isn't a registry dependency. dev-b's core-shell/reports tasks untouched; note CD change detection covers only core-shell and billing."}
+{"ts":1793414053128,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8532,"ci_main_ms":3099,"waited_ms":18679}
+{"ts":1793414053264,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"1f9824103489727d66dc4afbd725bbebc33d4eaa"}
+{"ts":1793414068795,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9322,"ci_main_ms":2917,"waited_ms":15501}
+{"ts":1793414071484,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793414071506,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793414071523,"who":"dev-b","event":"done","summary":"PLAT-104-3 (PR #3, core-shell) and PLAT-104-4 (PR #4, reports) merged, CI and CD green. Assumption: shared-contracts is inlined at build time, and CD only redeploys an app whose directory changed, so I bumped each app's package.json version 1.0.0->1.0.1 (same approach dev-a used for billing) to force a rebuild/deploy picking up billingUrl=/billing/v2. Verified local builds contain the new URL."}

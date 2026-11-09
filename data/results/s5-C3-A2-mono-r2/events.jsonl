@@ -1,0 +1,9 @@
+{"ts":1793393721088,"event":"clone","repo":"mono"}
+{"ts":1793393747002,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393757695,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3159,"waited_ms":9182,"sha":"b428f793b88cca26e283714da5a08ea19c3b37ac"}
+{"ts":1793393759856,"event":"pr_merged","pr":1,"merge_sha":"85db5a6ea6d1aa79131af430af239a9a3687d378"}
+{"ts":1793393781293,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12652,"ci_main_ms":3144,"waited_ms":21408}
+{"ts":1793393783077,"event":"task_done","task":1}
+{"ts":1793393783095,"event":"task_done","task":2}
+{"ts":1793393783111,"event":"task_done","task":3}
+{"ts":1793393785588,"event":"done","summary":"PLAT-103: validateApp now rejects apps without a non-empty owner (libs/shared-contracts). core-shell (platform), sub-route-billing (payments) and sub-route-reports (insights) pass owner. Shipped in PR #1 (CI and CD green on main). Assumptions: sub-route-reports also calls validateApp, so it was updated too, or it would fail at startup; the three PLAT-103 sub-tasks shipped as one PR because the breaking change needs all callers together; owners are hard-coded to match each package.json team field, since the build inliner cannot read JSON; shared-contracts is in-repo and inlined, so no version bump or registry publish applies per CONTRIBUTING.md."}

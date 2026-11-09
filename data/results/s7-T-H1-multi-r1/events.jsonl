@@ -1,0 +1,34 @@
+{"ts":1793413549687,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793413549747,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793413550728,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793413558620,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793413558809,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413569827,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3858,"waited_ms":9177,"sha":"49923fadb2cd1fcb5e64533e34e8ff2c71074597"}
+{"ts":1793413570020,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"b1dafd1cb67bfc1b375b1f012827df45533e5114"}
+{"ts":1793413582465,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4904,"ci_main_ms":2944,"waited_ms":12407}
+{"ts":1793413582527,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":151}
+{"ts":1793413583938,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1409}
+{"ts":1793413583954,"who":"dev-b","event":"msg_wait","waited_ms":30529}
+{"ts":1793413584646,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793413584667,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793413584728,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793413590420,"who":"dev-b","event":"pr_opened","pr":2,"repo":"shell","branch":"plat-104-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413590550,"who":"dev-b","event":"pr_opened","pr":3,"repo":"reports","branch":"plat-104-contracts-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413592206,"who":"dev-a","event":"pr_opened","pr":4,"repo":"billing","branch":"plat-104-billing-adopt-v2","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413604187,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3251,"waited_ms":12181,"sha":"713d70b59111aedbc251a02821a17ebb24a94d9d"}
+{"ts":1793413604254,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3209,"waited_ms":37,"sha":"237da6a4d0258302c825ae7a5285c005e4fdf934"}
+{"ts":1793413604390,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3251,"waited_ms":12151,"sha":"713d70b59111aedbc251a02821a17ebb24a94d9d"}
+{"ts":1793413604522,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"bc219911b4c4826d018f91d75ecc3f151426cd13"}
+{"ts":1793413606190,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"bc219911b4c4826d018f91d75ecc3f151426cd13"}
+{"ts":1793413606337,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"6846f04c61661c3650ec2ff8afe90b5ff2c348d9"}
+{"ts":1793413619971,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9930,"ci_main_ms":3064,"waited_ms":15411}
+{"ts":1793413621727,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9930,"ci_main_ms":3064,"waited_ms":15357}
+{"ts":1793413624993,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":167}
+{"ts":1793413625095,"who":"dev-a","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3226,"waited_ms":51,"sha":"cf728e75795f4102bc2ba838a51b10bf1fde5732"}
+{"ts":1793413625246,"who":"dev-a","event":"pr_merged","pr":4,"merge_sha":"5ce7798bfc2983bc3ea7abdc945059d3e63d0764"}
+{"ts":1793413627956,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13458,"ci_main_ms":3881,"waited_ms":6197}
+{"ts":1793413630389,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped: shell (PR#2) and reports (PR#3) moved to @mfe/shared-contracts ^2.0.0 (package.json + lockfile), CI green, merged, CD succeeded. Assumption: dev-a's 2.0.0 major release is the one carrying billingUrl /billing/v2; built locally OK."}
+{"ts":1793413630415,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":74}
+{"ts":1793413646846,"who":"dev-a","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11494,"ci_main_ms":3061,"waited_ms":21565}
+{"ts":1793413649443,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793413649461,"who":"dev-a","event":"done","summary":"Sub-tasks 1,2 live. contracts PR#1: billingUrl=/billing/v2, version 1.0.0->2.0.0 (major: changing a config value is breaking for consumers; ^1 ranges don't auto-pick it up). Billing PR#4: ^2.0.0 + lockfile, built dist contains /billing/v2. Assumption: major bump. Incident: I accidentally merged dev-b's PR#2 (green CI, deployed OK); told dev-b."}

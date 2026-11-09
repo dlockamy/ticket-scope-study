@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-104-1-billing-url-v2",
+    "title": "PLAT-104-1: billingUrl -> /billing/v2",
+    "head": "32546c7f88d42f62bbbb72e885ec324d68fc9584",
+    "opened_ts": 1793416405794,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793416419812,
+    "merge_sha": "e168e4b6909924e689182406134deb276cbcadf7",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-104-2-billing-adopt-v2",
+    "title": "PLAT-104-2: billing app adopts billing/v2 contract",
+    "head": "f6d066a7caeb0fc3f3588fd77355cd7d2d9bf783",
+    "opened_ts": 1793416441827,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 2,
+      "lock_del": 2,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793416452862,
+    "merge_sha": "e30da395af2c41f979fca5c8badb309521e13981",
+    "ci_prev": 2,
+    "cd_prev": 2
+  },
+  {
+    "id": 3,
+    "author": "dev-b",
+    "repo": "mono",
+    "branch": "plat-104-shell-reports-billing-v2",
+    "title": "PLAT-104-3/4: core-shell and reports adopt billing/v2",
+    "head": "9d57e64805cacd3078a4b733872b93eccba3fd04",
+    "opened_ts": 1793416444241,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793416455297,
+    "merge_sha": "c3d1b39db6e0c5809f57e3201a736c6b0839c22a",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

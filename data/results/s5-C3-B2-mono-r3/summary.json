@@ -1,0 +1,131 @@
+{
+  "run": "s5-C3-B2-mono-r3",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "B2",
+  "rep": 3,
+  "model": "haiku",
+  "tag": "s5",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 183,
+  "jenkins_wait_s": 89,
+  "agent_active_s": 94,
+  "t_first_clone_s": 7.471,
+  "t_first_pr_s": 64.646,
+  "t_first_merge_s": 77.321,
+  "repos_cloned": [
+    "mono"
+  ],
+  "repos_changed": [
+    "mono"
+  ],
+  "prs": 3,
+  "prs_merged": 3,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "mono",
+      "files": 3,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 13
+    },
+    {
+      "id": 2,
+      "repo": "mono",
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 15
+    },
+    {
+      "id": 3,
+      "repo": "mono",
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 14
+    }
+  ],
+  "lines_changed_excl_lock": 9,
+  "files_changed": 5,
+  "pr_updates": 0,
+  "ci_runs": 3,
+  "ci_failures": 0,
+  "deploys": 3,
+  "deploy_failures": 0,
+  "subtasks_recorded": 3,
+  "subtask_detail": [
+    {
+      "repo": "mono",
+      "title": "PLAT-103-1: validateApp rejects apps without owner (breaking, major bump)"
+    },
+    {
+      "repo": "mono",
+      "title": "PLAT-103-2: billing passes owner from package.json team"
+    },
+    {
+      "repo": "mono",
+      "title": "PLAT-103-3: core-shell passes owner from package.json team"
+    }
+  ],
+  "jenkins_builds": 12,
+  "jenkins_executor_s": 49.1,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "mono-cd": 6,
+    "mono-ci": 6
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "audit_runs": 2,
+  "audit_last_violations": 0,
+  "hidden": "reports",
+  "decoy_touched": false,
+  "repeat_repo_prs": 2,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 1268139,
+  "agent_output_tokens": 13880,
+  "agent_turns": 28,
+  "agent_cost_usd": 0.028106770000000007,
+  "agent_duration_s": 187,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true
+    }
+  },
+  "semver_ok": true,
+  "semver_class": null,
+  "platformkit_changed": false,
+  "failed_checks": []
+}

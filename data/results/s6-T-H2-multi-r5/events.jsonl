@@ -1,0 +1,34 @@
+{"ts":1793413032629,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413033655,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793413035719,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793413036247,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793413036319,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793413040630,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413042543,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413044735,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793413044927,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413052573,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413055628,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3633,"waited_ms":9177,"sha":"a30c384ca68a6449efbd320452059db9ae18610f"}
+{"ts":1793413055818,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"55ec031a388568c3a1afc42dec11f19d8f549e1c"}
+{"ts":1793413062608,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413068207,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5014,"ci_main_ms":2951,"waited_ms":12354}
+{"ts":1793413071365,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793413071389,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793413071415,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793413071495,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793413072647,"who":"dev-b","event":"handoff_read"}
+{"ts":1793413076361,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413078654,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413078820,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413088605,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3181,"waited_ms":12209,"sha":"0fbc34ae5f18d7e02cab8b8f3ca509a0cffd6c11"}
+{"ts":1793413088749,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"a9319f871d0e37d350dc310ce418de0a0df79ae1"}
+{"ts":1793413089736,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3212,"waited_ms":9155,"sha":"1fcedbfcc992b331f6677892699243079c878fb0"}
+{"ts":1793413089802,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3186,"waited_ms":36,"sha":"c39f1268a1e5bcac332f7e2d38f7461230281813"}
+{"ts":1793413091759,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"0d0766051537a1478b93e11b52640cd237d56002"}
+{"ts":1793413091936,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"11a5efdb5702477c5d6223972fd769ffe4f1af1c"}
+{"ts":1793413107261,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11628,"ci_main_ms":3017,"waited_ms":18480}
+{"ts":1793413107333,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9662,"ci_main_ms":6185,"waited_ms":15362}
+{"ts":1793413109534,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793413109552,"who":"dev-a","event":"done","summary":"PLAT-103-1: @mfe/shared-contracts 2.0.0 (major) published; validateApp throws if owner missing/empty (non-empty string). PLAT-103-2: billing passes owner 'payments' (package.json team), upgraded to ^2.0.0 with lockfile, deployed. Handoff posted for dev-b. Assumption: whitespace-only owner counts as empty."}
+{"ts":1793413113566,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16339,"ci_main_ms":3182,"waited_ms":6198}
+{"ts":1793413116026,"who":"dev-b","event":"done","summary":"PLAT-103-3 and -4 live: shell (owner=platform, PR #3) and reports (owner=insights, PR #4) pass owner from package.json 'team' to validateApp and adopt @mfe/shared-contracts ^2.0.0 (lockfiles committed). CI and CD green. Assumption: owner = package.json team value. Waited for dev-a's 2.0.0 handoff before bumping."}

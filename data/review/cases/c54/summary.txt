@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty (shared-contracts 2.0.0, breaking => major). shell/billing/reports upgraded to ^2.0.0 and pass owner from package.json team (platform/payments/insights; hardcoded since package.json team is the source). All merged, CI+CD green. Assumption: dependency catalog consumers (3 apps) matched grep of validateApp usage.

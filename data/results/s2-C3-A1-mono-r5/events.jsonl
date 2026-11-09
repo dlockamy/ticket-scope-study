@@ -1,0 +1,8 @@
+{"ts":1793376403040,"event":"clone","repo":"mono"}
+{"ts":1793376408816,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires owner","repo":""}
+{"ts":1793376408836,"event":"task_added","task":2,"title":"pass owner (package.json team) in core-shell, billing, reports","repo":""}
+{"ts":1793376414207,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793376428014,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4099,"waited_ms":12257,"sha":"82dd4f11d345e576906bea8641186693d1c45a3e"}
+{"ts":1793376429701,"event":"pr_merged","pr":1,"merge_sha":"cfdee0f2d0bcbf69576d75f07e6b60e325d6a7fa"}
+{"ts":1793376454261,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15108,"ci_main_ms":3162,"waited_ms":24530}
+{"ts":1793376456654,"event":"done","summary":"validateApp now throws if owner is missing/empty; core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team. Assumptions: owner hardcoded as literals (bundler inlines, no JSON import); whitespace-only owner counts as empty. Single PR #1 in mono since shared-contracts is inlined; local builds of all 3 apps passed, CI and CD green."}

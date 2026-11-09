@@ -1,0 +1,10 @@
+{"ts":1793389959745,"event":"clone","repo":"mono"}
+{"ts":1793389959773,"event":"deps_query","pkg":"validateApp"}
+{"ts":1793389972127,"event":"task_added","task":1,"title":"validateApp requires owner; pass package.json team from core-shell, billing, reports","repo":"mono"}
+{"ts":1793389973065,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793389975645,"event":"pr_updated","pr":1,"size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389984852,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4215,"waited_ms":9180,"sha":"f76d61381d1fc015afa9337120b08430a7a9b3ce"}
+{"ts":1793389986488,"event":"pr_merged","pr":1,"merge_sha":"a43564090a3509a40915e9c6656e521b52f2a9f7"}
+{"ts":1793390007943,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13584,"ci_main_ms":3457,"waited_ms":21425}
+{"ts":1793390011092,"event":"task_done","task":1}
+{"ts":1793390011108,"event":"done","summary":"validateApp now throws if owner missing/empty (libs/shared-contracts). core-shell (platform), billing (payments), reports (insights) pass owner matching their package.json team (hardcoded literals, since apps are inlined and can't read package.json at runtime). All three builds verified locally; CI and CD green via PR #1. Assumption: shared-contracts lives in the monorepo and is inlined, so no version bump/registry publish needed; docs claiming it is unconsumed are stale."}

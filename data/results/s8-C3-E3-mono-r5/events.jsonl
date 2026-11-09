@@ -1,0 +1,14 @@
+{"ts":1793450129615,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793450129695,"event":"clone","repo":"mono"}
+{"ts":1793450146277,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450158520,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3047,"waited_ms":12209,"sha":"d88e0ec424c0c5c8a86bd334fb76996edcd56cce"}
+{"ts":1793450160242,"event":"pr_merged","pr":1,"merge_sha":"1cb3327c1e81b70f542151bc491d58e59f4e3402"}
+{"ts":1793450181735,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10732,"ci_main_ms":3049,"waited_ms":21456}
+{"ts":1793450183757,"event":"child_opened","child":"PLAT-103-4"}
+{"ts":1793450183773,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793450186067,"event":"clone","repo":"platformkit"}
+{"ts":1793450190861,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793450190875,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793450190888,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793450190901,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793450190928,"event":"done","summary":"validateApp now throws if owner is missing/empty. All three callers (core-shell=platform, billing=payments, reports=insights, taken from each package.json 'team') pass owner. Shipped in one PR because shared-contracts is inlined at build time, so lib and apps must land together. Assumptions: reports (not in a child ticket) also needed fixing; shared-contracts version bumped to 2.0.0 for the breaking change though it is not registry-published; platform-kit does not use validateApp."}

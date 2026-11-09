@@ -1,0 +1,6 @@
+{"ts":1793387168650,"event":"clone","repo":"mono"}
+{"ts":1793387183325,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793387195789,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3188,"waited_ms":12412,"sha":"87b54445abb3ca2d284def05e306cfc6bcd7453c"}
+{"ts":1793387197540,"event":"pr_merged","pr":1,"merge_sha":"12d79b8cea327f91ab55b2019b4ac1227f6cdfbf"}
+{"ts":1793387219056,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11600,"ci_main_ms":3141,"waited_ms":21479}
+{"ts":1793387221290,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0, breaking). core-shell=platform, billing=payments, reports=insights, from each package.json team. Assumptions: libs/shared-contracts is inlined at build time (not a registry package), so no registry release or dependency update was needed; shipped as one PR so lib and apps land together. CI and CD green."}

@@ -1,0 +1,9 @@
+{"ts":1793451250323,"event":"clone","repo":"mono"}
+{"ts":1793451250391,"event":"clone","repo":"platformkit"}
+{"ts":1793451264262,"event":"task_added","task":1,"title":"Make validateApp require team in libs/shared-contracts (in-repo lib, inlined) and pass team from package.json in all 3 apps; single mono PR","repo":""}
+{"ts":1793451264283,"event":"task_added","task":2,"title":"README fake bucket names: out of scope (lee: separate thing), noted in done summary","repo":""}
+{"ts":1793451270956,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owners","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793451280346,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3065,"waited_ms":9349,"sha":"bd4d509b1fd417f541ef2778458f22fc768cce53"}
+{"ts":1793451281990,"event":"pr_merged","pr":1,"merge_sha":"dec5f4f1797da8b92f41340f0ce237e5754d3439"}
+{"ts":1793451303449,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10886,"ci_main_ms":3014,"waited_ms":21430}
+{"ts":1793451306241,"event":"done","summary":"validateApp (libs/shared-contracts, in-repo and inlined at build) now throws without app.team; version bumped to 2.0.0 (breaking). core-shell/billing/reports pass team matching their package.json (platform/payments/insights), hardcoded since the inliner can't import JSON. Single mono PR #1, CI+CD green. Assumptions: platform-kit untouched (unrelated); README fake bucket names left out as Lee said it's a separate thing - needs its own ticket."}

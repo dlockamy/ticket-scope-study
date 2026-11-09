@@ -1,0 +1,22 @@
+{"ts":1793397574275,"event":"clone","repo":"mono"}
+{"ts":1793397622309,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397633341,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3047,"waited_ms":9171,"sha":"db5974dfb96e1db98b0386250db9ff0b5c19596a"}
+{"ts":1793397635574,"event":"pr_merged","pr":1,"merge_sha":"eae79d389a0b1a307c9eaa8ba5efe5b181edb29c"}
+{"ts":1793397647802,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1329,"ci_main_ms":3189,"waited_ms":12199}
+{"ts":1793397664358,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397675467,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3133,"waited_ms":9175,"sha":"7b8d9cf30ef4a489b65e466ce5e7af7727728352"}
+{"ts":1793397678038,"event":"pr_merged","pr":2,"merge_sha":"3be8202a6adad753d657864da4064a3f0896be4f"}
+{"ts":1793397696430,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11173,"ci_main_ms":3100,"waited_ms":18362}
+{"ts":1793397706331,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-core-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397709543,"event":"task_added","task":1,"title":"PLAT-103-4: sub-route-reports passes its owner to validateApp (not in ticket breakdown; also calls validateApp)","repo":"mono"}
+{"ts":1793397709565,"event":"task_added","task":2,"title":"--help","repo":""}
+{"ts":1793397721924,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793397724605,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3137,"waited_ms":39,"sha":"976f975d2bcdff39a52f263bcff5e759a2939dd4"}
+{"ts":1793397733805,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3019,"waited_ms":9173,"sha":"c67af266ae169029dbda4bdd02dee1a308ac3e11"}
+{"ts":1793397736280,"event":"pr_merged","pr":3,"merge_sha":"5fb657d69cf9319d5927dd1f67d4603d53c44306"}
+{"ts":1793397757748,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12762,"ci_main_ms":3498,"waited_ms":21437}
+{"ts":1793397759693,"event":"pr_merged","pr":4,"merge_sha":"5285f7a7305f9080f44ffcb20963c2aa4196df08"}
+{"ts":1793397781225,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10222,"ci_main_ms":3009,"waited_ms":21502}
+{"ts":1793397789085,"event":"task_done","task":1}
+{"ts":1793397789104,"event":"task_start","task":2}
+{"ts":1793397789118,"event":"done","summary":"PLAT-103 shipped: validateApp (shared-contracts) now throws unless app.owner is a non-blank string. Each app passes the owner from its package.json team: billing=payments, core-shell=platform, reports=insights. Merged and CD green for PRs 1-4 (PR1 shared-contracts 1.0.0 -> 2.0.0; PR2 billing; PR3 core-shell; PR4 reports, added as PLAT-103-4 because it also calls validateApp). Assumptions: shared-contracts is inlined, not published, so the major bump is only a version marker; CD does not redeploy on libs/ changes, so PR1 alone changed nothing live; the owner strings are hard-coded to match package.json rather than read at build time. Stray task 2 ('--help') was created by mistake and could not be removed with st."}

@@ -1,0 +1,27 @@
+{"ts":1793449571641,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449573655,"event":"clone","repo":"contracts"}
+{"ts":1793449582812,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449595242,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3710,"waited_ms":12394,"sha":"3b74803063e5926467c8d4ae81896dea6ed3085b"}
+{"ts":1793449595409,"event":"pr_merged","pr":1,"merge_sha":"e45b29cb1cfc942b3c736fda22e1a4cc541b9897"}
+{"ts":1793449607713,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4968,"ci_main_ms":2906,"waited_ms":12275}
+{"ts":1793449610523,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793449610538,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793449610601,"event":"clone","repo":"billing"}
+{"ts":1793449610668,"event":"clone","repo":"shell"}
+{"ts":1793449610734,"event":"clone","repo":"reports"}
+{"ts":1793449623629,"event":"pr_opened","pr":2,"repo":"billing","branch":"billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793449635879,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2906,"waited_ms":12218,"sha":"5f2ec836d7b5721ad4b645cb307f76942fc5dd6a"}
+{"ts":1793449636011,"event":"pr_merged","pr":2,"merge_sha":"f179f2f2e3f9b12f46ee6321082a7707a7a71003"}
+{"ts":1793449654403,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11050,"ci_main_ms":3039,"waited_ms":18363}
+{"ts":1793449658296,"event":"pr_opened","pr":3,"repo":"shell","branch":"shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793449673597,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2923,"waited_ms":15270,"sha":"534633094b80180ac7f67022605fe1f22bd8c6bd"}
+{"ts":1793449673724,"event":"pr_merged","pr":3,"merge_sha":"b304d20505c4f6ad6bade8f964c6a4d1cb42b083"}
+{"ts":1793449692137,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8869,"ci_main_ms":3037,"waited_ms":18383}
+{"ts":1793449695992,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793449696007,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793449696703,"event":"pr_opened","pr":4,"repo":"reports","branch":"reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793449705906,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2881,"waited_ms":9172,"sha":"b55db15d54764e718e6845843d0b48269a1227bc"}
+{"ts":1793449706039,"event":"pr_merged","pr":4,"merge_sha":"89060570ed98ad5f2086ea9611cb39c27649a35b"}
+{"ts":1793449724505,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11277,"ci_main_ms":2962,"waited_ms":18434}
+{"ts":1793449724521,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793449724547,"event":"done","summary":"validateApp now requires non-empty owner (contracts v2.0.0, major bump). billing/shell/reports pass owner from their package.json team (payments/platform/insights; hardcoded since the bundler can't import JSON) and depend on ^2.0.0. Assumed whitespace-only owner counts as empty."}

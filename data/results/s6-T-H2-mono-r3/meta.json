@@ -1,0 +1,17 @@
+{
+  "run": "s6-T-H2-mono-r3",
+  "topology": "mono",
+  "mode": "team",
+  "change": "C3",
+  "arm": "H2",
+  "rep": 3,
+  "tag": "s6",
+  "model": "claude-sonnet-5-5",
+  "devs": [
+    "dev-a",
+    "dev-b"
+  ],
+  "msg": false,
+  "handoff": true,
+  "start_ms": 1793412342483
+}

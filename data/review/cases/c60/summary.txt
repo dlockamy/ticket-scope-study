@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty (contracts 2.0.0, published). Billing (owner=payments) and shell (owner=platform), taken from package.json team, adopt ^2.0.0 and are deployed. Assumptions: only billing and shell call validateApp (grep'd the three clones; other repos not checked); whitespace-only owner counts as empty.

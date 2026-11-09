@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Contract: validateApp requires owner",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Apps pass owner (core-shell platform, billing payments, reports insights)",
+    "repo": "",
+    "state": "todo"
+  }
+]

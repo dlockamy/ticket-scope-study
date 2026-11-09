@@ -1,0 +1,10 @@
+{"ts":1793388132296,"event":"clone","repo":"mono"}
+{"ts":1793388132333,"event":"deps_query","pkg":"@studio/contracts"}
+{"ts":1793388140264,"event":"task_added","task":1,"title":"validateApp: require non-empty owner (libs/shared-contracts)","repo":""}
+{"ts":1793388140284,"event":"task_added","task":2,"title":"Pass package.json team as owner in core-shell, billing, reports","repo":""}
+{"ts":1793388140303,"event":"task_added","task":3,"title":"Build all three apps, open PR, CI, merge, confirm CD","repo":""}
+{"ts":1793388160411,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793388171049,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3564,"waited_ms":9169,"sha":"ebf997d48edcf684bf0c8e1cf23fc9a6ca149805"}
+{"ts":1793388173667,"event":"pr_merged","pr":1,"merge_sha":"e33db2b66df31239b68af21f57ef3ef246dbba4f"}
+{"ts":1793388192035,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11444,"ci_main_ms":3146,"waited_ms":18340}
+{"ts":1793388195111,"event":"done","summary":"validateApp now throws if owner is missing/empty/non-string. core-shell='platform', billing='payments', reports='insights' passed as owner (copied from each app's package.json team; hardcoded because libs/apps are inlined into bundles and can't import package.json). All three apps built locally; CI and CD green via PR #1. Assumption: single PR in mono since the shared contract lives there; no registry libs involved."}

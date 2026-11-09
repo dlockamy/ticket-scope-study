@@ -1,0 +1,22 @@
+{"ts":1793391361172,"event":"clone","repo":"contracts"}
+{"ts":1793391361228,"event":"clone","repo":"billing"}
+{"ts":1793391361287,"event":"clone","repo":"shell"}
+{"ts":1793391380871,"event":"task_start","task":1}
+{"ts":1793391381038,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793391391573,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3821,"waited_ms":9204,"sha":"fd45a41b398c8713bc8300c2fd8bc74c8d240548"}
+{"ts":1793391393097,"event":"pr_merged","pr":1,"merge_sha":"8f46f9eb27cfb0c823229c8c8a97b5d159bd180b"}
+{"ts":1793391408452,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5150,"ci_main_ms":3038,"waited_ms":15324}
+{"ts":1793391411543,"event":"task_start","task":2}
+{"ts":1793391411562,"event":"task_start","task":3}
+{"ts":1793391423676,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-2-pass-app-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793391423793,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-pass-app-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793391437566,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3205,"waited_ms":12224,"sha":"48fc6961d9e43a2941674f0496035d0520c2f371"}
+{"ts":1793391437629,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3233,"waited_ms":34,"sha":"27a94b8f6fecff437a5eb67ce86550943ef12a88"}
+{"ts":1793391439278,"event":"pr_merged","pr":2,"merge_sha":"cbcb889c45a83551b29e0e361f4bad20e9437fce"}
+{"ts":1793391457658,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11758,"ci_main_ms":3099,"waited_ms":18348}
+{"ts":1793391457786,"event":"pr_merged","pr":3,"merge_sha":"9e65e017136854f7bb6950466d3340d96b409d5d"}
+{"ts":1793391479218,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8863,"ci_main_ms":3049,"waited_ms":21404}
+{"ts":1793391480598,"event":"task_done","task":1}
+{"ts":1793391480617,"event":"task_done","task":2}
+{"ts":1793391480633,"event":"task_done","task":3}
+{"ts":1793391483490,"event":"done","summary":"PLAT-103: every app now declares its owning team.\n- PLAT-103-1 (PR #1, libs-shared-contracts): validateApp throws if owner is missing or empty. Breaking, so released as 2.0.0 (CD published it; registry has 1.0.0 and 2.0.0).\n- PLAT-103-2 (PR #2, apps-sub-route-billing): passes owner 'payments' (package.json team); dependency moved to @mfe/shared-contracts ^2.0.0 with lockfile updated.\n- PLAT-103-3 (PR #3, apps-core-shell): passes owner 'platform' (package.json team); dependency moved to ^2.0.0 with lockfile updated.\nAll three merged; CI and CD green on main for each.\nAssumptions: owner is hardcoded in each app's source rather than read from package.json, since the build inlines only ES imports and cannot import JSON. The team value must be kept in sync with package.json by hand. The owner check rejects only missing or empty values (not whitespace-only). I did not add tests because the repos have none; I verified with node import checks and local builds."}

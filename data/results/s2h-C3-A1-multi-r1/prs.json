@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: require app.owner in validateApp (shared-contracts 2.0.0)",
+    "head": "d3df017fe0b31d07c395b7a9660a1e01218de91a",
+    "opened_ts": 1793369639415,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369656295,
+    "merge_sha": "48d3c3bd7c92c5f17b8f21438109a28d35ad4f43",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103: declare owner (platform) for core-shell",
+    "head": "c8fa9d769263fb428e79788b61de81584ae092a0",
+    "opened_ts": 1793369695590,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369710875,
+    "merge_sha": "9f0b76d3e92113037a3e72eeaa86989affb7dc56",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103: declare owner (payments) for billing",
+    "head": "67d7490f38ba01a4f27a5478639594fb6646d4e7",
+    "opened_ts": 1793369695721,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369732497,
+    "merge_sha": "35825c82a683c6fd34a82992374f88d4d2b72109",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-owner-reports",
+    "title": "PLAT-103: declare owner (insights) for reports",
+    "head": "6761cef4bc1fbecc930795bfaca25a3aa4adc59a",
+    "opened_ts": 1793369695842,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369754149,
+    "merge_sha": "d6b38a1374ef056aeff3d863ff7a61d59c1d8ac0",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,13 @@
+{"ts":1793451410620,"event":"clone","repo":"mono"}
+{"ts":1793451415932,"event":"clone","repo":"platformkit"}
+{"ts":1793451421431,"event":"task_added","task":1,"title":"validateApp requires owner (libs/shared-contracts, inlined; no registry release)","repo":""}
+{"ts":1793451421457,"event":"task_added","task":2,"title":"Pass owner from package.json team in core-shell, billing, reports","repo":""}
+{"ts":1793451421485,"event":"task_added","task":3,"title":"PR, CI, merge, deploy","repo":""}
+{"ts":1793451425033,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793451435918,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4328,"waited_ms":9179,"sha":"e38a28e166e6c072edcaf40999d2489025ae9003"}
+{"ts":1793451436070,"event":"pr_merged","pr":1,"merge_sha":"040138f4199dbd456180287d6529362cf54d134b"}
+{"ts":1793451454471,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11420,"ci_main_ms":3189,"waited_ms":18373}
+{"ts":1793451456947,"event":"task_done","task":1}
+{"ts":1793451456963,"event":"task_done","task":2}
+{"ts":1793451456978,"event":"task_done","task":3}
+{"ts":1793451456991,"event":"done","summary":"validateApp (libs/shared-contracts, the shared config lib; no libs/config exists) now throws if owner missing/empty. core-shell/billing/reports pass owner = package.json team (platform/payments/insights), hardcoded literals. Lib is inlined at build time and lives in the monorepo, so no registry release/version bump needed (platform-kit untouched). All 3 apps built locally; PR #1 CI+CD green."}

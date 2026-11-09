@@ -1,0 +1,31 @@
+{"ts":1793410895597,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793410895667,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793410908671,"who":"dev-b","event":"task_start","task":3}
+{"ts":1793410908690,"who":"dev-b","event":"task_start","task":4}
+{"ts":1793410911755,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793410911967,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":1,"add":1,"del":0,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793410912176,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-owner-shell-reports","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793410925695,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3742,"waited_ms":12222,"sha":"8940f75b3ef67086392133b012374e6ab068da87"}
+{"ts":1793410925841,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"e8a088878ff5ad0314099bece6b28816a33c99cd"}
+{"ts":1793410927456,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3742,"waited_ms":15240,"sha":"8940f75b3ef67086392133b012374e6ab068da87"}
+{"ts":1793410931381,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3502,"waited_ms":38,"sha":"5fea63a24684c93d978331fce49550a969c86b0c"}
+{"ts":1793410931529,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"16d034fe293b6c50998e8fd169c9592c78711b58"}
+{"ts":1793410944426,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":979,"ci_main_ms":3410,"waited_ms":18551}
+{"ts":1793410946918,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":979,"ci_main_ms":3410,"waited_ms":15350}
+{"ts":1793410946984,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793410947009,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":160}
+{"ts":1793410950078,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793410950101,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793410950117,"who":"dev-b","event":"done","summary":"PR #2 merged, CI+CD green: core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team). Assumptions: libs/shared-contracts is inlined at build time, so 'adopting the new release' needs no dependency bump; PR #2 branched before/independent of dev-a's PR #1 but was merged after it."}
+{"ts":1793410950141,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":118}
+{"ts":1793410954167,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793410954350,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793410954425,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3502,"waited_ms":39,"sha":"5fea63a24684c93d978331fce49550a969c86b0c"}
+{"ts":1793410954607,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"16d034fe293b6c50998e8fd169c9592c78711b58"}
+{"ts":1793410954694,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":979,"ci_main_ms":3410,"waited_ms":56}
+{"ts":1793410959685,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":180}
+{"ts":1793410965825,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3661,"waited_ms":6110,"sha":"52e86205c617ee0c8665b0b715a64a4e2921995f"}
+{"ts":1793410965973,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"8dd7686ac6e278799530e5298c7803c541a5f51f"}
+{"ts":1793410984662,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10014,"ci_main_ms":3090,"waited_ms":18651}
+{"ts":1793410984713,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793410987346,"who":"dev-a","event":"done","summary":"PLAT-103-1 (PR #1): validateApp throws if owner missing/empty/non-string; lib is in-repo and inlined so no publish or version bump (per CONTRIBUTING). PLAT-103-2 (PR #3): billing passes owner 'payments' (from package.json team), hardcoded because the inlining bundler can't import JSON; no dependency to adopt. All merged, CI/CD green. Note: I accidentally merged dev-b's PR #2 (green CI) by mixing up PR numbers; told dev-b."}

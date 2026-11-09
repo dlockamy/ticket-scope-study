@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "54876c393e856e6594a4d1a70a85f52b64550319",
+    "opened_ts": 1793389974022,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389985144,
+    "merge_sha": "e26cbae4fc7e66e45e8f2496f04a978ec7fc1fd6",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-owner-v2",
+    "title": "Pass owner to validateApp (contracts ^2.0.0)",
+    "head": "1e876c8debc2c8695f6cea02f9a3713b620fd1e1",
+    "opened_ts": 1793390008043,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390018952,
+    "merge_sha": "7c831cf31be94980050081437230a46d13d3e369",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-owner-v2",
+    "title": "Pass owner to validateApp (contracts ^2.0.0)",
+    "head": "119395d6aa1067795db99dd11eac26e5ce3fa4e9",
+    "opened_ts": 1793390008164,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390040587,
+    "merge_sha": "63d5dee96dab39d85215f2ff461ad3745c3af21e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-owner-v2",
+    "title": "Pass owner to validateApp (contracts ^2.0.0)",
+    "head": "aa3380a07a83c46657d86bcb8c60bc24d3157c4e",
+    "opened_ts": 1793390008283,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390062196,
+    "merge_sha": "54f074cb4cfa5894195ee1635b07ff76211033c0",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,8 @@
+{"ts":1793384368082,"event":"clone","repo":"mono"}
+{"ts":1793384368167,"event":"audit","violations":3}
+{"ts":1793384384873,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793384397082,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4092,"waited_ms":9208,"sha":"59c38b60555f8c4ff75433e61c0125f56475d299"}
+{"ts":1793384397241,"event":"pr_merged","pr":1,"merge_sha":"a41c1f7528bdfaaa1c713fed4d1c39063640bcfc"}
+{"ts":1793384418708,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13362,"ci_main_ms":3271,"waited_ms":21439}
+{"ts":1793384418797,"event":"audit","violations":0}
+{"ts":1793384423024,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0). core-shell passes owner 'platform', billing 'payments', reports 'insights' (from package.json team; hardcoded since bundles can't read package.json). Assumptions: shared-contracts lives in the monorepo and is inlined at build, so no registry release/dependency bump needed and one PR is safe ordering-wise. Reports also called validateApp, so I fixed it too to avoid breaking it and to clear audit. PR #1 merged, CI/CD green, audit 0 violations."}

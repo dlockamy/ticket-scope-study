@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl -> billingEndpoint, bump major 2.0.0",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Use billingEndpoint, depend on contracts ^2.0.0",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Use billingEndpoint, depend on contracts ^2.0.0",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Use billingEndpoint, depend on contracts ^2.0.0",
+    "repo": "reports",
+    "state": "done"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: require owner in validateApp (shared-contracts 2.0.0)",
+    "head": "516cd8ac437095c5ef56a48666e789a5f743d1d8",
+    "opened_ts": 1793367534695,
+    "size": {
+      "files": 5,
+      "add": 5,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367545599,
+    "merge_sha": "3a944d708ac98cb112c8a902beeb7d30b28c0870",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

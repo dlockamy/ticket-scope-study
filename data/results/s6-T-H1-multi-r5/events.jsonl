@@ -1,0 +1,29 @@
+{"ts":1793413167532,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793413167722,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793413167799,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793413176267,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793413176465,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413187209,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3775,"waited_ms":9193,"sha":"09c5e65264e92b9b249ae875b866d24088e664ad"}
+{"ts":1793413187418,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"2aa4520a8daca0b0a88574473d05af043dc509bb"}
+{"ts":1793413199808,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5393,"ci_main_ms":3056,"waited_ms":12357}
+{"ts":1793413203142,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793413203175,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":125}
+{"ts":1793413203273,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793413204433,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1264}
+{"ts":1793413204446,"who":"dev-b","event":"msg_wait","waited_ms":32374}
+{"ts":1793413205646,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793413208696,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413212553,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413212712,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413220920,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2975,"waited_ms":12189,"sha":"c5588dd9f445ebc41a7058fedad61afb9907bf90"}
+{"ts":1793413221175,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"0c827f9dec820b07994fcfed109f4bdbc294b364"}
+{"ts":1793413223481,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3310,"waited_ms":9193,"sha":"6564845cda8efd818e43bc326cdd13eea5e2a533"}
+{"ts":1793413223560,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3329,"waited_ms":41,"sha":"ae6ded8003524501f42fd0c96b1944daef8bfa04"}
+{"ts":1793413225248,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"de47d374430a2e8fea486043630c84e3ab523bba"}
+{"ts":1793413242869,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13236,"ci_main_ms":3222,"waited_ms":21644}
+{"ts":1793413243747,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10487,"ci_main_ms":3136,"waited_ms":18467}
+{"ts":1793413243908,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"463526e54fcdb0bc8a93c5ef98df099929a79d28"}
+{"ts":1793413245542,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793413245560,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp now throws if owner missing/empty; released as @mfe/shared-contracts 2.0.0 (major, breaking) via PR #1, published and CD green. PLAT-103-2: billing passes owner 'payments' (from package.json team), adopts ^2.0.0 with lockfile, PR #2 merged, CD green. Assumption: whitespace-only owner counts as empty. Notified dev-b."}
+{"ts":1793413268647,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13383,"ci_main_ms":3170,"waited_ms":24705}
+{"ts":1793413270776,"who":"dev-b","event":"done","summary":"PLAT-103-3/4 live: shell (PR #3, owner=platform) and reports (PR #4, owner=insights) pass owner from package.json team, adopt @mfe/shared-contracts ^2.0.0 with lockfile; CI+CD green. Assumption: owner literal copied from package.json team."}

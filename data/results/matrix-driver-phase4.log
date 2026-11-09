@@ -1,0 +1,22 @@
+16:15:34 round 0: s5 C3 A2 rep1 haiku
+16:19:29 round 1: s5 C3 B1 rep1 haiku
+16:40:18 round 2: s5 C3 B2 rep1 haiku
+16:44:15 round 3: s5 C3 A1 rep1 haiku
+16:47:33 round 4: s5 C3 B4 rep1 haiku
+16:51:29 round 5: s5 C3 A1 rep2 haiku
+16:54:56 round 6: s5 C3 A2 rep2 haiku
+16:57:42 round 7: s5 C3 B1 rep2 haiku
+17:01:24 round 8: s5 C3 B2 rep2 haiku
+17:04:57 round 9: s5 C3 B4 rep2 haiku
+17:08:59 round 10: s5 C3 B4 rep3 haiku
+17:12:25 round 11: s5 C3 B1 rep3 haiku
+17:37:54 round 11 INVALID (agent error); set aside (fail 1)
+17:37:56 round 12: s5 C3 A1 rep3 haiku
+17:41:10 round 13: s5 C3 B2 rep3 haiku
+17:44:47 round 14: s5 C3 A2 rep3 haiku
+17:48:51 round 15: s5 C3 B1 rep4 haiku
+17:52:27 round 16: s5 C3 B2 rep4 haiku
+17:56:05 round 17: s5 C3 A2 rep4 haiku
+17:59:07 round 18: s5 C3 B4 rep4 haiku
+18:03:24 round 19: s5 C3 A1 rep4 haiku
+18:06:44 matrix finished

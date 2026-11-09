@@ -1,0 +1,125 @@
+{
+  "timeouts": [],
+  "run": "s6-T-H1-mono-r4",
+  "topology": "mono",
+  "mode": "team",
+  "arm": "H1",
+  "rep": 4,
+  "tag": "s6",
+  "devs": [
+    "dev-a",
+    "dev-b"
+  ],
+  "makespan_s": 94.3,
+  "start_offset_s": 5.2,
+  "makespan_from_first_action_s": 89.1,
+  "blocked": [],
+  "per_dev": {
+    "dev-a": {
+      "finished_s": 94.3,
+      "jenkins_wait_s": 55.5,
+      "comm_wait_s": 0.0,
+      "busy_s": 38.8,
+      "utilisation": 0.41,
+      "prs": 2,
+      "msgs_sent": 1,
+      "clones": [
+        "mono"
+      ]
+    },
+    "dev-b": {
+      "finished_s": 91.6,
+      "jenkins_wait_s": 39.9,
+      "comm_wait_s": 18.3,
+      "busy_s": 33.4,
+      "utilisation": 0.36,
+      "prs": 1,
+      "msgs_sent": 1,
+      "clones": [
+        "mono"
+      ]
+    }
+  },
+  "prs": 3,
+  "prs_merged": 3,
+  "pr_updates": 2,
+  "ci_runs": 5,
+  "ci_failures": 0,
+  "merge_conflicts": 0,
+  "infra_retries": 0,
+  "msgs_total": 2,
+  "msg_chars": 481,
+  "msg_read_latency_median_s": 1.7,
+  "lines_changed_excl_lock": 7,
+  "pr_detail": [
+    {
+      "id": 1,
+      "author": "dev-b",
+      "repo": "mono",
+      "files": 2,
+      "lines": 4,
+      "opened_s": 21.4,
+      "merged_s": 70.3
+    },
+    {
+      "id": 2,
+      "author": "dev-a",
+      "repo": "mono",
+      "files": 1,
+      "lines": 1,
+      "opened_s": 23.4,
+      "merged_s": 37.9
+    },
+    {
+      "id": 3,
+      "author": "dev-a",
+      "repo": "mono",
+      "files": 1,
+      "lines": 2,
+      "opened_s": 54.3,
+      "merged_s": 66.8
+    }
+  ],
+  "dependency_live_s": 50.3,
+  "dependent_merged_s": 70.3,
+  "handoff_to_dependent_merge_s": 20.0,
+  "jenkins_builds": 12,
+  "jenkins_failed_builds": 0,
+  "jenkins_executor_s": 49.3,
+  "handoffs_posted": 0,
+  "handoff_reads": 0,
+  "handoff_reads_empty": 0,
+  "msg_waits": 1,
+  "dev_b_comm_wait_s": 18.3,
+  "dev_b_jenkins_wait_s": 39.9,
+  "dev_b_finished_s": 91.6,
+  "duplicate_clones": 1,
+  "agent_tokens": 798116,
+  "agent_cost_usd": 0.2936,
+  "agent_errors": [],
+  "acceptance_pass": true,
+  "missed": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true
+    }
+  },
+  "semver_class": null,
+  "semver_ok": true,
+  "agents_ok": true
+}

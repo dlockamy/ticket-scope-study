@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102: rename billingUrl to billingEndpoint (2.0.0)",
+    "head": "eee09582f214f2c8895545d3e570aaf896ba9da6",
+    "opened_ts": 1793376108907,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376123240,
+    "merge_sha": "22ca4f4a24efff523b43d6b95e0c25be5845eefc",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102: use billingEndpoint (shared-contracts 2.0.0)",
+    "head": "f0c1c0b13bfeb83f95cea5a44a7f35a6f6f25834",
+    "opened_ts": 1793376142637,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376155688,
+    "merge_sha": "cf0b8f604cbf526d15d736a631dff2b36073a64d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102: use billingEndpoint (shared-contracts 2.0.0)",
+    "head": "d829c774afa9cf9504a5fbd01388c20d6ed4cf5f",
+    "opened_ts": 1793376142776,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376155820,
+    "merge_sha": "8a988e932d841ed883b541f8cbec5bbb7a32dfc8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102: use billingEndpoint (shared-contracts 2.0.0)",
+    "head": "afc3a6f7efae371ef3256a77400d07b362f217dd",
+    "opened_ts": 1793376142896,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793376155951,
+    "merge_sha": "4dd8fa11cc977c03d61ee94c68ba6ca63858658d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

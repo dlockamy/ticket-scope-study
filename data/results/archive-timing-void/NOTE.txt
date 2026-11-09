@@ -1,0 +1,1 @@
+Overnight round 0 (C2 A4 rep1). Outcomes valid (pass, 0 misses, agents found the hidden consumer despite the decoy) but turnaround 2012 s in both layouts is the Docker VM clock-stall artifact. Re-run on a later pass.

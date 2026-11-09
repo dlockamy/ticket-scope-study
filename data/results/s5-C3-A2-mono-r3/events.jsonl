@@ -1,0 +1,23 @@
+{"ts":1793396715735,"event":"clone","repo":"mono"}
+{"ts":1793396743194,"event":"task_start","task":1}
+{"ts":1793396751650,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396763857,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3033,"waited_ms":9165,"sha":"f572652f86c34aad177783bc9afc452ad4b4b7dc"}
+{"ts":1793396766511,"event":"pr_merged","pr":1,"merge_sha":"e6a1fdee82db1229c175500df5be92453d252614"}
+{"ts":1793396778825,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1227,"ci_main_ms":3010,"waited_ms":12285}
+{"ts":1793396778845,"event":"task_done","task":1}
+{"ts":1793396783377,"event":"task_start","task":2}
+{"ts":1793396783401,"event":"task_added","task":1,"title":"PLAT-103: pass owner to validateApp in sub-route-reports (not in ticket list; acceptance criteria covers every app)","repo":"mono"}
+{"ts":1793396794679,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396806933,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3031,"waited_ms":12223,"sha":"93dcbd3d9b86f90519842860e672ac9903ebcb03"}
+{"ts":1793396808944,"event":"pr_merged","pr":2,"merge_sha":"6226bcbc3e257a04047dd570697e0f58b2fb4fa6"}
+{"ts":1793396824297,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9588,"ci_main_ms":3106,"waited_ms":15322}
+{"ts":1793396837629,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-core-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396849909,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3066,"waited_ms":12248,"sha":"e49cbf973beb2a58827b9f7c9b9bf751ae2ebd96"}
+{"ts":1793396852110,"event":"pr_merged","pr":3,"merge_sha":"e04396125ca2adcf6095a24dca808b93c06ad2a6"}
+{"ts":1793396873609,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11500,"ci_main_ms":2999,"waited_ms":21470}
+{"ts":1793396880591,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793396892857,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3097,"waited_ms":12232,"sha":"f71b05906bc1da0d94ee2d137108c2e03e94e565"}
+{"ts":1793396892978,"event":"pr_merged","pr":4,"merge_sha":"37b3e4b470175008410d81d5e3b2b138b7cab976"}
+{"ts":1793396911412,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8707,"ci_main_ms":3059,"waited_ms":18406}
+{"ts":1793396917575,"event":"task_done","task":1}
+{"ts":1793396917591,"event":"done","summary":"PLAT-103 shipped. validateApp in libs/shared-contracts now throws unless app.owner is a non-empty string (version bumped 1.0.0 -> 2.0.0 as a breaking change). All three apps that call it now pass owner from their package.json team: billing=payments, core-shell=platform, and reports=insights. Reports was not in the ticket but its startup would throw otherwise, and the acceptance criteria cover every app. PRs #1-#4 merged, CI and CD green. Assumptions: the in-repo lib has no registry release, so its version bump is a marker only; the shared contract is inlined at build time, so shipping is the apps' release. CD does not deploy reports, so that change is merged but not deployed. Deploy flag is on, so CD ran for core-shell and billing."}

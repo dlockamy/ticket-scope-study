@@ -1,0 +1,6 @@
+{"ts":1793368816408,"event":"clone","repo":"mono"}
+{"ts":1793368845221,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793368856331,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3125,"waited_ms":9158,"sha":"13c64e739300b03bb0bca52ca7e2f1790682daae"}
+{"ts":1793368856458,"event":"pr_merged","pr":1,"merge_sha":"4f80f9ac1e62af81362da6b08ded2246f3909d33"}
+{"ts":1793368881018,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13447,"ci_main_ms":3123,"waited_ms":24530}
+{"ts":1793368884153,"event":"done","summary":"PLAT-103 shipped in PR #1: validateApp throws if owner is missing/empty; core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team. Assumptions: shared-contracts is an in-repo lib inlined at build, so no version bump or registry release or dependency update was needed (CONTRIBUTING); reports also calls validateApp so updated it to avoid breaking it; owners hardcoded to match package.json team. CI and CD green."}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Add owner check to validateApp in shared contracts",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Pass team from package.json as owner in each app calling validateApp",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Verify build and startup of all affected apps",
+    "repo": "mono",
+    "state": "done"
+  }
+]

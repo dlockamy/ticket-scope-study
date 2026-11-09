@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: validateApp requires owner (2.0.0)",
+    "head": "0b004afe00cc0fa5d86ca40e41bf27041d8df956",
+    "opened_ts": 1793368624038,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368635010,
+    "merge_sha": "32d973f60798ddf74fe9da5f2d233d6eab661a6a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-declare-owner",
+    "title": "PLAT-103: declare owner (shell)",
+    "head": "eae2ec210683695ca604a5fc5838d804a6804c2b",
+    "opened_ts": 1793368658745,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368673134,
+    "merge_sha": "e357bec89cc2127555df463c2b6f6740e819546a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-declare-owner",
+    "title": "PLAT-103: declare owner (billing)",
+    "head": "2d1b9d409842590d4c873843933d17f7803f0121",
+    "opened_ts": 1793368658903,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368707095,
+    "merge_sha": "5d741febeeb9db53e23d75c659af23698948023e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-declare-owner",
+    "title": "PLAT-103: declare owner (reports)",
+    "head": "9bb027ed0cbb20702fbae4039006fc4b52805abd",
+    "opened_ts": 1793368659068,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793368728766,
+    "merge_sha": "14d92a24f9e044282cbd651b3fbc4b7b6ae87673",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

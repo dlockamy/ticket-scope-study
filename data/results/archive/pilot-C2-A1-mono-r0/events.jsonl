@@ -1,0 +1,8 @@
+{"ts":1793329050903,"event":"clone","repo":"mono"}
+{"ts":1793329050964,"event":"clone","repo":"platformkit"}
+{"ts":1793329056981,"event":"task_added","task":1,"title":"Rename billingUrl->billingEndpoint in shared-contracts and 3 apps (mono only; platformkit has no refs)","repo":""}
+{"ts":1793329064674,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793329117825,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4301,"waited_ms":53118,"sha":"71de92a48bc2478808b4a11e1e83b545777e4e14"}
+{"ts":1793329119455,"event":"pr_merged","pr":1,"merge_sha":"4a0c714d1d569fbdd07a670b01eea5e1665de7f9"}
+{"ts":1793329432226,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":141565,"ci_main_ms":3301,"waited_ms":312740}
+{"ts":1793329435913,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and the 3 apps (core-shell, billing, reports) in one mono PR (#1); CI and CD succeeded. Assumptions: shared config lives in mono's inlined lib, so platformkit needed no change (no references); local builds of all 3 apps passed the contract check."}

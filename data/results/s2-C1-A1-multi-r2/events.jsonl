@@ -1,0 +1,15 @@
+{"ts":1793365032508,"event":"clone","repo":"contracts"}
+{"ts":1793365032565,"event":"clone","repo":"billing"}
+{"ts":1793365044733,"event":"task_added","task":1,"title":"Add billingPortalUrl to shared config, bump 1.1.0","repo":"contracts"}
+{"ts":1793365044755,"event":"task_added","task":2,"title":"Render Manage billing link, upgrade contracts to ^1.1.0","repo":"billing"}
+{"ts":1793365044945,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-101-billing-portal-url","size":{"files":2,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793365057332,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4020,"waited_ms":9188,"sha":"fa9f83ff9faadc030f5cba4eadcacb4f2188b0ba"}
+{"ts":1793365057509,"event":"pr_merged","pr":1,"merge_sha":"45777b639384b0d925da25bd712f425ddbb3cf01"}
+{"ts":1793365069843,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5594,"ci_main_ms":3061,"waited_ms":12299}
+{"ts":1793365078115,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-101-manage-billing-link","size":{"files":2,"add":9,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365087316,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2927,"waited_ms":9170,"sha":"a09153956f61fe3879ff67654d41e79d8c37e952"}
+{"ts":1793365087461,"event":"pr_merged","pr":2,"merge_sha":"10240b9660b4bea8c32e1fb54184e3079c322f54"}
+{"ts":1793365105864,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11433,"ci_main_ms":3037,"waited_ms":18371}
+{"ts":1793365108440,"event":"task_done","task":1}
+{"ts":1793365108457,"event":"task_done","task":2}
+{"ts":1793365108472,"event":"done","summary":"Added billingPortalUrl (https://homelab.local/billing/portal) to @mfe/shared-contracts, released as 1.1.0 (PR #1). Billing now depends on ^1.1.0 (lockfile updated) and renders a 'Manage billing' link from SHARED_CONFIG.billingPortalUrl (PR #2). Both merged, CI/CD green. Assumptions: new field name billingPortalUrl; minor bump since additive; billing app version left unchanged."}

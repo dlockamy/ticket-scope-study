@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "author": "dev-b",
+    "repo": "mono",
+    "branch": "plat-103-owner-core-shell-reports",
+    "title": "PLAT-103-3/4: core-shell and reports pass owner",
+    "head": "50e57736f6d0ccca67a6752333bbf845f9ae96ad",
+    "opened_ts": 1793412794639,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793412807309,
+    "merge_sha": "147eef6839937ee9273b241b8aba388f0b02ef6f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-103-owner-required",
+    "title": "PLAT-103-1/2: validateApp requires owner; billing passes owner",
+    "head": "8580863777351fa54443e18898efb9d26cd29f1b",
+    "opened_ts": 1793412801469,
+    "size": {
+      "files": 3,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793412812477,
+    "merge_sha": "9e8a0ab6017a29a44990a7580de31f4711269b3a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "3273f4ad116d2fa59f54b7b65055e76066de0e07",
+    "opened_ts": 1793451920410,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451935240,
+    "merge_sha": "baf2d596a291a9e0dfdad0c51df43401757db6d9",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-app-owner",
+    "title": "Pass team as owner, shared-contracts ^2.0.0",
+    "head": "ae53ea4dba5a33759d9220f71bdacddfa51e3fa6",
+    "opened_ts": 1793451955705,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451971148,
+    "merge_sha": "994a63351fe54b8e7966cae2487cae45428a6350",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-app-owner",
+    "title": "Pass team as owner, shared-contracts ^2.0.0",
+    "head": "c8318758a4d5f1c6149e0890a9d53a08ac17f0cc",
+    "opened_ts": 1793451955872,
+    "size": {
+      "files": 2,
+      "add": 10,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451989712,
+    "merge_sha": "7a635f37176f4bcd3be9d84d3dcf85353561509f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-app-owner",
+    "title": "Pass team as owner, shared-contracts ^2.0.0",
+    "head": "86a92d4881f8a78d1bd575d09fa8d6194aa9c806",
+    "opened_ts": 1793451956038,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793452008305,
+    "merge_sha": "771474c9d31676d842e021dee0df384dc32e8d32",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,33 @@
+=== cc68dbd Add Manage billing link from shared config
+
+diff --git a/package.json b/package.json
+index 66aa1b5..fff2c1a 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,12 @@
+   "name": "@mfe/sub-route-billing",
+   "version": "1.0.0",
+   "team": "payments",
+-  "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0", "@studio/platform-kit": "^1.0.0"}
++  "scripts": {
++    "prebuild": "npm install --no-audit --no-fund",
++    "build": "node build.js"
++  },
++  "dependencies": {
++    "@mfe/shared-contracts": "^1.1.0",
++    "@studio/platform-kit": "^1.0.0"
++  }
+ }
+diff --git a/src/main.js b/src/main.js
+index 6493c0d..bcd3d34 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -11,6 +11,7 @@ export function renderBilling(containerId) {
+       <div style="padding: 20px; background: #1e1e24; border-radius: 8px; color: #fff; font-family: sans-serif;">
+         <h3 style="color: #4caf50; margin-top: 0;">Billing Component</h3>
+         <p>Status: Active</p>
++        <a href="${SHARED_CONFIG.billingPortalUrl}" style="color: #4caf50;">Manage billing</a>
+         <p>Test charge: ${formatMoney(1999)}</p>
+         <button style="background: #4caf50; border: none; color: white; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
+           Process Test Payment

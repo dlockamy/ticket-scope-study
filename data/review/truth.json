@@ -1,0 +1,662 @@
+{
+ "c01": {
+  "run": "s4-C3-A5-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A5",
+  "tag": "s4",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c02": {
+  "run": "s2-C3-A7-multi-r2",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A7",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c03": {
+  "run": "s5-C3-B2-multi-r4",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B2",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c04": {
+  "run": "s5-C3-A2-multi-r2",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "haiku",
+  "arm": "A2",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c05": {
+  "run": "s2-C3-A2-multi-r4",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c06": {
+  "run": "s2-C3-A1-multi-r2",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A1",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c07": {
+  "run": "s3-C3-B2-multi-r2",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B2",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c08": {
+  "run": "s3-C3-B3-multi-r2",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B3",
+  "tag": "s3",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c09": {
+  "run": "s4-C3-A2-multi-r4",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s4",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c10": {
+  "run": "s4-C3-A1-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A1",
+  "tag": "s4",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c11": {
+  "run": "s3-C3-A2s-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "shell"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2s",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c12": {
+  "run": "s4-C3-A2-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s4",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c13": {
+  "run": "s2-C3-A6-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A6",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c14": {
+  "run": "s5-C3-B1-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B1",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c15": {
+  "run": "s5-C3-A2-multi-r4",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "haiku",
+  "arm": "A2",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c16": {
+  "run": "s2-C3-A2-multi-r5",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c17": {
+  "run": "s3-C3-A2s-multi-r2",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2s",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c18": {
+  "run": "s5-C3-B4-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B4",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c19": {
+  "run": "s2-C3-A7-multi-r5",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A7",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c20": {
+  "run": "s4-C3-A2-multi-r1",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s4",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c21": {
+  "run": "s2-C3-A3-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A3",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c22": {
+  "run": "s3-C3-B1-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B1",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c23": {
+  "run": "s5-C3-B2-multi-r1",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B2",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c24": {
+  "run": "s2-C3-A2-multi-r2",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c25": {
+  "run": "s3-C3-B3-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B3",
+  "tag": "s3",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c26": {
+  "run": "s5-C3-A2-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "haiku",
+  "arm": "A2",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c27": {
+  "run": "s5-C3-A1-multi-r1",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "A1",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c28": {
+  "run": "s4-C3-A3-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A3",
+  "tag": "s4",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c29": {
+  "run": "s2-C3-A1-multi-r4",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A1",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c30": {
+  "run": "s2-C3-A2-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c31": {
+  "run": "s2-C3-A4-multi-r4",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A4",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c32": {
+  "run": "s3-C3-B2-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B2",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c33": {
+  "run": "s2-C3-A4-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A4",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c34": {
+  "run": "s2-C3-A4-multi-r2",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A4",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c35": {
+  "run": "s2-C3-A4-multi-r5",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A4",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c36": {
+  "run": "s2-C3-A7-multi-r4",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A7",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c37": {
+  "run": "s5-C3-A1-multi-r2",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "A1",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c38": {
+  "run": "s5-C3-B1-multi-r1",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B1",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c39": {
+  "run": "s3-C3-B3-multi-r1",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B3",
+  "tag": "s3",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c40": {
+  "run": "s5-C3-B4-multi-r4",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B4",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c41": {
+  "run": "s2-C3-A4-multi-r1",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A4",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c42": {
+  "run": "s5-C3-B2-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "haiku",
+  "arm": "B2",
+  "tag": "s5",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c43": {
+  "run": "s2-C3-A2-multi-r1",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c44": {
+  "run": "s5-C3-B4-multi-r2",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "haiku",
+  "arm": "B4",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c45": {
+  "run": "s4-C3-A1-multi-r4",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A1",
+  "tag": "s4",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c46": {
+  "run": "s2-C3-A7-multi-r1",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A7",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c47": {
+  "run": "s3-C3-B4-multi-r2",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B4",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c48": {
+  "run": "s3-C3-B3-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B3",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c49": {
+  "run": "s2-C3-A1-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A1",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c50": {
+  "run": "s4-C3-A2-multi-r5",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s4",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c51": {
+  "run": "s2-C3-A6-multi-r3",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A6",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c52": {
+  "run": "s3-C3-B3-multi-r4",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B3",
+  "tag": "s3",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": true
+ },
+ "c53": {
+  "run": "s3-C3-A2s-multi-r4",
+  "incomplete": true,
+  "missed": [
+   "shell"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2s",
+  "tag": "s3",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c54": {
+  "run": "s2-C3-A5-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A5",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c55": {
+  "run": "s2-C3-A7-multi-r3",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A7",
+  "tag": "s2",
+  "summary_mentions_hidden": true,
+  "hidden_repo_cloned": false
+ },
+ "c56": {
+  "run": "s3-C3-B1-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B1",
+  "tag": "s3",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c57": {
+  "run": "s2-C3-A3-multi-r4",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A3",
+  "tag": "s2",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c58": {
+  "run": "s4-C3-B4-multi-r5",
+  "incomplete": false,
+  "missed": [],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "B4",
+  "tag": "s4",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c59": {
+  "run": "s5-C3-A2-multi-r1",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "haiku",
+  "arm": "A2",
+  "tag": "s5",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ },
+ "c60": {
+  "run": "s4-C3-A2-multi-r2",
+  "incomplete": true,
+  "missed": [
+   "reports"
+  ],
+  "dev_model": "claude-sonnet-5-5",
+  "arm": "A2",
+  "tag": "s4",
+  "summary_mentions_hidden": false,
+  "hidden_repo_cloned": false
+ }
+}

@@ -1,0 +1,32 @@
+{"ts":1793372463026,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793372463046,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793372463108,"event":"clone","repo":"shell"}
+{"ts":1793372463170,"event":"clone","repo":"billing"}
+{"ts":1793372463228,"event":"clone","repo":"reports"}
+{"ts":1793372463285,"event":"clone","repo":"contracts"}
+{"ts":1793372463342,"event":"clone","repo":"platformkit"}
+{"ts":1793372470263,"event":"task_added","task":1,"title":"contracts: rename billingUrl->billingEndpoint, bump 2.0.0 (breaking)","repo":""}
+{"ts":1793372470292,"event":"task_added","task":2,"title":"shell: use billingEndpoint, upgrade contracts ^2.0.0","repo":""}
+{"ts":1793372470317,"event":"task_added","task":3,"title":"billing: same","repo":""}
+{"ts":1793372470341,"event":"task_added","task":4,"title":"reports: same (not in dep catalog but uses it)","repo":""}
+{"ts":1793372472112,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372484343,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4029,"waited_ms":12200,"sha":"df8abdd211617e87dcca793136a45290f7f857c6"}
+{"ts":1793372486102,"event":"pr_merged","pr":1,"merge_sha":"24ef14b81a80f437fc6c5218d22349c673658a4e"}
+{"ts":1793372501477,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5532,"ci_main_ms":3126,"waited_ms":15343}
+{"ts":1793372507801,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372507934,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-102-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372508059,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372519250,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3274,"waited_ms":9181,"sha":"c62ce85f5859d0a7565cf6f029bb271ee4eaa466"}
+{"ts":1793372519313,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3293,"waited_ms":36,"sha":"92cfe3427a07a12aa1734ae031096d3a8f8352e2"}
+{"ts":1793372519372,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3253,"waited_ms":34,"sha":"55cd47d73dfd2b731147ab22361d1be1c88eab79"}
+{"ts":1793372520903,"event":"pr_merged","pr":2,"merge_sha":"3e3a44d193f5a3b55d745cb71a2d9101642e7b9c"}
+{"ts":1793372539326,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8892,"ci_main_ms":3029,"waited_ms":18394}
+{"ts":1793372539462,"event":"pr_merged","pr":3,"merge_sha":"fb875a3509f54092007a94464d92ec3e04772fb8"}
+{"ts":1793372564062,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13171,"ci_main_ms":3166,"waited_ms":24571}
+{"ts":1793372564196,"event":"pr_merged","pr":4,"merge_sha":"237a56ad6b5c709336f5093285c777435bf6f701"}
+{"ts":1793372588820,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12848,"ci_main_ms":3134,"waited_ms":24597}
+{"ts":1793372591325,"event":"task_done","task":1}
+{"ts":1793372591345,"event":"task_done","task":2}
+{"ts":1793372591362,"event":"task_done","task":3}
+{"ts":1793372591379,"event":"task_done","task":4}
+{"ts":1793372591392,"event":"done","summary":"Renamed billingUrl->billingEndpoint in @mfe/shared-contracts (major bump 2.0.0, published), then upgraded shell, billing and reports to ^2.0.0 with the new name; all built, CI and CD green. Assumptions: rename is breaking so major bump; reports uses the setting though absent from the dep catalog, so it was updated too. platform-kit unaffected."}

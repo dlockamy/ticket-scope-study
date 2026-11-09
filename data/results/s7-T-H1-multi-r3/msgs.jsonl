@@ -1,0 +1,2 @@
+{"id":1793415430552,"ts":1793415430552,"from":"dev-a","to":"dev-b","text":"contracts 1.1.0 published (billingUrl=/billing/v2). Adopt with npm install @mfe/shared-contracts@^1.1.0"}
+{"id":1793415477013,"ts":1793415477013,"from":"dev-b","to":"dev-a","text":"shell (#3) and reports (#4) merged+deployed on contracts 1.1.0"}

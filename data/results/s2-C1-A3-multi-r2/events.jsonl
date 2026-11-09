@@ -1,0 +1,11 @@
+{"ts":1793366069460,"event":"clone","repo":"contracts"}
+{"ts":1793366069542,"event":"clone","repo":"billing"}
+{"ts":1793366077025,"event":"pr_opened","pr":1,"repo":"contracts","branch":"add-billing-portal-url","size":{"files":2,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793366093950,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4017,"waited_ms":15333,"sha":"883d1b71e55eb8298b5eddb1833fb922fa65f315"}
+{"ts":1793366094146,"event":"pr_merged","pr":1,"merge_sha":"ec162dc54531c0f94b725573b69ed69fb53d58e3"}
+{"ts":1793366109552,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5528,"ci_main_ms":3226,"waited_ms":15376}
+{"ts":1793366118229,"event":"pr_opened","pr":2,"repo":"billing","branch":"add-manage-billing-link","size":{"files":2,"add":9,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793366130473,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2894,"waited_ms":12213,"sha":"e664809e67432f3de6f415286b1e532a7b64151c"}
+{"ts":1793366130604,"event":"pr_merged","pr":2,"merge_sha":"561aed208f7bb3e6914dafa7209c52a1edc65d07"}
+{"ts":1793366152110,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12146,"ci_main_ms":3011,"waited_ms":21478}
+{"ts":1793366155496,"event":"done","summary":"Contracts 1.1.0 adds SHARED_CONFIG.billingPortalUrl (minor bump so CD publishes). Billing depends on ^1.1.0 (lockfile updated) and renders a 'Manage billing' link below the status line from the shared config. Both PRs merged, CI/CD green. Assumption: link styled to match the component's green accent."}

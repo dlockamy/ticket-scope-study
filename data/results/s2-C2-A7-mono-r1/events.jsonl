@@ -1,0 +1,6 @@
+{"ts":1793362412167,"event":"clone","repo":"mono"}
+{"ts":1793362431001,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793362442905,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4325,"waited_ms":9188,"sha":"12dd9238a73ee3f7d6cb656ae3239e4324240a84"}
+{"ts":1793362443082,"event":"pr_merged","pr":1,"merge_sha":"9b9ecd31173f12761f3454ede18d4130cf6e8058"}
+{"ts":1793362467657,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14408,"ci_main_ms":3433,"waited_ms":24544}
+{"ts":1793362470114,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts, bumped to 2.0.0 (breaking). Assumptions: lib lives in the monorepo and is inlined at build, so no registry release/dependency update needed; one PR for all apps since they must land together. Also updated sub-route-reports, which used billingUrl too (would otherwise print undefined). PR #1 merged, CI and CD green."}

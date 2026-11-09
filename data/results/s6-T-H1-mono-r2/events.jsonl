@@ -1,0 +1,26 @@
+{"ts":1793411315991,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793411316313,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793411328665,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":193}
+{"ts":1793411329368,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793411329496,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":1,"add":1,"del":0,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411333394,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-shell-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411340238,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3352,"waited_ms":9172,"sha":"63ff05e15cc389a9fd3c40f91b1080e776d93511"}
+{"ts":1793411340389,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"53d80b6a8d71e5e0f2cc4908b0360e0c5988d0b2"}
+{"ts":1793411344376,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3101,"waited_ms":9195,"sha":"488e61d722aa3c1b3e1d68bec796cfda0808b84d"}
+{"ts":1793411346883,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"80ac264ad5e42c87091673df7620523b575c442e"}
+{"ts":1793411349706,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1631,"ci_main_ms":3310,"waited_ms":9286}
+{"ts":1793411352205,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793411358062,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793411358204,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411358275,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3101,"waited_ms":37,"sha":"488e61d722aa3c1b3e1d68bec796cfda0808b84d"}
+{"ts":1793411358397,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"80ac264ad5e42c87091673df7620523b575c442e"}
+{"ts":1793411367672,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10500,"ci_main_ms":3167,"waited_ms":9239}
+{"ts":1793411368579,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10500,"ci_main_ms":3167,"waited_ms":21648}
+{"ts":1793411369875,"who":"dev-a","event":"msg_read","from":"dev-b","latency_ms":41208}
+{"ts":1793411371108,"who":"dev-b","event":"done","summary":"PLAT-103-3/4 shipped in PR #2 (merged after dev-a's PR #1; CI+CD green). core-shell owner='platform', reports owner='insights' (match package.json team). Assumptions: owner hardcoded as literal since apps are browser bundles; libs/shared-contracts is inlined at build so no registry release/lockfile update needed for these apps; combined 3+4 into one PR."}
+{"ts":1793411373373,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":230}
+{"ts":1793411373439,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3322,"waited_ms":38,"sha":"adcbb810b3fe5af74d48ceb7f43e1aecf5123b71"}
+{"ts":1793411373579,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"a985e095498ab0b8200e52a0e88afbf17d8c19a7"}
+{"ts":1793411392077,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9995,"ci_main_ms":3024,"waited_ms":18466}
+{"ts":1793411392109,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793411394531,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/empty/non-string (PR #1). PLAT-103-2: billing passes owner 'payments' (hardcoded, matching package.json team, since the bundle can't read package.json) (PR #3). Assumptions: libs/shared-contracts is inlined at build time, so no version bump/registry release or lockfile change applies. Note: I accidentally merged dev-b's PR #2 (green CI, deps met); told dev-b."}

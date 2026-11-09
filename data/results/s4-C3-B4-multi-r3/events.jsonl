@@ -1,0 +1,21 @@
+{"ts":1793388950730,"event":"clone","repo":"contracts"}
+{"ts":1793388950786,"event":"clone","repo":"shell"}
+{"ts":1793388950847,"event":"clone","repo":"billing"}
+{"ts":1793388950904,"event":"clone","repo":"reports"}
+{"ts":1793388964490,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793388975890,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3734,"waited_ms":9241,"sha":"12a87678d57be32c68bb797fd4144c7af546d126"}
+{"ts":1793388976067,"event":"pr_merged","pr":1,"merge_sha":"fa80508f79f944d5d782ee4246dcf8d42cfea237"}
+{"ts":1793388991411,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5390,"ci_main_ms":3032,"waited_ms":15316}
+{"ts":1793388995679,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388996258,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388996823,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793389005207,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2935,"waited_ms":6110,"sha":"7586a83484b7de8b564c035cd8450e2e87838618"}
+{"ts":1793389005325,"event":"pr_merged","pr":2,"merge_sha":"6c09ecb1b857459e72338305b4777cdee06a0df2"}
+{"ts":1793389020684,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8125,"ci_main_ms":2940,"waited_ms":15329}
+{"ts":1793389020759,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3021,"waited_ms":39,"sha":"b580316eb426090754715245ee435fb01c88fb27"}
+{"ts":1793389020882,"event":"pr_merged","pr":3,"merge_sha":"82f1b2f80113d2f98b509359043b5b3241cf6990"}
+{"ts":1793389039329,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11295,"ci_main_ms":3008,"waited_ms":18417}
+{"ts":1793389039394,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2983,"waited_ms":33,"sha":"570052a2a4f813704e6857c4fe6522f76987455d"}
+{"ts":1793389039519,"event":"pr_merged","pr":4,"merge_sha":"01510086b203a953ff963c217e7d96bbf90f31bb"}
+{"ts":1793389057948,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11729,"ci_main_ms":2969,"waited_ms":18401}
+{"ts":1793389060873,"event":"done","summary":"validateApp now throws without a non-empty owner; released as @mfe/shared-contracts 2.0.0 (major, breaking). Shell (platform), billing (payments) and reports (insights) pass owner from package.json team and adopt ^2.0.0; all merged, CI/CD green. Assumptions: reports also calls validateApp but wasn't a listed sub-task, so I updated it too; other apps don't reference validateApp in the repos I checked (I only checked shell, billing, reports; I did not search the others)."}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-101-billing-portal-url",
+    "title": "PLAT-101: add billingPortalUrl to shared contracts",
+    "head": "e7dd20b306c0ecbaef367681dd67b3ef6685f523",
+    "opened_ts": 1793372350315,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793372363996,
+    "merge_sha": "c492bcf60bcafc753056ab14990b279c90cef7cb",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-101-manage-billing-link",
+    "title": "PLAT-101: add Manage billing link",
+    "head": "e8f683209d8d3b102ce9dc2c3511fa70a3d4b698",
+    "opened_ts": 1793372387469,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793372396969,
+    "merge_sha": "017221efd83b869978d89b00d1eab6e2fc28ab5e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

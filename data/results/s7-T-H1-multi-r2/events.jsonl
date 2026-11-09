@@ -1,0 +1,25 @@
+{"ts":1793414461853,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793414462211,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793414462276,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793414475252,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414489066,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4167,"waited_ms":12170,"sha":"708d811784b43cb7f1e1f570866a40d58c631247"}
+{"ts":1793414489273,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"bde32f1b3794007fd9412f55c2f520756eb4cfd6"}
+{"ts":1793414504709,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5380,"ci_main_ms":2988,"waited_ms":15400}
+{"ts":1793414507603,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":141}
+{"ts":1793414507666,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793414509377,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1771}
+{"ts":1793414509399,"who":"dev-b","event":"msg_wait","waited_ms":44623}
+{"ts":1793414517062,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-billing-contracts","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414517709,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-adopt-billing-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414517896,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-adopt-billing-v2","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414525829,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2924,"waited_ms":6106,"sha":"0ada373e06ded1d0fa6f82d7b9866ec33a81d7a7"}
+{"ts":1793414526054,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"eb6af1d397662fac3bf777627b131243513ebfe4"}
+{"ts":1793414528602,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3188,"waited_ms":9154,"sha":"efed4bc6ac0da768b6b64583d8f2e5a2abd309ef"}
+{"ts":1793414528670,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3153,"waited_ms":36,"sha":"f5db13304e08f24514149d34b5b2358c7f840359"}
+{"ts":1793414530686,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"93d0bec4000d611eab79412302dffffd19040eb5"}
+{"ts":1793414530835,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"f9468dd8fb075324e7da6739a32192db5e6045c9"}
+{"ts":1793414547608,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12310,"ci_main_ms":3287,"waited_ms":21515}
+{"ts":1793414549349,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11925,"ci_main_ms":3187,"waited_ms":18480}
+{"ts":1793414549440,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12001,"ci_main_ms":5125,"waited_ms":55}
+{"ts":1793414550027,"who":"dev-a","event":"done","summary":"Sub-tasks 1+2 live. contracts PR#1: billingUrl=/billing/v2, version 1.0.0->1.1.0 (minor; assumption: value change of existing key, no shape/API break), published. billing PR#2: @mfe/shared-contracts ^1.1.0 with lockfile, CI+CD green, bundle contains new URL. Told dev-b about 1.1.0."}
+{"ts":1793414551986,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped: shell (PR #3) and reports (PR #4) now depend on @mfe/shared-contracts ^1.1.0 (billingUrl=/billing/v2); lockfiles committed, CI green, merged, CD success. Assumption: dev-a's contracts 1.1.0 release (PR #1) was published as they reported; local builds passed the contract check."}

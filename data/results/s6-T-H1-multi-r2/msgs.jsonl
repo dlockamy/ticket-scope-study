@@ -1,0 +1,3 @@
+{"id":1793411322503,"ts":1793411322503,"from":"dev-b","to":"dev-a","text":"dev-b: shell+reports edits ready; waiting for contracts major release (2.0.0) to be live in registry. Please message me when deployed."}
+{"id":1793411352045,"ts":1793411352045,"from":"dev-a","to":"dev-b","text":"contracts 2.0.0 published (validateApp requires owner). Apps must npm install @mfe/shared-contracts@^2.0.0 and pass owner."}
+{"id":1793411399718,"ts":1793411399718,"from":"dev-b","to":"dev-a","text":"dev-b: shell and reports shipped on contracts 2.0.0."}

@@ -1,0 +1,96 @@
+{
+  "run": "s2-C2-A1-mono-r4",
+  "topology": "mono",
+  "change": "C2",
+  "arm": "A1",
+  "rep": 4,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "structure": "open",
+  "finished": "done",
+  "turnaround_s": 49,
+  "jenkins_wait_s": 31,
+  "agent_active_s": 18,
+  "t_first_clone_s": 4.077,
+  "t_first_pr_s": 12.894,
+  "t_first_merge_s": 28.065,
+  "repos_cloned": [
+    "mono",
+    "platformkit"
+  ],
+  "repos_changed": [
+    "mono"
+  ],
+  "prs": 1,
+  "prs_merged": 1,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "mono",
+      "files": 4,
+      "add": 4,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 15
+    }
+  ],
+  "lines_changed_excl_lock": 8,
+  "files_changed": 4,
+  "pr_updates": 0,
+  "ci_runs": 1,
+  "ci_failures": 0,
+  "deploys": 1,
+  "deploy_failures": 0,
+  "subtasks_recorded": 1,
+  "subtask_detail": [
+    {
+      "repo": "mono",
+      "title": "Rename billingUrl to billingEndpoint in shared-contracts and all apps (core-shell, billing, reports)"
+    }
+  ],
+  "jenkins_builds": 4,
+  "jenkins_executor_s": 20.1,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "mono-cd": 2,
+    "mono-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 246456,
+  "agent_output_tokens": 2034,
+  "agent_turns": 9,
+  "agent_cost_usd": 0.09812030000000001,
+  "agent_duration_s": 51,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_old_name": false
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_old_name": false
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_old_name": false
+    }
+  },
+  "semver_ok": true,
+  "semver_class": null,
+  "platformkit_changed": false,
+  "failed_checks": []
+}

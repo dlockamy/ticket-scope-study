@@ -1,0 +1,42 @@
+{"ts":1793387322708,"event":"clone","repo":"shell"}
+{"ts":1793387322775,"event":"clone","repo":"billing"}
+{"ts":1793387322831,"event":"clone","repo":"reports"}
+{"ts":1793387322887,"event":"clone","repo":"contracts"}
+{"ts":1793387322941,"event":"clone","repo":"platformkit"}
+{"ts":1793387322995,"event":"clone","repo":"analytics"}
+{"ts":1793387323047,"event":"clone","repo":"admin"}
+{"ts":1793387323099,"event":"clone","repo":"help"}
+{"ts":1793387323151,"event":"clone","repo":"marketing"}
+{"ts":1793387323206,"event":"clone","repo":"uikit"}
+{"ts":1793387323259,"event":"clone","repo":"logger"}
+{"ts":1793387323313,"event":"clone","repo":"i18n"}
+{"ts":1793387323385,"event":"clone","repo":"notify"}
+{"ts":1793387323448,"event":"clone","repo":"authproxy"}
+{"ts":1793387323513,"event":"clone","repo":"search"}
+{"ts":1793387323580,"event":"clone","repo":"export"}
+{"ts":1793387323647,"event":"clone","repo":"relnotes"}
+{"ts":1793387333228,"event":"task_added","task":1,"title":"validateApp requires owner; bump to 2.0.0 (breaking)","repo":"contracts"}
+{"ts":1793387333249,"event":"task_added","task":2,"title":"pass owner, depend on contracts ^2.0.0","repo":"shell"}
+{"ts":1793387333269,"event":"task_added","task":3,"title":"pass owner, depend on contracts ^2.0.0","repo":"billing"}
+{"ts":1793387333287,"event":"task_added","task":4,"title":"pass owner, depend on contracts ^2.0.0","repo":"reports"}
+{"ts":1793387333497,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793387348949,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3662,"waited_ms":15416,"sha":"41460282a019fdc199420538888b941342007615"}
+{"ts":1793387350943,"event":"pr_merged","pr":1,"merge_sha":"977eabe8e355125965ebe7f62181a064c6ba8780"}
+{"ts":1793387363251,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5354,"ci_main_ms":3095,"waited_ms":12278}
+{"ts":1793387371398,"event":"pr_opened","pr":2,"repo":"shell","branch":"require-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793387371569,"event":"pr_opened","pr":3,"repo":"billing","branch":"require-app-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793387371722,"event":"pr_opened","pr":4,"repo":"reports","branch":"require-app-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793387383947,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3422,"waited_ms":12192,"sha":"8679d4c238b4ace10d4f576507a9138e9ea06f22"}
+{"ts":1793387384011,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3429,"waited_ms":34,"sha":"7fd88e50f60ef3219243799ab177cd8634bc8cab"}
+{"ts":1793387384070,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3461,"waited_ms":34,"sha":"c0898c38832d42f3c0cc8dbb4c4a7a549c42a11b"}
+{"ts":1793387386853,"event":"pr_merged","pr":2,"merge_sha":"211a61723e2b92ee619dc1129705adc3b4f5eb0a"}
+{"ts":1793387405291,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9865,"ci_main_ms":3033,"waited_ms":18393}
+{"ts":1793387405421,"event":"pr_merged","pr":3,"merge_sha":"051a53d0cc95faa1ff141ffedab89e5b52c89301"}
+{"ts":1793387426919,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11274,"ci_main_ms":2988,"waited_ms":21469}
+{"ts":1793387427051,"event":"pr_merged","pr":4,"merge_sha":"490d79ee8a1eb48cb1c2c1b555357b56340e5ec3"}
+{"ts":1793387445468,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11322,"ci_main_ms":2971,"waited_ms":18388}
+{"ts":1793387448598,"event":"task_done","task":1}
+{"ts":1793387448617,"event":"task_done","task":2}
+{"ts":1793387448634,"event":"task_done","task":3}
+{"ts":1793387448649,"event":"task_done","task":4}
+{"ts":1793387448662,"event":"done","summary":"validateApp now throws if owner missing/empty; released as @mfe/shared-contracts 2.0.0 (breaking, per CONTRIBUTING). Only shell, billing, reports call validateApp (grepped all 17 repos); each now passes owner equal to its package.json team (platform/payments/insights) and depends on ^2.0.0 with updated lockfile. Assumption: owner hardcoded to match package.json team rather than read at runtime. All CI/CD green."}

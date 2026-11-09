@@ -1,0 +1,34 @@
+{"ts":1793393281314,"event":"clone","repo":"contracts"}
+{"ts":1793393281377,"event":"clone","repo":"billing"}
+{"ts":1793393281435,"event":"clone","repo":"shell"}
+{"ts":1793393293416,"event":"task_added","task":1,"title":"PLAT-103-1 require owner in validateApp (v2.0.0)","repo":"contracts"}
+{"ts":1793393293435,"event":"task_start","task":1}
+{"ts":1793393293603,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-owner-required","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393304830,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3673,"waited_ms":9225,"sha":"da23223c7f43be98ff71ca0a29baa9ffe1b3c5d5"}
+{"ts":1793393306417,"event":"pr_merged","pr":1,"merge_sha":"80cb297f270341ad3490c5a089cd84e540f72ff9"}
+{"ts":1793393321791,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4948,"ci_main_ms":3048,"waited_ms":15344}
+{"ts":1793393340819,"event":"task_added","task":2,"title":"PLAT-103-2 billing passes owner to validateApp","repo":"billing"}
+{"ts":1793393340857,"event":"task_start","task":2}
+{"ts":1793393341009,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393353238,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2914,"waited_ms":12194,"sha":"472c91183e7e0470ce0a8d3bde070b0040620b2c"}
+{"ts":1793393355998,"event":"pr_merged","pr":2,"merge_sha":"b4fb83d596b0f1d35faba3cb3e83bbf89a59b19a"}
+{"ts":1793393377431,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11939,"ci_main_ms":3286,"waited_ms":21402}
+{"ts":1793393388274,"event":"task_added","task":3,"title":"PLAT-103-3 core shell passes owner to validateApp","repo":"shell"}
+{"ts":1793393388295,"event":"task_start","task":3}
+{"ts":1793393388446,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393400703,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3068,"waited_ms":12224,"sha":"6288950c5ae9b9c93fc1319b37ad7113285fa00d"}
+{"ts":1793393402393,"event":"pr_merged","pr":3,"merge_sha":"b8222630bc67a81bc785203eb701adb2ec5cb357"}
+{"ts":1793393420807,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8810,"ci_main_ms":3085,"waited_ms":18385}
+{"ts":1793393423580,"event":"clone","repo":"reports"}
+{"ts":1793393423644,"event":"clone","repo":"platformkit"}
+{"ts":1793393434378,"event":"task_added","task":4,"title":"PLAT-103-4 reports passes owner to validateApp (not in breakdown, found by search)","repo":"reports"}
+{"ts":1793393434394,"event":"task_start","task":4}
+{"ts":1793393434507,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393443713,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2877,"waited_ms":9174,"sha":"fad8a6f259b02a608df8933efc09e30a95998130"}
+{"ts":1793393443840,"event":"pr_merged","pr":4,"merge_sha":"5283b8b7024554a4a95ca879503282592c8281f6"}
+{"ts":1793393462253,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11470,"ci_main_ms":3147,"waited_ms":18384}
+{"ts":1793393465523,"event":"task_done","task":1}
+{"ts":1793393465543,"event":"task_done","task":2}
+{"ts":1793393465560,"event":"task_done","task":3}
+{"ts":1793393465575,"event":"task_done","task":4}
+{"ts":1793393465597,"event":"done","summary":"PLAT-103 shipped: validateApp now requires owner (@mfe/shared-contracts 2.0.0, breaking, published by CD). Adopted in billing (payments), core-shell (platform), and reports (insights), each passing owner from package.json team and bumped to ^2.0.0; all merged and CD green. Assumptions: owner is hardcoded in each app's src (bundles cannot read package.json at runtime, and the build only inlines named imports); reports was not in the breakdown but calls validateApp, so I included it under the acceptance criterion; platformkit has no validateApp callers. Empty-string owner is rejected; whitespace-only is not trimmed."}

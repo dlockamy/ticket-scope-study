@@ -1,0 +1,29 @@
+{"ts":1793415231694,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793415231694,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415233985,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793415234048,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793415241733,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415244075,"who":"dev-b","event":"task_claim","task":3}
+{"ts":1793415244095,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415248786,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793415254139,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415259567,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4172,"waited_ms":9204,"sha":"e805c65de1f99b7dbdb296431bf2216de5ab3395"}
+{"ts":1793415259758,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"8702be71411f8bf4c81a76fab6f106193720a3e9"}
+{"ts":1793415264192,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415274247,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793415275351,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":3690,"ci_main_ms":3675,"waited_ms":15562}
+{"ts":1793415279452,"who":"dev-a","event":"handoff_posted","version":"1.1.0","class":"minor"}
+{"ts":1793415279660,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793415284293,"who":"dev-b","event":"handoff_read"}
+{"ts":1793415287602,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-3-4-adopt-billing-v2","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793415290399,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2935,"waited_ms":9182,"sha":"f46bf6a9e177e580670011c2dfcebaae98ef34f7"}
+{"ts":1793415290532,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"ad148baa57f5a62e9a967c9ba3b40ae636285b41"}
+{"ts":1793415291178,"who":"dev-b","event":"pr_updated","pr":3,"size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793415300379,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3132,"waited_ms":9162,"sha":"0a9c65e61f1a053b7cd979d2ad6a2702eda29470"}
+{"ts":1793415302082,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"76a4010fe62980058ab6ac2e0d8107802a503744"}
+{"ts":1793415309181,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10016,"ci_main_ms":3213,"waited_ms":18617}
+{"ts":1793415311653,"who":"dev-a","event":"done","summary":"PLAT-104-1: shared-contracts billingUrl -> /billing/v2, version 1.0.0->1.1.0 (PR #1, live). PLAT-104-2: billing app version bump 1.0.1 (PR #2, CD green) to trigger rebuild, since the lib is inlined and CD only detects changes under app dirs. Assumptions: minor bump for a value change; handoff posted for dev-b."}
+{"ts":1793415317538,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10096,"ci_main_ms":3111,"waited_ms":15417}
+{"ts":1793415320274,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793415320295,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793415320312,"who":"dev-b","event":"done","summary":"Merged PR #3 (core-shell and reports 1.0.1, rebuilt with inlined shared-contracts 1.1.0, billingUrl /billing/v2); CI and CD green. Assumptions: libs/ is inlined, so a version bump under each app dir is the way to trigger a rebuild. CD's change detection only lists core-shell and billing, so I could not confirm reports was deployed separately; I did not change the pipeline."}

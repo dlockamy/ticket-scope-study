@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-app-owner",
+    "title": "PLAT-103: require app owner in validateApp (2.0.0)",
+    "head": "a67c4b75238bfded5df336ae5bbc4de5a0d8d76d",
+    "opened_ts": 1793393118024,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393130105,
+    "merge_sha": "e61bb8fde85ce8e61f0814ac55f8a50b8e378c7f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: core-shell declares owner (platform), contract ^2",
+    "head": "c2300bc469317af9e71691c35e001f4d2ef6a4a4",
+    "opened_ts": 1793393166112,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393178368,
+    "merge_sha": "bd42e6ad0f02867f390c049a39f42a587b099f66",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: sub-route-billing declares owner (payments), contract ^2",
+    "head": "b18a67e797654a3f6608e5d7f1bb3b77ad402bc3",
+    "opened_ts": 1793393166247,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393196884,
+    "merge_sha": "ccfeb71450c5d737c4f592a36749cbad31e77647",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: sub-route-reports declares owner (insights), contract ^2",
+    "head": "f703dc6b411f1e5ec1122aaa66317b6f8f01c6e1",
+    "opened_ts": 1793393166384,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393215427,
+    "merge_sha": "69262564e55071ae41e23fed2cb92d69aed1ce62",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

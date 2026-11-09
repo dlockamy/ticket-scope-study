@@ -1,0 +1,6 @@
+{"ts":1793385649906,"event":"clone","repo":"mono"}
+{"ts":1793385675835,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793385688111,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3123,"waited_ms":12243,"sha":"437fa12afeb2b3a0c09ba79ba97dd1f90bc51875"}
+{"ts":1793385691094,"event":"pr_merged","pr":1,"merge_sha":"6a97749ce2e6dd451055d49b6c5ac371dfaa0cfc"}
+{"ts":1793385712546,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12619,"ci_main_ms":3124,"waited_ms":21422}
+{"ts":1793385717162,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty (shared-contracts bumped to 2.0.0, breaking). core-shell passes 'platform', billing 'payments' (from package.json team). Also set reports owner 'insights' since it calls validateApp and would otherwise fail at startup. Assumptions: shared-contracts lives in the monorepo and is inlined at build, so no registry release/lockfile update was needed; one PR (#1) used for all three subtasks. CI and CD green."}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-owner-contract",
+    "title": "PLAT-103: require owner in validateApp (breaking) and pass it from reports",
+    "head": "2818254bf4e92985754d4e85828913a332118618",
+    "opened_ts": 1793393927936,
+    "size": {
+      "files": 3,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393940207,
+    "merge_sha": "30897f1919159a28ed9b55178c1cde9e933e4338",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "mono",
+    "branch": "plat-103-owner-billing-shell",
+    "title": "PLAT-103: pass owner to validateApp in billing and core shell",
+    "head": "b7180301b0650e460a70b17758d37e33da062db3",
+    "opened_ts": 1793393967347,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393980711,
+    "merge_sha": "df74a93fc5af47ed8d899cf813bf8683d7b7f3d3",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

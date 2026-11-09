@@ -1,0 +1,26 @@
+{"ts":1793449961793,"event":"clone","repo":"mono"}
+{"ts":1793449961815,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793449961828,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793449961842,"event":"child_opened","child":"PLAT-103-3"}
+{"ts":1793449961856,"event":"child_opened","child":"PLAT-103-4"}
+{"ts":1793449977555,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793449988608,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3125,"waited_ms":9163,"sha":"7be35e500de091789757a32148fdfa6802b50450"}
+{"ts":1793449988760,"event":"pr_merged","pr":1,"merge_sha":"66069281d3650d9a3e0f85f84dbe4033026c6d25"}
+{"ts":1793450001013,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1239,"ci_main_ms":3120,"waited_ms":12225}
+{"ts":1793450006134,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793450018979,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450019103,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-3-core-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450019225,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-4-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450033369,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":6015,"waited_ms":12208,"sha":"9f6e7095be8c1734a5c56f8cd7f0a72f0f7fa68e"}
+{"ts":1793450033487,"event":"pr_merged","pr":2,"merge_sha":"9d59787efcda3bca9e823228eee548c6f93f275a"}
+{"ts":1793450048831,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9460,"ci_main_ms":3091,"waited_ms":15315}
+{"ts":1793450048892,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3237,"waited_ms":30,"sha":"582bec10a3d5826f07620d6940d2adcfef6936ac"}
+{"ts":1793450049004,"event":"pr_merged","pr":3,"merge_sha":"20f60a7b30816d3239045daadfd545c046200214"}
+{"ts":1793450067421,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8466,"ci_main_ms":3076,"waited_ms":18385}
+{"ts":1793450067498,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":5106,"waited_ms":36,"sha":"29597b6fee9e5777b5731cae5ac560615adea35a"}
+{"ts":1793450067614,"event":"pr_merged","pr":4,"merge_sha":"f256d40e10c5538ba938389ed60bd089b50bb982"}
+{"ts":1793450086067,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8871,"ci_main_ms":2920,"waited_ms":18424}
+{"ts":1793450089411,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793450089428,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793450089441,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793450089468,"event":"done","summary":"validateApp (shared-contracts, bumped to 2.0.0) now throws if owner is missing/empty. billing=payments, core-shell=platform, reports=insights, taken from each app's package.json team and hardcoded in the validateApp call (bundles are browser-inlined, can't read package.json). Assumptions: libs/ is inlined in-repo so no registry publish/dependency update was needed; lib PR merged first (deploys nothing), then one PR per app. All CI/CD green. Note reports isn't built/deployed by CD per docs, so it only gets the change when CD supports it."}

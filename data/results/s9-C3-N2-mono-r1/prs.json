@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owners",
+    "title": "PLAT-103: require owning team in validateApp",
+    "head": "ba78c809905bb334d5fe041256941297d307d47c",
+    "opened_ts": 1793450676234,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450688631,
+    "merge_sha": "50bedfe955898dd9c6ff2619a953ceba9021fef5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

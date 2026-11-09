@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp require owner (shared-contracts 2.0.0) and pass team as owner in all 3 apps, one PR in mono (lib is in-repo, no platformkit change)",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Leave README bucket-name cleanup out (lee: separate thing)",
+    "repo": "",
+    "state": "todo"
+  }
+]

@@ -1,0 +1,6 @@
+{"ts":1793366063497,"event":"clone","repo":"mono"}
+{"ts":1793366078996,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-101-billing-portal-link","size":{"files":2,"add":3,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793366094423,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4341,"waited_ms":15396,"sha":"a41b310b10bd0a909f9b32b61a05f02ccca65fdb"}
+{"ts":1793366094561,"event":"pr_merged","pr":1,"merge_sha":"0fbb81aff902ae970f1d3d71a4574a6eebf449b2"}
+{"ts":1793366116070,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11868,"ci_main_ms":3627,"waited_ms":21478}
+{"ts":1793366118091,"event":"done","summary":"Added billingPortalUrl to libs/shared-contracts and a 'Manage billing' link in the billing component reading SHARED_CONFIG.billingPortalUrl. Single PR #1 (shared-contracts lives in the monorepo and is inlined at build, so no version bump/registry publish needed; ordering is satisfied within one PR). CI and CD green."}

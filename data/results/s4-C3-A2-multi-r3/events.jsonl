@@ -1,0 +1,17 @@
+{"ts":1793388460031,"event":"clone","repo":"contracts"}
+{"ts":1793388460101,"event":"clone","repo":"billing"}
+{"ts":1793388460164,"event":"clone","repo":"shell"}
+{"ts":1793388460222,"event":"clone","repo":"reports"}
+{"ts":1793388477927,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793388490203,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4043,"waited_ms":12244,"sha":"e55daccbe30f2d3421c70b53832698a192df5f96"}
+{"ts":1793388491798,"event":"pr_merged","pr":1,"merge_sha":"d64d665598f6fa6c35e115f810c1426de631a607"}
+{"ts":1793388507152,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5434,"ci_main_ms":2877,"waited_ms":15322}
+{"ts":1793388523707,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388523829,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388533036,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3033,"waited_ms":9174,"sha":"3cb87700fe509c4b08d841c87f261946de9de881"}
+{"ts":1793388533098,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3061,"waited_ms":35,"sha":"ad849be3e1b734477975afd95174dc3f055574b2"}
+{"ts":1793388535649,"event":"pr_merged","pr":2,"merge_sha":"ca629383373f23966476c7a8b3cf7ac9eb2a23f8"}
+{"ts":1793388554056,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8356,"ci_main_ms":3101,"waited_ms":18379}
+{"ts":1793388554177,"event":"pr_merged","pr":3,"merge_sha":"6ba5939508692e9e012593d4b13b5d155e7472c5"}
+{"ts":1793388572617,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11571,"ci_main_ms":3029,"waited_ms":18411}
+{"ts":1793388576040,"event":"done","summary":"validateApp now throws if owner missing/empty; released @mfe/shared-contracts 2.0.0 (major bump, published by CD). Shell passes owner 'platform', billing passes 'payments' (from package.json team), both upgraded to ^2.0.0 with lockfiles and deployed. Assumptions: owner must be a non-blank string. apps-sub-route-reports also calls validateApp but is pinned to ^1.0.0 so is unaffected; left out of scope (it will need owner 'insights' when it upgrades)."}

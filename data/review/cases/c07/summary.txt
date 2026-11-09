@@ -1,0 +1,1 @@
+validateApp now throws without owner (shared-contracts 2.0.0, major bump as breaking, published). billing/shell/reports pass owner from package.json team (payments/platform/insights) and adopt ^2.0.0; all deployed, audit 0 violations. Assumption: reports also calls validateApp so it was included though not a listed sub-task.

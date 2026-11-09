@@ -1,0 +1,42 @@
+// CD for a published library: publish to the private registry when this version is not there yet, then tag it.
+// A change that does not bump "version" in package.json publishes nothing (the registry is immutable).
+pipeline {
+    agent { label 'linux-build' }
+    options { timeout(time: 10, unit: 'MINUTES'); buildDiscarder(logRotator(numToKeepStr: '30')); disableConcurrentBuilds() }
+    stages {
+        stage('Build') {
+            when { branch 'main' }
+            agent { docker { image 'node:22-alpine'; reuseNode true; args '-e HOME=/tmp -e npm_config_cache=/tmp/.npm' } }
+            steps { sh 'npm pack --dry-run' }
+        }
+        stage('Publish to registry') {
+            when { beforeAgent true; branch 'main' }
+            agent { docker { image 'node:22-alpine'; reuseNode true; args '-e HOME=/tmp -e npm_config_cache=/tmp/.npm' } }
+            steps {
+                withCredentials([string(credentialsId: 'registry-token', variable: 'NPM_TOKEN')]) {
+                    sh '''#!/bin/sh
+                        set -eu
+                        NAME=$(node -p "require('./package.json').name"); VERSION=$(node -p "require('./package.json').version")
+                        if npm view "$NAME@$VERSION" version >/dev/null 2>&1; then
+                            echo "$NAME@$VERSION is already in the registry; nothing to publish"; exit 0
+                        fi
+                        printf '//host.docker.internal:4873/:_authToken=%s\n' "$NPM_TOKEN" > "$HOME/.npmrc"
+                        npm publish --registry "$MFE_REGISTRY"
+                        echo "PUBLISHED $NAME@$VERSION"
+                    '''
+                }
+            }
+        }
+        stage('Tag release') {
+            when { branch 'main' }
+            steps {
+                sh '''#!/bin/sh
+                    set -eu
+                    VERSION=$(node -p "require('./package.json').version" 2>/dev/null || sed -n 's/.*"version": *"\\([^"]*\\)".*/\\1/p' package.json | head -1)
+                    if git ls-remote --exit-code --tags origin "refs/tags/v$VERSION" >/dev/null 2>&1; then echo "v$VERSION already tagged"; exit 0; fi
+                    git tag "v$VERSION" && git push origin "v$VERSION"
+                '''
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{"ts":1793369608306,"event":"clone","repo":"contracts"}
+{"ts":1793369608367,"event":"clone","repo":"shell"}
+{"ts":1793369608424,"event":"clone","repo":"billing"}
+{"ts":1793369608481,"event":"clone","repo":"reports"}
+{"ts":1793369630590,"event":"task_added","task":1,"title":"Contract: validateApp requires owner, bump to 2.0.0 (breaking) and publish","repo":"contracts"}
+{"ts":1793369630615,"event":"task_added","task":2,"title":"Core shell: pass owner (platform), depend on shared-contracts ^2","repo":"shell"}
+{"ts":1793369630635,"event":"task_added","task":3,"title":"Billing: pass owner (payments), depend on shared-contracts ^2","repo":"billing"}
+{"ts":1793369630656,"event":"task_added","task":4,"title":"Reports: pass owner (insights), depend on shared-contracts ^2","repo":"reports"}
+{"ts":1793369632748,"event":"task_start","task":1}
+{"ts":1793369639437,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369654925,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":6959,"waited_ms":12225,"sha":"d3df017fe0b31d07c395b7a9660a1e01218de91a"}
+{"ts":1793369656327,"event":"pr_merged","pr":1,"merge_sha":"48d3c3bd7c92c5f17b8f21438109a28d35ad4f43"}
+{"ts":1793369668585,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5163,"ci_main_ms":2805,"waited_ms":12229}
+{"ts":1793369671104,"event":"task_done","task":1}
+{"ts":1793369671124,"event":"task_start","task":2}
+{"ts":1793369671142,"event":"task_start","task":3}
+{"ts":1793369671158,"event":"task_start","task":4}
+{"ts":1793369695616,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369695739,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369695862,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369709332,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3382,"waited_ms":12270,"sha":"c8fa9d769263fb428e79788b61de81584ae092a0"}
+{"ts":1793369709396,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3444,"waited_ms":37,"sha":"67d7490f38ba01a4f27a5478639594fb6646d4e7"}
+{"ts":1793369709456,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3406,"waited_ms":36,"sha":"6761cef4bc1fbecc930795bfaca25a3aa4adc59a"}
+{"ts":1793369710908,"event":"pr_merged","pr":2,"merge_sha":"9f0b76d3e92113037a3e72eeaa86989affb7dc56"}
+{"ts":1793369732406,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9997,"ci_main_ms":3085,"waited_ms":21468}
+{"ts":1793369732530,"event":"pr_merged","pr":3,"merge_sha":"35825c82a683c6fd34a82992374f88d4d2b72109"}
+{"ts":1793369754049,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11731,"ci_main_ms":2929,"waited_ms":21490}
+{"ts":1793369754183,"event":"pr_merged","pr":4,"merge_sha":"d6b38a1374ef056aeff3d863ff7a61d59c1d8ac0"}
+{"ts":1793369772595,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10597,"ci_main_ms":2989,"waited_ms":18384}
+{"ts":1793369773852,"event":"task_done","task":2}
+{"ts":1793369773871,"event":"task_done","task":3}
+{"ts":1793369773887,"event":"task_done","task":4}
+{"ts":1793369776044,"event":"done","summary":"PLAT-103 shipped. validateApp in @mfe/shared-contracts now throws if app.owner is missing or empty; released as 2.0.0 (breaking, so major bump). Apps moved to ^2 with refreshed lockfiles and pass owner: core-shell=platform, billing=payments, reports=insights (taken from each package.json team field, hardcoded in source). PRs: #1 contracts, #2 shell, #3 billing, #4 reports; all CI green, CD green on main. Assumptions: 2.0.0 major so ^1 consumers are unaffected until they opt in; owner values hardcoded rather than read from package.json; no other consumers of validateApp exist in these repos."}

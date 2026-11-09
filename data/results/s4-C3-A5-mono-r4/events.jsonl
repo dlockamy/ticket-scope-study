@@ -1,0 +1,9 @@
+{"ts":1793390124155,"event":"clone","repo":"mono"}
+{"ts":1793390124183,"event":"deps_query","pkg":"@studio/shared-contract"}
+{"ts":1793390132502,"event":"task_added","task":1,"title":"Make validateApp require owner (libs/shared-contracts)","repo":""}
+{"ts":1793390132521,"event":"task_added","task":2,"title":"Pass owner (package.json team) in core-shell, billing, reports","repo":""}
+{"ts":1793390136010,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793390149763,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4156,"waited_ms":12272,"sha":"449da0a76c19abe32e78b0dc6a7c89b0e7a92c50"}
+{"ts":1793390151468,"event":"pr_merged","pr":1,"merge_sha":"17461ea9f0e912913d1ac5a976a968fd0cea7e08"}
+{"ts":1793390175973,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12857,"ci_main_ms":3597,"waited_ms":24475}
+{"ts":1793390178152,"event":"done","summary":"validateApp now throws if owner missing/empty. core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team (hardcoded, as apps are bundled and don't read package.json). Single PR since libs/shared-contracts is inlined at build. Assumed packages/* are unrelated and don't call validateApp (grep confirmed)."}

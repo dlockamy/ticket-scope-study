@@ -1,0 +1,31 @@
+{"ts":1793373076608,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793373076669,"event":"clone","repo":"contracts"}
+{"ts":1793373076726,"event":"clone","repo":"shell"}
+{"ts":1793373076783,"event":"clone","repo":"billing"}
+{"ts":1793373076838,"event":"clone","repo":"reports"}
+{"ts":1793373076894,"event":"clone","repo":"platformkit"}
+{"ts":1793373090698,"event":"task_added","task":1,"title":"PLAT-103: contracts","repo":"contracts"}
+{"ts":1793373090719,"event":"task_added","task":2,"title":"PLAT-103: shell","repo":"shell"}
+{"ts":1793373090738,"event":"task_added","task":3,"title":"PLAT-103: billing","repo":"billing"}
+{"ts":1793373090756,"event":"task_added","task":4,"title":"PLAT-103: reports","repo":"reports"}
+{"ts":1793373090929,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373102296,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4100,"waited_ms":9187,"sha":"15f46b71b591d0cfa74e77faee861c844bf6bef1"}
+{"ts":1793373102427,"event":"pr_merged","pr":1,"merge_sha":"2d025bdaa23c69ccb5ee6d69363e72cb4fe3ff66"}
+{"ts":1793373117774,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5058,"ci_main_ms":2815,"waited_ms":15317}
+{"ts":1793373128854,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-declare-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793373128976,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-declare-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793373129096,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-declare-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793373141349,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3143,"waited_ms":12222,"sha":"2b9ffb5d5361048467c01dec474481005a72bc32"}
+{"ts":1793373141474,"event":"pr_merged","pr":2,"merge_sha":"8f19225718a324166df35caa913ded73d3cb29a2"}
+{"ts":1793373141534,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3240,"waited_ms":33,"sha":"e76fda4f4c8444e740d26c970887869bb9dd6bc3"}
+{"ts":1793373141647,"event":"pr_merged","pr":3,"merge_sha":"767bad748e33996f0b5b6cec562a50330f8ac9f7"}
+{"ts":1793373141707,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3195,"waited_ms":32,"sha":"2fe15d376b049e1e2be8cbde701041c709343cc1"}
+{"ts":1793373141820,"event":"pr_merged","pr":4,"merge_sha":"e69b2869967e708cf028067d97c9dd2e638c2b22"}
+{"ts":1793373157135,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7928,"ci_main_ms":3164,"waited_ms":15287}
+{"ts":1793373163343,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15448,"ci_main_ms":4998,"waited_ms":6175}
+{"ts":1793373166510,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16905,"ci_main_ms":5793,"waited_ms":3135}
+{"ts":1793373171786,"event":"task_done","task":1}
+{"ts":1793373171804,"event":"task_done","task":2}
+{"ts":1793373171822,"event":"task_done","task":3}
+{"ts":1793373171839,"event":"task_done","task":4}
+{"ts":1793373171854,"event":"done","summary":"validateApp now throws if owner is missing/empty; released as @mfe/shared-contracts 2.0.0 (breaking). shell, billing, reports each pass owner matching package.json team (platform/payments/insights) and were bumped to ^2.0.0 with updated lockfiles; all built, merged, deployed. Assumptions: owner passed as literal (bundles inline sources, no JSON import); reports also consumes the contract though missing from st deps catalog (found via grep); platformkit not affected."}

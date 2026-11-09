@@ -1,0 +1,27 @@
+=== f2f743c Pass owner to validateApp and adopt shared-contracts 2.0.0 (PLAT-103)
+
+diff --git a/package.json b/package.json
+index 66aa1b5..ea53d12 100644
+--- a/package.json
++++ b/package.json
+@@ -3,5 +3,5 @@
+   "version": "1.0.0",
+   "team": "payments",
+   "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0", "@studio/platform-kit": "^1.0.0"}
++  "dependencies": {"@mfe/shared-contracts": "^2.0.0", "@studio/platform-kit": "^1.0.0"}
+ }
+diff --git a/src/main.js b/src/main.js
+index 6493c0d..2014741 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -1,7 +1,8 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ import { formatMoney } from '@studio/platform-kit';
+ 
+-const app = validateApp({ name: 'billing' });
++// owner must match "team" in package.json (the bundler cannot inline a JSON import)
++const app = validateApp({ name: 'billing', owner: 'payments' });
+ console.log("Billing Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderBilling(containerId) {

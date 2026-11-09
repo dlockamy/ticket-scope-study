@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102-1: Rename billingUrl to billingEndpoint (breaking, v2.0.0)\n\nRenames the billingUrl key in SHARED_CONFIG to billingEndpoint (same value). This is a breaking change for consumers, so the package version is bumped 1.0.0 -> 2.0.0 so CD publishes it.\n\nConsumers (billing, shell, reports) are updated in PLAT-102-2/3/4.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "72661c248bfca56c471b66a879b2b1546b93b3db",
+    "opened_ts": 1793370245073,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793370261689,
+    "merge_sha": "f889c01a13bc0d7ab25e3e882ac60a0ad14b2ad1",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102-2: Use billingEndpoint and adopt shared-contracts 2.0.0\n\nRenames the billingUrl read to billingEndpoint and moves @mfe/shared-contracts from ^1.0.0 to ^2.0.0 (lockfile updated). Local build passes, including the contract check.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "06b1d507939762e3e66935a51f9e14b8b2055403",
+    "opened_ts": 1793370286267,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793370298318,
+    "merge_sha": "d1096b592bb5a37b300aa0ea78a37172bfb8a39c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102-2: Use billingEndpoint and adopt shared-contracts 2.0.0\n\nRenames the billingUrl read to billingEndpoint and moves @mfe/shared-contracts from ^1.0.0 to ^2.0.0 (lockfile updated). Local build passes, including the contract check.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "060656980d79f505f0fa771e087ba182e5f6ea9f",
+    "opened_ts": 1793370324665,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371553146,
+    "merge_sha": "1175b76a1160d11f0cbd09a4b4e100d54532441f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102-3: Use billingEndpoint and adopt shared-contracts 2.0.0\n\nRenames the billingUrl read to billingEndpoint and moves @mfe/shared-contracts from ^1.0.0 to ^2.0.0 (lockfile updated). Local build passes, including the contract check.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "1ea4c7d47e52414cb942632c0425098c23d42ab0",
+    "opened_ts": 1793370324809,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371571691,
+    "merge_sha": "95448c4b6be7b620bab72c6d5fd916e6d04fb5b5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

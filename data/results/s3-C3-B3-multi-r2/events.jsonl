@@ -1,0 +1,17 @@
+{"ts":1793382770375,"event":"clone","repo":"contracts"}
+{"ts":1793382770437,"event":"clone","repo":"billing"}
+{"ts":1793382770498,"event":"clone","repo":"shell"}
+{"ts":1793382770555,"event":"clone","repo":"reports"}
+{"ts":1793382795975,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793382808475,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3692,"waited_ms":12460,"sha":"a371bc388c45883f359b0d2de8df9ef02c0592f3"}
+{"ts":1793382808649,"event":"pr_merged","pr":1,"merge_sha":"e93e53afc08f2a7c4b543dacd169f9a40f1f41b8"}
+{"ts":1793382820934,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5468,"ci_main_ms":3034,"waited_ms":12256}
+{"ts":1793382840980,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382841104,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793382853333,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3029,"waited_ms":12196,"sha":"139fcf94068a6095bd725bd0a638915c945311ba"}
+{"ts":1793382853394,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3054,"waited_ms":34,"sha":"a32c0ae9a1f32abb319db317ee0814c09c5d7b33"}
+{"ts":1793382855790,"event":"pr_merged","pr":2,"merge_sha":"bc1b73e12d33e76984f10cdf2e62a2ade8b42d3d"}
+{"ts":1793382855910,"event":"pr_merged","pr":3,"merge_sha":"8786d71d56389f7ce6e9f0246450ab280b07197d"}
+{"ts":1793382877375,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11472,"ci_main_ms":3287,"waited_ms":21435}
+{"ts":1793382877454,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9118,"ci_main_ms":5157,"waited_ms":47}
+{"ts":1793382881246,"event":"done","summary":"validateApp now throws if owner is missing/blank (contracts 2.0.0, major bump, published). Billing passes owner 'payments' and shell passes 'platform' (from package.json team), both on shared-contracts ^2.0.0 with updated lockfiles; deployed. Assumptions: owner hardcoded as literal matching package.json team (custom bundler can't import JSON). Reports app also calls validateApp but is not in the ticket; it stays on ^1.0.0 so is unaffected, but will need owner 'insights' when it upgrades."}

@@ -1,0 +1,142 @@
+[
+{
+"change": "C3",
+"arm": "A2",
+"rep": 1,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B1",
+"rep": 1,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B2",
+"rep": 1,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A1",
+"rep": 1,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B4",
+"rep": 1,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A1",
+"rep": 2,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A2",
+"rep": 2,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B1",
+"rep": 2,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B2",
+"rep": 2,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B4",
+"rep": 2,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B4",
+"rep": 3,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B1",
+"rep": 3,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A1",
+"rep": 3,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B2",
+"rep": 3,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A2",
+"rep": 3,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B1",
+"rep": 4,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B2",
+"rep": 4,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A2",
+"rep": 4,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "B4",
+"rep": 4,
+"model": "haiku",
+"tag": "s5"
+},
+{
+"change": "C3",
+"arm": "A1",
+"rep": 4,
+"model": "haiku",
+"tag": "s5"
+}
+]

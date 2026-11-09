@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103 reports app: pass owner to validateApp (not in original ticket, found by search)",
+    "repo": "reports",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "PLAT-103-1: validateApp rejects apps without owner (breaking, 2.0.0)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-2: billing passes owner (team) to validateApp; adopt shared-contracts 2.x",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-103-3: core shell passes owner (team) to validateApp; adopt shared-contracts 2.x",
+    "repo": "shell",
+    "state": "done"
+  }
+]

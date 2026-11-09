@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-101-billing-portal-link",
+    "title": "PLAT-101: Manage billing link",
+    "head": "60234fc79d4a29cdfa951525709d4067c5268250",
+    "opened_ts": 1793366397202,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793366411456,
+    "merge_sha": "61e1a1d1d820130f1b4113ef499112a3222ae8b5",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

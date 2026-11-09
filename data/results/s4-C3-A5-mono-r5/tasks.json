@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "mono: validateApp requires non-empty owner (libs/shared-contracts)",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "mono: core-shell, billing, reports pass owner from package.json team",
+    "repo": "",
+    "state": "todo"
+  }
+]

@@ -1,0 +1,6 @@
+{"ts":1793367507281,"event":"clone","repo":"mono"}
+{"ts":1793367534719,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793367544054,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3158,"waited_ms":9294,"sha":"516cd8ac437095c5ef56a48666e789a5f743d1d8"}
+{"ts":1793367545634,"event":"pr_merged","pr":1,"merge_sha":"3a944d708ac98cb112c8a902beeb7d30b28c0870"}
+{"ts":1793367567136,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11788,"ci_main_ms":3090,"waited_ms":21473}
+{"ts":1793367573741,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty; shared-contracts bumped 1.0.0->2.0.0 (breaking). core-shell (platform), billing (payments) and reports (insights, not in ticket but would have broken) pass owner from package.json team. Assumptions: shared-contracts is an in-repo lib inlined at build time, so no registry publish/dependency update applies; owners hardcoded as strings since bundles can't read package.json; one PR since all changes must land together. CI and CD green."}

@@ -1,0 +1,23 @@
+{"ts":1793369815827,"event":"clone","repo":"mono"}
+{"ts":1793369815882,"event":"clone","repo":"platformkit"}
+{"ts":1793369834282,"event":"task_added","task":1,"title":"Rename billingUrl to billingEndpoint in shared-contracts and all readers (core-shell, sub-route-billing, sub-route-reports)","repo":"mono"}
+{"ts":1793369834304,"event":"task_added","task":2,"title":"Build core-shell, sub-route-billing, sub-route-reports and verify no billingUrl remains","repo":"mono"}
+{"ts":1793369834323,"event":"task_added","task":3,"title":"Open PR, wait for CI green, merge","repo":"mono"}
+{"ts":1793369834341,"event":"task_added","task":4,"title":"Confirm CD deploy of core-shell and billing via st deploy wait","repo":"mono"}
+{"ts":1793369834360,"event":"task_added","task":5,"title":"No change needed: @studio/platform-kit does not reference billingUrl","repo":"platformkit"}
+{"ts":1793369836482,"event":"task_start","task":1}
+{"ts":1793369846756,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369848958,"event":"task_done","task":1}
+{"ts":1793369848977,"event":"task_start","task":2}
+{"ts":1793369848995,"event":"task_done","task":2}
+{"ts":1793369849011,"event":"task_start","task":3}
+{"ts":1793369858218,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4380,"waited_ms":9176,"sha":"d59ba488902376a661eaa69fe2d18d79694fce8e"}
+{"ts":1793369860447,"event":"pr_merged","pr":1,"merge_sha":"0b0d5d76fbc7789cc54f8ab7e8127723b1a8fe56"}
+{"ts":1793369860467,"event":"task_done","task":3}
+{"ts":1793369860484,"event":"task_start","task":4}
+{"ts":1793369885030,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14888,"ci_main_ms":3467,"waited_ms":24518}
+{"ts":1793369889111,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14888,"ci_main_ms":3467,"waited_ms":47}
+{"ts":1793369894194,"event":"task_done","task":4}
+{"ts":1793369894213,"event":"task_start","task":5}
+{"ts":1793369894230,"event":"task_done","task":5}
+{"ts":1793369894243,"event":"done","summary":"PLAT-102: renamed SHARED_CONFIG.billingUrl to billingEndpoint (same value) in libs/shared-contracts and all readers: core-shell, sub-route-billing, sub-route-reports. Merged as mono PR #1; CI and CD succeeded on main, CD deployed core-shell and billing. No billingUrl left in the work tree. platform-kit does not reference it, so no change there. Assumptions: the core-shell key billingEndpointHint was left as-is (not billingUrl); sub-route-reports changed too even though CD does not deploy it; no version bump needed because shared-contracts is inlined in mono, not published."}

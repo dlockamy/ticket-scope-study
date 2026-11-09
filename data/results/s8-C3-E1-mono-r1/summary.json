@@ -1,0 +1,106 @@
+{
+  "run": "s8-C3-E1-mono-r1",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "E1",
+  "rep": 1,
+  "model": "claude-sonnet-5-5",
+  "tag": "s8",
+  "structure": "epic",
+  "finished": "done",
+  "turnaround_s": 54,
+  "jenkins_wait_s": 27,
+  "agent_active_s": 27,
+  "t_first_clone_s": 8.486,
+  "t_first_pr_s": 21.605,
+  "t_first_merge_s": 32.765,
+  "repos_cloned": [
+    "mono"
+  ],
+  "repos_changed": [
+    "mono"
+  ],
+  "prs": 1,
+  "prs_merged": 1,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "mono",
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 11
+    }
+  ],
+  "lines_changed_excl_lock": 7,
+  "files_changed": 4,
+  "pr_updates": 0,
+  "ci_runs": 1,
+  "ci_failures": 0,
+  "deploys": 1,
+  "deploy_failures": 0,
+  "subtasks_recorded": 0,
+  "subtask_detail": [],
+  "jenkins_builds": 4,
+  "jenkins_executor_s": 19.7,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "mono-cd": 2,
+    "mono-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "audit_runs": 0,
+  "audit_last_violations": null,
+  "hidden": "reports",
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 0,
+  "messages": 0,
+  "agent_tokens": 300610,
+  "agent_output_tokens": 2576,
+  "agent_turns": 11,
+  "agent_cost_usd": 0.114241,
+  "agent_duration_s": 58,
+  "agent_error": false,
+  "acceptance_pass": false,
+  "missed": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": false,
+      "live_owner": "platform-team",
+      "live_enforces_contract": true
+    },
+    "billing": {
+      "src_ok": false,
+      "live_ok": false,
+      "live_owner": "billing-team",
+      "live_enforces_contract": true
+    },
+    "reports": {
+      "src_ok": false,
+      "live_ok": false,
+      "live_owner": "reports-team",
+      "live_enforces_contract": true
+    }
+  },
+  "semver_ok": true,
+  "semver_class": null,
+  "platformkit_changed": false,
+  "failed_checks": [
+    "shell: live bundle boots with owner \"platform\" and the enforcing contract",
+    "billing: source passes owner \"payments\"",
+    "billing: live bundle boots with owner \"payments\" and the enforcing contract",
+    "reports: source passes owner \"insights\"",
+    "reports: live bundle boots with owner \"insights\" and the enforcing contract"
+  ]
+}

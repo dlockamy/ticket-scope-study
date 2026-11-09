@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "shared-contracts: validateApp requires owner; pass package.json team in all 3 apps (single PR)",
+    "repo": "mono",
+    "state": "done"
+  }
+]

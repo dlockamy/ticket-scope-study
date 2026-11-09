@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires team; bump to 2.0.0",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "shell: adopt contracts ^2.0.0, pass team",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "billing: adopt contracts ^2.0.0, pass team",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "reports: adopt contracts ^2.0.0, pass team",
+    "repo": "reports",
+    "state": "done"
+  }
+]

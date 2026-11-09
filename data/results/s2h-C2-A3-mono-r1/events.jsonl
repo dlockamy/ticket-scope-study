@@ -1,0 +1,14 @@
+{"ts":1793370226985,"event":"clone","repo":"mono"}
+{"ts":1793370268303,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793370279644,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3045,"waited_ms":9179,"sha":"89f6a91f9985d98e7cd24e2911e647b6a553d89e"}
+{"ts":1793370281596,"event":"pr_merged","pr":1,"merge_sha":"73fe85f125ad8d9ba309e476d574b39fbb170760"}
+{"ts":1793370300006,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10391,"ci_main_ms":2831,"waited_ms":18380}
+{"ts":1793370302192,"event":"task_start","task":1}
+{"ts":1793370302208,"event":"task_start","task":2}
+{"ts":1793370302223,"event":"task_start","task":3}
+{"ts":1793370302238,"event":"task_start","task":4}
+{"ts":1793370302254,"event":"task_done","task":1}
+{"ts":1793370302269,"event":"task_done","task":2}
+{"ts":1793370302283,"event":"task_done","task":3}
+{"ts":1793370302299,"event":"task_done","task":4}
+{"ts":1793370305170,"event":"done","summary":"PLAT-102: renamed billingUrl to billingEndpoint in libs/shared-contracts (bumped to 2.0.0) and in core-shell, sub-route-billing and sub-route-reports; shipped as one PR (#1, merged 73fe85f) because CI builds every app against the contract and splitting would break CI. CI and CD succeeded. Assumptions: shared-contracts is in-repo and inlined (CONTRIBUTING), so no registry publish or dependency bump is needed; the 'release' is the apps redeploying. Sub-tasks 2-4 were satisfied by the same PR and the same CD run, not separate PRs. shellConfig key billingEndpointHint kept as is. Reports is deployed by CD even though docs/ci-cd.md does not mention it."}

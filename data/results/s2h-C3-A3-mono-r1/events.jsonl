@@ -1,0 +1,30 @@
+{"ts":1793371638295,"event":"clone","repo":"mono"}
+{"ts":1793371661339,"event":"task_added","task":1,"title":"PLAT-103-1: validateApp requires owner","repo":"mono"}
+{"ts":1793371661360,"event":"task_added","task":2,"title":"PLAT-103-2: billing passes owner","repo":"mono"}
+{"ts":1793371661379,"event":"task_added","task":3,"title":"PLAT-103-3: core-shell passes owner","repo":"mono"}
+{"ts":1793371661398,"event":"task_added","task":4,"title":"PLAT-103-4: reports passes owner","repo":"mono"}
+{"ts":1793371661413,"event":"task_start","task":1}
+{"ts":1793371672786,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-validate-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793371683356,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3061,"waited_ms":9166,"sha":"3e724507203f05af01d0ae64fa2099b42e0193ca"}
+{"ts":1793371684783,"event":"pr_merged","pr":1,"merge_sha":"ab6378d94ea62785e927c5e8c1eefc639044eaa0"}
+{"ts":1793371697100,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1184,"ci_main_ms":3089,"waited_ms":12287}
+{"ts":1793371700147,"event":"task_done","task":1}
+{"ts":1793371700165,"event":"task_start","task":2}
+{"ts":1793371705881,"event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793371718157,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3010,"waited_ms":12244,"sha":"2756e930450331e0bd2567c759220c274f612426"}
+{"ts":1793371718281,"event":"pr_merged","pr":2,"merge_sha":"af1682e9911a9bbe5b7352a938c0de4d5c724904"}
+{"ts":1793371736636,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10881,"ci_main_ms":2983,"waited_ms":18321}
+{"ts":1793371739837,"event":"task_done","task":2}
+{"ts":1793371739855,"event":"task_start","task":3}
+{"ts":1793371740362,"event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-shell-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793371749559,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3054,"waited_ms":9163,"sha":"1ac2993dc64dac212c0850979bc0d6236232d0b4"}
+{"ts":1793371749679,"event":"pr_merged","pr":3,"merge_sha":"2567a33bf811e752878b1c3e3197301a3a8e1158"}
+{"ts":1793371768096,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8279,"ci_main_ms":3091,"waited_ms":18387}
+{"ts":1793371771079,"event":"task_done","task":3}
+{"ts":1793371771097,"event":"task_start","task":4}
+{"ts":1793371771448,"event":"pr_opened","pr":4,"repo":"mono","branch":"plat-103-reports-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793371783714,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2959,"waited_ms":12231,"sha":"36f8d77b083eeacbe837972770fef394ab3faf45"}
+{"ts":1793371783831,"event":"pr_merged","pr":4,"merge_sha":"fc08acc58c0fff0bc9e9ef0e7404c7cee440275b"}
+{"ts":1793371805324,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13064,"ci_main_ms":3050,"waited_ms":21465}
+{"ts":1793371806899,"event":"task_done","task":4}
+{"ts":1793371809205,"event":"done","summary":"PLAT-103 shipped in 4 PRs (mono #1-#4), all merged with CI and CD green. #1: validateApp throws when owner is missing, not a string, or blank; shared-contracts bumped 1.0.0 -> 2.0.0 (breaking). #2-#4: billing (payments), core-shell (platform), reports (insights) pass owner as literal strings. Assumptions: owner values are hardcoded to match each app's package.json team, since the build inlines the lib and nothing reads package.json at runtime; PRs merged in dependency order (#1 first). CD does not rebuild apps when libs/ changes, so there was no runtime breakage window beyond the gap between #1 and the app deploys. Live CDN not checked directly; verified via st deploy wait."}

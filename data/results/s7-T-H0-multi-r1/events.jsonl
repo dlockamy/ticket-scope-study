@@ -1,0 +1,22 @@
+{"ts":1793413689792,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793413690908,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793413690967,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793413697121,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413708249,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3660,"waited_ms":9239,"sha":"6b4cc6bfe78462a6ea2a5f159870250293479bd8"}
+{"ts":1793413708436,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"86ce0eb8df6898596eaa19efdcb27735154debf7"}
+{"ts":1793413720826,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4996,"ci_main_ms":2891,"waited_ms":12355}
+{"ts":1793413723028,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793413728840,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-billing-contracts","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413732793,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-contracts-1-1-0","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413732921,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-contracts-1-1-0","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793413738063,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2908,"waited_ms":9177,"sha":"68452860be2286f4fc18b3dbe0b5dfed06dffd5e"}
+{"ts":1793413738234,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"ded478ba7b819cc571987f44f7a2eb0b625795df"}
+{"ts":1793413743648,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3208,"waited_ms":9168,"sha":"a23a7bc43954f49b5df22e0dedd7c60f3ab612eb"}
+{"ts":1793413743720,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3185,"waited_ms":37,"sha":"f26198278f9909f15f9715483be473e937740bc9"}
+{"ts":1793413745596,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"0712f134240e3b4e6494aa049a87e258cd189e70"}
+{"ts":1793413756716,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13184,"ci_main_ms":3004,"waited_ms":18445}
+{"ts":1793413758912,"who":"dev-a","event":"done","summary":"PLAT-104-1: contracts billingUrl -> https://homelab.local/billing/v2, released as 1.1.0 (minor; value change, same shape) via PR #1, published. PLAT-104-2: billing bumped to ^1.1.0 with lockfile (resolves 1.1.0) via PR #2, CI/CD green. Assumptions: minor bump; left billingVersion untouched."}
+{"ts":1793413764142,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10998,"ci_main_ms":5812,"waited_ms":18514}
+{"ts":1793413764294,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"5b5015762bdd58640c3179a111d140b05905689e"}
+{"ts":1793413782791,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11754,"ci_main_ms":3102,"waited_ms":18454}
+{"ts":1793413784981,"who":"dev-b","event":"done","summary":"PLAT-104-3 (shell, PR #3) and PLAT-104-4 (reports, PR #4) both adopted @mfe/shared-contracts ^1.1.0 (billingUrl=/billing/v2, verified in installed package), CI green, merged, CD success. Assumption: dev-a's 1.1.0 release (PR #1) is the correct one; I waited for it in the registry."}

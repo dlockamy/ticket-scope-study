@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "PLAT-103: validateApp requires owner (2.0.0)",
+    "head": "9526732faaaa942a197d3d79c081976886fb9e4f",
+    "opened_ts": 1793389119707,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389135674,
+    "merge_sha": "5529104cc812e03f8f92f658adbb3939cd624567",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "PLAT-103: declare owner",
+    "head": "75a36c82946d13ad12545611499a49229e2ab69d",
+    "opened_ts": 1793389155827,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389174607,
+    "merge_sha": "23f6bf3c2ba23f1e16e22ffa6251941fa4e3ccd2",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "PLAT-103: declare owner",
+    "head": "f81dc3f93a940dde35abf63696736e041a523211",
+    "opened_ts": 1793389155950,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389190092,
+    "merge_sha": "22df559271210bba1e20682e6b11a84b27e89944",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "PLAT-103: declare owner",
+    "head": "d5432fd7f4d3c4c350e977437082207ce936d30e",
+    "opened_ts": 1793389156072,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793389211681,
+    "merge_sha": "0a23a02ba085a990cea1ad1acf3721035bed59f6",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

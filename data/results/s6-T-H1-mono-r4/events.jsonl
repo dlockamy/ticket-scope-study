@@ -1,0 +1,26 @@
+{"ts":1793412905716,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793412905770,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793412921917,"who":"dev-b","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-shell-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412923913,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":1,"add":1,"del":0,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412936143,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4130,"waited_ms":12194,"sha":"e7ff74734e7fced6e5f15a320696461c6d1a2615"}
+{"ts":1793412937976,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4130,"waited_ms":12223,"sha":"e7ff74734e7fced6e5f15a320696461c6d1a2615"}
+{"ts":1793412938004,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":250}
+{"ts":1793412938312,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":4041,"waited_ms":37,"sha":"3e510ae4e31b6512e8ff20d98b66d64b8e2f0a1a"}
+{"ts":1793412938456,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"411b1dbea9cefaece83a15a0afd240fba73029ae"}
+{"ts":1793412950797,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1405,"ci_main_ms":3359,"waited_ms":12306}
+{"ts":1793412954613,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":231}
+{"ts":1793412954813,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793412956333,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":1718}
+{"ts":1793412956350,"who":"dev-b","event":"msg_wait","waited_ms":18325}
+{"ts":1793412958538,"who":"dev-a","event":"pr_updated","pr":3,"size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412959834,"who":"dev-b","event":"pr_updated","pr":1,"size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":2}}
+{"ts":1793412964777,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3065,"waited_ms":6179,"sha":"eab9c80203d4cb16e8545f628e4ee10e9228efd6"}
+{"ts":1793412967295,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"c4f54455eaf20b7ce107a861cf20399c27ba268d"}
+{"ts":1793412969008,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3124,"waited_ms":9141,"sha":"cc170418d11f258dbc30198b00d44fea159c9c48"}
+{"ts":1793412970783,"who":"dev-b","event":"pr_merged","pr":1,"merge_sha":"427c459e5f723da35d8a62891572a5506b52d95b"}
+{"ts":1793412989345,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14302,"ci_main_ms":5743,"waited_ms":18523}
+{"ts":1793412992023,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793412992046,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793412992064,"who":"dev-b","event":"done","summary":"PR #1 merged and deployed (CI+CD green): core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team) to validateApp. Assumptions: owner is a literal since the bundler can't import JSON; shared-contracts is in-repo/inlined so no version bump/registry step; merged after dev-a's PR #2 so builds include the new check. One PR for both tasks."}
+{"ts":1793412992142,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14302,"ci_main_ms":5743,"waited_ms":24816}
+{"ts":1793412994816,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/empty/non-string (PR #2, merged, CD ok). PLAT-103-2: billing passes owner 'payments' (package.json team) (PR #3, merged, CD deployed). Assumptions: shared-contracts is in-repo and inlined at build, so no version bump/registry release or dependency update applies; owner is a literal because the regex bundler can't import package.json. Lib-only change deploys nothing by itself."}

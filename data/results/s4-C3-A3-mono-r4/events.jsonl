@@ -1,0 +1,6 @@
+{"ts":1793389414888,"event":"clone","repo":"mono"}
+{"ts":1793389441791,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793389453679,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3132,"waited_ms":9160,"sha":"cd865b112f53935a455132e3d6404eb0e150899a"}
+{"ts":1793389453837,"event":"pr_merged","pr":1,"merge_sha":"4aadd1f1ed3ac89757aa736b6eacbaff023fe501"}
+{"ts":1793389472274,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11806,"ci_main_ms":3120,"waited_ms":18390}
+{"ts":1793389480346,"event":"done","summary":"PR #1: validateApp throws if owner missing/empty; shared-contracts bumped to 2.0.0; core-shell (platform), billing (payments), reports (insights) pass owner from package.json team. Assumptions: shared-contracts is inlined from the monorepo (per CONTRIBUTING), so no registry release or lockfile update was needed and lib+apps shipped in one PR; whitespace-only owner is treated as empty. CI and CD green."}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103: validateApp requires owner (2.0.0)",
+    "head": "628fbd3776ea78e4afde14a9e5797e6f125e1ce1",
+    "opened_ts": 1793390461608,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390475038,
+    "merge_sha": "df0ff9a7fa112b9f392405774cfcc5022bb72729",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103: declare owner",
+    "head": "6f33680a653aaaa007929a7bfece6300d8ee16fd",
+    "opened_ts": 1793390497612,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390511520,
+    "merge_sha": "b0da47eaeb40c070b4f5851f3cab841e085b5f1f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103: declare owner",
+    "head": "d935b2906e1cc15b787994e128924c7676fafe3a",
+    "opened_ts": 1793390497739,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390511703,
+    "merge_sha": "612daa43973dd49dd73e0a134a273746a141afb1",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-103-owner-reports",
+    "title": "PLAT-103: declare owner",
+    "head": "b942fc1e3c3f17e6fe89c965159ab805d3ea4df8",
+    "opened_ts": 1793390497863,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793390511897,
+    "merge_sha": "972eaee65bfa0cb15c56877506783fa08f0597f4",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "mono: rename billingUrl->billingEndpoint in shared-contracts and core-shell, billing, reports (single PR; platformkit has no references)",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "PR, CI, merge, confirm CD",
+    "repo": "",
+    "state": "todo"
+  }
+]

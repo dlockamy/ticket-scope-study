@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "PLAT-103: Require owner in validateApp (2.0.0)",
+    "head": "336bd7db0593595318de1f396fb88b364ea270b4",
+    "opened_ts": 1793397863749,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397874058,
+    "merge_sha": "aa95ec07e38b26ca707f77ed0f90f93d153afad8",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "declare-app-owner",
+    "title": "PLAT-103: core-shell declares owner (platform)",
+    "head": "2e15c02cda2ff4f6fbf13be33d7e873015163460",
+    "opened_ts": 1793397899104,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397923909,
+    "merge_sha": "677f19ed0f4cdac893c59a2e1e085182bb864277",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "declare-app-owner",
+    "title": "PLAT-103: billing declares owner (payments)",
+    "head": "62a1101e18cc1fc33278f2605384f6dacf832885",
+    "opened_ts": 1793397908120,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397942512,
+    "merge_sha": "1be94f82042b7e4e129e9376edf825ab367b3c1b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "declare-app-owner",
+    "title": "PLAT-103: reports declares owner (insights)",
+    "head": "1ff78195cd235089257d9fbe54201b081511b2cb",
+    "opened_ts": 1793397908257,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793397967200,
+    "merge_sha": "963dc41740ac4344503ed5d8464946af5bfa6081",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

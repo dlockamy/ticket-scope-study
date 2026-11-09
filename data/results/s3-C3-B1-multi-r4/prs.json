@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "d457c020e3fcf100b4f96ccf68ebce9255a3ccde",
+    "opened_ts": 1793384769576,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793384783948,
+    "merge_sha": "66ffebecdaaca9fc02d48fc34a2eff0f76625d47",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "Declare owner for validateApp (shell)",
+    "head": "462d8575f5c2a0108b8ebe6f47af3e5793778212",
+    "opened_ts": 1793384804429,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793384816434,
+    "merge_sha": "d421c113e29a38b3c45017a7cd03850c12be35cc",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "Declare owner for validateApp (billing)",
+    "head": "26e0422cf7d438d1fb6ddca1a62fa55490779e83",
+    "opened_ts": 1793384804990,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793384835066,
+    "merge_sha": "656e0a19047a9f7461f2f3a741be46a2ec993924",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "Declare owner for validateApp (reports)",
+    "head": "d14b31524cd44c4c1c5e732d68b1d35b6b50c0f8",
+    "opened_ts": 1793384805512,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793384856696,
+    "merge_sha": "cc8fdbb7ebeda062928c71165ed7b5732fd6238b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

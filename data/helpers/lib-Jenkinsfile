@@ -1,0 +1,15 @@
+// CI for a published library: it must load and pack.
+pipeline {
+    agent { label 'linux-build' }
+    options { timeout(time: 10, unit: 'MINUTES'); buildDiscarder(logRotator(numToKeepStr: '30')); disableConcurrentBuilds(abortPrevious: true) }
+    stages {
+        stage('Build') {
+            agent { docker { image 'node:22-alpine'; reuseNode true; args '-e HOME=/tmp -e npm_config_cache=/tmp/.npm' } }
+            steps {
+                sh 'node --version && npm --version'
+                sh 'node --input-type=module -e "import(\'./index.js\').then(m => console.log(\'exports:\', Object.keys(m).join(\', \')))"'
+                sh 'npm pack --dry-run'
+            }
+        }
+    }
+}

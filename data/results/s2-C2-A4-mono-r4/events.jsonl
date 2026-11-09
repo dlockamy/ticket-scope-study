@@ -1,0 +1,7 @@
+{"ts":1793373503069,"event":"clone","repo":"mono"}
+{"ts":1793373503133,"event":"clone","repo":"platformkit"}
+{"ts":1793373523156,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373534057,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3161,"waited_ms":9211,"sha":"15d5d68399894ab5b70a42d54b7d56cc8d6d4a19"}
+{"ts":1793373534245,"event":"pr_merged","pr":1,"merge_sha":"aa5c44b7e3081c1311030fbb6a749c4a2083de81"}
+{"ts":1793373561836,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16497,"ci_main_ms":3540,"waited_ms":27563}
+{"ts":1793373564805,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts and all users (core-shell, sub-route-billing, sub-route-reports) in one PR #1, since shared-contracts lives in the monorepo and is inlined at build time (no registry release or dependency bump exists/needed; version left unchanged). Platform kit has no reference to billingUrl or shared-contracts, so no change/PR made for PLAT-102-4. Assumed reports app (not in sub-tasks) should be updated per acceptance criteria. CI and CD green."}

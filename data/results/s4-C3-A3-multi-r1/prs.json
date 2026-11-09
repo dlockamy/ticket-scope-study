@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "validateApp rejects apps without owner (v2.0.0, breaking)",
+    "head": "6e311f62fa56e66e3da21ee0c55b867edd7461a7",
+    "opened_ts": 1793387172626,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387187050,
+    "merge_sha": "71f231986948e7a1fbaec253248f79b5793dd900",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "add-app-owner",
+    "title": "Declare owner for validateApp (shared-contracts 2)",
+    "head": "c650fe46a4bdf920217659a9139a151e5ab9f97a",
+    "opened_ts": 1793387209816,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387221845,
+    "merge_sha": "81b89bc3c2518b7121176651a24b368f74a030b9",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "add-app-owner",
+    "title": "Declare owner for validateApp (shared-contracts 2)",
+    "head": "a5924bcedae03ad3743dff6180eb72a783744946",
+    "opened_ts": 1793387210354,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387240475,
+    "merge_sha": "f0d250e40566534e1184a111647d85bbf54ab09e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "add-app-owner",
+    "title": "Declare owner for validateApp (shared-contracts 2)",
+    "head": "aee4cf92fe7dd4723599b0de9b07c048285f3dbf",
+    "opened_ts": 1793387210958,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793387259089,
+    "merge_sha": "8b3c1037c383ecee8f8957ff65a7f54296dfb4b1",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

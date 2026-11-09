@@ -1,0 +1,28 @@
+=== 76fc6fa PLAT-101: add Manage billing link driven by shared config
+
+diff --git a/apps/sub-route-billing/src/main.js b/apps/sub-route-billing/src/main.js
+index 6493c0d..c37ed30 100644
+--- a/apps/sub-route-billing/src/main.js
++++ b/apps/sub-route-billing/src/main.js
+@@ -15,6 +15,7 @@ export function renderBilling(containerId) {
+         <button style="background: #4caf50; border: none; color: white; padding: 10px 20px; border-radius: 4px; cursor: pointer;">
+           Process Test Payment
+         </button>
++        <p><a href="${SHARED_CONFIG.billingPortalUrl}" style="color: #4caf50;">Manage billing</a></p>
+       </div>
+     `;
+   }
+diff --git a/libs/shared-contracts/index.js b/libs/shared-contracts/index.js
+index 94d096c..5a07a32 100644
+--- a/libs/shared-contracts/index.js
++++ b/libs/shared-contracts/index.js
+@@ -2,7 +2,8 @@ export const SHARED_CONFIG = {
+   theme: 'dark',
+   apiEndpoint: 'https://homelab.local',
+   billingVersion: '1.0.0',
+-  billingUrl: 'https://homelab.local/billing'
++  billingUrl: 'https://homelab.local/billing',
++  billingPortalUrl: 'https://homelab.local/billing/portal'
+ };
+ 
+ export function validateApp(app) {

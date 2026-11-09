@@ -1,0 +1,17 @@
+{"ts":1793376239366,"event":"clone","repo":"contracts"}
+{"ts":1793376239424,"event":"clone","repo":"billing"}
+{"ts":1793376239483,"event":"clone","repo":"shell"}
+{"ts":1793376239543,"event":"clone","repo":"reports"}
+{"ts":1793376259816,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793376269269,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3653,"waited_ms":9410,"sha":"f9955ff411c3cff0e2f8b6708eb7731d7ae4ffd8"}
+{"ts":1793376273450,"event":"pr_merged","pr":1,"merge_sha":"d2d8cabee4f4804632b22a84dd5148a21b6bb9c2"}
+{"ts":1793376285776,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5073,"ci_main_ms":2854,"waited_ms":12295}
+{"ts":1793376300578,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793376300704,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793376314965,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2941,"waited_ms":12248,"sha":"9f0a85843c4d14e83b5964548d4810e6ec8ba825"}
+{"ts":1793376315028,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2974,"waited_ms":36,"sha":"c3f4d0c54fdda6de7f81eb0992a3faf7ce879fc6"}
+{"ts":1793376319567,"event":"pr_merged","pr":2,"merge_sha":"b33283ab8354362c9c7f6f50dce1bd830aca1eec"}
+{"ts":1793376341052,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12668,"ci_main_ms":2921,"waited_ms":21456}
+{"ts":1793376341179,"event":"pr_merged","pr":3,"merge_sha":"7ed4792484d1fa6cdefac7ea85b5a2a87716f547"}
+{"ts":1793376359604,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8182,"ci_main_ms":3042,"waited_ms":18397}
+{"ts":1793376361972,"event":"done","summary":"validateApp now throws without owner; shared-contracts released as 2.0.0 (breaking, major). billing (owner=payments) and shell (owner=platform), from package.json team, adopted ^2.0.0 and shipped. Assumption: reports also calls validateApp but is out of scope; it stays on ^1.0.0 lockfile so is unaffected until it upgrades."}

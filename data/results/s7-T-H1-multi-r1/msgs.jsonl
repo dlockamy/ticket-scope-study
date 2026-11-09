@@ -1,0 +1,3 @@
+{"id":1793413582518,"ts":1793413582518,"from":"dev-a","to":"dev-b","text":"contracts PR#1 merged; published @mfe/shared-contracts 2.0.0 (MAJOR bump, so ^1 ranges won't pick it up: use npm install @mfe/shared-contracts@^2.0.0)."}
+{"id":1793413624972,"ts":1793413624972,"from":"dev-a","to":"dev-b","text":"Heads-up: I mistakenly ran 'pr merge 2' (your shell PR, CI was green; deploy succeeded) while meaning my billing PR #4. Sorry; please verify shell is live as expected."}
+{"id":1793413630406,"ts":1793413630406,"from":"dev-b","to":"dev-a","text":"dev-b: shell PR#2 and reports PR#3 merged and deployed on contracts 2.0.0."}

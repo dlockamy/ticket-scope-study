@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102-1: rename billingUrl to billingEndpoint (2.0.0)",
+    "head": "c475ca14d721053b28921c1b1da3c4a14868de1a",
+    "opened_ts": 1793375776489,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793375785816,
+    "merge_sha": "66e543718a4f49f0698459d7c16fc6ad59212d30",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-102-billing-endpoint-billing",
+    "title": "PLAT-102: use billingEndpoint (billing)",
+    "head": "cef63c374da76a0840acfd32aab67b8abcd72378",
+    "opened_ts": 1793375811872,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793375823820,
+    "merge_sha": "8c48fec9c5fd11422721fc67bd6aa4a289d5bdae",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-102-billing-endpoint-shell",
+    "title": "PLAT-102: use billingEndpoint (shell)",
+    "head": "ffedc2124850aefb576087cad84b8a18718dd84a",
+    "opened_ts": 1793375812001,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793375842440,
+    "merge_sha": "727abb6892136b530d5ea25c91995c28b5840aab",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-102-billing-endpoint-reports",
+    "title": "PLAT-102: use billingEndpoint (reports)",
+    "head": "62dd3d958fff2c2d550533944c3ac892ce8ddecf",
+    "opened_ts": 1793375812125,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793375864137,
+    "merge_sha": "f64eda725880cddc8af03089a55f77c7a0f399c7",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

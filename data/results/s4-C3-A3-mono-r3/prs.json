@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-require-app-owner",
+    "title": "PLAT-103: require app owner",
+    "head": "7370eff4d03e0b069d8535bfbb38f3029137ff4d",
+    "opened_ts": 1793388319309,
+    "size": {
+      "files": 5,
+      "add": 5,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793388332482,
+    "merge_sha": "f350d10184baaa286d615c0addd875559bfc85ff",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

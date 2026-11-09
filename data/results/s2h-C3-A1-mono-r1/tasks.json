@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp reject apps without a non-empty owner (libs/shared-contracts)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Pass owner from package.json team in core-shell, sub-route-billing, sub-route-reports",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Build apps locally, verify startup, open PR, pass CI, merge, confirm CD",
+    "repo": "mono",
+    "state": "done"
+  }
+]

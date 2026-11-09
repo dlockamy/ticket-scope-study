@@ -1,0 +1,37 @@
+{"ts":1793388792048,"event":"deps_query","pkg":"validateApp"}
+{"ts":1793388792066,"event":"deps_query","pkg":"@mfe/contract"}
+{"ts":1793388795760,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793388795828,"event":"clone","repo":"contracts"}
+{"ts":1793388800604,"event":"clone","repo":"shell"}
+{"ts":1793388800662,"event":"clone","repo":"billing"}
+{"ts":1793388800719,"event":"clone","repo":"reports"}
+{"ts":1793388800775,"event":"clone","repo":"analytics"}
+{"ts":1793388800828,"event":"clone","repo":"admin"}
+{"ts":1793388800880,"event":"clone","repo":"help"}
+{"ts":1793388800932,"event":"clone","repo":"marketing"}
+{"ts":1793388811828,"event":"task_added","task":1,"title":"validateApp requires owner; bump to 2.0.0","repo":"contracts"}
+{"ts":1793388811849,"event":"task_added","task":2,"title":"Pass owner, upgrade contracts ^2.0.0","repo":"shell"}
+{"ts":1793388811868,"event":"task_added","task":3,"title":"Pass owner, upgrade contracts ^2.0.0","repo":"billing"}
+{"ts":1793388811886,"event":"task_added","task":4,"title":"Pass owner, upgrade contracts ^2.0.0","repo":"reports"}
+{"ts":1793388811962,"event":"task_start","task":1}
+{"ts":1793388812145,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793388826289,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4057,"waited_ms":12218,"sha":"cbd0347fb09e50599dbed3f6f93e6eadd31a95a9"}
+{"ts":1793388826427,"event":"pr_merged","pr":1,"merge_sha":"9bd23d3ac50563799b0bc335856501cbfc1b8cff"}
+{"ts":1793388841729,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5467,"ci_main_ms":3131,"waited_ms":15272}
+{"ts":1793388864777,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-pass-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388864913,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-pass-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388865046,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-pass-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793388875346,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3258,"waited_ms":6130,"sha":"3b30c22cf70607d366c78760b1cf78f84ada0776"}
+{"ts":1793388875473,"event":"pr_merged","pr":2,"merge_sha":"a7349ea2f1eaad4dede3ed105eb90f7b710d21be"}
+{"ts":1793388875533,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3238,"waited_ms":32,"sha":"bf8f4c6679f5a1362ec2370d32ab754fa960fa3d"}
+{"ts":1793388875646,"event":"pr_merged","pr":3,"merge_sha":"f5f9e128892c1ad71155a96933a99658adb65ef4"}
+{"ts":1793388875706,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3214,"waited_ms":32,"sha":"2ec68cc2ff02ce8dd7267dc4688061f6265b6a93"}
+{"ts":1793388875819,"event":"pr_merged","pr":4,"merge_sha":"c604ede284e829ca634a7eb43968f2c5a992a8ac"}
+{"ts":1793388900317,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14510,"ci_main_ms":3309,"waited_ms":24468}
+{"ts":1793388903466,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":16682,"ci_main_ms":3355,"waited_ms":3117}
+{"ts":1793388903540,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14021,"ci_main_ms":7132,"waited_ms":46}
+{"ts":1793388908609,"event":"task_done","task":2}
+{"ts":1793388908627,"event":"task_done","task":3}
+{"ts":1793388908644,"event":"task_done","task":4}
+{"ts":1793388908659,"event":"task_done","task":1}
+{"ts":1793388908672,"event":"done","summary":"validateApp now throws if owner missing/empty; @mfe/shared-contracts bumped to 2.0.0 (breaking, major) and published. shell, billing, reports (the only callers, verified by grep across all cloned repos) pass owner from package.json team (platform/payments/insights) and upgraded to ^2.0.0 with lockfiles. All PRs merged, CI/CD green. Assumptions: owner must be a non-blank string; team values hardcoded since apps bundle without JSON import."}

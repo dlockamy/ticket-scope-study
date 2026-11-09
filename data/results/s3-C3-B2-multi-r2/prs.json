@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-owner",
+    "title": "validateApp requires owner (v2.0.0)",
+    "head": "77221e1bc312faa814d1ef4584835e00e41fe94e",
+    "opened_ts": 1793382238713,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382253107,
+    "merge_sha": "e808a623a19242d6078420b72f683d090e7022fe",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "adopt-contracts-v2",
+    "title": "Pass owner to validateApp; adopt shared-contracts 2.x",
+    "head": "42243887a00b238ff49a7a0a85e176dd8856df52",
+    "opened_ts": 1793382277995,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382294536,
+    "merge_sha": "d1bb74d19e75107ac908db9001b2b0a441fa7cfd",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "adopt-contracts-v2",
+    "title": "Pass owner to validateApp; adopt shared-contracts 2.x",
+    "head": "654e8adf029d4fa2563c780436265ef61d697b99",
+    "opened_ts": 1793382278125,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 2
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382316181,
+    "merge_sha": "301f857f79a37d1b94de21b3bc5abbfff20a219c",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "adopt-contracts-v2",
+    "title": "Pass owner to validateApp; adopt shared-contracts 2.x",
+    "head": "65e5a7b8612962b43ba27942daa473d0fd6b234c",
+    "opened_ts": 1793382278247,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793382331737,
+    "merge_sha": "957ba61897d96fc4cb8192ea9126a691821dee9b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

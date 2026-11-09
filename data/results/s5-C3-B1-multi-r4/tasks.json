@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "PLAT-103-4: reports app passes owner (team) to validateApp",
+    "repo": "reports",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "noop",
+    "repo": "platformkit",
+    "state": "todo"
+  },
+  {
+    "id": 3,
+    "title": "PLAT-103-1: validateApp rejects apps without owner (breaking, major release)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "PLAT-103-2: billing passes owner (team) to validateApp",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 5,
+    "title": "PLAT-103-3: core shell passes owner (team) to validateApp",
+    "repo": "shell",
+    "state": "done"
+  }
+]

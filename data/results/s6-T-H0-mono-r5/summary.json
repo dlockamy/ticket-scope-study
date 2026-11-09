@@ -1,0 +1,125 @@
+{
+  "timeouts": [],
+  "run": "s6-T-H0-mono-r5",
+  "topology": "mono",
+  "mode": "team",
+  "arm": "H0",
+  "rep": 5,
+  "tag": "s6",
+  "devs": [
+    "dev-a",
+    "dev-b"
+  ],
+  "makespan_s": 90.4,
+  "start_offset_s": 5.4,
+  "makespan_from_first_action_s": 85.0,
+  "blocked": [],
+  "per_dev": {
+    "dev-a": {
+      "finished_s": 90.4,
+      "jenkins_wait_s": 58.6,
+      "comm_wait_s": 0.0,
+      "busy_s": 31.9,
+      "utilisation": 0.35,
+      "prs": 2,
+      "msgs_sent": 0,
+      "clones": [
+        "mono"
+      ]
+    },
+    "dev-b": {
+      "finished_s": 61.0,
+      "jenkins_wait_s": 27.8,
+      "comm_wait_s": 0.0,
+      "busy_s": 33.2,
+      "utilisation": 0.54,
+      "prs": 1,
+      "msgs_sent": 0,
+      "clones": [
+        "mono"
+      ]
+    }
+  },
+  "prs": 3,
+  "prs_merged": 3,
+  "pr_updates": 0,
+  "ci_runs": 3,
+  "ci_failures": 0,
+  "merge_conflicts": 0,
+  "infra_retries": 0,
+  "msgs_total": 0,
+  "msg_chars": 0,
+  "msg_read_latency_median_s": null,
+  "lines_changed_excl_lock": 9,
+  "pr_detail": [
+    {
+      "id": 1,
+      "author": "dev-a",
+      "repo": "mono",
+      "files": 2,
+      "lines": 3,
+      "opened_s": 19.7,
+      "merged_s": 33.2
+    },
+    {
+      "id": 2,
+      "author": "dev-b",
+      "repo": "mono",
+      "files": 2,
+      "lines": 4,
+      "opened_s": 20.0,
+      "merged_s": 33.4
+    },
+    {
+      "id": 3,
+      "author": "dev-a",
+      "repo": "mono",
+      "files": 1,
+      "lines": 2,
+      "opened_s": 54.8,
+      "merged_s": 66.3
+    }
+  ],
+  "dependency_live_s": 51.9,
+  "dependent_merged_s": 33.5,
+  "handoff_to_dependent_merge_s": -18.4,
+  "jenkins_builds": 10,
+  "jenkins_failed_builds": 0,
+  "jenkins_executor_s": 42.7,
+  "handoffs_posted": 0,
+  "handoff_reads": 0,
+  "handoff_reads_empty": 0,
+  "msg_waits": 0,
+  "dev_b_comm_wait_s": 0.0,
+  "dev_b_jenkins_wait_s": 27.8,
+  "dev_b_finished_s": 61.0,
+  "duplicate_clones": 1,
+  "agent_tokens": 801665,
+  "agent_cost_usd": 0.2907,
+  "agent_errors": [],
+  "acceptance_pass": true,
+  "missed": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true
+    }
+  },
+  "semver_class": null,
+  "semver_ok": true,
+  "agents_ok": true
+}

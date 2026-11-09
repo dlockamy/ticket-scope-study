@@ -1,0 +1,29 @@
+{
+  "run": "s9b-C3-N2b-mono-r3",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "N2b",
+  "rep": 3,
+  "model": "claude-sonnet-5-5",
+  "tag": "s9b",
+  "start_ms": 1793453229714,
+  "structure": "open",
+  "list": "none",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [],
+  "decoys": [],
+  "hidden": null,
+  "epic": false,
+  "children": [],
+  "custom": "thread2",
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

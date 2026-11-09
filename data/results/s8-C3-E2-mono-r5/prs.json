@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-1-require-owner",
+    "title": "PLAT-103-1: validateApp requires an owner",
+    "head": "7be35e500de091789757a32148fdfa6802b50450",
+    "opened_ts": 1793449977531,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793449988726,
+    "merge_sha": "66069281d3650d9a3e0f85f84dbe4033026c6d25",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "mono",
+    "branch": "plat-103-2-billing-owner",
+    "title": "PLAT-103-2: billing passes its owner",
+    "head": "9f6e7095be8c1734a5c56f8cd7f0a72f0f7fa68e",
+    "opened_ts": 1793450018960,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450033455,
+    "merge_sha": "9d59787efcda3bca9e823228eee548c6f93f275a",
+    "ci_prev": 2,
+    "cd_prev": 2
+  },
+  {
+    "id": 3,
+    "repo": "mono",
+    "branch": "plat-103-3-core-shell-owner",
+    "title": "PLAT-103-3: core shell passes its owner",
+    "head": "582bec10a3d5826f07620d6940d2adcfef6936ac",
+    "opened_ts": 1793450019083,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450048971,
+    "merge_sha": "20f60a7b30816d3239045daadfd545c046200214",
+    "ci_prev": 3,
+    "cd_prev": 3
+  },
+  {
+    "id": 4,
+    "repo": "mono",
+    "branch": "plat-103-4-reports-owner",
+    "title": "PLAT-103-4: reports passes its owner",
+    "head": "29597b6fee9e5777b5731cae5ac560615adea35a",
+    "opened_ts": 1793450019207,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450067581,
+    "merge_sha": "f256d40e10c5538ba938389ed60bd089b50bb982",
+    "ci_prev": 4,
+    "cd_prev": 4
+  }
+]

@@ -1,0 +1,30 @@
+{"ts":1793411178465,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793411178540,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793411180636,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793411180714,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793411180997,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793411185039,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793411186942,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793411187420,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411196976,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793411201328,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4634,"waited_ms":12236,"sha":"0c6afb7de988144175f721dc2399238bb58a95c4"}
+{"ts":1793411201567,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"d9186c904336aedafa31ebc55deeb69156b1523f"}
+{"ts":1793411207001,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793411213978,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5898,"ci_main_ms":3606,"waited_ms":12371}
+{"ts":1793411216678,"who":"dev-a","event":"handoff_posted","version":"2.0.0","class":"major"}
+{"ts":1793411216749,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793411217033,"who":"dev-b","event":"handoff_read"}
+{"ts":1793411220257,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411223606,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411223739,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411231105,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2892,"waited_ms":9146,"sha":"9010838757ef00e82a22c233f17cd4f44db6ec07"}
+{"ts":1793411231251,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"61cf16591f978a8a4aa601343171a4e374664c63"}
+{"ts":1793411234773,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2985,"waited_ms":9122,"sha":"e03689a4fe8bb3dcbcc8c6f0396cec82e28ad611"}
+{"ts":1793411234838,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3011,"waited_ms":36,"sha":"a0a4f85a24e9d2356b16e986e1995519f32a6873"}
+{"ts":1793411236830,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"ce2044d800728c09a735e4c787155494a4bf6ddb"}
+{"ts":1793411249739,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11649,"ci_main_ms":3103,"waited_ms":18452}
+{"ts":1793411251758,"who":"dev-a","event":"done","summary":"Shipped contracts 2.0.0 (major; validateApp throws on missing/empty owner) and billing passing owner 'payments' (from package.json team), adopting ^2.0.0 with lockfile. Both live. Handoff posted for dev-b. Assumption: owner must be a non-blank string."}
+{"ts":1793411255337,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8243,"ci_main_ms":3214,"waited_ms":18466}
+{"ts":1793411255491,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"16e4c08f747682b463986a6aa1022a1ed5f5141e"}
+{"ts":1793411274003,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11935,"ci_main_ms":3183,"waited_ms":18477}
+{"ts":1793411276514,"who":"dev-b","event":"done","summary":"PLAT-103-3 (shell, PR #3) and PLAT-103-4 (reports, PR #4) are merged and CD succeeded. Each app now passes owner from package.json team (shell=platform, reports=insights) and depends on @mfe/shared-contracts ^2.0.0 (lockfile committed). Local builds passed. Assumption: I hardcoded the team value rather than reading package.json at runtime. I waited for dev-a's handoff note (2.0.0, major) before adopting."}

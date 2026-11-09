@@ -1,0 +1,27 @@
+{"ts":1793448431880,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793448433979,"event":"clone","repo":"contracts"}
+{"ts":1793448444647,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793448457086,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3927,"waited_ms":12394,"sha":"e666de2fa8406a2cc51ad085f83b5ac1986de1b0"}
+{"ts":1793448457255,"event":"pr_merged","pr":1,"merge_sha":"85b15c41024e0c23523a134971867b61985d95f2"}
+{"ts":1793448469548,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5281,"ci_main_ms":2953,"waited_ms":12262}
+{"ts":1793448471823,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793448471837,"event":"child_opened","child":"PLAT-103-2"}
+{"ts":1793448471901,"event":"clone","repo":"billing"}
+{"ts":1793448471965,"event":"clone","repo":"shell"}
+{"ts":1793448472022,"event":"clone","repo":"reports"}
+{"ts":1793448490378,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793448502631,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2945,"waited_ms":12220,"sha":"efbe397068b7b4707175b82cf096798af36b6e16"}
+{"ts":1793448502761,"event":"pr_merged","pr":2,"merge_sha":"e178992ee33f64a3930180666f54eb5025956de8"}
+{"ts":1793448524234,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10995,"ci_main_ms":3046,"waited_ms":21445}
+{"ts":1793448524252,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793448524387,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793448536665,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2946,"waited_ms":12247,"sha":"9b5508c2f64a18a9becf844892f4554be4856767"}
+{"ts":1793448536797,"event":"pr_merged","pr":3,"merge_sha":"16b7d7995ba0865ac81cceb10f428c101b905eca"}
+{"ts":1793448552166,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7936,"ci_main_ms":3098,"waited_ms":15339}
+{"ts":1793448552183,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793448552297,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793448567614,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2858,"waited_ms":15285,"sha":"fe18e21c47c16e9d46c791e5e260c59142e9ccf7"}
+{"ts":1793448567738,"event":"pr_merged","pr":4,"merge_sha":"278c53d45892e0b9b68f6d90e148ac02b5808e4c"}
+{"ts":1793448589220,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11666,"ci_main_ms":2876,"waited_ms":21452}
+{"ts":1793448589238,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793448592508,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts 2.0.0, major bump, published). billing (payments), shell (platform), reports (insights) pass owner from their package.json team, adopt ^2.0.0 with updated lockfiles, built locally, and are deployed. Assumption: owner is hardcoded to match package.json team rather than read at runtime, since apps inline code at build time."}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp require team in libs/shared-contracts (in-repo lib, inlined) and pass team from package.json in all 3 apps; single mono PR",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "README fake bucket names: out of scope (lee: separate thing), noted in done summary",
+    "repo": "",
+    "state": "todo"
+  }
+]

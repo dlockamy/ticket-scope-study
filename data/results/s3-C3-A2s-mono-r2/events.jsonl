@@ -1,0 +1,6 @@
+{"ts":1793382067999,"event":"clone","repo":"mono"}
+{"ts":1793382079796,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793382089017,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3128,"waited_ms":9185,"sha":"4eb230e546372f08fbee943d49f3c4ea3bd16605"}
+{"ts":1793382090386,"event":"pr_merged","pr":1,"merge_sha":"a7fa02ddfe4af0d99c2fb47603e1b386a6b84c1e"}
+{"ts":1793382108745,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11777,"ci_main_ms":3036,"waited_ms":18332}
+{"ts":1793382111137,"event":"done","summary":"validateApp now throws if owner missing/empty. Billing passes owner 'payments', reports 'insights' (from package.json team); also core-shell passes 'platform' since it calls validateApp and would otherwise break at startup. Assumptions: shared-contracts is an in-repo lib inlined at build time, so no version bump/registry release or dependency update is needed; one PR (#1) covers all sub-tasks. CI and CD green. Note: CD only deploys core-shell and billing; reports has no deploy path in CD."}

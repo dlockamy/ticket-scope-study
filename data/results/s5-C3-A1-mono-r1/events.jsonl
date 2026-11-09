@@ -1,0 +1,15 @@
+{"ts":1793393080600,"event":"clone","repo":"mono"}
+{"ts":1793393080667,"event":"clone","repo":"platformkit"}
+{"ts":1793393098086,"event":"task_added","task":1,"title":"Make validateApp require a non-empty owner in libs/shared-contracts","repo":"mono"}
+{"ts":1793393098107,"event":"task_added","task":2,"title":"Pass owner (team from package.json) in core-shell, sub-route-billing and sub-route-reports","repo":"mono"}
+{"ts":1793393098127,"event":"task_added","task":3,"title":"Build all apps, open PR, merge when green, confirm CD deploy","repo":"mono"}
+{"ts":1793393100106,"event":"task_start","task":1}
+{"ts":1793393110267,"event":"task_done","task":1}
+{"ts":1793393110282,"event":"task_done","task":2}
+{"ts":1793393110452,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner-required","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393122088,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4273,"waited_ms":9221,"sha":"8e5154c75c1e6740e25a952698fedff17b2ed020"}
+{"ts":1793393123907,"event":"pr_merged","pr":1,"merge_sha":"23045713d6e6579705e5f36d63e86f655ab103b9"}
+{"ts":1793393123927,"event":"task_start","task":3}
+{"ts":1793393142325,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11718,"ci_main_ms":3185,"waited_ms":18366}
+{"ts":1793393144086,"event":"task_done","task":3}
+{"ts":1793393147388,"event":"done","summary":"PLAT-103: validateApp in libs/shared-contracts now throws unless app.owner is a non-empty string. core-shell (platform), sub-route-billing (payments) and sub-route-reports (insights) pass owner matching their package.json team. Shipped in PR #1 (merged to main; CI and CD green). Assumptions: owner is the field name (ticket names only the team); the value is hard-coded per app because the build inlines modules by text replacement and cannot import package.json; whitespace-only owner is rejected as empty; platformkit was not touched."}

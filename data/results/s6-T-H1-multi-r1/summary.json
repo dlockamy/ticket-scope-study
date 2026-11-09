@@ -1,0 +1,139 @@
+{
+  "timeouts": [],
+  "run": "s6-T-H1-multi-r1",
+  "topology": "multi",
+  "mode": "team",
+  "arm": "H1",
+  "rep": 1,
+  "tag": "s6",
+  "devs": [
+    "dev-a",
+    "dev-b"
+  ],
+  "makespan_s": 107.8,
+  "start_offset_s": 5.2,
+  "makespan_from_first_action_s": 102.6,
+  "blocked": [],
+  "per_dev": {
+    "dev-a": {
+      "finished_s": 86.6,
+      "jenkins_wait_s": 55.2,
+      "comm_wait_s": 0.0,
+      "busy_s": 31.4,
+      "utilisation": 0.36,
+      "prs": 2,
+      "msgs_sent": 1,
+      "clones": [
+        "billing",
+        "contracts"
+      ]
+    },
+    "dev-b": {
+      "finished_s": 107.8,
+      "jenkins_wait_s": 49.1,
+      "comm_wait_s": 36.4,
+      "busy_s": 22.3,
+      "utilisation": 0.21,
+      "prs": 2,
+      "msgs_sent": 0,
+      "clones": [
+        "reports",
+        "shell"
+      ]
+    }
+  },
+  "prs": 4,
+  "prs_merged": 4,
+  "pr_updates": 0,
+  "ci_runs": 4,
+  "ci_failures": 0,
+  "merge_conflicts": 0,
+  "infra_retries": 0,
+  "msgs_total": 1,
+  "msg_chars": 110,
+  "msg_read_latency_median_s": 0.8,
+  "lines_changed_excl_lock": 37,
+  "pr_detail": [
+    {
+      "id": 1,
+      "author": "dev-a",
+      "repo": "contracts",
+      "files": 2,
+      "lines": 3,
+      "opened_s": 14.9,
+      "merged_s": 25.7
+    },
+    {
+      "id": 2,
+      "author": "dev-a",
+      "repo": "billing",
+      "files": 2,
+      "lines": 12,
+      "opened_s": 51.3,
+      "merged_s": 65.6
+    },
+    {
+      "id": 3,
+      "author": "dev-b",
+      "repo": "shell",
+      "files": 2,
+      "lines": 11,
+      "opened_s": 52.7,
+      "merged_s": 68.4
+    },
+    {
+      "id": 4,
+      "author": "dev-b",
+      "repo": "reports",
+      "files": 2,
+      "lines": 11,
+      "opened_s": 52.8,
+      "merged_s": 87.1
+    }
+  ],
+  "dependency_live_s": 41.3,
+  "dependent_merged_s": 68.5,
+  "handoff_to_dependent_merge_s": 27.2,
+  "jenkins_builds": 16,
+  "jenkins_failed_builds": 0,
+  "jenkins_executor_s": 80.2,
+  "handoffs_posted": 0,
+  "handoff_reads": 0,
+  "handoff_reads_empty": 0,
+  "msg_waits": 1,
+  "dev_b_comm_wait_s": 36.4,
+  "dev_b_jenkins_wait_s": 49.1,
+  "dev_b_finished_s": 107.8,
+  "duplicate_clones": 0,
+  "agent_tokens": 649682,
+  "agent_cost_usd": 0.2097,
+  "agent_errors": [],
+  "acceptance_pass": true,
+  "missed": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "platform",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "payments",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_owner": "insights",
+      "live_enforces_contract": true,
+      "lock_contracts": "2.0.0"
+    }
+  },
+  "semver_class": "major",
+  "semver_ok": true,
+  "agents_ok": true
+}

@@ -1,0 +1,22 @@
+{"ts":1793411438404,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793411439374,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793411439443,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793411446853,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411457611,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4119,"waited_ms":9189,"sha":"9dbd2a7b4f9f8e9afe4222c332112cb937b0da6d"}
+{"ts":1793411457843,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"9cdf1b99fa27ebaa549ea324523f55803f271c6d"}
+{"ts":1793411470209,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5658,"ci_main_ms":3280,"waited_ms":12333}
+{"ts":1793411472422,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793411480738,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793411494558,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2966,"waited_ms":12218,"sha":"b3f84bc81142d89c7fbe5f9016fda430262efc77"}
+{"ts":1793411494705,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"b7c445a6ccb2aecc1bf7b4da51fb150b044c0d6f"}
+{"ts":1793411516261,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11332,"ci_main_ms":3048,"waited_ms":21523}
+{"ts":1793411518566,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/empty; shared-contracts bumped to 2.0.0 (major, breaking), published via CD (PR #1). PLAT-103-2: billing passes owner 'payments' (from package.json team; hardcoded since bundler inlines modules), upgraded to ^2.0.0 with lockfile, deployed (PR #2). Assumption: owner must be a non-blank string."}
+{"ts":1793412009089,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412009250,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412020789,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3146,"waited_ms":9170,"sha":"07961aa215451081ccecc3dc8852319f51b923fa"}
+{"ts":1793412020859,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3132,"waited_ms":41,"sha":"f336b1ceb63f0c1eca4357f51cee30e2174b1257"}
+{"ts":1793412023060,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"63a73d42a649485550360f3641c79fc63352700e"}
+{"ts":1793412023203,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"a8d50e30a6fed2bd68bd9583d9152399ec4c8582"}
+{"ts":1793412041722,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11114,"ci_main_ms":3276,"waited_ms":18487}
+{"ts":1793412041812,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11937,"ci_main_ms":5197,"waited_ms":54}
+{"ts":1793412044380,"who":"dev-b","event":"done","summary":"Shell (PR #3) and reports (PR #4) now pass owner from package.json team ('platform' / 'insights') to validateApp and depend on @mfe/shared-contracts ^2.0.0 (lockfiles updated). CI and CD green. Assumptions: owner hardcoded as literal matching package.json team because the bundler inlines config.js; waited for dev-a's contracts 2.0.0 to appear in the registry before adopting."}

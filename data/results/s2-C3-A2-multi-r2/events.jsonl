@@ -1,0 +1,16 @@
+{"ts":1793364469066,"event":"clone","repo":"contracts"}
+{"ts":1793364486678,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364498921,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4049,"waited_ms":12210,"sha":"6fcb7f3b11b4ab1a3cac496e03d5e8671f1f748d"}
+{"ts":1793364502431,"event":"pr_merged","pr":1,"merge_sha":"70302b9a0b408cbfe25854697ca019afb7a05eac"}
+{"ts":1793364514720,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":6782,"ci_main_ms":2863,"waited_ms":12259}
+{"ts":1793364522886,"event":"clone","repo":"billing"}
+{"ts":1793364522949,"event":"clone","repo":"shell"}
+{"ts":1793364543376,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793364543521,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793364555791,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3103,"waited_ms":12238,"sha":"c0df89413973526b0f305d12d39635a373792f65"}
+{"ts":1793364555854,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3068,"waited_ms":36,"sha":"8bae48622b5728c17dbb1cc3ed88927c4ccd68fa"}
+{"ts":1793364558642,"event":"pr_merged","pr":2,"merge_sha":"ea07ab5f282919d7ea14093c0312596f9029559b"}
+{"ts":1793364580139,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13066,"ci_main_ms":3048,"waited_ms":21468}
+{"ts":1793364580268,"event":"pr_merged","pr":3,"merge_sha":"08c82c234c55646a6de79461bfa4bf1862d858d6"}
+{"ts":1793364598714,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8724,"ci_main_ms":3062,"waited_ms":18417}
+{"ts":1793364603496,"event":"done","summary":"validateApp now throws if owner missing/empty; released as @mfe/shared-contracts 2.0.0 (major, breaking), published by CD. Billing (owner 'payments') and shell (owner 'platform') pass owner and adopt ^2.0.0 with updated lockfiles; all merged and CD green. Assumptions: owner literals copied from package.json 'team' since the custom bundler can't import JSON; apps-sub-route-reports not in the ticket and not checked for validateApp usage."}

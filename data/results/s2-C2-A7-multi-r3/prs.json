@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "rename-billing-endpoint",
+    "title": "Rename billingUrl to billingEndpoint (v2.0.0)",
+    "head": "c00b1d98593adb2372b4627eb27ad903e71d0a53",
+    "opened_ts": 1793367359106,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367371377,
+    "merge_sha": "fb61c3bb4b8f4c56c6f8d16f18d0e704245ddc95",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "adopt-billing-endpoint",
+    "title": "Use billingEndpoint from shared-contracts 2.0.0",
+    "head": "c93d437b0ad370c2837746defcc6ac9b1abf7ee6",
+    "opened_ts": 1793367399887,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367412832,
+    "merge_sha": "e8ff8693dffe560e7bb27903229049d862726f78",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "adopt-billing-endpoint",
+    "title": "Use billingEndpoint from shared-contracts 2.0.0",
+    "head": "56f8ed5a0131c61e335c1905913bbb4f3b0f3aab",
+    "opened_ts": 1793367400025,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793367434477,
+    "merge_sha": "4e241b9544eb73960c2dade25e1a28885cbdc96a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

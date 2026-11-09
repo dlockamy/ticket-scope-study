@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty (shared-contracts 2.0.0, major bump, published). billing(payments), shell(platform), reports(insights) pass owner from package.json team and adopt ^2.0.0; all merged, CD green, st audit 0 violations. Assumption: reports wasn't in ticket sub-tasks but also calls validateApp, so fixed it too (PR #4) to meet audit criterion.

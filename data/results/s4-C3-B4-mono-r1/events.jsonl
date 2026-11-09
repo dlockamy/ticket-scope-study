@@ -1,0 +1,6 @@
+{"ts":1793386996445,"event":"clone","repo":"mono"}
+{"ts":1793387026758,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793387042216,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3088,"waited_ms":15418,"sha":"5e77e790e7ee649fd8d255a99d4e2c3d50d7f1e9"}
+{"ts":1793387043798,"event":"pr_merged","pr":1,"merge_sha":"7eb5b6e31931be45f33d55d8821b608addd40ba3"}
+{"ts":1793387065258,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13176,"ci_main_ms":3091,"waited_ms":21430}
+{"ts":1793387067759,"event":"done","summary":"validateApp now throws if owner missing/empty. All three apps calling it pass owner from package.json team: core-shell=platform, billing=payments, reports=insights (reports not in sub-tasks but would have broken at startup). Assumptions: libs/shared-contracts lives in the monorepo and is inlined at build, so no registry release/version bump or lockfile change needed; one PR since changes must land together. CI and CD green."}

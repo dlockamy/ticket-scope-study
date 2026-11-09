@@ -1,0 +1,13 @@
+{"ts":1793372336012,"event":"clone","repo":"contracts"}
+{"ts":1793372336080,"event":"clone","repo":"billing"}
+{"ts":1793372345346,"event":"task_added","task":1,"title":"contracts: add billingPortalUrl to SHARED_CONFIG, bump to 1.1.0, ship","repo":""}
+{"ts":1793372345366,"event":"task_added","task":2,"title":"billing: bump contracts dep to ^1.1.0, render Manage billing link, ship","repo":""}
+{"ts":1793372350386,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-101-billing-portal-url","size":{"files":2,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793372363841,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3822,"waited_ms":9228,"sha":"e7dd20b306c0ecbaef367681dd67b3ef6685f523"}
+{"ts":1793372364030,"event":"pr_merged","pr":1,"merge_sha":"c492bcf60bcafc753056ab14990b279c90cef7cb"}
+{"ts":1793372379365,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5514,"ci_main_ms":3165,"waited_ms":15305}
+{"ts":1793372387489,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-101-manage-billing-link","size":{"files":2,"add":9,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793372396874,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3093,"waited_ms":9353,"sha":"e8f683209d8d3b102ce9dc2c3511fa70a3d4b698"}
+{"ts":1793372397002,"event":"pr_merged","pr":2,"merge_sha":"017221efd83b869978d89b00d1eab6e2fc28ab5e"}
+{"ts":1793372415468,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11710,"ci_main_ms":3099,"waited_ms":18436}
+{"ts":1793372421893,"event":"done","summary":"Added billingPortalUrl to @mfe/shared-contracts (1.1.0, PR #1), billing bumped to ^1.1.0 and renders 'Manage billing' link from SHARED_CONFIG (PR #2). Both CI/CD green. Assumptions: new config key billingPortalUrl alongside existing billingUrl; link placed under the payment button."}

@@ -1,0 +1,6 @@
+{"ts":1793363983726,"event":"clone","repo":"mono"}
+{"ts":1793363994248,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364009741,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":6799,"waited_ms":15441,"sha":"821458fbb6453b2b6282037ff5dff968b12371fe"}
+{"ts":1793364015728,"event":"pr_merged","pr":1,"merge_sha":"1d93bb3ab8c4aaa2b753ab7aed02f709ecc7bbaf"}
+{"ts":1793364037174,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13758,"ci_main_ms":3056,"waited_ms":21417}
+{"ts":1793364041660,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts (bumped to 2.0.0, breaking) and all consumers: sub-route-billing, core-shell, plus sub-route-reports (not in ticket but referenced the key). Single PR #1 since the lib lives in the monorepo and is inlined at build time (no registry release/dependency bump needed). CI and CD green. Assumption: reports app is not built/deployed by CD, so its change is source-only."}

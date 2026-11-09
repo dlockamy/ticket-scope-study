@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-103-require-owner",
+    "title": "PLAT-103-1 require owner in validateApp",
+    "head": "bcdaef93845cbdba5e213e428de503913cbc9899",
+    "opened_ts": 1793371892078,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371906600,
+    "merge_sha": "6c5d8a91a96efe33ac9add934a015a482ef5677a",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-103-owner-billing",
+    "title": "PLAT-103-2 billing owner",
+    "head": "f3a65b7631c7744e2840362f0cdef43a15f722b3",
+    "opened_ts": 1793371933608,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371945453,
+    "merge_sha": "63f389526c30e7d3e00aa1db09e0bd20dded7a24",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-103-owner-shell",
+    "title": "PLAT-103-3 shell owner",
+    "head": "08512eb775d2f4e253c7286dc937a1bccf0e2ac0",
+    "opened_ts": 1793371933752,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793371945633,
+    "merge_sha": "ccf3f3314db516c13f621adf47651a7730fd350e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

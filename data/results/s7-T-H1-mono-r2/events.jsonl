@@ -1,0 +1,26 @@
+{"ts":1793414461611,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793414461750,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793414473630,"who":"dev-b","event":"msg_sent","to":"dev-a","chars":364}
+{"ts":1793414474772,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793414474950,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414488865,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4476,"waited_ms":12270,"sha":"23f971e06f5e5985908e287b8675f76921a2b9b0"}
+{"ts":1793414489061,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"0b0419503f98be170467ba7c93ae7995a18b6d94"}
+{"ts":1793414501571,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":3666,"ci_main_ms":3507,"waited_ms":12431}
+{"ts":1793414505596,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793414505621,"who":"dev-a","event":"msg_sent","to":"dev-b","chars":275}
+{"ts":1793414505720,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793414505854,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414506189,"who":"dev-b","event":"msg_read","from":"dev-a","latency_ms":565}
+{"ts":1793414506205,"who":"dev-b","event":"msg_wait","waited_ms":32551}
+{"ts":1793414511876,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-shell-reports-adopt-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414518049,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3205,"waited_ms":12162,"sha":"a1ce682fcbafc21ca8be7d846c95405babef56e3"}
+{"ts":1793414519763,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"7f410a353ca4495bdc8e8c3236cb16bbe7ca6aa5"}
+{"ts":1793414522803,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3148,"waited_ms":9141,"sha":"cb27279d06fc0f2da077fe8033aae5fec5badd28"}
+{"ts":1793414522989,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"a7304b0adbce07e7a24c8025dc5175086ac67eba"}
+{"ts":1793414538425,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11986,"ci_main_ms":3557,"waited_ms":15396}
+{"ts":1793414538474,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11986,"ci_main_ms":3557,"waited_ms":18672}
+{"ts":1793414538499,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793414540840,"who":"dev-a","event":"done","summary":"PLAT-104-1 (PR #1) and PLAT-104-2 (PR #2) merged, CI/CD green. Assumptions: shared-contracts lives in-repo and is inlined at build, so no registry publish; bumped its version to 1.0.1 anyway. CD only detects changes under apps/, so billing got a version bump 1.0.0->1.0.1 to force a rebuild with the new URL. Told dev-b the same applies to the shell/reports."}
+{"ts":1793414541076,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793414541100,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793414541118,"who":"dev-b","event":"done","summary":"PLAT-104-3 and -4 shipped in one PR (#3): shared-contracts is an in-repo lib inlined at build time (no registry release), so I bumped core-shell and sub-route-reports to 1.0.1 to trigger CD rebuild against dev-a's merged billingUrl=/billing/v2. CI and CD green. Assumption: one PR for both apps since no ordering between them."}

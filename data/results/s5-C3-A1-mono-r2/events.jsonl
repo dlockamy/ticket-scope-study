@@ -1,0 +1,15 @@
+{"ts":1793393515050,"event":"clone","repo":"mono"}
+{"ts":1793393515115,"event":"clone","repo":"platformkit"}
+{"ts":1793393530300,"event":"task_added","task":1,"title":"Make shared-contracts validateApp require a non-empty owner","repo":"mono"}
+{"ts":1793393530321,"event":"task_added","task":2,"title":"Pass each app's team from package.json as owner in its validateApp call","repo":"mono"}
+{"ts":1793393530338,"event":"task_added","task":3,"title":"Build, open PR, CI green, merge, confirm CD","repo":"mono"}
+{"ts":1793393530353,"event":"task_start","task":1}
+{"ts":1793393530368,"event":"task_start","task":2}
+{"ts":1793393540841,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393542121,"event":"task_done","task":1}
+{"ts":1793393542143,"event":"task_done","task":2}
+{"ts":1793393551329,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4341,"waited_ms":9158,"sha":"c994c9a937ddf04c4583ccc432a1144057dbc7e8"}
+{"ts":1793393552679,"event":"pr_merged","pr":1,"merge_sha":"480e768e79793836660e13ce6629833149f84f73"}
+{"ts":1793393577145,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13536,"ci_main_ms":3720,"waited_ms":24437}
+{"ts":1793393579760,"event":"task_done","task":3}
+{"ts":1793393579787,"event":"done","summary":"PLAT-103: validateApp (libs/shared-contracts) now throws unless the app declares a non-empty owner. core-shell (platform), billing (payments) and reports (insights) pass the team from their package.json. Shipped in PR #1 (mono, merged to main at 480e768); CI and CD green. Assumptions: owner is a plain string on the validateApp argument, named 'owner' per the ticket; team values are hardcoded in each app's source because the browser bundles cannot read package.json, so they must be kept in sync by hand; no shared-contracts version bump since it is inlined in-repo; platform-kit untouched. Note: CD deploys are reported green, but the Jenkinsfile.cd notes deploys may be disabled (DEPLOY_ENABLED) in this repo, so 'live' is only as confirmed by st deploy wait."}

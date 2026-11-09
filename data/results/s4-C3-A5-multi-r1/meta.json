@@ -1,0 +1,26 @@
+{
+  "run": "s4-C3-A5-multi-r1",
+  "topology": "multi",
+  "change": "C3",
+  "arm": "A5",
+  "rep": 1,
+  "model": "claude-sonnet-5-5",
+  "tag": "s4",
+  "start_ms": 1793386309461,
+  "structure": "open",
+  "list": "none",
+  "catalog": "complete",
+  "checks": false,
+  "clarify": false,
+  "listed": [],
+  "decoys": [],
+  "hidden": null,
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

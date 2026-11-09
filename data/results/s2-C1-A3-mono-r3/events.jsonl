@@ -1,0 +1,6 @@
+{"ts":1793367977737,"event":"clone","repo":"mono"}
+{"ts":1793368013544,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-101-billing-portal-link","size":{"files":2,"add":3,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793368025764,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2997,"waited_ms":12186,"sha":"7e2e4b07d49996a8cd0aae8b7ea639164a90a503"}
+{"ts":1793368028756,"event":"pr_merged","pr":1,"merge_sha":"d0dd424b234ab1dc2b4320ac31fc53c0dd5974bb"}
+{"ts":1793368047184,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10712,"ci_main_ms":2786,"waited_ms":18400}
+{"ts":1793368052388,"event":"done","summary":"Added billingPortalUrl to libs/shared-contracts and a 'Manage billing' link (from SHARED_CONFIG.billingPortalUrl) in sub-route-billing, in one PR (#1) since libs/ is inlined at build time and needs no version bump/publish. CI and CD green. Assumptions: link styled to match the component; no version bumps needed for in-repo lib."}

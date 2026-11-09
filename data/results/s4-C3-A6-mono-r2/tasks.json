@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp: require non-empty owner (libs/shared-contracts)",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Pass package.json team as owner in core-shell, billing, reports",
+    "repo": "",
+    "state": "todo"
+  },
+  {
+    "id": 3,
+    "title": "Build all three apps, open PR, CI, merge, confirm CD",
+    "repo": "",
+    "state": "todo"
+  }
+]

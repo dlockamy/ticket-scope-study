@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "author": "dev-b",
+    "repo": "mono",
+    "branch": "plat-103-owner-shell-reports",
+    "title": "PLAT-103-3/4: core shell and reports declare owner",
+    "head": "7ac25db88a0993db8e0a3c0035715c43c40a0fe2",
+    "opened_ts": 1793413048227,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413061731,
+    "merge_sha": "83dc4beb98eb9a78ba263f24f41ef9839a16369e",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-103-1-require-owner",
+    "title": "PLAT-103-1: validateApp requires an owner (shared-contracts 2.0.0, breaking)",
+    "head": "dadbbc93139c543476137ace24d0748d50585df6",
+    "opened_ts": 1793413050794,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413061992,
+    "merge_sha": "e9ec21ecf27a99e503033da3476376c663a84cf0",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "author": "dev-a",
+    "repo": "mono",
+    "branch": "plat-103-2-billing-owner",
+    "title": "PLAT-103-2: billing passes owner to validateApp",
+    "head": "6bedb4219f9f645331a3be8c9f92fc0da3b52022",
+    "opened_ts": 1793413092143,
+    "size": {
+      "files": 1,
+      "add": 1,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793413107732,
+    "merge_sha": "09f5e88c841aae62593ae2537600f0db2fa1cf10",
+    "ci_prev": 2,
+    "cd_prev": 2
+  }
+]

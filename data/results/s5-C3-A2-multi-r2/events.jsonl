@@ -1,0 +1,19 @@
+{"ts":1793393721995,"event":"clone","repo":"contracts"}
+{"ts":1793393722052,"event":"clone","repo":"billing"}
+{"ts":1793393722112,"event":"clone","repo":"shell"}
+{"ts":1793393739669,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-owner-required","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793393750902,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3720,"waited_ms":9199,"sha":"f02612d76280ec0b0d1cf50f6807ddf8b4dc8239"}
+{"ts":1793393752934,"event":"pr_merged","pr":1,"merge_sha":"2b6f95666983ea67764b3af0dbb578b92b487d1f"}
+{"ts":1793393765205,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4931,"ci_main_ms":2944,"waited_ms":12240}
+{"ts":1793393787597,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393787721,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793393802260,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3083,"waited_ms":12202,"sha":"af54eaeb82ef1d5ccfcb4843710b13fd552474c9"}
+{"ts":1793393802320,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3123,"waited_ms":31,"sha":"f66d294ca22dd3a0203a6661e9c201602b37ce7e"}
+{"ts":1793393804270,"event":"pr_merged","pr":2,"merge_sha":"2565eb5b5606a6c4c6140ad705f19e56c093bd93"}
+{"ts":1793393825757,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11870,"ci_main_ms":3087,"waited_ms":21457}
+{"ts":1793393825889,"event":"pr_merged","pr":3,"merge_sha":"7e2b11bc9dea26b6d3387de7a246d79fb10e6d4f"}
+{"ts":1793393841265,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":7933,"ci_main_ms":3085,"waited_ms":15346}
+{"ts":1793393846038,"event":"task_done","task":1}
+{"ts":1793393846058,"event":"task_done","task":2}
+{"ts":1793393846075,"event":"task_done","task":3}
+{"ts":1793393849082,"event":"done","summary":"PLAT-103 shipped. (1) libs-shared-contracts PR #1: validateApp now throws if app.owner is missing/empty; breaking change released as @mfe/shared-contracts 2.0.0 (CD published it, registry confirmed). (2) apps-sub-route-billing PR #2 and (3) apps-core-shell PR #3: pass owner (billing=payments, shell=platform, taken from package.json team) and move @mfe/shared-contracts to ^2.0.0; both merged, CI and CD green. Assumptions: owner is hard-coded in each app's validateApp call rather than read from package.json at build time, since the bundler only inlines ES imports; only package.json version and dependency range were changed, not the full npm-formatted package.json; no app with an empty owner exists."}

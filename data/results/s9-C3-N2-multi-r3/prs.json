@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-team",
+    "title": "validateApp requires team (2.0.0)",
+    "head": "fd46d902965078898b5193d077f83e4602b8aab3",
+    "opened_ts": 1793451752040,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451773557,
+    "merge_sha": "42efd8097de9ea56fbb5b3bcb25ddae037648294",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "shell",
+    "branch": "require-team-2",
+    "title": "Pass team to validateApp (contracts 2.0.0)",
+    "head": "11f09b331631408cd6cdd9fba24480aad7577dee",
+    "opened_ts": 1793451792980,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451808594,
+    "merge_sha": "10c98ab5fcd38fc27a4d0ce54d9c250a378ae40f",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "billing",
+    "branch": "require-team-2",
+    "title": "Pass team to validateApp (contracts 2.0.0)",
+    "head": "499a02af5142e357c6378661ffe1bf9874ce1cf2",
+    "opened_ts": 1793451793122,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451827172,
+    "merge_sha": "a873de21dabf5e3b15227377aa04cfd51cb4d424",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "require-team-2",
+    "title": "Pass team to validateApp (contracts 2.0.0)",
+    "head": "ca90ff57bb397e34bbe38311b0e8b188d5a87a9b",
+    "opened_ts": 1793451793264,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793451848775,
+    "merge_sha": "7444d008278e8239690ff8e2fcd90ddd22ae3174",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

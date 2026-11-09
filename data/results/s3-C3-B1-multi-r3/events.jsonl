@@ -1,0 +1,24 @@
+{"ts":1793383464364,"event":"clone","repo":"shell"}
+{"ts":1793383464428,"event":"clone","repo":"billing"}
+{"ts":1793383464494,"event":"clone","repo":"reports"}
+{"ts":1793383464551,"event":"clone","repo":"contracts"}
+{"ts":1793383464608,"event":"clone","repo":"platformkit"}
+{"ts":1793383468425,"event":"task_added","task":1,"title":"Make reports app pass owner (team) to validateApp and adopt new shared-contracts release","repo":"reports"}
+{"ts":1793383471206,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793383486731,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3828,"waited_ms":15487,"sha":"70053b2bbe5ff2b02b43a5889c506a16237aa3f2"}
+{"ts":1793383488203,"event":"pr_merged","pr":1,"merge_sha":"4dc53a634510c7df0d25bb1800af6ca585383783"}
+{"ts":1793383500549,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5043,"ci_main_ms":2982,"waited_ms":12316}
+{"ts":1793383511281,"event":"pr_opened","pr":2,"repo":"shell","branch":"require-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793383511407,"event":"pr_opened","pr":3,"repo":"billing","branch":"require-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793383511531,"event":"pr_opened","pr":4,"repo":"reports","branch":"require-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793383523772,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3248,"waited_ms":12186,"sha":"d59d44cabbefd4da70ee258928505b0a2847baf1"}
+{"ts":1793383523834,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3211,"waited_ms":34,"sha":"cdb19fa4dc87f453f7c5d6a824af2bdb869ab1ea"}
+{"ts":1793383523890,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3197,"waited_ms":32,"sha":"f692fb75892407c5fbae43bb850c330d2a40b82e"}
+{"ts":1793383525827,"event":"pr_merged","pr":2,"merge_sha":"f8a9c781f6e94bff2804187303cccd38ea9f4ae6"}
+{"ts":1793383550352,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12963,"ci_main_ms":3191,"waited_ms":24494}
+{"ts":1793383550491,"event":"pr_merged","pr":3,"merge_sha":"24e2bda390f61aca4c6ea90af909b10016866745"}
+{"ts":1793383575028,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13688,"ci_main_ms":3045,"waited_ms":24508}
+{"ts":1793383575158,"event":"pr_merged","pr":4,"merge_sha":"53266f5480a8c190b3bec2d3f716f2c0dbd46bce"}
+{"ts":1793383593597,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11383,"ci_main_ms":3143,"waited_ms":18410}
+{"ts":1793383596041,"event":"task_done","task":1}
+{"ts":1793383596056,"event":"done","summary":"validateApp now throws if owner missing/empty; released as shared-contracts 2.0.0 (major, breaking) and published. Billing (payments), core-shell (platform) and reports (insights, found via grep, added as a sub-task) now pass owner from package.json team, adopt ^2.0.0 with updated lockfiles, built OK, deployed. Assumption: reports was in scope since it calls validateApp; PRs #1-#4."}

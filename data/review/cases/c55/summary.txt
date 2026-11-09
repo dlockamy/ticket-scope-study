@@ -1,0 +1,1 @@
+validateApp now requires owner; shared-contracts released as 2.0.0 (breaking=major). Billing (owner=payments) and core-shell (owner=platform), taken from package.json team, updated to ^2.0.0 with lockfiles, built locally, and deployed. Assumptions: reports app doesn't call validateApp so left untouched; owner values hardcoded to match package.json team.

@@ -1,0 +1,25 @@
+=== 34ca8e9 Pass owner to validateApp
+
+diff --git a/package.json b/package.json
+index 8d1a1fb..a22b11f 100644
+--- a/package.json
++++ b/package.json
+@@ -3,5 +3,5 @@
+   "version": "1.0.0",
+   "team": "insights",
+   "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0"}
++  "dependencies": {"@mfe/shared-contracts": "^2.0.0"}
+ }
+diff --git a/src/main.js b/src/main.js
+index e8f22da..0fab262 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -1,6 +1,6 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'reports' });
++const app = validateApp({ name: 'reports', owner: 'insights' });
+ console.log("Reports Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderReports(containerId) {

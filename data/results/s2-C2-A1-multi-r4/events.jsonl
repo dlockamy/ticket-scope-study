@@ -1,0 +1,30 @@
+{"ts":1793374308406,"event":"clone","repo":"shell"}
+{"ts":1793374308464,"event":"clone","repo":"billing"}
+{"ts":1793374308527,"event":"clone","repo":"reports"}
+{"ts":1793374308583,"event":"clone","repo":"contracts"}
+{"ts":1793374308637,"event":"clone","repo":"platformkit"}
+{"ts":1793374315542,"event":"task_added","task":1,"title":"Rename billingUrl -> billingEndpoint, bump major 2.0.0","repo":"contracts"}
+{"ts":1793374315562,"event":"task_added","task":2,"title":"Use billingEndpoint, depend on contracts ^2.0.0","repo":"shell"}
+{"ts":1793374315587,"event":"task_added","task":3,"title":"Use billingEndpoint, depend on contracts ^2.0.0","repo":"billing"}
+{"ts":1793374315608,"event":"task_added","task":4,"title":"Use billingEndpoint, depend on contracts ^2.0.0","repo":"reports"}
+{"ts":1793374326683,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793374335858,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2728,"waited_ms":6139,"sha":"4475dd01fa8ff42dfaae9d6680cafb90e9b7c3a8"}
+{"ts":1793374336016,"event":"pr_merged","pr":1,"merge_sha":"b1bdb75fb04cd67ec1d143c144c7356f27a8a28e"}
+{"ts":1793374348329,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5277,"ci_main_ms":2995,"waited_ms":12277}
+{"ts":1793374357742,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793374357869,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-102-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793374357995,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793374366299,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2940,"waited_ms":6116,"sha":"628d48011a282667d5c4f80a5559a0cae91ee8c1"}
+{"ts":1793374366462,"event":"pr_merged","pr":2,"merge_sha":"228845bfef207081f1a452ce5f88040a11e6d973"}
+{"ts":1793374381838,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8174,"ci_main_ms":2992,"waited_ms":15344}
+{"ts":1793374381901,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2897,"waited_ms":32,"sha":"dd0c8975edfc2f867344e7a16c64ffba656492d0"}
+{"ts":1793374382027,"event":"pr_merged","pr":3,"merge_sha":"7246adff4aa370d343102fb3e6f6df8b399d7f13"}
+{"ts":1793374403472,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12940,"ci_main_ms":3020,"waited_ms":21416}
+{"ts":1793374403538,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2918,"waited_ms":34,"sha":"dfaeb5a47816616da5ea0088dc2c26165c273f0c"}
+{"ts":1793374403666,"event":"pr_merged","pr":4,"merge_sha":"783b0b208951bba28e7fc579d5e6b8a15314814d"}
+{"ts":1793374425137,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11888,"ci_main_ms":3126,"waited_ms":21442}
+{"ts":1793374433513,"event":"task_done","task":1}
+{"ts":1793374433532,"event":"task_done","task":2}
+{"ts":1793374433548,"event":"task_done","task":3}
+{"ts":1793374433563,"event":"task_done","task":4}
+{"ts":1793374433576,"event":"done","summary":"Renamed billingUrl->billingEndpoint in @mfe/shared-contracts (major bump 2.0.0, published), then moved shell, billing, reports to ^2.0.0 and the new name; all CI/CD green. Assumptions: rename is breaking so major; platform-kit has no references so untouched; apps ordered after the library publish."}

@@ -1,0 +1,30 @@
+{"ts":1793361813949,"event":"deps_query","pkg":"billingUrl"}
+{"ts":1793361813967,"event":"deps_query","pkg":"shared-config"}
+{"ts":1793361817085,"event":"clone","repo":"shell"}
+{"ts":1793361817144,"event":"clone","repo":"billing"}
+{"ts":1793361817203,"event":"clone","repo":"reports"}
+{"ts":1793361817261,"event":"clone","repo":"contracts"}
+{"ts":1793361817315,"event":"clone","repo":"platformkit"}
+{"ts":1793361817331,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793361817347,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793361830754,"event":"task_added","task":1,"title":"Rename billingUrl->billingEndpoint, major bump 2.0.0","repo":"contracts"}
+{"ts":1793361830775,"event":"task_added","task":2,"title":"Use billingEndpoint, depend on contracts ^2.0.0","repo":"shell"}
+{"ts":1793361830794,"event":"task_added","task":3,"title":"Use billingEndpoint, depend on contracts ^2.0.0","repo":"billing"}
+{"ts":1793361830812,"event":"task_added","task":4,"title":"Use billingEndpoint, depend on contracts ^2.0.0 (not in dep catalog but uses it)","repo":"reports"}
+{"ts":1793361830964,"event":"pr_opened","pr":1,"repo":"contracts","branch":"rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793361843799,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2728,"waited_ms":9160,"sha":"055d875fd0e293ea35b1795475bf345d8b48b7ce"}
+{"ts":1793361843929,"event":"pr_merged","pr":1,"merge_sha":"19ef4cc11df544ad9491c74e65c7ae5016276233"}
+{"ts":1793361856244,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5380,"ci_main_ms":2911,"waited_ms":12286}
+{"ts":1793361864454,"event":"pr_opened","pr":2,"repo":"shell","branch":"rename-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793361864582,"event":"pr_opened","pr":3,"repo":"billing","branch":"rename-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793361864712,"event":"pr_opened","pr":4,"repo":"reports","branch":"rename-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793361880006,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3329,"waited_ms":12224,"sha":"838305db2a0d0c29e365c88d126c27fa635aaf9f"}
+{"ts":1793361880135,"event":"pr_merged","pr":2,"merge_sha":"f2066ae1694e6618ed4a6aa722459b6266bb90f2"}
+{"ts":1793361880199,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3316,"waited_ms":35,"sha":"9a5da4bbdb4cccb4dd24100bc3c452f483c70118"}
+{"ts":1793361880317,"event":"pr_merged","pr":3,"merge_sha":"ac9c7488fab221dc300598ea0a6ed74d7b7fa517"}
+{"ts":1793361880378,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3284,"waited_ms":32,"sha":"f3578e94b18fc723529100ba3a8662d38b684432"}
+{"ts":1793361880492,"event":"pr_merged","pr":4,"merge_sha":"c4aba67cbd442c730de8acb38128fa96dbabd18e"}
+{"ts":1793361901900,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11368,"ci_main_ms":3226,"waited_ms":21378}
+{"ts":1793361901978,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12025,"ci_main_ms":6134,"waited_ms":44}
+{"ts":1793361908193,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":17311,"ci_main_ms":3257,"waited_ms":6187}
+{"ts":1793361916571,"event":"done","summary":"Renamed billingUrl->billingEndpoint in @mfe/shared-contracts (breaking, so major 2.0.0, published). Updated shell, billing and reports to ^2.0.0 with the new name; all CI/CD green. Assumption: reports also consumes the contracts lib although the dep catalog doesn't list it (found via grep), so I updated it too. 1.0.0 stays in the registry for any unknown consumers."}

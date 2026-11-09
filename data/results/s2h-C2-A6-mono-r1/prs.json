@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-102-rename-billing-endpoint",
+    "title": "PLAT-102: Rename billingUrl to billingEndpoint\n\nRenames the shared config key billingUrl to billingEndpoint (same value) and updates every consumer: core-shell, sub-route-billing, sub-route-reports. Shared contracts are inlined at build time, so the rename ships in a single PR.\n\nVerified locally: all three apps build, contract check passes, billing bundle has no unresolved @mfe/shared-contracts import.\n\nAssumption: core-shell's `billingEndpointHint` output key is left unchanged (it does not contain billingUrl).\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "head": "75d5cbdbc744684b7da41eda7bc20da07ca4f7df",
+    "opened_ts": 1793370048599,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793370065894,
+    "merge_sha": "93e237d3f698b549576014bcdee595b20d68ccab",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

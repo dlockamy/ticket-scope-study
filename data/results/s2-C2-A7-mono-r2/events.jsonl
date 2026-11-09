@@ -1,0 +1,6 @@
+{"ts":1793364289928,"event":"clone","repo":"mono"}
+{"ts":1793364308512,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":5,"add":5,"del":5,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364320774,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3162,"waited_ms":12227,"sha":"a7f01d1bb4810fcf0fe28cda5a6ee5e74e35af51"}
+{"ts":1793364326681,"event":"pr_merged","pr":1,"merge_sha":"ac92775441bf1efc55a4b01b44b48d2f439609f5"}
+{"ts":1793364351223,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12793,"ci_main_ms":3180,"waited_ms":24513}
+{"ts":1793364354979,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in libs/shared-contracts, bumped its version 1.0.0->2.0.0 (breaking, per semver rule), updated core-shell, sub-route-billing and sub-route-reports in a single PR #1 (libs/ is inlined at build time, so no registry release or lockfile change was needed; one PR avoids ordering issues). Both apps built locally; CI and CD green. Assumptions: also updated sub-route-reports since it referenced billingUrl; did not inspect the live CDN bundle directly beyond CD success."}

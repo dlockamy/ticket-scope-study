@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "Add owner check to validateApp + pass team from package.json in all 3 apps (mono only; lib is in-repo, no publish/major bump)",
+    "repo": "",
+    "state": "done"
+  }
+]

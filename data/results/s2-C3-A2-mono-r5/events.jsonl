@@ -1,0 +1,6 @@
+{"ts":1793374794120,"event":"clone","repo":"mono"}
+{"ts":1793374825526,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793374837886,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3440,"waited_ms":12328,"sha":"847d65a751df5be61941b4e386fbf9788299d839"}
+{"ts":1793374841944,"event":"pr_merged","pr":1,"merge_sha":"6060b71d5d3e7624a1cb25b4d606017e56ef3e71"}
+{"ts":1793374884808,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":33813,"ci_main_ms":3161,"waited_ms":42835}
+{"ts":1793374889196,"event":"done","summary":"PLAT-103: validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0, breaking). Apps pass owner from package.json team: core-shell=platform, billing=payments, reports=insights. Merged in one PR (#1), CI and CD green. Assumptions: shared-contracts lives in-repo and is inlined at build time (no registry release or dependency update needed, so the three subtasks landed in one PR so main is never broken); owner values hardcoded to match package.json since the inliner can't import JSON; reports also calls validateApp so I updated it too (not deployed by CD)."}

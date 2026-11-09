@@ -1,0 +1,16 @@
+{"ts":1793411438186,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793411438881,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793411453210,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-owner-billing","size":{"files":3,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411454424,"who":"dev-b","event":"task_start","task":3}
+{"ts":1793411454450,"who":"dev-b","event":"task_start","task":4}
+{"ts":1793411454589,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-shell-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793411463903,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3202,"waited_ms":9121,"sha":"0a2a590d1f997a8f4f55b1f656eea5cf6df06270"}
+{"ts":1793411464051,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"5280ca6d35e270715520b205dd1037396038225f"}
+{"ts":1793411468493,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3489,"waited_ms":12248,"sha":"3014098de258ac83e327060e39bcee55b9c2212e"}
+{"ts":1793411470611,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"d70056c3a0e851c9294e75ffaaf92d5795997e2a"}
+{"ts":1793411482590,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10468,"ci_main_ms":3297,"waited_ms":18502}
+{"ts":1793411485119,"who":"dev-a","event":"done","summary":"PLAT-103-1/2 shipped in PR #1 (merged, CI+CD green): validateApp throws if owner missing/empty; billing passes owner 'payments' (package.json team). Assumptions: shared-contracts is an in-repo lib inlined at build, so no registry release/lockfile change; bumped its version to 2.0.0 (breaking) for the record. Combined lib+billing in one PR so ordering is safe."}
+{"ts":1793411492315,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10019,"ci_main_ms":3218,"waited_ms":21654}
+{"ts":1793411495150,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793411495171,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793411497563,"who":"dev-b","event":"done","summary":"PR #2: core-shell passes owner 'platform', reports passes owner 'insights' (from package.json team) to validateApp. Merged, CI+CD green. Assumptions: shared-contracts is inlined from libs/ so no dependency bump needed; owner hardcoded to match package.json team. PR #2 was opened before dev-a's PR #1 merged (old contract ignores extra field, so order-safe); verified post-merge main builds with the new owner check."}

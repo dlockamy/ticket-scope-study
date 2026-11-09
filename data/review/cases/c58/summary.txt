@@ -1,0 +1,1 @@
+validateApp now requires non-empty owner (shared-contracts 2.0.0, major bump, published). Billing (payments), core shell (platform) and reports (insights, not in sub-tasks but also called validateApp) now pass owner from package.json team, adopt ^2.0.0, built locally, merged and CD green. Assumption: other repos pin ^1 so are unaffected until they upgrade.

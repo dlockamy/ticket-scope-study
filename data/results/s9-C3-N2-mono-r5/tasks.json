@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires team; pass team from package.json in 3 apps; bump shared-contracts to 2.0.0",
+    "repo": "mono",
+    "state": "done"
+  }
+]

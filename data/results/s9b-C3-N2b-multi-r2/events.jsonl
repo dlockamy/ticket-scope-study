@@ -1,0 +1,34 @@
+{"ts":1793453077370,"event":"clone","repo":"shell"}
+{"ts":1793453077432,"event":"clone","repo":"billing"}
+{"ts":1793453077491,"event":"clone","repo":"reports"}
+{"ts":1793453077546,"event":"clone","repo":"contracts"}
+{"ts":1793453077602,"event":"clone","repo":"platformkit"}
+{"ts":1793453085645,"event":"task_added","task":1,"title":"validateApp throws without owner; bump to 2.0.0","repo":"contracts"}
+{"ts":1793453085666,"event":"task_added","task":2,"title":"upgrade contracts to ^2.0.0, pass team as owner","repo":"shell"}
+{"ts":1793453085686,"event":"task_added","task":3,"title":"upgrade contracts to ^2.0.0, pass team as owner","repo":"billing"}
+{"ts":1793453085704,"event":"task_added","task":4,"title":"upgrade contracts to ^2.0.0, pass team as owner","repo":"reports"}
+{"ts":1793453089385,"event":"task_start","task":1}
+{"ts":1793453089548,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-app-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793453103702,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3786,"waited_ms":12245,"sha":"211138a65c6f29b3e86956fd46a54379ec0ad606"}
+{"ts":1793453103877,"event":"pr_merged","pr":1,"merge_sha":"ff84e115c841dadbc9ae1fe2b9e356f69e771085"}
+{"ts":1793453116184,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4908,"ci_main_ms":2975,"waited_ms":12277}
+{"ts":1793453120773,"event":"task_start","task":2}
+{"ts":1793453120897,"event":"pr_opened","pr":2,"repo":"shell","branch":"require-owner-contracts-2","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793453121399,"event":"task_start","task":3}
+{"ts":1793453121517,"event":"pr_opened","pr":3,"repo":"billing","branch":"require-owner-contracts-2","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793453121940,"event":"task_start","task":4}
+{"ts":1793453122077,"event":"pr_opened","pr":4,"repo":"reports","branch":"require-owner-contracts-2","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793453133084,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3297,"waited_ms":9160,"sha":"e5ac3237347131f7062148c331d379ce48127a3b"}
+{"ts":1793453133213,"event":"pr_merged","pr":2,"merge_sha":"14923840da96f636d90a9d3f8c6f3e260bab4b05"}
+{"ts":1793453151669,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8143,"ci_main_ms":3006,"waited_ms":18426}
+{"ts":1793453151733,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3283,"waited_ms":34,"sha":"de86dada28ace1d2e34322c2eb01d7d54048b7e0"}
+{"ts":1793453151855,"event":"pr_merged","pr":3,"merge_sha":"c15e6b437551c1a35cbf25f67d891b6f923dd8e8"}
+{"ts":1793453170296,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10855,"ci_main_ms":2995,"waited_ms":18411}
+{"ts":1793453170360,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3257,"waited_ms":33,"sha":"2d34d1c0c5a4f83f1544eec17ec69d5da09bd6c6"}
+{"ts":1793453170477,"event":"pr_merged","pr":4,"merge_sha":"70343fcdf42c73a799ea46bb283a9e090a09e8e5"}
+{"ts":1793453191975,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11186,"ci_main_ms":3088,"waited_ms":21469}
+{"ts":1793453194797,"event":"task_done","task":1}
+{"ts":1793453194815,"event":"task_done","task":2}
+{"ts":1793453194831,"event":"task_done","task":3}
+{"ts":1793453194845,"event":"task_done","task":4}
+{"ts":1793453194858,"event":"done","summary":"validateApp in @mfe/shared-contracts now throws without owner; released as 2.0.0 (breaking). shell, billing, reports upgraded to ^2.0.0 and pass their package.json team (platform/payments/insights) as owner; all deployed. Assumptions: team strings hardcoded in source since the bundler inlines source and can't read package.json. Not done: the 'fake bucket names in readme' item, which lee called a separate thing. No README mentions buckets; the names are in Makefile/Jenkinsfile.cd, which I left alone."}

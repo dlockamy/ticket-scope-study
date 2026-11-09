@@ -1,0 +1,10 @@
+{"ts":1793373075374,"event":"clone","repo":"mono"}
+{"ts":1793373075405,"event":"deps_query","pkg":"@studio/platform-kit"}
+{"ts":1793373083008,"event":"task_added","task":1,"title":"shared-contracts: validateApp requires owner","repo":""}
+{"ts":1793373083029,"event":"task_added","task":2,"title":"Pass owner (package.json team) in core-shell, billing, reports","repo":""}
+{"ts":1793373083048,"event":"task_added","task":3,"title":"Build, PR, CI, merge, deploy","repo":""}
+{"ts":1793373088776,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793373101243,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4449,"waited_ms":12432,"sha":"f9405408885a571061c034f1bc5db8af5a204db2"}
+{"ts":1793373101416,"event":"pr_merged","pr":1,"merge_sha":"6047254e23459c40070e3660bb18d83030a96b77"}
+{"ts":1793373119836,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12140,"ci_main_ms":3152,"waited_ms":18390}
+{"ts":1793373121775,"event":"done","summary":"validateApp now throws if owner missing/empty; core-shell (platform), billing (payments), reports (insights) pass owner matching package.json team (hardcoded since libs are inlined at build). All three apps built locally; PR #1 merged, CI+CD green. platform-kit untouched (doesn't call validateApp)."}

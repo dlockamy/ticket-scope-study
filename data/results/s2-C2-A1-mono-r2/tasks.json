@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl->billingEndpoint in libs/shared-contracts and update consumers (core-shell, billing, reports) in mono; platformkit unaffected",
+    "repo": "",
+    "state": "todo"
+  }
+]

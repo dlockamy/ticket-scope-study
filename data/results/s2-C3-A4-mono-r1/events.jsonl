@@ -1,0 +1,7 @@
+{"ts":1793363031901,"event":"clone","repo":"mono"}
+{"ts":1793363031961,"event":"clone","repo":"platformkit"}
+{"ts":1793363056967,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793363066316,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3103,"waited_ms":9312,"sha":"63103dcdd3187905496e08bb7ba64aed040a47be"}
+{"ts":1793363068363,"event":"pr_merged","pr":1,"merge_sha":"3bb8911ea87af3ba9eca04fd20c279d5889c93a2"}
+{"ts":1793363086742,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11151,"ci_main_ms":3196,"waited_ms":18348}
+{"ts":1793363089596,"event":"done","summary":"PLAT-103-1/2/3 shipped in one mono PR #1 (CI+CD green): validateApp now throws if owner missing/empty; core-shell passes owner 'platform', billing 'payments' (from package.json team). Also fixed sub-route-reports (owner 'insights') since it calls validateApp and would have broken; reports isn't deployed by CD. shared-contracts is inlined at build time (no registry release/version bump needed; one PR so the lib and apps land together). PLAT-103-4 not done: libs-platform-kit has no validateApp call and doesn't depend on shared-contracts, so there is nothing to change; no change made."}

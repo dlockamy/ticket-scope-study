@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner (major 2.0.0)",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "shell passes owner, bump contracts ^2.0.0",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "billing passes owner, bump contracts ^2.0.0",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "reports passes owner, bump contracts ^2.0.0",
+    "repo": "reports",
+    "state": "done"
+  }
+]

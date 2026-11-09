@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "plat-102-rename-billing-endpoint",
+    "title": "PLAT-102: rename billingUrl to billingEndpoint (2.0.0)",
+    "head": "c44b164403742517e9eeaa92ca42f079960fe24d",
+    "opened_ts": 1793369375478,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369389542,
+    "merge_sha": "b640836c626476737dd01570d8bd634bfd1e4f22",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "plat-102-billing-endpoint",
+    "title": "PLAT-102: billing uses billingEndpoint (shared-contracts 2.0.0)",
+    "head": "ec65525db6ad64649dfbe0a3e3209a7f6aab94a7",
+    "opened_ts": 1793369426118,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369442149,
+    "merge_sha": "4961b65f0e41460706d6d86599857b1f642fe9d3",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "plat-102-shell-billing-endpoint",
+    "title": "PLAT-102: core shell uses billingEndpoint (shared-contracts 2.0.0)",
+    "head": "b92034ab4bb1b504b012a4df80da8687059c462b",
+    "opened_ts": 1793369470020,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369484538,
+    "merge_sha": "dccaf17d12a864656deff2e515d5712b95399644",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "plat-102-reports-billing-endpoint",
+    "title": "PLAT-102: reports uses billingEndpoint (shared-contracts 2.0.0)",
+    "head": "ebb1f1b5ac8d5f4010f41d61e4f836ac30542db6",
+    "opened_ts": 1793369527181,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793369538911,
+    "merge_sha": "0ed25bed52ab755f4dedb2715ac0b544c3620018",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,6 @@
+{"ts":1793387636718,"event":"clone","repo":"mono"}
+{"ts":1793387650482,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793387661450,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3143,"waited_ms":9170,"sha":"2c59008e2b14a17dfe2b3f5885b142874b9293f7"}
+{"ts":1793387664436,"event":"pr_merged","pr":1,"merge_sha":"dedf6f258222089ef9277185bd70b0aada3b596b"}
+{"ts":1793387682840,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11513,"ci_main_ms":3145,"waited_ms":18370}
+{"ts":1793387685813,"event":"done","summary":"PLAT-103: validateApp now throws if owner missing/empty; billing=payments, reports=insights, core-shell=platform (from package.json team). Assumptions: @mfe/shared-contracts lives in the monorepo and is inlined at build, so no version bump/registry release or dependency adoption applies; shipped as one PR so lib and apps land together (otherwise apps would break). PR #1 merged, CI+CD green."}

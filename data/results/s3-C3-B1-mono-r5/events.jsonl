@@ -1,0 +1,10 @@
+{"ts":1793385245996,"event":"clone","repo":"mono"}
+{"ts":1793385250559,"event":"task_added","task":1,"title":"--help","repo":""}
+{"ts":1793385257673,"event":"task_added","task":2,"title":"Reports app: pass owner to validateApp","repo":""}
+{"ts":1793385271031,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793385286531,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4140,"waited_ms":15450,"sha":"012a9940a4a504d00b0953c5b6b07acf7fc08f8c"}
+{"ts":1793385290327,"event":"pr_merged","pr":1,"merge_sha":"ef362251aab29080ede5c7502c1c66eb8f904fa6"}
+{"ts":1793385311773,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11563,"ci_main_ms":3138,"waited_ms":21416}
+{"ts":1793385318235,"event":"task_done","task":1}
+{"ts":1793385318254,"event":"task_done","task":2}
+{"ts":1793385318269,"event":"done","summary":"Shipped in one PR (#1): validateApp now throws if owner is missing/empty; billing=payments, reports=insights, core-shell=platform (from each package.json team). Found a third validateApp consumer (reports) and added a sub-task. Assumptions: shared-contracts is inlined at build time (in-repo lib), so no registry release or lockfile bump; bumped its version to 2.0.0 to mark the breaking change. All apps had to change in the same PR since the contract change would otherwise break them. CI and CD green."}

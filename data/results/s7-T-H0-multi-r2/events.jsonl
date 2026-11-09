@@ -1,0 +1,27 @@
+{"ts":1793413963153,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793413963354,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793413963413,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793413966028,"who":"dev-b","event":"task_claim","task":3}
+{"ts":1793413966051,"who":"dev-b","event":"task_claim","task":4}
+{"ts":1793413970899,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-104-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413981892,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4240,"waited_ms":9252,"sha":"97ce8c1c5a13415e8706b9d4a1955b382d8e5047"}
+{"ts":1793413982073,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"82b457e78d2eb5034ad54d4b5d1b6a8b1671abb6"}
+{"ts":1793413994461,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4910,"ci_main_ms":2996,"waited_ms":12350}
+{"ts":1793413996578,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793414002049,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-104-billing-adopt-contracts","size":{"files":1,"add":8,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414012770,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3071,"waited_ms":9139,"sha":"39ad4bd45c4f24822e852f48679f814046ba6849"}
+{"ts":1793414012918,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"a8263bc78c6846204fced3a544875bb667b4fea4"}
+{"ts":1793414031443,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12182,"ci_main_ms":3137,"waited_ms":18492}
+{"ts":1793414033874,"who":"dev-a","event":"done","summary":"PLAT-104-1: contracts billingUrl -> https://homelab.local/billing/v2, released as 1.1.0 (PR #1, CD published). PLAT-104-2: billing now depends on ^1.1.0 with updated lockfile (PR #2, CI+CD green). Assumptions: value change treated as minor bump; no code changes needed in billing."}
+{"ts":1793414373427,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4910,"ci_main_ms":2996,"waited_ms":73}
+{"ts":1793414379949,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-104-adopt-contracts-shell","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414380112,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-104-adopt-contracts-reports","size":{"files":1,"add":7,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793414397392,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":5771,"waited_ms":15268,"sha":"8bcf0d4a1f4291168c6dcbf5f44684a3c955e140"}
+{"ts":1793414397549,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"09165b6ed62898e5c7f83acbc546b676bf8118ff"}
+{"ts":1793414397616,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2954,"waited_ms":35,"sha":"fe46e77fab0c644ce8ab5a2b3b8875af2b67dd8d"}
+{"ts":1793414397751,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"d92c80b1fa364bde7b641f3b978800ec81272653"}
+{"ts":1793414416308,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9058,"ci_main_ms":5216,"waited_ms":18521}
+{"ts":1793414419463,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12212,"ci_main_ms":3221,"waited_ms":3120}
+{"ts":1793414422339,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793414422363,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793414422379,"who":"dev-b","event":"done","summary":"PLAT-104-3 and PLAT-104-4 shipped. Shell (PR #3) and reports (PR #4) now depend on @mfe/shared-contracts ^1.1.0, with the lockfile committed. Local builds showed billing/v2. CI and CD were green for both. Assumptions: dev-a's contracts PR #1 (v1.1.0) and its registry publish were complete before I started. I confirmed that through the PR list, deploy wait 1 and the registry, because the board never showed task 1 as done."}

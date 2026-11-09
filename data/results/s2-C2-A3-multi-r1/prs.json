@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "rename-billing-endpoint",
+    "title": "Rename billingUrl to billingEndpoint (v2.0.0)",
+    "head": "c75773c66ae8e532c65fda120a6d508bf6ac6799",
+    "opened_ts": 1793361481286,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793361490649,
+    "merge_sha": "d5405c75e129e23dc3d2458f433b8c18acf0e90b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (shared-contracts 2.x)",
+    "head": "59400c69539f2babba15b03477d183a955579b3b",
+    "opened_ts": 1793361520459,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793361533011,
+    "merge_sha": "8596278d6dcea97e48cf5ccd9101aa4ba978b9fc",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (shared-contracts 2.x)",
+    "head": "e402d1251c9c2840216f9b062cbe324347cd9bb2",
+    "opened_ts": 1793361520588,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793361554717,
+    "merge_sha": "8d1f365f4527d32ce5a15e4f396eed7ac798df62",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "use-billing-endpoint",
+    "title": "Use billingEndpoint (shared-contracts 2.x)",
+    "head": "d133ef51de3e6978420b18e23985495d0a77a27a",
+    "opened_ts": 1793361520713,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793361573365,
+    "merge_sha": "600d49490eac85971c7401bdb4ac8d58ba966351",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

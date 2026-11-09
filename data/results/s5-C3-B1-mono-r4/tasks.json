@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Make validateApp reject apps without an owner (libs/shared-contracts)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Pass owner (team) from apps/sub-route-reports to validateApp and ship it",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Pass owner (team) from apps/sub-route-billing to validateApp, adopt the new contract and ship it",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Pass owner (team) from apps/core-shell to validateApp, adopt the new contract and ship it",
+    "repo": "mono",
+    "state": "done"
+  }
+]

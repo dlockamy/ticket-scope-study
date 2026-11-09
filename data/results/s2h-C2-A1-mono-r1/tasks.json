@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl to billingEndpoint in shared-contracts and all readers (core-shell, sub-route-billing, sub-route-reports)",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Build core-shell, sub-route-billing, sub-route-reports and verify no billingUrl remains",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Open PR, wait for CI green, merge",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Confirm CD deploy of core-shell and billing via st deploy wait",
+    "repo": "mono",
+    "state": "done"
+  },
+  {
+    "id": 5,
+    "title": "No change needed: @studio/platform-kit does not reference billingUrl",
+    "repo": "platformkit",
+    "state": "done"
+  }
+]

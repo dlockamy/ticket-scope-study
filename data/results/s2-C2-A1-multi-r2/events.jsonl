@@ -1,0 +1,24 @@
+{"ts":1793365326658,"event":"clone","repo":"shell"}
+{"ts":1793365326718,"event":"clone","repo":"billing"}
+{"ts":1793365326781,"event":"clone","repo":"reports"}
+{"ts":1793365326842,"event":"clone","repo":"contracts"}
+{"ts":1793365326897,"event":"clone","repo":"platformkit"}
+{"ts":1793365342235,"event":"task_added","task":1,"title":"contracts: rename billingUrl->billingEndpoint, bump to 2.0.0 (breaking), publish via CD","repo":""}
+{"ts":1793365342257,"event":"task_added","task":2,"title":"shell, billing, reports: use billingEndpoint, depend on contracts ^2.0.0, ship (after contracts is published)","repo":""}
+{"ts":1793365348019,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793365360439,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3749,"waited_ms":12384,"sha":"1316954ae2e1284b63301f4b1199ff5eb1911036"}
+{"ts":1793365365533,"event":"pr_merged","pr":1,"merge_sha":"a517d2e3c2f262e4252045f0c87f135c16c63a51"}
+{"ts":1793365377843,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4914,"ci_main_ms":2834,"waited_ms":12280}
+{"ts":1793365383784,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365384313,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-102-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365384847,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793365394691,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3180,"waited_ms":6137,"sha":"edcd1432fc7afc17330c6909da70e27f7aa1588f"}
+{"ts":1793365394753,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3207,"waited_ms":34,"sha":"5c066325fd805cf84a7001cead169863c7823c3c"}
+{"ts":1793365397863,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2985,"waited_ms":3085,"sha":"ea7a2dc50f6fb68d6acae28372438c8443d51343"}
+{"ts":1793365402857,"event":"pr_merged","pr":2,"merge_sha":"c9e9b5793173a9f3801f0989a78825a2b221be45"}
+{"ts":1793365418250,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8179,"ci_main_ms":2988,"waited_ms":15365}
+{"ts":1793365418378,"event":"pr_merged","pr":3,"merge_sha":"aa41948f576e892fe6e8ce687109029e831ccffb"}
+{"ts":1793365439881,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14289,"ci_main_ms":2832,"waited_ms":21474}
+{"ts":1793365440015,"event":"pr_merged","pr":4,"merge_sha":"ce0b5ec070afd96e8c1bba53a37dba21456577d1"}
+{"ts":1793365464571,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12416,"ci_main_ms":2838,"waited_ms":24527}
+{"ts":1793365468790,"event":"done","summary":"Renamed billingUrl->billingEndpoint (same value) in @mfe/shared-contracts, released as 2.0.0 (major: removing a key is breaking). Shell, billing, reports updated to ^2.0.0 and use billingEndpoint; all CI/CD green. Assumptions: no alias for the old name kept, since AC requires no billingUrl remaining; platform-kit does not use the setting so was untouched. Contracts merged first so the apps could resolve 2.0.0."}

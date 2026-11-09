@@ -1,0 +1,2 @@
+{"run":"pilot-C2-A1-mono-r0","finished":"done","acceptance_pass":true,"missed":[],"prs":1,"turnaround_s":390,"rework_events":0,"agent_tokens":308399}
+{"run":"pilot-C2-A1-multi-r0","finished":"done","acceptance_pass":true,"missed":[],"prs":4,"turnaround_s":1327,"rework_events":0,"agent_tokens":480173}

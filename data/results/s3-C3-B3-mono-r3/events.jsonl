@@ -1,0 +1,6 @@
+{"ts":1793383636860,"event":"clone","repo":"mono"}
+{"ts":1793383659947,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793383672415,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4124,"waited_ms":12431,"sha":"9d838c59e4236db7cae94d0bebaaf6ffa7e2ab05"}
+{"ts":1793383675217,"event":"pr_merged","pr":1,"merge_sha":"65832abfa59232b6bdb4987721c2397405cd4126"}
+{"ts":1793383696705,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12132,"ci_main_ms":3305,"waited_ms":21452}
+{"ts":1793383700622,"event":"done","summary":"validateApp now throws if owner is missing/blank. core-shell passes 'platform', billing passes 'payments' (from package.json team); also reports -> 'insights' since it calls validateApp and would otherwise break. Assumptions: shared-contracts is an in-repo lib inlined at build, so no registry release/version bump or npm dependency update was needed; done in one PR (#1). Owners hardcoded to match package.json team."}

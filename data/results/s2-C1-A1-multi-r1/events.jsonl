@@ -1,0 +1,13 @@
+{"ts":1793362282822,"event":"clone","repo":"contracts"}
+{"ts":1793362282880,"event":"clone","repo":"billing"}
+{"ts":1793362292164,"event":"task_added","task":1,"title":"contracts: add billingPortalUrl to SHARED_CONFIG, bump 1.1.0","repo":""}
+{"ts":1793362292185,"event":"task_added","task":2,"title":"billing: bump contracts to ^1.1.0, render Manage billing link","repo":""}
+{"ts":1793362296229,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-101-billing-portal-url","size":{"files":2,"add":3,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793362310490,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3802,"waited_ms":12210,"sha":"6d5de5fac775d5c620fb269224acfc8ce2c8df6c"}
+{"ts":1793362310673,"event":"pr_merged","pr":1,"merge_sha":"41e6cbe4f0c5066223487dd339bcfd97d28a7a8a"}
+{"ts":1793362322996,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4860,"ci_main_ms":2829,"waited_ms":12286}
+{"ts":1793362328763,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-101-manage-billing-link","size":{"files":2,"add":9,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793362341034,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2921,"waited_ms":12237,"sha":"314e1b3ee6f1e076234042d25b3743345ddf27ac"}
+{"ts":1793362341162,"event":"pr_merged","pr":2,"merge_sha":"f0cbc4221922e42be2a134ba7e9ae70f1851ab7f"}
+{"ts":1793362362648,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11305,"ci_main_ms":2975,"waited_ms":21455}
+{"ts":1793362365796,"event":"done","summary":"Added billingPortalUrl (https://homelab.local/billing/portal) to @mfe/shared-contracts, released as 1.1.0 (PR #1). Billing now depends on ^1.1.0 (lockfile updated) and renders a 'Manage billing' link from SHARED_CONFIG.billingPortalUrl (PR #2). Both merged, CI/CD green. Assumptions: additive change = minor bump; link styled to match the existing card."}

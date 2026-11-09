@@ -1,0 +1,7 @@
+{"ts":1793376592782,"event":"clone","repo":"mono"}
+{"ts":1793376592838,"event":"clone","repo":"platformkit"}
+{"ts":1793376633191,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793376645216,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3074,"waited_ms":9145,"sha":"e90ee523c86134cb8c9d25d628e9f6d1bc15743b"}
+{"ts":1793376645354,"event":"pr_merged","pr":1,"merge_sha":"c65660bc2aace9dfadd67d8bcf08cbb2ebad1063"}
+{"ts":1793376663785,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11880,"ci_main_ms":3056,"waited_ms":18401}
+{"ts":1793376667592,"event":"done","summary":"validateApp now requires non-empty owner (shared-contracts 2.0.0). core-shell(platform), billing(payments), reports(insights; also a caller, not in ticket) pass owner from package.json team; shipped in mono PR #1, CI+CD green. Assumptions: shared-contracts is an in-repo lib inlined at build and no app depends on the registry copy, so no dependency adoption/lockfile change was needed and one PR was safe. PLAT-103-4 (platform-kit): it does not call validateApp or depend on shared-contracts, so no change made."}

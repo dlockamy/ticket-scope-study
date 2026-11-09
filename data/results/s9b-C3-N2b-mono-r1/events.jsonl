@@ -1,0 +1,9 @@
+{"ts":1793452943368,"event":"clone","repo":"mono"}
+{"ts":1793452943433,"event":"clone","repo":"platformkit"}
+{"ts":1793452952471,"event":"task_added","task":1,"title":"mono: validateApp requires owner (libs/shared-contracts) + apps pass team as owner, single PR","repo":""}
+{"ts":1793452952491,"event":"task_added","task":2,"title":"README bucket names: out of scope (lee said separate); not done","repo":""}
+{"ts":1793452963911,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-app-owner","size":{"files":4,"add":4,"del":3,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793452973282,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3099,"waited_ms":9340,"sha":"d0c691eab5a9cf3b0c26bd38943a12c2ba0ec4a8"}
+{"ts":1793452974954,"event":"pr_merged","pr":1,"merge_sha":"c0ec7a0a17bd6a1da082cd02e3634355cd3780d4"}
+{"ts":1793452993337,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11640,"ci_main_ms":3215,"waited_ms":18356}
+{"ts":1793452996033,"event":"done","summary":"validateApp (libs/shared-contracts in mono) now throws if owner is missing; core-shell/billing/reports pass their package.json team (platform/payments/insights) as owner. Single PR #1 merged, CI+CD green. Assumptions: the lib is in-repo and inlined at build, so no version bump or registry publish was needed and platform-kit is untouched; hardcoded owner strings match each package.json team. The README fake-bucket-names request was explicitly 'separate' so I left it undone."}

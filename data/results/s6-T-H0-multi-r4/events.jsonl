@@ -1,0 +1,32 @@
+{"ts":1793412782766,"who":"dev-a","event":"clone","repo":"contracts"}
+{"ts":1793412782809,"who":"dev-b","event":"clone","repo":"shell"}
+{"ts":1793412782867,"who":"dev-b","event":"clone","repo":"reports"}
+{"ts":1793412790867,"who":"dev-a","event":"task_claim","task":1}
+{"ts":1793412790891,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793412791071,"who":"dev-a","event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412791907,"who":"dev-b","event":"task_claim","task":3}
+{"ts":1793412791930,"who":"dev-b","event":"task_claim","task":4}
+{"ts":1793412802108,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3675,"waited_ms":9221,"sha":"5dcd40d8444d48478c74c5cffcedcb2565c143bb"}
+{"ts":1793412802359,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"930fe894b06ec39a05f1e357a7c72abaf56087db"}
+{"ts":1793412814762,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5308,"ci_main_ms":2860,"waited_ms":12368}
+{"ts":1793412817319,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793412817402,"who":"dev-a","event":"clone","repo":"billing"}
+{"ts":1793412822922,"who":"dev-a","event":"task_claim","task":2}
+{"ts":1793412822941,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793412823062,"who":"dev-a","event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-billing-owner","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412826675,"who":"dev-b","event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-3-shell-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412826826,"who":"dev-b","event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-4-reports-owner","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793412837446,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3155,"waited_ms":9175,"sha":"78dba717d2371c93b604ac1504eaf0650af93941"}
+{"ts":1793412837511,"who":"dev-b","event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3139,"waited_ms":37,"sha":"700598a043fe98d34b6e81c7ac9210afbd53b7d8"}
+{"ts":1793412838365,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3177,"waited_ms":15268,"sha":"6856d1cdad6f82f02a7f730ec42506ddf80fd6d5"}
+{"ts":1793412838508,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"b9df83ee7b801e24f7570680797973a5045374c0"}
+{"ts":1793412839220,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"c8ff5285509ac828ee63222d6857f0e13b619d61"}
+{"ts":1793412839358,"who":"dev-b","event":"pr_merged","pr":4,"merge_sha":"d8158320b8a5cb700b5ed3899cc7d6ddb8ceb694"}
+{"ts":1793412863232,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13087,"ci_main_ms":5317,"waited_ms":24694}
+{"ts":1793412864029,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":14228,"ci_main_ms":8302,"waited_ms":24640}
+{"ts":1793412864110,"who":"dev-b","event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":15076,"ci_main_ms":3260,"waited_ms":49}
+{"ts":1793412865736,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793412865754,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/blank; released as @mfe/shared-contracts 2.0.0 (major bump, PR #1, published). PLAT-103-2: billing passes owner 'payments' (from package.json team), depends on ^2.0.0 with updated lockfile (PR #2, deployed). Assumption: whitespace-only owner counts as empty; non-string owner rejected."}
+{"ts":1793412866555,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793412866577,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793412866593,"who":"dev-b","event":"done","summary":"PLAT-103-3 (shell, PR #3) and PLAT-103-4 (reports, PR #4) merged and deployed (CI+CD green). Both pass owner to validateApp and adopt @mfe/shared-contracts ^2.0.0. Assumptions: owner is a literal copied from package.json team (shell='platform', reports='insights') because the bundler inlines imports and a JSON import risked breaking it; waited for dev-a's 2.0.0 to be published before adopting."}

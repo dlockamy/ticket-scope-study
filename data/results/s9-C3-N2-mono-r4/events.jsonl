@@ -1,0 +1,10 @@
+{"ts":1793452074247,"event":"clone","repo":"mono"}
+{"ts":1793452074319,"event":"clone","repo":"platformkit"}
+{"ts":1793452086953,"event":"task_added","task":1,"title":"Make validateApp require team (shared-contracts, major bump)","repo":""}
+{"ts":1793452086976,"event":"task_added","task":2,"title":"Pass package.json team from core-shell, billing, reports","repo":""}
+{"ts":1793452086996,"event":"task_added","task":3,"title":"PR, CI, merge, deploy; note README has no bucket names","repo":""}
+{"ts":1793452093134,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owners","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793452105521,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3059,"waited_ms":12354,"sha":"fcb46e5774200360280262ede2b98446a263a7c9"}
+{"ts":1793452107219,"event":"pr_merged","pr":1,"merge_sha":"3cbbcdfe47f26803eafec89c1b0b8fa7394d56a5"}
+{"ts":1793452128651,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10710,"ci_main_ms":2986,"waited_ms":21401}
+{"ts":1793452131695,"event":"done","summary":"validateApp in libs/shared-contracts now throws if app.team is missing; shared-contracts bumped to 2.0.0 (breaking). core-shell, billing and reports pass the team from their package.json (platform, payments, insights). Assumptions: team values are hardcoded to match package.json, since bundled browser code can't read it at runtime. platformkit untouched, because the lib lives in mono and is inlined. README contains no fake bucket names, so there was nothing to change there (Sam called that separate anyway). PR #1 merged, CI and CD green."}

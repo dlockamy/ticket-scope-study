@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "add-billing-portal-url",
+    "title": "PLAT-101-1: add billingPortalUrl (1.1.0)",
+    "head": "883d1b71e55eb8298b5eddb1833fb922fa65f315",
+    "opened_ts": 1793366076951,
+    "size": {
+      "files": 2,
+      "add": 3,
+      "del": 2,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793366094113,
+    "merge_sha": "ec162dc54531c0f94b725573b69ed69fb53d58e3",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "add-manage-billing-link",
+    "title": "PLAT-101-2: Manage billing link",
+    "head": "e664809e67432f3de6f415286b1e532a7b64151c",
+    "opened_ts": 1793366118207,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 2,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793366130570,
+    "merge_sha": "561aed208f7bb3e6914dafa7209c52a1edc65d07",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

@@ -1,0 +1,31 @@
+{"ts":1793391155968,"event":"deps_query","pkg":"@mfe/shared-contracts"}
+{"ts":1793391156044,"event":"clone","repo":"contracts"}
+{"ts":1793391158478,"event":"clone","repo":"shell"}
+{"ts":1793391158538,"event":"clone","repo":"billing"}
+{"ts":1793391158596,"event":"clone","repo":"reports"}
+{"ts":1793391158651,"event":"clone","repo":"analytics"}
+{"ts":1793391158706,"event":"clone","repo":"admin"}
+{"ts":1793391158759,"event":"clone","repo":"help"}
+{"ts":1793391158812,"event":"clone","repo":"marketing"}
+{"ts":1793391166823,"event":"task_added","task":1,"title":"validateApp requires owner; bump to 2.0.0 (breaking)","repo":"contracts"}
+{"ts":1793391166844,"event":"task_added","task":2,"title":"Pass owner 'platform', depend on contracts ^2.0.0","repo":"shell"}
+{"ts":1793391166863,"event":"task_added","task":3,"title":"Pass owner 'payments', depend on contracts ^2.0.0","repo":"billing"}
+{"ts":1793391166882,"event":"task_added","task":4,"title":"Pass owner 'insights' (not in dep catalog), depend on contracts ^2.0.0","repo":"reports"}
+{"ts":1793391167084,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793391169262,"event":"pr_updated","pr":1,"size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793391181518,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3740,"waited_ms":12228,"sha":"b640fe9c9df18c9244d2884f840fa3f9a2375d6d"}
+{"ts":1793391183166,"event":"pr_merged","pr":1,"merge_sha":"c2b141fe616ec44f094c964983dda95808bf53bf"}
+{"ts":1793391198526,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5315,"ci_main_ms":2950,"waited_ms":15327}
+{"ts":1793391205742,"event":"pr_opened","pr":2,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793391205863,"event":"pr_opened","pr":3,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793391205985,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-103-owner-reports","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793391216583,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3138,"waited_ms":9196,"sha":"d2fbaa66c6566aa34cfb5bc93d8295df9cfd1026"}
+{"ts":1793391216647,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3131,"waited_ms":36,"sha":"1e03a170491658c5cef10a26484d0909fc7e78bb"}
+{"ts":1793391216703,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3167,"waited_ms":32,"sha":"b5840fab782b302bcf6a2fd4aac0567a54f69729"}
+{"ts":1793391218218,"event":"pr_merged","pr":2,"merge_sha":"ca06e224ca924f0f8d000c4f8f77548d34dc60f0"}
+{"ts":1793391236650,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8760,"ci_main_ms":2999,"waited_ms":18404}
+{"ts":1793391236775,"event":"pr_merged","pr":3,"merge_sha":"7dfdfb36e17191b8a81a5440c169f72bd63ec14e"}
+{"ts":1793391261332,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13126,"ci_main_ms":3012,"waited_ms":24527}
+{"ts":1793391261468,"event":"pr_merged","pr":4,"merge_sha":"02c2be06aa9fc480ae13e65e2e740446bd06f0fa"}
+{"ts":1793391282984,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11469,"ci_main_ms":3125,"waited_ms":21488}
+{"ts":1793391285515,"event":"done","summary":"validateApp now throws without a non-empty owner (shared-contracts 2.0.0, major since breaking; published). Shell (platform), billing (payments), reports (insights) pass owner from package.json team and depend on ^2.0.0 with updated lockfiles; all built, CI and CD green. Assumptions: the dependency catalog was incomplete (reports was missing), so I grepped every app clone for validateApp; owners are hardcoded to match package.json team; other apps/services don't call validateApp."}

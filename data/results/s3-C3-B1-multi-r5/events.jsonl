@@ -1,0 +1,23 @@
+{"ts":1793385246322,"event":"clone","repo":"shell"}
+{"ts":1793385246381,"event":"clone","repo":"billing"}
+{"ts":1793385246437,"event":"clone","repo":"reports"}
+{"ts":1793385246494,"event":"clone","repo":"contracts"}
+{"ts":1793385246549,"event":"clone","repo":"platformkit"}
+{"ts":1793385281194,"event":"task_added","task":1,"title":"Pass owner to validateApp in reports app (depends on PLAT-103-1)","repo":"reports"}
+{"ts":1793385286281,"event":"pr_opened","pr":1,"repo":"contracts","branch":"require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793385299243,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2706,"waited_ms":6131,"sha":"705f45b0633c372cbfd59eba11dc6fa8454006ba"}
+{"ts":1793385299374,"event":"pr_merged","pr":1,"merge_sha":"f9e5bf99860df4cee3c16944a2b087c6c017a7e9"}
+{"ts":1793385311716,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5306,"ci_main_ms":3037,"waited_ms":12313}
+{"ts":1793385322892,"event":"pr_opened","pr":2,"repo":"shell","branch":"adopt-contracts-v2","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385323017,"event":"pr_opened","pr":3,"repo":"billing","branch":"adopt-contracts-v2","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385323154,"event":"pr_opened","pr":4,"repo":"reports","branch":"adopt-contracts-v2","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385335417,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3233,"waited_ms":12230,"sha":"9bb7f8cf8734540211578df05db7aee543127f2b"}
+{"ts":1793385335478,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3265,"waited_ms":33,"sha":"35957b48bad36e188781100bbc25a9c0ecb2a14b"}
+{"ts":1793385335536,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":3302,"waited_ms":34,"sha":"5df590d88f202b7b339e775541a4d36045036120"}
+{"ts":1793385339038,"event":"pr_merged","pr":2,"merge_sha":"b8d9dbdc3340207592b15ea4994580b976779c1d"}
+{"ts":1793385354389,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8897,"ci_main_ms":3090,"waited_ms":15322}
+{"ts":1793385354517,"event":"pr_merged","pr":3,"merge_sha":"d8e740f41362951b766bdf35fa76b7a820a0b7a2"}
+{"ts":1793385372958,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11989,"ci_main_ms":3156,"waited_ms":18412}
+{"ts":1793385373093,"event":"pr_merged","pr":4,"merge_sha":"98d81afd7fbfe1804b7d94fb1cb762364105cab8"}
+{"ts":1793385394613,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12572,"ci_main_ms":3139,"waited_ms":21486}
+{"ts":1793385398708,"event":"done","summary":"validateApp now requires owner (contracts 2.0.0, major bump, published). shell(platform), billing(payments), reports(insights) pass owner from package.json 'team', adopt ^2.0.0 with lockfiles, deployed. Assumptions: reports also uses validateApp (not in ticket) so I added a sub-task and fixed it, since 2.0.0 would otherwise break it; owner values hardcoded from package.json team."}

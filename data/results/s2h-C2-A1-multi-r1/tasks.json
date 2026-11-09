@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Rename billingUrl to billingEndpoint in shared-contracts, bump to 2.0.0, ship",
+    "repo": "contracts",
+    "state": "done"
+  },
+  {
+    "id": 2,
+    "title": "Move core-shell to shared-contracts ^2 and rename billingUrl reference, ship",
+    "repo": "shell",
+    "state": "done"
+  },
+  {
+    "id": 3,
+    "title": "Move sub-route-billing to shared-contracts ^2 and rename billingUrl reference, ship",
+    "repo": "billing",
+    "state": "done"
+  },
+  {
+    "id": 4,
+    "title": "Move sub-route-reports to shared-contracts ^2 and rename billingUrl reference, ship",
+    "repo": "reports",
+    "state": "done"
+  }
+]

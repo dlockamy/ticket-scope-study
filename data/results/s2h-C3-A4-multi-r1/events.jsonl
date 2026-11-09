@@ -1,0 +1,28 @@
+{"ts":1793368972018,"event":"clone","repo":"contracts"}
+{"ts":1793368984842,"event":"task_added","task":1,"title":"PLAT-103-1 require owner in validateApp","repo":"contracts"}
+{"ts":1793368984859,"event":"task_start","task":1}
+{"ts":1793368985026,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793368999196,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3753,"waited_ms":12276,"sha":"81c2f7a045e6e3857c0f8896ed7d73de88054bb0"}
+{"ts":1793369001481,"event":"pr_merged","pr":1,"merge_sha":"676ae074e033b0f8cc4996eca2b3400c3b987e48"}
+{"ts":1793369013833,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5113,"ci_main_ms":3018,"waited_ms":12318}
+{"ts":1793369017097,"event":"clone","repo":"billing"}
+{"ts":1793369017162,"event":"clone","repo":"shell"}
+{"ts":1793369017221,"event":"clone","repo":"platformkit"}
+{"ts":1793369041719,"event":"task_added","task":2,"title":"PLAT-103-2 billing owner","repo":"billing"}
+{"ts":1793369041736,"event":"task_start","task":2}
+{"ts":1793369041856,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369054094,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3106,"waited_ms":12206,"sha":"f9afc2a9a548c4f225bc784e2d316aa1874e78df"}
+{"ts":1793369054223,"event":"pr_merged","pr":2,"merge_sha":"e9681b845f1260f99c259e46643d906750f01f4c"}
+{"ts":1793369072603,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11714,"ci_main_ms":3018,"waited_ms":18352}
+{"ts":1793369079267,"event":"task_added","task":3,"title":"PLAT-103-3 shell owner","repo":"shell"}
+{"ts":1793369079284,"event":"task_start","task":3}
+{"ts":1793369079403,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369091655,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2946,"waited_ms":12221,"sha":"97c35a5230dd698cb755c3ca580fa60b4acd7a4c"}
+{"ts":1793369091784,"event":"pr_merged","pr":3,"merge_sha":"e3ddf757436b34de3d4a897c6d396a612f83f549"}
+{"ts":1793369107160,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8967,"ci_main_ms":3102,"waited_ms":15346}
+{"ts":1793369113003,"event":"task_added","task":4,"title":"PLAT-103-4 platform kit owner (no validateApp call in library; no change)","repo":"platformkit"}
+{"ts":1793369113022,"event":"task_done","task":4}
+{"ts":1793369116857,"event":"task_done","task":1}
+{"ts":1793369116880,"event":"task_done","task":2}
+{"ts":1793369116897,"event":"task_done","task":3}
+{"ts":1793369116911,"event":"done","summary":"PLAT-103: every app now declares an owner. Shipped: (1) libs-shared-contracts PR #1 - validateApp throws when app.owner is missing/empty, released as breaking 2.0.0 (published to registry, CD green). (2) apps-sub-route-billing PR #2 - passes owner 'payments' (package.json team) and moved to @mfe/shared-contracts ^2.0.0 (CI+CD green, live). (3) apps-core-shell PR #3 - passes owner 'platform' (package.json team) and moved to ^2.0.0 (CI+CD green, live). (4) libs-platform-kit - NO CHANGE: the library never calls validateApp and has no team field or contracts dependency, so there was nothing to pass; adding a dependency and a version bump would have been a no-op release. Assumptions: owner check is a falsy check (missing or empty string; whitespace-only is not rejected); owner values are hardcoded literals in app source because the bundler inlines imports and cannot read package.json; app versions not bumped (only libraries are version-gated per CONTRIBUTING.md); apps on ^1 would keep working until updated since 1.x remains in the registry."}

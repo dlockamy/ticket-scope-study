@@ -1,0 +1,52 @@
+=== eab9c80 billing passes owner (payments) to validateApp (PLAT-103-2)
+
+diff --git a/apps/sub-route-billing/src/main.js b/apps/sub-route-billing/src/main.js
+index 6493c0d..3dceb18 100644
+--- a/apps/sub-route-billing/src/main.js
++++ b/apps/sub-route-billing/src/main.js
+@@ -1,7 +1,7 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ import { formatMoney } from '@studio/platform-kit';
+ 
+-const app = validateApp({ name: 'billing' });
++const app = validateApp({ name: 'billing', owner: 'payments' });
+ console.log("Billing Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderBilling(containerId) {
+=== e7ff747 PLAT-103-3/4: core-shell and reports pass owner to validateApp
+
+diff --git a/apps/core-shell/src/config.js b/apps/core-shell/src/config.js
+index fc478f3..bb5ce95 100644
+--- a/apps/core-shell/src/config.js
++++ b/apps/core-shell/src/config.js
+@@ -1,4 +1,4 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'core-shell' });
++const app = validateApp({ name: 'core-shell', owner: 'platform' });
+ export const shellConfig = { app, billingEndpointHint: SHARED_CONFIG.billingUrl };
+diff --git a/apps/sub-route-reports/src/main.js b/apps/sub-route-reports/src/main.js
+index e8f22da..0fab262 100644
+--- a/apps/sub-route-reports/src/main.js
++++ b/apps/sub-route-reports/src/main.js
+@@ -1,6 +1,6 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ 
+-const app = validateApp({ name: 'reports' });
++const app = validateApp({ name: 'reports', owner: 'insights' });
+ console.log("Reports Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderReports(containerId) {
+=== 3e510ae validateApp requires a non-empty owner (PLAT-103-1)
+
+diff --git a/libs/shared-contracts/index.js b/libs/shared-contracts/index.js
+index 94d096c..e9d719d 100644
+--- a/libs/shared-contracts/index.js
++++ b/libs/shared-contracts/index.js
+@@ -7,5 +7,6 @@ export const SHARED_CONFIG = {
+ 
+ export function validateApp(app) {
+   if (!app || !app.name) throw new Error('app.name is required');
++  if (typeof app.owner !== 'string' || !app.owner.trim()) throw new Error('app.owner is required');
+   return { ...app };
+ }

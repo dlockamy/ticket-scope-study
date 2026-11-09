@@ -1,0 +1,1 @@
+{"id":1793412519034,"ts":1793412519034,"from":"dev-a","to":"dev-b","text":"contracts 2.0.0 (validateApp requires owner) is published to the registry. Apps can now adopt it: npm install @mfe/shared-contracts@^2.0.0"}

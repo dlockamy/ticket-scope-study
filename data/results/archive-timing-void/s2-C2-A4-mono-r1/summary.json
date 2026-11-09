@@ -1,0 +1,91 @@
+{
+  "run": "s2-C2-A4-mono-r1",
+  "topology": "mono",
+  "change": "C2",
+  "arm": "A4",
+  "rep": 1,
+  "model": "claude-sonnet-5-5",
+  "tag": "s2",
+  "structure": "structured",
+  "finished": "done",
+  "turnaround_s": 2012,
+  "jenkins_wait_s": 320,
+  "agent_active_s": 1692,
+  "t_first_clone_s": 190.438,
+  "t_first_pr_s": 504.208,
+  "t_first_merge_s": 817.832,
+  "repos_cloned": [
+    "mono",
+    "platformkit"
+  ],
+  "repos_changed": [
+    "mono"
+  ],
+  "prs": 1,
+  "prs_merged": 1,
+  "pr_detail": [
+    {
+      "id": 1,
+      "repo": "mono",
+      "files": 4,
+      "add": 4,
+      "del": 4,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1,
+      "open_to_merge_s": 314
+    }
+  ],
+  "lines_changed_excl_lock": 8,
+  "files_changed": 4,
+  "pr_updates": 1,
+  "ci_runs": 2,
+  "ci_failures": 0,
+  "deploys": 1,
+  "deploy_failures": 0,
+  "subtasks_recorded": 0,
+  "subtask_detail": [],
+  "jenkins_builds": 4,
+  "jenkins_executor_s": 891.2,
+  "jenkins_failed_builds": 0,
+  "jenkins_builds_by_job": {
+    "mono-cd": 2,
+    "mono-ci": 2
+  },
+  "deps_queries": 0,
+  "asks": 0,
+  "decoy_touched": false,
+  "repeat_repo_prs": 0,
+  "rework_events": 1,
+  "messages": 0,
+  "agent_tokens": 426018,
+  "agent_output_tokens": 3021,
+  "agent_turns": 14,
+  "agent_cost_usd": 0.12779730000000003,
+  "agent_duration_s": 153,
+  "agent_error": false,
+  "acceptance_pass": true,
+  "missed": [],
+  "broken_live": [],
+  "consumers": {
+    "shell": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_old_name": false
+    },
+    "billing": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_old_name": false
+    },
+    "reports": {
+      "src_ok": true,
+      "live_ok": true,
+      "live_old_name": false
+    }
+  },
+  "semver_ok": true,
+  "semver_class": null,
+  "platformkit_changed": false,
+  "failed_checks": []
+}

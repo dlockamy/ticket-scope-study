@@ -1,0 +1,30 @@
+{"ts":1793369351167,"event":"clone","repo":"contracts"}
+{"ts":1793369351226,"event":"clone","repo":"billing"}
+{"ts":1793369351283,"event":"clone","repo":"shell"}
+{"ts":1793369351341,"event":"clone","repo":"platformkit"}
+{"ts":1793369375382,"event":"task_start","task":1}
+{"ts":1793369375600,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-102-rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793369386924,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3677,"waited_ms":9197,"sha":"c44b164403742517e9eeaa92ca42f079960fe24d"}
+{"ts":1793369389575,"event":"pr_merged","pr":1,"merge_sha":"b640836c626476737dd01570d8bd634bfd1e4f22"}
+{"ts":1793369404987,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":5072,"ci_main_ms":2985,"waited_ms":15383}
+{"ts":1793369426022,"event":"task_start","task":2}
+{"ts":1793369426137,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-102-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369438402,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":2969,"waited_ms":12232,"sha":"ec65525db6ad64649dfbe0a3e3209a7f6aab94a7"}
+{"ts":1793369442184,"event":"pr_merged","pr":2,"merge_sha":"4961b65f0e41460706d6d86599857b1f642fe9d3"}
+{"ts":1793369460658,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11281,"ci_main_ms":3004,"waited_ms":18444}
+{"ts":1793369469924,"event":"task_start","task":3}
+{"ts":1793369470042,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-102-shell-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369482319,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":2928,"waited_ms":12246,"sha":"b92034ab4bb1b504b012a4df80da8687059c462b"}
+{"ts":1793369484570,"event":"pr_merged","pr":3,"merge_sha":"dccaf17d12a864656deff2e515d5712b95399644"}
+{"ts":1793369503007,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":9872,"ci_main_ms":3111,"waited_ms":18408}
+{"ts":1793369508032,"event":"clone","repo":"reports"}
+{"ts":1793369514113,"event":"task_added","task":1,"title":"PLAT-102: reports uses billingEndpoint (found by acceptance criterion; not in original breakdown)","repo":"reports"}
+{"ts":1793369527089,"event":"task_start","task":1}
+{"ts":1793369527204,"event":"pr_opened","pr":4,"repo":"reports","branch":"plat-102-reports-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793369536395,"event":"ci_result","pr":4,"result":"SUCCESS","build_ms":2950,"waited_ms":9160,"sha":"ebb1f1b5ac8d5f4010f41d61e4f836ac30542db6"}
+{"ts":1793369538943,"event":"pr_merged","pr":4,"merge_sha":"0ed25bed52ab755f4dedb2715ac0b544c3620018"}
+{"ts":1793369560392,"event":"deploy_result","pr":4,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12027,"ci_main_ms":3081,"waited_ms":21418}
+{"ts":1793369565025,"event":"task_done","task":1}
+{"ts":1793369565043,"event":"task_done","task":2}
+{"ts":1793369565059,"event":"task_done","task":3}
+{"ts":1793369569163,"event":"done","summary":"PLAT-102: billingUrl renamed to billingEndpoint, shipped. PRs: contracts #1 (@mfe/shared-contracts 2.0.0, breaking major bump), billing #2, shell #3, reports #4 (apps moved to ^2.0.0 and read billingEndpoint). All CI and CD green. Assumptions: (1) breaking rename with no deprecated alias, per ticket; (2) major bump to 2.0.0 so CD publishes; (3) platform-kit needed no change: it does not reference billingUrl or depend on shared-contracts, so no PR; (4) reports was not in the ticket breakdown but the acceptance criterion covers any app that used billingUrl, so I updated it; (5) apps still pinned to ^1.0.0 would keep working since 1.0.0 stays in the registry."}

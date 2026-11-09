@@ -1,0 +1,20 @@
+{"ts":1793412215274,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793412215654,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793412224935,"who":"dev-b","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-shell-reports-owner","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412229009,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793412229138,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-103-1-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412235795,"who":"dev-b","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4492,"waited_ms":9164,"sha":"b659afa9ab96f1ca9953f8c506d815c40fc6dd7f"}
+{"ts":1793412237483,"who":"dev-b","event":"pr_merged","pr":1,"merge_sha":"77a6fe3c5964f03e5a3cf7016f373550094603c7"}
+{"ts":1793412239867,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3564,"waited_ms":9130,"sha":"2ea0c94ebd991ca2289161d6ce5c5f29566bfe5f"}
+{"ts":1793412240020,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"e327a796b286d9467e79d673c646851a7d3b76de"}
+{"ts":1793412261603,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13925,"ci_main_ms":4076,"waited_ms":21553}
+{"ts":1793412262286,"who":"dev-b","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13925,"ci_main_ms":4076,"waited_ms":24746}
+{"ts":1793412264505,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793412265157,"who":"dev-b","event":"done","summary":"PLAT-103-3/4: core-shell passes owner 'platform', reports passes owner 'insights' (from each package.json team) in one PR #1; CI and CD green. Assumptions: shared-contracts is inlined from libs/ in this monorepo, so there is no registry version to adopt. Passing an extra owner field is harmless with the old validateApp, so I shipped without waiting for PLAT-103-1."}
+{"ts":1793412270743,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793412270889,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-103-2-billing-owner","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793412283417,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3090,"waited_ms":12481,"sha":"d89be59cdd3882eca985dcfcf2834446b7437b18"}
+{"ts":1793412283558,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"f6dd74e50f58b9a2ad29797d7f547c19f7c00219"}
+{"ts":1793412305315,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":13533,"ci_main_ms":5375,"waited_ms":21725}
+{"ts":1793412307809,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793412307826,"who":"dev-a","event":"done","summary":"PLAT-103-1: validateApp throws if owner missing/empty (PR #2, merged, CD green); bumped libs/shared-contracts to 2.0.0 (breaking). PLAT-103-2: billing passes owner 'payments' from package.json team (PR #3, merged, CD green). Assumptions: shared-contracts lives in-repo and is inlined at build, so no registry publish or dependency update is needed; owner whitespace-only is treated as empty."}

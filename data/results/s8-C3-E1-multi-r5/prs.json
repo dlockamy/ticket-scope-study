@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "repo": "contracts",
+    "branch": "require-app-owner",
+    "title": "PLAT-103-1: validateApp requires owner (v2.0.0)",
+    "head": "6c32fdc2a520eb0f3262b62c5798ac36e6c018fe",
+    "opened_ts": 1793450328132,
+    "size": {
+      "files": 2,
+      "add": 2,
+      "del": 1,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450339314,
+    "merge_sha": "60f67fb578ba22a8494a49a34c43874e89726207",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 2,
+    "repo": "billing",
+    "branch": "billing-owner",
+    "title": "PLAT-103-2: billing passes owner",
+    "head": "c4850364aa52252960a52e5599b2badec07a5d1f",
+    "opened_ts": 1793450359573,
+    "size": {
+      "files": 2,
+      "add": 9,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450375030,
+    "merge_sha": "99ffe442af4a091ae5cae5ba0b469991f0d9c530",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 3,
+    "repo": "shell",
+    "branch": "shell-owner",
+    "title": "PLAT-103-3: shell passes owner",
+    "head": "da0c75e7d01c900924b99dea8d9fbc6d5e9d7ee5",
+    "opened_ts": 1793450402865,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450415235,
+    "merge_sha": "0ff15ae8b116bfdca79cc7c978d4a1ab4ea9a84d",
+    "ci_prev": 1,
+    "cd_prev": 1
+  },
+  {
+    "id": 4,
+    "repo": "reports",
+    "branch": "reports-owner",
+    "title": "PLAT-103: reports passes owner",
+    "head": "430ec1033c9e613dcb7351d9c5844852e97ffb3b",
+    "opened_ts": 1793450443370,
+    "size": {
+      "files": 2,
+      "add": 8,
+      "del": 3,
+      "lock_add": 4,
+      "lock_del": 4,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793450452691,
+    "merge_sha": "288dcbae5b789d89e0dd474a1ba92deca5185f7b",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

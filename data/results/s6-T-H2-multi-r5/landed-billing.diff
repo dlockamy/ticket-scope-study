@@ -1,0 +1,34 @@
+=== 0fbc34a billing passes owner, adopts shared-contracts 2.0.0
+
+diff --git a/package.json b/package.json
+index 66aa1b5..e241cf1 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,12 @@
+   "name": "@mfe/sub-route-billing",
+   "version": "1.0.0",
+   "team": "payments",
+-  "scripts": {"prebuild": "npm install --no-audit --no-fund", "build": "node build.js"},
+-  "dependencies": {"@mfe/shared-contracts": "^1.0.0", "@studio/platform-kit": "^1.0.0"}
++  "scripts": {
++    "prebuild": "npm install --no-audit --no-fund",
++    "build": "node build.js"
++  },
++  "dependencies": {
++    "@mfe/shared-contracts": "^2.0.0",
++    "@studio/platform-kit": "^1.0.0"
++  }
+ }
+diff --git a/src/main.js b/src/main.js
+index 6493c0d..3dceb18 100644
+--- a/src/main.js
++++ b/src/main.js
+@@ -1,7 +1,7 @@
+ import { SHARED_CONFIG, validateApp } from '@mfe/shared-contracts';
+ import { formatMoney } from '@studio/platform-kit';
+ 
+-const app = validateApp({ name: 'billing' });
++const app = validateApp({ name: 'billing', owner: 'payments' });
+ console.log("Billing Sub-Route initialized with system endpoint:", SHARED_CONFIG.apiEndpoint, "billing:", SHARED_CONFIG.billingUrl);
+ 
+ export function renderBilling(containerId) {

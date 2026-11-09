@@ -1,0 +1,9 @@
+{"ts":1793335305872,"event":"clone","repo":"mono"}
+{"ts":1793335305936,"event":"clone","repo":"platformkit"}
+{"ts":1793335619642,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-102-rename-billing-endpoint","size":{"files":0,"add":0,"del":0,"lock_add":0,"lock_del":0,"commits":0}}
+{"ts":1793335622145,"event":"pr_updated","pr":1,"size":{"files":4,"add":4,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793335931388,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4369,"waited_ms":3090,"sha":"eaf6a47c07145abe2ccdf79213816bb8b3fa5abd"}
+{"ts":1793335933266,"event":"pr_merged","pr":1,"merge_sha":"24e9a84d564f1c446631461761cbaf16a35dc3b9"}
+{"ts":1793335933333,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":4369,"waited_ms":311159,"sha":"eaf6a47c07145abe2ccdf79213816bb8b3fa5abd"}
+{"ts":1793336821040,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":882156,"ci_main_ms":3319,"waited_ms":6163}
+{"ts":1793337127895,"event":"done","summary":"Renamed billingUrl to billingEndpoint (same value) in libs/shared-contracts and updated core-shell, sub-route-billing and sub-route-reports (reports also used it) in one mono PR (#1, merged, CI and CD green). Assumptions: shared-contracts lives in the monorepo and is inlined at build time, so no version bump or lockfile change was needed. libs-platform-kit has no reference to billingUrl and does not depend on shared-contracts, so PLAT-102-4 needed no change and no PR or release. Billing's platform-kit dependency was left as is."}

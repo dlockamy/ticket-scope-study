@@ -1,0 +1,8 @@
+[
+  {
+    "id": 1,
+    "title": "validateApp requires owner; apps pass team from package.json (all in mono; shared-contracts is in-repo lib, no release/version needed)",
+    "repo": "mono",
+    "state": "done"
+  }
+]

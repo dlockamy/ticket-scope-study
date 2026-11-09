@@ -1,0 +1,34 @@
+{"ts":1793413822755,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413822792,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793413825002,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793413825086,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793413832490,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413837308,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413837963,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793413838090,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413847362,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413848828,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3186,"waited_ms":9179,"sha":"b1d4f6481a8496cec01e4956ee43a62e18e45826"}
+{"ts":1793413848980,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"0202fa22dd46f901fdfa1387ed19a1941b4df416"}
+{"ts":1793413857421,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793413858321,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1204,"ci_main_ms":3186,"waited_ms":9310}
+{"ts":1793413861517,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793413861550,"who":"dev-a","event":"handoff_posted","version":"1.1.0","class":"minor"}
+{"ts":1793413867473,"who":"dev-b","event":"handoff_read"}
+{"ts":1793413870866,"who":"dev-b","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-3-4-adopt-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793413871764,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793413871920,"who":"dev-a","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-2-billing-adopt-contract","size":{"files":1,"add":1,"del":1,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793413881132,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3306,"waited_ms":9174,"sha":"8d13731991da8b96be57a9971bbb8b04973f1825"}
+{"ts":1793413881264,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"84fb9b9c9b43726c6c6a3f4490e30593423f073e"}
+{"ts":1793413881777,"who":"dev-b","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3306,"waited_ms":9182,"sha":"8d13731991da8b96be57a9971bbb8b04973f1825"}
+{"ts":1793413881911,"who":"dev-b","event":"pr_merged","pr":2,"merge_sha":"84fb9b9c9b43726c6c6a3f4490e30593423f073e"}
+{"ts":1793413899846,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12150,"ci_main_ms":4024,"waited_ms":18549}
+{"ts":1793413900508,"who":"dev-b","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12150,"ci_main_ms":4024,"waited_ms":18561}
+{"ts":1793413903028,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793413903052,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793413903069,"who":"dev-b","event":"done","summary":"Tasks 3 and 4 shipped via PR #2 (CI+CD green). shared-contracts is an in-repo lib inlined at build time, so no registry install; bumped patch version 1.0.0->1.0.1 in core-shell and sub-route-reports package.json to trigger CD to rebuild them against 1.1.0 (billingUrl /billing/v2). Assumption: version bump is an acceptable minimal change to trigger the app rebuild."}
+{"ts":1793413904885,"who":"dev-a","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3280,"waited_ms":38,"sha":"65c10dc73e66f0cc0964d7b5eaf8b802ec6bb499"}
+{"ts":1793413905033,"who":"dev-a","event":"pr_merged","pr":3,"merge_sha":"a5c24d0c9279cc0ba2aa3942fa7512eb204e7da0"}
+{"ts":1793413920526,"who":"dev-a","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10144,"ci_main_ms":3303,"waited_ms":15461}
+{"ts":1793413920553,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793413920571,"who":"dev-a","event":"handoff_read"}
+{"ts":1793413923533,"who":"dev-a","event":"done","summary":"Sub-tasks 1+2 shipped. PR #1: shared-contracts billingUrl -> https://homelab.local/billing/v2, version 1.0.0->1.1.0 (minor; in-repo lib inlined at build, nothing published). PR #3: billing app rebuilt/version bump 1.0.1 (needed because CD only detects apps/ changes); local build confirmed bundle contains billing/v2; CD green. Assumptions: minor class for value change. Note: I accidentally ran pr wait/merge on dev-b's PR #2 (green CI, merged, CD green) due to a PR-number mix-up; its content was dev-b's intended change."}

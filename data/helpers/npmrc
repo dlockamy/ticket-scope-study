@@ -1,0 +1,2 @@
+registry=${MFE_REGISTRY}
+replace-registry-host=always

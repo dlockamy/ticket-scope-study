@@ -1,0 +1,6 @@
+{"ts":1793364820254,"event":"clone","repo":"mono"}
+{"ts":1793364857285,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-app-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364866494,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3096,"waited_ms":9177,"sha":"5467c2d263c0217b1373f487cbde0e05268f5337"}
+{"ts":1793364873840,"event":"pr_merged","pr":1,"merge_sha":"5b09072063af2a89de3e47fc52c9ec222df5beca"}
+{"ts":1793364895375,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10905,"ci_main_ms":3103,"waited_ms":21508}
+{"ts":1793364898829,"event":"done","summary":"PLAT-103 shipped in PR #1 (CI+CD green). validateApp now throws if owner missing/empty; shared-contracts bumped 1.0.0->2.0.0 (breaking). core-shell passes owner 'platform', billing 'payments' (their package.json team). Assumptions: shared-contracts lives in libs/ and is inlined at build time, so there is no registry release to adopt and one PR sufficed; build can't import package.json so owner strings are hardcoded to match. Also fixed sub-route-reports (calls validateApp; owner 'insights') though not in the ticket, since it would otherwise break at startup."}

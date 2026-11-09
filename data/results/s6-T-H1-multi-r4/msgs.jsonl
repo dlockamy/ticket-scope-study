@@ -1,0 +1,2 @@
+{"id":1793412910976,"ts":1793412910976,"from":"dev-b","to":"dev-a","text":"dev-b: shell/reports edits ready; waiting for contracts major release (2.0.0) to be live in registry. Please message me when deployed."}
+{"id":1793412940862,"ts":1793412940862,"from":"dev-a","to":"dev-b","text":"contracts PR#1 merged+published: @mfe/shared-contracts 2.0.0 is in registry (validateApp requires non-empty owner). Adopt with npm install @mfe/shared-contracts@^2.0.0"}

@@ -1,0 +1,10 @@
+{"ts":1793450314236,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793450318358,"event":"clone","repo":"mono"}
+{"ts":1793450338004,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793450350350,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3177,"waited_ms":12309,"sha":"0c17907b37ed3b8ae6d2d2d5d15f15de82fc60e3"}
+{"ts":1793450352344,"event":"pr_merged","pr":1,"merge_sha":"dd077b383e8a252437ba6d4025d353a7869323cc"}
+{"ts":1793450370730,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11319,"ci_main_ms":3093,"waited_ms":18354}
+{"ts":1793450373934,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793450373951,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793450373964,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793450373988,"event":"done","summary":"Single PR #1 (order matters; libs/ are inlined at build time so the stricter contract would break any app still lacking owner). validateApp now throws on missing/blank owner (lib bumped to 2.0.0, breaking). Billing=payments, core-shell=platform, reports=insights (reports also called validateApp but had no ticket; fixed so it won't break on next build). Owners taken from each app's package.json 'team'. All three apps build locally; CI and CD green."}

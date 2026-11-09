@@ -1,0 +1,29 @@
+{"ts":1793414588969,"who":"dev-a","event":"handoff_read","empty":true}
+{"ts":1793414588981,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414591074,"who":"dev-a","event":"clone","repo":"mono"}
+{"ts":1793414591190,"who":"dev-b","event":"clone","repo":"mono"}
+{"ts":1793414600219,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414603968,"who":"dev-a","event":"task_start","task":1}
+{"ts":1793414604132,"who":"dev-a","event":"pr_opened","pr":1,"repo":"mono","branch":"plat-104-1-billing-url-v2","size":{"files":1,"add":1,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414604183,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414614815,"who":"dev-a","event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3258,"waited_ms":9164,"sha":"9cb99b2969904f22ce02077e505da05cebd25a4c"}
+{"ts":1793414614979,"who":"dev-a","event":"pr_merged","pr":1,"merge_sha":"65b7663db150c80631a462701708dc9cbe76e435"}
+{"ts":1793414619220,"who":"dev-b","event":"handoff_read","empty":true}
+{"ts":1793414627426,"who":"dev-a","event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":1246,"ci_main_ms":3113,"waited_ms":12414}
+{"ts":1793414632724,"who":"dev-a","event":"handoff_posted","version":"1.0.0","class":"patch"}
+{"ts":1793414632810,"who":"dev-a","event":"task_done","task":1}
+{"ts":1793414632831,"who":"dev-a","event":"task_start","task":2}
+{"ts":1793414634271,"who":"dev-b","event":"handoff_read"}
+{"ts":1793414637466,"who":"dev-a","event":"pr_opened","pr":2,"repo":"mono","branch":"plat-104-2-billing-adopt-v2","size":{"files":1,"add":1,"del":1,"lock_add":2,"lock_del":2,"commits":1}}
+{"ts":1793414638935,"who":"dev-b","event":"pr_opened","pr":3,"repo":"mono","branch":"plat-104-adopt-billing-v2","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793414652870,"who":"dev-a","event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3558,"waited_ms":15370,"sha":"7520c3ef33feda7a8bc4c60f5f66c4c9bc815911"}
+{"ts":1793414653025,"who":"dev-a","event":"pr_merged","pr":2,"merge_sha":"abde5849cc2e9cefa010b4949c7695ef9eeb0f50"}
+{"ts":1793414653088,"who":"dev-b","event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3519,"waited_ms":12375,"sha":"a5d8a0a9ec164b091d4795e2a848aa9b208c4663"}
+{"ts":1793414653294,"who":"dev-b","event":"pr_merged","pr":3,"merge_sha":"356a5e19b4753162b7d08f5eb5a75c0b4dff90c6"}
+{"ts":1793414677939,"who":"dev-b","event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":18115,"ci_main_ms":7927,"waited_ms":24613}
+{"ts":1793414677975,"who":"dev-a","event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":18115,"ci_main_ms":7927,"waited_ms":24909}
+{"ts":1793414680606,"who":"dev-a","event":"task_done","task":2}
+{"ts":1793414680623,"who":"dev-a","event":"done","summary":"PLAT-104-1: billingUrl changed to /billing/v2 in libs/shared-contracts (PR #1). The lib is in-repo and inlined at build time, so there is no registry release or version bump; CD ignores libs/. PLAT-104-2: billing app rebuilt and shipped (PR #2, version 1.0.1 to trigger CD); CI and CD green. Assumption: the 'release' for an in-repo lib is just the merge. Handoff note posted for dev-b."}
+{"ts":1793414680755,"who":"dev-b","event":"task_done","task":3}
+{"ts":1793414680776,"who":"dev-b","event":"task_done","task":4}
+{"ts":1793414680791,"who":"dev-b","event":"done","summary":"PR #3 merged and CD green: core-shell and reports rebuilt with billingUrl=/billing/v2 (shared-contracts is in-repo and inlined, so no npm update; bumped each app's package.json to 1.0.1 so CD's change detection builds/deploys them). Assumption: one PR for both tasks. Note: dev-a's handoff said reports has no CD detection, but Jenkinsfile.cd does detect apps/sub-route-reports/."}

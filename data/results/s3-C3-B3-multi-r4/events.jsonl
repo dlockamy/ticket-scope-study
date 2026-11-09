@@ -1,0 +1,17 @@
+{"ts":1793384932215,"event":"clone","repo":"contracts"}
+{"ts":1793384932273,"event":"clone","repo":"billing"}
+{"ts":1793384932332,"event":"clone","repo":"shell"}
+{"ts":1793384953758,"event":"pr_opened","pr":1,"repo":"contracts","branch":"plat-103-require-owner","size":{"files":2,"add":2,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793384962941,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":2652,"waited_ms":9152,"sha":"df260f0ebc80dad1df2aa35ada697b967c407d35"}
+{"ts":1793384963074,"event":"pr_merged","pr":1,"merge_sha":"c4b12ba08d0139ca2eb05a9f6d1bcc255af08e65"}
+{"ts":1793384978414,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4794,"ci_main_ms":2843,"waited_ms":15310}
+{"ts":1793384989371,"event":"pr_opened","pr":2,"repo":"billing","branch":"plat-103-owner-billing","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793384989494,"event":"pr_opened","pr":3,"repo":"shell","branch":"plat-103-owner-shell","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793385000045,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3127,"waited_ms":6132,"sha":"bbb182148c8e13e410f450b6dec147fb430e1721"}
+{"ts":1793385000108,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3122,"waited_ms":36,"sha":"6f3684c04471b141647333d887a21b7ef210e552"}
+{"ts":1793385005659,"event":"pr_merged","pr":2,"merge_sha":"a06948241ee635c313f41cb1cd302773a8326cc5"}
+{"ts":1793385005782,"event":"pr_merged","pr":3,"merge_sha":"98635e99acfa02e53589a64bdadc1c8a0a8341d8"}
+{"ts":1793385030286,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12829,"ci_main_ms":3353,"waited_ms":24473}
+{"ts":1793385030364,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11288,"ci_main_ms":5397,"waited_ms":47}
+{"ts":1793385034992,"event":"clone","repo":"reports"}
+{"ts":1793385039811,"event":"done","summary":"validateApp now throws if owner missing/empty (shared-contracts 2.0.0, major bump, published). Billing passes owner 'payments' and shell passes 'platform' (from package.json team), both on ^2.0.0 with updated lockfiles; all merged and CD green. Assumption: owner value hardcoded from package.json team. Note: apps-sub-route-reports also calls validateApp without owner but is pinned to ^1.0.0 so is unaffected now; it will break when it upgrades and needs a follow-up ticket."}

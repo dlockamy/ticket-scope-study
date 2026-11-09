@@ -1,0 +1,12 @@
+{"ts":1793447659823,"event":"child_opened","child":"PLAT-103-1"}
+{"ts":1793447659910,"event":"clone","repo":"mono"}
+{"ts":1793447666016,"event":"child_opened","child":"PLAT-103-4"}
+{"ts":1793447680714,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-103-require-owner","size":{"files":5,"add":5,"del":4,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793447690009,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3744,"waited_ms":9261,"sha":"8837be016de40dea7fdcbe8326b4b59ad85ea9c9"}
+{"ts":1793447691890,"event":"pr_merged","pr":1,"merge_sha":"a384df735fd2248819c1e23a8226767ce348bec3"}
+{"ts":1793447716363,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":12822,"ci_main_ms":3699,"waited_ms":24444}
+{"ts":1793447719360,"event":"child_done","child":"PLAT-103-1"}
+{"ts":1793447719376,"event":"child_done","child":"PLAT-103-2"}
+{"ts":1793447719391,"event":"child_done","child":"PLAT-103-3"}
+{"ts":1793447719405,"event":"child_done","child":"PLAT-103-4"}
+{"ts":1793447719432,"event":"done","summary":"validateApp now throws if owner is missing/empty (shared-contracts bumped to 2.0.0, breaking). core-shell=platform, billing=payments, reports=insights, taken from each app's package.json team. Assumption: since libs/shared-contracts is inlined at build time in the monorepo, I shipped the lib and all three apps in one PR (#1) so main never had a broken build. CI and CD green."}

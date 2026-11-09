@@ -1,0 +1,9 @@
+{"ts":1793366367121,"event":"clone","repo":"mono"}
+{"ts":1793366367178,"event":"clone","repo":"platformkit"}
+{"ts":1793366381598,"event":"task_added","task":1,"title":"Add billingPortalUrl to libs/shared-contracts SHARED_CONFIG","repo":""}
+{"ts":1793366381619,"event":"task_added","task":2,"title":"Billing renders 'Manage billing' link from SHARED_CONFIG.billingPortalUrl; build, PR, deploy","repo":""}
+{"ts":1793366397224,"event":"pr_opened","pr":1,"repo":"mono","branch":"plat-101-billing-portal-link","size":{"files":2,"add":3,"del":1,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793366411345,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3056,"waited_ms":12223,"sha":"60234fc79d4a29cdfa951525709d4067c5268250"}
+{"ts":1793366411491,"event":"pr_merged","pr":1,"merge_sha":"61e1a1d1d820130f1b4113ef499112a3222ae8b5"}
+{"ts":1793366429901,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":10778,"ci_main_ms":3190,"waited_ms":18378}
+{"ts":1793366432834,"event":"done","summary":"Added billingPortalUrl (https://homelab.local/billing/portal) to libs/shared-contracts SHARED_CONFIG; billing renders 'Manage billing' link from it. PR #1 merged, CI+CD green. Assumptions: 'shared configuration' = libs/shared-contracts (already holds billingUrl); no platformkit change needed since shared-contracts is inlined at build and billing deploys on apps/ change."}

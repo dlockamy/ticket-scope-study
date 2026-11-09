@@ -1,0 +1,16 @@
+{"ts":1793364290420,"event":"clone","repo":"contracts"}
+{"ts":1793364290478,"event":"clone","repo":"billing"}
+{"ts":1793364290544,"event":"clone","repo":"shell"}
+{"ts":1793364296775,"event":"pr_opened","pr":1,"repo":"contracts","branch":"rename-billing-endpoint","size":{"files":2,"add":2,"del":2,"lock_add":0,"lock_del":0,"commits":1}}
+{"ts":1793364312280,"event":"ci_result","pr":1,"result":"SUCCESS","build_ms":3704,"waited_ms":15467,"sha":"0ac8600cd47c67953dedcc39ff8c32691a8fd779"}
+{"ts":1793364345205,"event":"pr_merged","pr":1,"merge_sha":"318c81104c7b47f45f430dec5aeba69dcf600dec"}
+{"ts":1793364357516,"event":"deploy_result","pr":1,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":4728,"ci_main_ms":2792,"waited_ms":12280}
+{"ts":1793364367835,"event":"pr_opened","pr":2,"repo":"billing","branch":"use-billing-endpoint","size":{"files":2,"add":9,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793364367960,"event":"pr_opened","pr":3,"repo":"shell","branch":"use-billing-endpoint","size":{"files":2,"add":8,"del":3,"lock_add":4,"lock_del":4,"commits":1}}
+{"ts":1793364379557,"event":"ci_result","pr":2,"result":"SUCCESS","build_ms":3125,"waited_ms":9132,"sha":"8c4ff86439ecba83b1ede10f270d306cb7085797"}
+{"ts":1793364379619,"event":"ci_result","pr":3,"result":"SUCCESS","build_ms":3136,"waited_ms":32,"sha":"6cc8097bcc0a04e1586ae0f24bdff5ed9444c3f3"}
+{"ts":1793364383533,"event":"pr_merged","pr":2,"merge_sha":"aeef3b8bca7f33c2628c1bba5fde2aaf1e06e51d"}
+{"ts":1793364405025,"event":"deploy_result","pr":2,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":11860,"ci_main_ms":2979,"waited_ms":21462}
+{"ts":1793364405157,"event":"pr_merged","pr":3,"merge_sha":"bcbe6ca52a073b0db85c58d678ec0d7d0959469a"}
+{"ts":1793364420548,"event":"deploy_result","pr":3,"cd_result":"SUCCESS","ci_main_result":"SUCCESS","cd_ms":8953,"ci_main_ms":3111,"waited_ms":15360}
+{"ts":1793364424307,"event":"done","summary":"Renamed billingUrl->billingEndpoint in shared-contracts (released as 2.0.0, major since breaking; PR #1). Billing (PR #2) and shell (PR #3) updated to use billingEndpoint and depend on ^2.0.0 with lockfiles; CI and CD green for all. Assumptions: reports and platform-kit were not cloned or changed; the only billingUrl references were in the three repos I cloned. I did not inspect the live bundles directly."}

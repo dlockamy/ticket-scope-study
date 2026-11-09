@@ -1,0 +1,29 @@
+{
+  "run": "s9-C3-N3-mono-r4",
+  "topology": "mono",
+  "change": "C3",
+  "arm": "N3",
+  "rep": 4,
+  "model": "claude-sonnet-5-5",
+  "tag": "s9",
+  "start_ms": 1793452205415,
+  "structure": "open",
+  "list": "none",
+  "catalog": "none",
+  "checks": false,
+  "clarify": false,
+  "listed": [],
+  "decoys": [],
+  "hidden": null,
+  "epic": false,
+  "children": [],
+  "custom": "stale",
+  "audit": false,
+  "note": null,
+  "users": [
+    "shell",
+    "billing",
+    "reports"
+  ],
+  "ticket_key": "PLAT-103"
+}

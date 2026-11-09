@@ -1,0 +1,1 @@
+validateApp now throws if owner missing/empty; released as @mfe/shared-contracts 2.0.0 (major, breaking). Billing/shell/reports bump to ^2.0.0 (lockfiles committed) and pass owner from package.json team (payments/platform/insights; hardcoded, not read at runtime). All PRs (#1-#4) merged, CI+CD green. Assumption: owner string literal matches package.json team.

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "repo": "mono",
+    "branch": "plat-103-app-owner",
+    "title": "PLAT-103: require an owning team on every app",
+    "head": "c994c9a937ddf04c4583ccc432a1144057dbc7e8",
+    "opened_ts": 1793393540818,
+    "size": {
+      "files": 4,
+      "add": 4,
+      "del": 3,
+      "lock_add": 0,
+      "lock_del": 0,
+      "commits": 1
+    },
+    "ci": "SUCCESS",
+    "merged_ts": 1793393552646,
+    "merge_sha": "480e768e79793836660e13ce6629833149f84f73",
+    "ci_prev": 1,
+    "cd_prev": 1
+  }
+]

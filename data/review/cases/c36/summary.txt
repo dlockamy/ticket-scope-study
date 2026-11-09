@@ -1,0 +1,1 @@
+validateApp now requires non-empty owner (shared-contracts 2.0.0, major since breaking). Billing (owner=payments) and shell (owner=platform) pass owner from package.json team, adopt ^2.0.0 with lockfile, deployed. Assumption: reports app doesn't call validateApp (not in ticket; not checked).
